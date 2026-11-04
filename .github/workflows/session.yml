@@ -1,0 +1,53 @@
+name: session
+
+on:
+  schedule:
+    # Triggers every 20 min, 13:00-20:40 UTC weekdays (covers 9:30-4:00 ET in winter and summer).
+    # GitHub often delays or drops scheduled runs, so there are many; whichever starts first
+    # runs the whole session, and the rest queue behind it and exit quickly.
+    - cron: "0,20,40 13-20 * * 1-5"
+    # Off-hours: forum + insider snapshots every 4 hours, every day.
+    - cron: "7 0,4,8,12 * * *"
+  workflow_dispatch:
+    inputs:
+      max_minutes:
+        description: "Stop after this many minutes (default 345)"
+        required: false
+        default: "345"
+
+concurrency:
+  group: trading            # only one job touches state at a time
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      ALPACA_PAPER: "true"
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "trading-bot"
+          git config user.email "trading-bot@users.noreply.github.com"
+      - name: Off-hours snapshots
+        if: github.event.schedule == '7 0,4,8,12 * * *'
+        run: |
+          python forum_collector.py || true
+          python insider_collector.py || true
+          git add data
+          git diff --cached --quiet || (git commit -qm "snapshots $(date -u +%F_%H%M)" && git pull -q --rebase && git push -q)
+      - name: Market session (checks every minute until the close)
+        if: github.event.schedule != '7 0,4,8,12 * * *'
+        run: python -m tournament.session --max-minutes ${{ github.event.inputs.max_minutes || '345' }}

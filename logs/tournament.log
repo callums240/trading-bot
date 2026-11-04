@@ -1,0 +1,116 @@
+2026-11-03 22:52:56,782 INFO ==== tick 2026-11-03 23:52 ET, slot=open (DRY-RUN) ====
+2026-11-03 22:52:57,040 INFO spy_hold          BUY  SPY   $ 200.00 @ 754.67  benchmark
+2026-11-03 22:52:57,040 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-03 22:52:57,370 INFO orb_tqqq          BUY  TQQQ  $ 200.00 @ 61.33  QQQ 688.14 > OR high 687.21
+2026-11-03 22:52:57,370 INFO orb_tqqq          value $199.90  cash $0.00  holding ['TQQQ']
+2026-11-03 22:52:57,776 INFO gap_fade          BUY  SHOP  $ 100.00 @ 142.77  gap down, bouncing
+2026-11-03 22:52:57,777 INFO gap_fade          BUY  PLTR  $ 100.00 @ 175.43  gap down, bouncing
+2026-11-03 22:52:57,777 INFO gap_fade          value $199.90  cash $0.00  holding ['SHOP', 'PLTR']
+2026-11-03 22:52:57,777 INFO midday_momentum   value $200.00  cash $200.00  holding -
+2026-11-03 22:52:57,825 INFO wsb_crowd         BUY  AAPL  $  66.67 @ 330.75  WSB mentions spiking
+2026-11-03 22:52:57,825 INFO wsb_crowd         BUY  MU    $  66.67 @ 869.21  WSB mentions spiking
+2026-11-03 22:52:57,826 INFO wsb_crowd         BUY  MRVL  $  66.67 @ 173.98  WSB mentions spiking
+2026-11-03 22:52:57,826 INFO wsb_crowd         value $199.90  cash $0.00  holding ['AAPL', 'MU', 'MRVL']
+2026-11-03 22:52:57,827 INFO overnight_qqq     value $200.00  cash $200.00  holding -
+2026-11-03 22:52:57,827 INFO dip_buy_volatile  value $200.00  cash $200.00  holding -
+2026-11-03 22:52:57,827 INFO weekly_momentum   value $200.00  cash $200.00  holding -
+2026-11-03 22:52:57,827 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-03 22:52:57,827 INFO ==== tick end ====
+2026-11-03 22:52:58,592 INFO ==== tick 2026-11-03 23:52 ET, slot=midday (DRY-RUN) ====
+2026-11-03 22:52:58,784 INFO spy_hold          BUY  SPY   $ 200.00 @ 754.67  benchmark
+2026-11-03 22:52:58,785 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-03 22:52:58,785 INFO orb_tqqq          value $200.00  cash $200.00  holding -
+2026-11-03 22:52:58,785 INFO gap_fade          value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,019 INFO midday_momentum   BUY  MARA  $ 100.00 @ 7.18  top gainer at midday
+2026-11-03 22:52:59,019 INFO midday_momentum   BUY  SMCI  $ 100.00 @ 33.88  top gainer at midday
+2026-11-03 22:52:59,019 INFO midday_momentum   value $199.90  cash $0.00  holding ['MARA', 'SMCI']
+2026-11-03 22:52:59,019 INFO wsb_crowd         value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,019 INFO overnight_qqq     value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,020 INFO dip_buy_volatile  value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,020 INFO weekly_momentum   value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,020 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,020 INFO ==== tick end ====
+2026-11-03 22:52:59,686 INFO ==== tick 2026-11-03 23:52 ET, slot=close (DRY-RUN) ====
+2026-11-03 22:52:59,874 INFO spy_hold          BUY  SPY   $ 200.00 @ 754.67  benchmark
+2026-11-03 22:52:59,874 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-03 22:52:59,874 INFO orb_tqqq          value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,874 INFO gap_fade          value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,874 INFO midday_momentum   value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,875 INFO wsb_crowd         value $200.00  cash $200.00  holding -
+2026-11-03 22:52:59,928 INFO overnight_qqq     BUY  QQQ   $ 200.00 @ 688.48  overnight hold
+2026-11-03 22:52:59,928 INFO overnight_qqq     value $199.90  cash $0.00  holding ['QQQ']
+2026-11-03 22:53:00,301 INFO dip_buy_volatile  value $200.00  cash $200.00  holding -
+2026-11-03 22:53:00,566 INFO weekly_momentum   BUY  TSLA  $  66.67 @ 398.41  top 20-day return 2026-W45
+2026-11-03 22:53:00,566 INFO weekly_momentum   BUY  SOFI  $  66.67 @ 16.79  top 20-day return 2026-W45
+2026-11-03 22:53:00,566 INFO weekly_momentum   BUY  AMZN  $  66.67 @ 250.86  top 20-day return 2026-W45
+2026-11-03 22:53:00,566 INFO weekly_momentum   value $199.90  cash $0.00  holding ['TSLA', 'SOFI', 'AMZN']
+2026-11-03 22:53:00,635 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-03 22:53:00,636 INFO ==== tick end ====
+<<<<<<< Updated upstream
+2026-11-04 04:54:09,981 INFO ==== tick 2026-11-03 23:54 ET, slot=open (DRY-RUN) ====
+2026-11-04 04:54:10,317 INFO spy_hold          BUY  SPY   $ 200.00 @ 754.67  benchmark
+2026-11-04 04:54:10,317 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-04 04:54:10,520 INFO orb_tqqq          BUY  TQQQ  $ 200.00 @ 61.33  QQQ 688.14 > OR high 687.21
+2026-11-04 04:54:10,520 INFO orb_tqqq          value $199.90  cash $0.00  holding ['TQQQ']
+2026-11-04 04:54:10,794 INFO gap_fade          BUY  SHOP  $ 100.00 @ 142.77  gap down, bouncing
+2026-11-04 04:54:10,794 INFO gap_fade          BUY  PLTR  $ 100.00 @ 175.43  gap down, bouncing
+2026-11-04 04:54:10,794 INFO gap_fade          value $199.90  cash $0.00  holding ['SHOP', 'PLTR']
+2026-11-04 04:54:10,794 INFO midday_momentum   value $200.00  cash $200.00  holding -
+2026-11-04 04:54:10,844 INFO wsb_crowd         BUY  AAPL  $  66.67 @ 330.75  WSB mentions spiking
+2026-11-04 04:54:10,844 INFO wsb_crowd         BUY  MU    $  66.67 @ 869.21  WSB mentions spiking
+2026-11-04 04:54:10,844 INFO wsb_crowd         BUY  MRVL  $  66.67 @ 173.98  WSB mentions spiking
+2026-11-04 04:54:10,844 INFO wsb_crowd         value $199.90  cash $0.00  holding ['AAPL', 'MU', 'MRVL']
+2026-11-04 04:54:10,844 INFO overnight_qqq     value $200.00  cash $200.00  holding -
+2026-11-04 04:54:10,844 INFO dip_buy_volatile  value $200.00  cash $200.00  holding -
+2026-11-04 04:54:10,844 INFO weekly_momentum   value $200.00  cash $200.00  holding -
+2026-11-04 04:54:10,844 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-04 04:54:10,844 INFO ==== tick end ====
+=======
+2026-11-03 22:56:20,926 INFO ==== tick 2026-11-03 23:56 ET, slot=open (DRY-RUN) ====
+2026-11-03 22:56:21,704 INFO options_orb       value $200.00  cash $200.00  holding -
+2026-11-03 22:56:21,704 INFO ==== tick end ====
+2026-11-03 22:56:22,353 INFO ==== tick 2026-11-03 23:56 ET, slot=close (DRY-RUN) ====
+2026-11-03 22:56:22,353 INFO options_orb       value $200.00  cash $200.00  holding -
+2026-11-03 22:56:22,353 INFO ==== tick end ====
+2026-11-03 22:56:22,969 INFO ==== tick 2026-11-03 23:56 ET, slot=open (DRY-RUN) ====
+2026-11-03 22:56:23,773 INFO put_credit_spread value $200.00  cash $200.00  holding -
+2026-11-03 22:56:23,773 INFO ==== tick end ====
+>>>>>>> Stashed changes
+2026-11-03 22:56:45,969 INFO ==== tick 2026-11-03 23:56 ET, slot=close (DRY-RUN) ====
+2026-11-03 22:56:46,162 INFO spy_hold          BUY  SPY   $ 200.00 @ 754.67  benchmark
+2026-11-03 22:56:46,162 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-03 22:56:46,163 INFO orb_tqqq          value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,163 INFO gap_fade          value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,163 INFO midday_momentum   value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,163 INFO wsb_crowd         value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,214 INFO overnight_qqq     BUY  QQQ   $ 200.00 @ 688.48  overnight hold
+2026-11-03 22:56:46,214 INFO overnight_qqq     value $199.90  cash $0.00  holding ['QQQ']
+2026-11-03 22:56:46,628 INFO dip_buy_volatile  value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,918 INFO weekly_momentum   BUY  TSLA  $  66.67 @ 398.41  top 20-day return 2026-W45
+2026-11-03 22:56:46,918 INFO weekly_momentum   BUY  SOFI  $  66.67 @ 16.79  top 20-day return 2026-W45
+2026-11-03 22:56:46,918 INFO weekly_momentum   BUY  AMZN  $  66.67 @ 250.86  top 20-day return 2026-W45
+2026-11-03 22:56:46,918 INFO weekly_momentum   value $199.90  cash $0.00  holding ['TSLA', 'SOFI', 'AMZN']
+2026-11-03 22:56:46,974 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,975 INFO options_orb       value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,975 INFO put_credit_spread value $200.00  cash $200.00  holding -
+2026-11-03 22:56:46,975 INFO ==== tick end ====
+2026-11-04 20:42:58,798 INFO ==== tick 2026-11-04 15:42 ET, slot=close ====
+2026-11-04 20:42:59,011 INFO spy_hold          BUY  SPY   $ 200.00 @ 767.95  benchmark
+2026-11-04 20:42:59,012 INFO spy_hold          value $199.90  cash $0.00  holding ['SPY']
+2026-11-04 20:42:59,012 INFO orb_tqqq          value $200.00  cash $200.00  holding -
+2026-11-04 20:42:59,012 INFO gap_fade          value $200.00  cash $200.00  holding -
+2026-11-04 20:42:59,012 INFO midday_momentum   value $200.00  cash $200.00  holding -
+2026-11-04 20:42:59,013 INFO wsb_crowd         value $200.00  cash $200.00  holding -
+2026-11-04 20:42:59,090 INFO overnight_qqq     BUY  QQQ   $ 200.00 @ 692.37  overnight hold
+2026-11-04 20:42:59,090 INFO overnight_qqq     value $199.90  cash $0.00  holding ['QQQ']
+2026-11-04 20:42:59,904 INFO dip_buy_volatile  BUY  TSLA  $ 100.00 @ 383.84  RSI-2 dip
+2026-11-04 20:42:59,905 INFO dip_buy_volatile  value $199.95  cash $100.00  holding ['TSLA']
+2026-11-04 20:43:00,694 INFO weekly_momentum   BUY  SOFI  $  66.67 @ 17.47  top 20-day return 2026-W45
+2026-11-04 20:43:00,694 INFO weekly_momentum   BUY  TSLA  $  66.67 @ 383.84  top 20-day return 2026-W45
+2026-11-04 20:43:00,694 INFO weekly_momentum   BUY  AMZN  $  66.67 @ 268.11  top 20-day return 2026-W45
+2026-11-04 20:43:00,695 INFO weekly_momentum   value $199.90  cash $0.00  holding ['SOFI', 'TSLA', 'AMZN']
+2026-11-04 20:43:00,926 INFO trend_tqqq        value $200.00  cash $200.00  holding -
+2026-11-04 20:43:00,927 INFO insider_buys      value $200.00  cash $200.00  holding -
+2026-11-04 20:43:00,927 INFO options_orb       value $200.00  cash $200.00  holding -
+2026-11-04 20:43:00,927 INFO put_credit_spread value $200.00  cash $200.00  holding -
+2026-11-04 20:43:00,928 INFO ==== tick end ====

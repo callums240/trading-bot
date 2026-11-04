@@ -1,0 +1,356 @@
+"""The tournament's players. Each strategy acts in one or more time slots:
+
+  open    10:00-11:30 ET  (after the first 30 minutes set the opening range)
+  midday  12:30-14:00 ET
+  close   15:30-16:00 ET  (last 30 minutes)
+
+A strategy gets ctx (market data, its ledger, the slot, the time) and trades its
+own virtual $200. Day-trade strategies ("intraday") never hold overnight: if a
+close slot was missed, the next run sells their leftovers first.
+
+Add a strategy: write a function, then add a Strategy(...) line to PLAYERS.
+"""
+from dataclasses import dataclass, field
+from datetime import date, time, timedelta
+import glob
+import json
+from pathlib import Path
+
+from strategy import rsi
+from tournament.ledger import SLIPPAGE
+from tournament.market import occ_expiry, occ_strike
+
+ETFS = ["SPY", "QQQ", "IWM", "DIA", "XLK", "XLF", "XLE", "XLV", "XLI", "XLY", "XLP", "XLU", "SMH"]
+VOLATILE = ["TSLA", "NVDA", "AMD", "COIN", "MSTR", "PLTR", "SOFI", "MARA", "SMCI", "HOOD",
+            "RIVN", "SHOP", "META", "AMZN", "NFLX"]
+LEVERAGED = ["TQQQ", "SOXL"]
+FORUM_DIR = Path(__file__).parent.parent / "data" / "forum" / "wallstreetbets"
+
+
+@dataclass
+class Strategy:
+    name: str
+    about: str
+    slots: tuple
+    fn: object
+    intraday: bool = False
+    tags: list = field(default_factory=list)
+
+
+# ------------------------------------------------------------- helpers ---
+def held_prices(ctx):
+    return ctx.m.prices(list(ctx.led.positions))
+
+
+def go_flat(ctx, reason):
+    ctx.led.sell_all(held_prices(ctx), ctx.now, reason)
+
+
+def buy_equal(ctx, symbols, reason):
+    if not symbols:
+        return
+    prices = ctx.m.prices(symbols)
+    each = ctx.led.cash / len(symbols)
+    for s in symbols:
+        ctx.led.buy(s, each, prices.get(s), ctx.now, reason)
+
+
+# ---------------------------------------------------------- strategies ---
+def orb_tqqq(ctx):
+    """Opening range breakout: if QQQ trades above its 9:30-10:00 high, ride TQQQ to the close."""
+    if ctx.slot == "close":
+        return go_flat(ctx, "close")
+    if ctx.led.positions:
+        return
+    bars = ctx.m.today_bars("QQQ")
+    if bars.empty:
+        return
+    rng = bars[bars.index.time < time(10, 0)]
+    price = ctx.m.price("QQQ")
+    if len(rng) >= 10 and price and price > rng["high"].max():
+        buy_equal(ctx, ["TQQQ"], f"QQQ {price:.2f} > OR high {rng['high'].max():.2f}")
+
+
+def gap_fade(ctx):
+    """Buy the 2 biggest gap-downs (>2%) that are already bouncing above their open; sell at close."""
+    if ctx.slot == "close":
+        return go_flat(ctx, "close")
+    if ctx.led.positions:
+        return
+    syms = ETFS + VOLATILE
+    prev = ctx.m.daily_closes(syms, days=10).iloc[-1]
+    opens, prices = ctx.m.today_opens(syms), ctx.m.prices(syms)
+    picks = []
+    for s in syms:
+        if s in opens and s in prices and s in prev and prev[s] > 0:
+            gap = opens[s] / prev[s] - 1
+            if gap < -0.02 and prices[s] > opens[s]:
+                picks.append((gap, s))
+    buy_equal(ctx, [s for _, s in sorted(picks)[:2]], "gap down, bouncing")
+
+
+def midday_momentum(ctx):
+    """At midday, buy the 2 volatile stocks up most today (>2%); sell at close."""
+    if ctx.slot == "close":
+        return go_flat(ctx, "close")
+    if ctx.led.positions:
+        return
+    opens, prices = ctx.m.today_opens(VOLATILE), ctx.m.prices(VOLATILE)
+    moves = sorted(((prices[s] / opens[s] - 1, s) for s in VOLATILE if s in opens and s in prices),
+                   reverse=True)
+    buy_equal(ctx, [s for chg, s in moves[:2] if chg > 0.02], "top gainer at midday")
+
+
+def overnight_qqq(ctx):
+    """Buy QQQ in the last 30 minutes, sell the next morning."""
+    if ctx.slot == "open":
+        go_flat(ctx, "morning exit")
+    elif ctx.slot == "close" and not ctx.led.positions:
+        buy_equal(ctx, ["QQQ"], "overnight hold")
+
+
+def wsb_crowd(ctx):
+    """Buy the 3 stocks whose WallStreetBets mentions jumped most in 24h; sell at close."""
+    if ctx.slot == "close":
+        return go_flat(ctx, "close")
+    if ctx.led.positions:
+        return
+    files = sorted(glob.glob(str(FORUM_DIR / "*.json")))
+    if not files:
+        return
+    rows = json.loads(Path(files[-1]).read_text())["results"]
+    skip = set(ETFS) | {"TQQQ", "SQQQ", "VOO"}
+    hot = sorted(((int(r["mentions"]) - int(r.get("mentions_24h_ago") or 0), r["ticker"]) for r in rows
+                  if r["ticker"] not in skip and int(r["mentions"]) >= 25
+                  and int(r["mentions"]) >= 2 * int(r.get("mentions_24h_ago") or 0)), reverse=True)
+    cands = [t for _, t in hot[:10]]
+    prices = ctx.m.prices(cands) if cands else {}
+    picks = [t for t in cands if prices.get(t, 0) >= 2][:3]
+    buy_equal(ctx, picks, "WSB mentions spiking")
+
+
+def weekly_momentum(ctx):
+    """Each Monday, hold the 3 volatile names with the best 20-day return."""
+    week = ctx.now.strftime("%G-W%V")
+    if ctx.led.memo.get("week") == week and ctx.led.positions:
+        return
+    syms = VOLATILE + LEVERAGED
+    closes = ctx.m.daily_closes(syms, days=45)
+    if len(closes) < 21:
+        return
+    ret = (closes.iloc[-1] / closes.iloc[-21] - 1).dropna().sort_values(ascending=False)
+    top = list(ret.index[:3])
+    prices = ctx.m.prices(top + list(ctx.led.positions))
+    for s in list(ctx.led.positions):
+        if s not in top:
+            ctx.led.sell(s, prices.get(s), ctx.now, "dropped out of top 3")
+    buy_equal(ctx, [s for s in top if s not in ctx.led.positions], f"top 20-day return {week}")
+    ctx.led.memo["week"] = week
+
+
+def dip_buy_volatile(ctx):
+    """RSI-2 dip-buy on volatile stocks in uptrends (the live bot's idea, more aggressive)."""
+    closes = ctx.m.daily_closes(VOLATILE, days=120)
+    prices = ctx.m.prices(VOLATILE)
+    for s in VOLATILE:
+        if s in closes and s in prices:
+            closes.loc[ctx.m.today, s] = prices[s]
+    for s, p in list(ctx.led.positions.items()):
+        c = closes[s].dropna()
+        held = (ctx.m.today - date.fromisoformat(p["since"])).days
+        if c.iloc[-1] <= p["entry"] * 0.92 or c.iloc[-1] > c.iloc[-5:].mean() or held >= 14:
+            ctx.led.sell(s, prices.get(s), ctx.now, "exit rule")
+    picks = []
+    for s in VOLATILE:
+        c = closes[s].dropna() if s in closes else None
+        if c is None or len(c) < 51 or s in ctx.led.positions:
+            continue
+        r = rsi(c, 2).iloc[-1]
+        if c.iloc[-1] > c.iloc[-50:].mean() and r < 10:
+            picks.append((r, s))
+    slots = 2 - len(ctx.led.positions)
+    for _, s in sorted(picks)[:max(slots, 0)]:
+        ctx.led.buy(s, ctx.led.cash / max(slots, 1), prices[s], ctx.now, "RSI-2 dip")
+        slots -= 1
+
+
+def trend_tqqq(ctx):
+    """Hold TQQQ (3x Nasdaq) while QQQ is above its 50-day average, otherwise cash."""
+    closes = ctx.m.daily_closes(["QQQ"], days=90)["QQQ"].dropna()
+    price = ctx.m.price("QQQ")
+    if len(closes) < 50 or not price:
+        return
+    up = price > closes.iloc[-50:].mean()
+    if up and not ctx.led.positions:
+        buy_equal(ctx, ["TQQQ"], "QQQ above 50-day")
+    elif not up and ctx.led.positions:
+        go_flat(ctx, "QQQ below 50-day")
+
+
+def _opt_buy(ctx, sym, contracts, ask, reason):
+    # pass a price that makes the ledger's fill land exactly on the ask
+    ctx.led.buy(sym, contracts * 100 * ask, ask / (1 + SLIPPAGE), ctx.now, reason)
+
+
+def _opt_sell(ctx, sym, bid, reason):
+    ctx.led.sell(sym, max(bid, 0.0001) / (1 - SLIPPAGE), ctx.now, reason)
+
+
+def options_orb(ctx):
+    """Opening range breakout with same-day QQQ options: calls on a breakout above the
+    9:30-10:00 high, puts on a breakdown below the low. Whole contracts, sold by the close."""
+    if ctx.slot == "close":
+        held = list(ctx.led.positions)
+        quotes = ctx.m.option_quotes(held) if held else {}
+        for sym in held:
+            if sym in quotes:
+                _opt_sell(ctx, sym, quotes[sym][0], "close")
+        return
+    if ctx.led.positions:
+        return
+    bars = ctx.m.today_bars("QQQ")
+    price = ctx.m.price("QQQ")
+    if bars.empty or not price:
+        return
+    rng = bars[bars.index.time < time(10, 0)]
+    if len(rng) < 10:
+        return
+    hi, lo = rng["high"].max(), rng["low"].min()
+    if price > hi:
+        kind, reason = "C", f"QQQ {price:.2f} broke above {hi:.2f}"
+    elif price < lo:
+        kind, reason = "P", f"QQQ {price:.2f} broke below {lo:.2f}"
+    else:
+        return
+    chain = ctx.m.chain("QQQ", max_days=4)
+    exp = min((occ_expiry(c) for c in chain), default=None)
+    if exp is None:
+        return
+    cands = [(c, q) for c, q in chain.items() if occ_expiry(c) == exp and c[-9] == kind]
+    if kind == "C":   # nearest out-of-the-money first, moving further out until affordable
+        cands = sorted((x for x in cands if occ_strike(x[0]) >= price * 1.002), key=lambda x: occ_strike(x[0]))
+    else:
+        cands = sorted((x for x in cands if occ_strike(x[0]) <= price * 0.998), key=lambda x: -occ_strike(x[0]))
+    for c, (bid, ask) in cands:
+        if ask < 0.05:
+            break
+        n = int(ctx.led.cash // (ask * 100))
+        if n >= 1:
+            return _opt_buy(ctx, c, n, ask, f"{reason}; {n}x {c} @ {ask:.2f}")
+
+
+def put_credit_spread(ctx):
+    """Option SELLING: sell a QQQ put ~2% below the price, buy the next strike down for
+    protection, 5-9 days out. Take profit at 50% of the credit, stop at 2x the credit,
+    otherwise close on expiry day. Max loss per spread = (width - credit) x 100."""
+    for sym in list(ctx.led.positions):
+        credit = ctx.led.memo.get(sym, {}).get("credit", 0)
+        width = float(sym.split(":")[3])
+        value = ctx.m.spread_value(sym, side="close")
+        if value is None:
+            continue
+        entry = width - credit
+        short = sym.split(":")[1]
+        reason = None
+        if value >= entry + 0.5 * credit:
+            reason = "took 50% of credit"
+        elif value <= entry - 2 * credit:
+            reason = "stop: loss 2x credit"
+        elif occ_expiry(short) <= ctx.m.today and ctx.slot == "close":
+            reason = "expiry day"
+        if reason:
+            ctx.led.sell(sym, value / (1 - SLIPPAGE), ctx.now, reason)
+            ctx.led.memo.pop(sym, None)
+    if ctx.led.positions or ctx.slot != "open":
+        return
+    price = ctx.m.price("QQQ")
+    chain = ctx.m.chain("QQQ", max_days=9, type="put")
+    exps = sorted({occ_expiry(c) for c in chain if (occ_expiry(c) - ctx.m.today).days >= 5})
+    if not price or not exps:
+        return
+    puts = {occ_strike(c): (c, q) for c, q in chain.items() if occ_expiry(c) == exps[0]}
+    strikes = sorted(puts)
+    shorts = [k for k in strikes if k <= price * 0.98]
+    if not shorts:
+        return
+    k_short = shorts[-1]
+    lower = [k for k in strikes if k < k_short]
+    if not lower:
+        return
+    k_long = lower[-1]
+    (cs, (sb, sa)), (cl, (lb, la)) = puts[k_short], puts[k_long]
+    width, credit = k_short - k_long, sb - la
+    if credit < 0.10 or credit >= width:
+        return
+    risk = width - credit
+    n = int(ctx.led.cash // (risk * 100))
+    if n < 1:
+        return
+    sym = f"SPREAD:{cs}:{cl}:{width:g}"
+    ctx.led.buy(sym, n * risk * 100, risk / (1 + SLIPPAGE), ctx.now,
+                f"sold {n}x {k_short:g}/{k_long:g} put spread for {credit:.2f} credit")
+    ctx.led.memo[sym] = {"credit": credit, "n": n}
+
+
+INSIDER_FILE = Path(__file__).parent.parent / "data" / "insider" / "purchases.jsonl"
+ENTITY = ("L.P.", " LP", "LLC", "INC", "CORP", "HOLDING", "CAPITAL", "FUND", "TRUST", "S.A", "LTD", "PARTNERS", "MANAGEMENT")
+
+
+def insider_buys(ctx):
+    """Copy insiders: buy stocks where officers/directors (people, not funds) bought $100k+
+    of their own company's shares in the last 3 days; several insiders buying counts double.
+    Up to 4 positions, held ~4 weeks, 15% stop."""
+    prices = held_prices(ctx)
+    for sym, p in list(ctx.led.positions.items()):
+        held = (ctx.m.today - date.fromisoformat(p["since"])).days
+        px = prices.get(sym)
+        if px and (px <= p["entry"] * 0.85 or held >= 28):
+            ctx.led.sell(sym, px, ctx.now, "stop -15%" if px <= p["entry"] * 0.85 else "held 4 weeks")
+    if not INSIDER_FILE.exists() or len(ctx.led.positions) >= 4:
+        return
+    cutoff = (ctx.now - timedelta(days=3)).isoformat()
+    by_ticker = {}
+    for line in INSIDER_FILE.read_text().splitlines():
+        r = json.loads(line)
+        if r["seen_utc"] < cutoff[:16] or not (r.get("officer") or r.get("director")):
+            continue
+        if any(w in r["owner"].upper() for w in ENTITY) or not r["ticker"].isalpha():
+            continue
+        t = by_ticker.setdefault(r["ticker"], {"value": 0, "owners": set()})
+        t["value"] += r["value"]
+        t["owners"].add(r["owner"])
+    ranked = sorted(((v["value"] * (2 if len(v["owners"]) > 1 else 1), k) for k, v in by_ticker.items()
+                     if v["value"] >= 100_000 and k not in ctx.led.positions), reverse=True)
+    cands = [k for _, k in ranked[:8]]
+    if not cands:
+        return
+    px = ctx.m.prices(cands)
+    picks = [k for k in cands if px.get(k, 0) >= 3][:4 - len(ctx.led.positions)]
+    slots = 4 - len(ctx.led.positions)
+    for k in picks:
+        info = by_ticker[k]
+        ctx.led.buy(k, ctx.led.cash / slots, px[k], ctx.now,
+                    f"{len(info['owners'])} insider(s) bought ${info['value']:,}")
+        slots -= 1
+
+
+def spy_hold(ctx):
+    """Benchmark: buy SPY once and hold."""
+    if not ctx.led.positions:
+        buy_equal(ctx, ["SPY"], "benchmark")
+
+
+PLAYERS = [
+    Strategy("spy_hold", "Benchmark: buy SPY and hold", ("open", "midday", "close"), spy_hold),
+    Strategy("orb_tqqq", "Opening range breakout on QQQ, trades TQQQ, out by close", ("open", "close"), orb_tqqq, intraday=True),
+    Strategy("gap_fade", "Buys big gap-downs that bounce, out by close", ("open", "close"), gap_fade, intraday=True),
+    Strategy("midday_momentum", "Buys midday top gainers, out by close", ("midday", "close"), midday_momentum, intraday=True),
+    Strategy("wsb_crowd", "Buys stocks with spiking WSB mentions, out by close", ("open", "close"), wsb_crowd, intraday=True),
+    Strategy("overnight_qqq", "Buys QQQ at the close, sells next morning", ("open", "close"), overnight_qqq),
+    Strategy("dip_buy_volatile", "RSI-2 dip-buy on volatile stocks", ("close",), dip_buy_volatile),
+    Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
+    Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
+    Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
+    Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break, out by close", ("open", "close"), options_orb, intraday=True),
+    Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller)", ("open", "midday", "close"), put_credit_spread),
+]

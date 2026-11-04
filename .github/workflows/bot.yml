@@ -1,0 +1,45 @@
+name: daily-bot
+
+on:
+  # No schedule: the session runner (session.yml) now runs bot.py in the last 30 minutes.
+  # This workflow stays as a manual backup.
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Extra bot args, e.g. --dry-run --force"
+        required: false
+        default: ""
+
+concurrency:
+  group: trading
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run bot
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ALPACA_PAPER: "true"
+        run: python bot.py ${{ github.event.inputs.args }}
+      - name: Save state and logs back to the repo
+        if: always()
+        run: |
+          git config user.name "trading-bot"
+          git config user.email "trading-bot@users.noreply.github.com"
+          git add state logs
+          git diff --cached --quiet && exit 0
+          git commit -m "bot run $(date -u +%F_%H%M)"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done

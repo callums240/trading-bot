@@ -1,0 +1,8 @@
+# Secrets and local-only stuff. NEVER commit .env
+.env
+.venv/
+__pycache__/
+data_cache/
+.DS_Store
+# state/, logs/ and data/ ARE committed: the cloud bot saves its memory there.
+logs/*dryrun*
