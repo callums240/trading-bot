@@ -8,6 +8,9 @@ A strategy gets ctx (market data, its ledger, the slot, the time) and trades its
 own virtual $200. Day-trade strategies ("intraday") never hold overnight: if a
 close slot was missed, the next run sells their leftovers first.
 
+Scalpers ("every_minute") instead get a pass every minute of the session and make
+short in-and-out trades (minutes, never overnight); see scalp_backtest.py.
+
 Add a strategy: write a function, then add a Strategy(...) line to PLAYERS.
 """
 from dataclasses import dataclass, field
@@ -17,6 +20,7 @@ import json
 from pathlib import Path
 
 from strategy import rsi
+import scalp_backtest
 from tournament.ledger import SLIPPAGE
 from tournament.market import occ_expiry, occ_strike
 
@@ -24,6 +28,7 @@ ETFS = ["SPY", "QQQ", "IWM", "DIA", "XLK", "XLF", "XLE", "XLV", "XLI", "XLY", "X
 VOLATILE = ["TSLA", "NVDA", "AMD", "COIN", "MSTR", "PLTR", "SOFI", "MARA", "SMCI", "HOOD",
             "RIVN", "SHOP", "META", "AMZN", "NFLX"]
 LEVERAGED = ["TQQQ", "SOXL"]
+SCALP = scalp_backtest.SMALL          # small, jumpy, high-volume tickers
 FORUM_DIR = Path(__file__).parent.parent / "data" / "forum" / "wallstreetbets"
 
 
@@ -35,6 +40,7 @@ class Strategy:
     fn: object
     intraday: bool = False
     tags: list = field(default_factory=list)
+    every_minute: bool = False
 
 
 # ------------------------------------------------------------- helpers ---
@@ -334,6 +340,68 @@ def insider_buys(ctx):
         slots -= 1
 
 
+# ------------------------------------------------------------ scalpers ---
+SCALP_TARGET, SCALP_STOP, SCALP_MAX_MIN = 0.015, 0.01, 90
+SCALP_SIZE, SCALP_MAX_OPEN = 50.0, 4
+
+
+def _scalp_extra(price):
+    """Extra cost beyond the ledger's 0.05%: half a 1-cent spread + 0.02%, as in the backtest."""
+    return max(0.0, scalp_backtest.cost(price) - SLIPPAGE)
+
+
+def scalp(ctx, style):
+    m, led, now = ctx.m, ctx.led, ctx.now
+    memo = led.memo
+    if memo.get("day") != str(m.today):
+        memo.clear()
+        memo.update(day=str(m.today), open={}, count={}, last_bar={})
+    # exits: check each open trade against its target / stop / time limit
+    if led.positions:
+        px = m.prices(list(led.positions))
+        for sym in list(led.positions):
+            p, plan = px.get(sym), memo["open"].get(sym, {})
+            if not p:
+                continue
+            why = ("target" if p >= plan.get("tp", float("inf")) else
+                   "stop" if p <= plan.get("sl", 0) else
+                   "time limit" if now.isoformat() >= plan.get("until", "") else
+                   "end of day" if now.time() >= time(15, 55) else None)
+            if why:
+                led.sell(sym, p * (1 - _scalp_extra(p)), now, f"{style} exit: {why}")
+                memo["open"].pop(sym, None)
+    if now.time() >= time(15, 15) or len(led.positions) >= SCALP_MAX_OPEN:
+        return
+    # entries: a signal on the latest completed 1-minute bar
+    for sym in SCALP:
+        if sym in led.positions or memo["count"].get(sym, 0) >= scalp_backtest.MAX_TRADES_PER_DAY:
+            continue
+        bars = m.today_bars(sym, universe=SCALP)
+        if len(bars) < 25:
+            continue
+        g = bars.reset_index().rename(columns={"timestamp": "ts"})
+        d, sig = scalp_backtest.signals(g)
+        last_t = d.ts.iloc[-1].isoformat()
+        if not sig[style].iloc[-1] or memo["last_bar"].get(sym) == last_t:
+            continue
+        memo["last_bar"][sym] = last_t
+        p = m.prices([sym]).get(sym)
+        if not p or not led.buy(sym, SCALP_SIZE, p * (1 + _scalp_extra(p)), now, f"{style} signal"):
+            continue
+        entry = led.positions[sym]["entry"]
+        memo["open"][sym] = {"tp": entry * (1 + SCALP_TARGET), "sl": entry * (1 - SCALP_STOP),
+                             "until": (now + timedelta(minutes=SCALP_MAX_MIN)).isoformat()}
+        memo["count"][sym] = memo["count"].get(sym, 0) + 1
+        if len(led.positions) >= SCALP_MAX_OPEN:
+            break
+
+
+def scalp_orb5(ctx): scalp(ctx, "orb5")
+def scalp_vwap(ctx): scalp(ctx, "vwap")
+def scalp_burst(ctx): scalp(ctx, "burst")
+def scalp_reversion(ctx): scalp(ctx, "reversion")
+
+
 def spy_hold(ctx):
     """Benchmark: buy SPY once and hold."""
     if not ctx.led.positions:
@@ -353,4 +421,8 @@ PLAYERS = [
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break, out by close", ("open", "close"), options_orb, intraday=True),
     Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller)", ("open", "midday", "close"), put_credit_spread),
+    Strategy("scalp_orb5", "Scalper: breakout above the first 5-minute high on small caps", (), scalp_orb5, intraday=True, every_minute=True),
+    Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),
+    Strategy("scalp_burst", "Scalper: small caps up 1%+ in 5 min on 3x volume", (), scalp_burst, intraday=True, every_minute=True),
+    Strategy("scalp_reversion", "Scalper: buys sharp 5-minute drops on small caps (RSI < 20)", (), scalp_reversion, intraday=True, every_minute=True),
 ]

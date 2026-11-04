@@ -123,9 +123,10 @@ class Market:
             start=start, feed=DataFeed.IEX)).df
         return df
 
-    def today_bars(self, symbol) -> pd.DataFrame:
-        """Today's 1-minute bars since 9:30 ET for one symbol (may be empty)."""
-        df = self._intraday((symbol,))
+    def today_bars(self, symbol, universe=None) -> pd.DataFrame:
+        """Today's 1-minute bars since 9:30 ET for one symbol (may be empty). Pass the
+        whole universe to fetch every symbol in one request (cached for this pass)."""
+        df = self._intraday(tuple(sorted(set(universe or [symbol]))))
         if df.empty or symbol not in df.index.get_level_values(0):
             return pd.DataFrame()
         bars = df.loc[symbol].copy()
