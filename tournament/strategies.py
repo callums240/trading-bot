@@ -1,12 +1,14 @@
-"""The tournament's players. Each strategy acts in one or more time slots:
+"""The tournament's players. Most strategies have time windows:
 
   open    10:00-11:30 ET  (after the first 30 minutes set the opening range)
   midday  12:30-14:00 ET
-  close   15:30-16:00 ET  (last 30 minutes)
+  close   15:30-16:00 ET  (last 30 minutes: when daily-close rules decide)
 
-A strategy gets ctx (market data, its ledger, the slot, the time) and trades its
-own virtual $200. Day-trade strategies ("intraday") never hold overnight: if a
-close slot was missed, the next run sells their leftovers first.
+During its window a strategy is checked every minute and trades the first time its
+setup appears, then rests until its next window. A strategy gets ctx (market data,
+its ledger, the window, the time, the market mood) and trades its own virtual $200.
+Day-trade strategies ("intraday") never hold overnight: if a close was missed, the
+next run sells their leftovers first.
 
 Scalpers ("every_minute") instead get a pass every minute of the session and make
 short in-and-out trades (minutes, never overnight); see scalp_backtest.py.
@@ -420,7 +422,7 @@ PLAYERS = [
     Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break, out by close", ("open", "close"), options_orb, intraday=True),
-    Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller)", ("open", "midday", "close"), put_credit_spread),
+    Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller); risk checked every minute", ("open", "midday", "close"), put_credit_spread, every_minute=True),
     Strategy("scalp_orb5", "Scalper: breakout above the first 5-minute high on small caps", (), scalp_orb5, intraday=True, every_minute=True),
     Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),
     Strategy("scalp_burst", "Scalper: small caps up 1%+ in 5 min on 3x volume", (), scalp_burst, intraday=True, every_minute=True),

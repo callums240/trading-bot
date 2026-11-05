@@ -1,5 +1,6 @@
-"""Runs one tick of the strategy tournament. GitHub calls this every 15 minutes
-on weekdays; each strategy acts at most once per time slot per day.
+"""Runs one pass ("tick") of the strategy tournament. The session runner calls this
+every minute in market hours. Window strategies are checked every minute of their
+window and trade at most once per window; scalpers can trade any minute.
 
 Usage:
   python -m tournament.run                     # normal tick
@@ -73,10 +74,13 @@ def tick(m, slot=None, dry_run=False, only=None, quiet=False):
             if getattr(p, "every_minute", False):
                 p.fn(ctx)
             else:
+                # Watch every minute through the window; the first time the strategy
+                # actually trades, it's done for that window (so it can't trade twice).
                 key = f"{m.today}:{slot}"
                 if slot in p.slots and key not in led.done:
                     p.fn(ctx)
-                    led.done.append(key)
+                    if len(led.trades) > before:
+                        led.done.append(key)
         except Exception as e:                      # one broken strategy never stops the rest
             log.exception("%s failed: %s", p.name, e)
         try:
