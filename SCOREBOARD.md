@@ -1,25 +1,25 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-05 17:38 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side. Ranked by return.
+Updated 2026-11-05 17:54 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side. Ranked by return.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Holding | Since |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **gap_fade** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 2 | **insider_buys** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 3 | **midday_momentum** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 4 | **options_orb** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 5 | **orb_tqqq** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 6 | **put_credit_spread** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 7 | **scalp_burst** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-05 |
-| 8 | **scalp_orb5** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-05 |
-| 9 | **scalp_reversion** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-05 |
-| 10 | **scalp_vwap** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-05 |
-| 11 | **trend_tqqq** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 12 | **wsb_crowd** | $200.00 | +0.0% | +3.8 pts | 0 | - | cash | 2026-11-04 |
-| 13 | **spy_hold** | $192.43 | -3.8% | - | 1 | - | SPY | 2026-11-04 |
-| 14 | **dip_buy_volatile** | $189.12 | -5.4% | -1.7 pts | 1 | - | TSLA | 2026-11-04 |
-| 15 | **overnight_qqq** | $189.01 | -5.5% | -1.7 pts | 1 | - | QQQ | 2026-11-04 |
-| 16 | **weekly_momentum** | $184.68 | -7.7% | -3.9 pts | 3 | - | SOFI, TSLA, AMZN | 2026-11-04 |
+| 1 | **gap_fade** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 2 | **insider_buys** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 3 | **midday_momentum** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 4 | **options_orb** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 5 | **orb_tqqq** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 6 | **put_credit_spread** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 7 | **scalp_burst** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-05 |
+| 8 | **scalp_orb5** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-05 |
+| 9 | **scalp_reversion** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-05 |
+| 10 | **scalp_vwap** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-05 |
+| 11 | **trend_tqqq** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 12 | **wsb_crowd** | $200.00 | +0.0% | +3.9 pts | 0 | - | cash | 2026-11-04 |
+| 13 | **spy_hold** | $192.19 | -3.9% | - | 1 | - | SPY | 2026-11-04 |
+| 14 | **dip_buy_volatile** | $189.04 | -5.5% | -1.6 pts | 1 | - | TSLA | 2026-11-04 |
+| 15 | **overnight_qqq** | $188.71 | -5.6% | -1.7 pts | 1 | - | QQQ | 2026-11-04 |
+| 16 | **weekly_momentum** | $184.40 | -7.8% | -3.9 pts | 3 | - | SOFI, TSLA, AMZN | 2026-11-04 |
 
 ## What each strategy does
 
