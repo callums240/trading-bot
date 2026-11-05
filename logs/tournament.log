@@ -116,3 +116,5 @@
 2026-11-04 20:43:00,928 INFO ==== tick end ====
 2026-11-04 23:28:18,661 INFO ==== session start ====
 2026-11-04 23:28:18,869 INFO market closed (opens in 902 min); session ending
+2026-11-05 17:22:30,937 INFO ==== session start ====
+2026-11-05 17:22:53,669 INFO insider: checked 72 new Form 4 filings, found 2 insider purchases
