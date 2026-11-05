@@ -7,6 +7,7 @@ STATE_DIR = Path(__file__).parent.parent / "state" / "tournament"
 SLIPPAGE = 0.0005      # 0.05% lost per side, same as the backtests
 MIN_ORDER = 1.00
 START_CASH = 200.0
+STOP_FRACTION = 0.75   # the user's rule: a strategy that falls to $150 of $200 is stopped for good
 
 
 class Ledger:
@@ -19,6 +20,7 @@ class Ledger:
             d = {"start_cash": START_CASH, "cash": START_CASH, "positions": {},
                  "trades": [], "equity": {}, "done": []}
         d.setdefault("memo", {})          # free-form per-strategy memory
+        d.setdefault("stopped", None)     # date it hit the stop (STOP_FRACTION of start)
         self.__dict__.update(d)
         self._fields = list(d)
 
