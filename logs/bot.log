@@ -27,3 +27,8 @@
 2026-11-04 04:41:15,436 INFO equity $200.00 | cash $200.00 | unsettled $0.00 | settled $200.00
 2026-11-04 04:41:15,987 INFO entry candidates: none
 2026-11-04 04:41:15,987 INFO ==== run end ====
+2026-11-05 20:32:32,240 INFO ==== run start (PAPER) ====
+2026-11-05 20:32:32,437 INFO equity $200.00 | cash $200.00 | unsettled $0.00 | settled $200.00
+2026-11-05 20:32:33,948 INFO entry candidates: [('XLE', 2.9)]
+2026-11-05 20:32:33,995 INFO BUY XLE $100.00 (price ~62.34, rsi 2.9)
+2026-11-05 20:32:33,995 INFO ==== run end ====
