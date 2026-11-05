@@ -6,8 +6,11 @@ Every 15 min:  insider filings collected, results saved and pushed to GitHub
 Hourly:        forum snapshot
 Last 30 min:   the live bot (bot.py) trades the real paper account, once per day
 
-GitHub jobs are capped at 6 hours, so a run stops after 5h45m; the next scheduled
-trigger (every 20 minutes) picks up where it left off.
+Outside market hours it keeps going: insider and forum snapshots hourly.
+
+GitHub jobs are capped at 6 hours, so a run stops after 5h45m and the workflow's last
+step starts the next run itself (a chain that never depends on GitHub's unreliable
+schedule; the schedule is only a backup that restarts the chain if it ever breaks).
 
 Usage: python -m tournament.session [--max-minutes N]
 """
@@ -66,11 +69,14 @@ def main():
             continue
 
         if not m.clock.is_open:
-            wait = (m.clock.next_open - m.clock.timestamp).total_seconds()
-            if wait > 20 * 60:
-                log.info("market closed (opens in %.0f min); session ending", wait / 60)
-                break
-            clock.sleep(min(wait, 60))
+            if clock.time() - last_insider >= 60 * 60:
+                wait = (m.clock.next_open - m.clock.timestamp).total_seconds() / 60
+                log.info("market closed (opens in %.0f min); hourly snapshots", wait)
+                sh(f"{PY} insider_collector.py", timeout=300)
+                sh(f"{PY} forum_collector.py", timeout=180)
+                last_insider = clock.time()
+                save_and_push(f"snapshots {datetime.now(timezone.utc):%F_%H%M}")
+            clock.sleep(60)
             continue
 
         try:
