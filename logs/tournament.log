@@ -311,3 +311,8 @@
 2026-11-06 20:02:26,422 INFO scalp_vwap        SELL PLUG  $  49.63 @ 1.435  vwap exit: time limit  P/L $-0.37
 2026-11-06 20:02:26,423 INFO scalp_vwap        value $198.94  cash $149.04  holding ['SOFI']
 2026-11-06 20:02:30,314 INFO insider: checked 13 new Form 4 filings, found 0 insider purchases
+2026-11-06 20:03:23,962 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.416  burst signal
+2026-11-06 20:03:23,963 INFO scalp_burst       value $199.86  cash $99.79  holding ['SOUN', 'MARA']
+2026-11-06 20:05:23,929 INFO scalp_vwap        SELL SOFI  $  49.86 @ 16.19  vwap exit: time limit  P/L $-0.14
+2026-11-06 20:05:23,930 INFO scalp_vwap        value $198.90  cash $198.90  holding -
+2026-11-06 20:18:27,816 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
