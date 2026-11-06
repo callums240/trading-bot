@@ -280,3 +280,4 @@
 2026-11-06 17:38:23,696 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 16.36  reversion signal
 2026-11-06 17:38:23,696 INFO scalp_reversion   value $203.33  cash $153.36  holding ['RIOT']
 2026-11-06 17:38:32,526 INFO insider: checked 29 new Form 4 filings, found 0 insider purchases
+2026-11-06 17:54:31,029 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
