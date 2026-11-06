@@ -321,3 +321,17 @@
 2026-11-06 20:19:22,167 INFO scalp_burst       value $198.65  cash $198.65  holding -
 2026-11-06 20:27:47,234 INFO ==== session start ====
 2026-11-06 20:27:52,498 INFO insider: checked 11 new Form 4 filings, found 0 insider purchases
+2026-11-06 20:30:48,570 INFO gap_fade          SELL NFLX  $  98.95 @ 63.55  close  P/L $-1.05
+2026-11-06 20:30:48,570 INFO gap_fade          SELL XLP   $ 100.06 @ 90.06  close  P/L $+0.06
+2026-11-06 20:30:48,571 INFO gap_fade          value $199.01  cash $199.01  holding -
+2026-11-06 20:30:48,618 INFO midday_momentum   SELL SHOP  $  99.02 @ 148.7  close  P/L $-0.98
+2026-11-06 20:30:48,618 INFO midday_momentum   SELL TSLA  $ 100.18 @ 360.5  close  P/L $+0.18
+2026-11-06 20:30:48,619 INFO midday_momentum   value $199.21  cash $199.21  holding -
+2026-11-06 20:30:48,650 INFO wsb_crowd         SELL NVDA  $  64.82 @ 188  close  P/L $-1.85
+2026-11-06 20:30:48,650 INFO wsb_crowd         SELL AMD   $  65.97 @ 450.3  close  P/L $-0.69
+2026-11-06 20:30:48,650 INFO wsb_crowd         SELL IREN  $  66.35 @ 21.4  close  P/L $-0.31
+2026-11-06 20:30:48,651 INFO wsb_crowd         value $197.14  cash $197.14  holding -
+2026-11-06 20:30:48,651 INFO overnight_qqq     BUY  QQQ   $ 191.41 @ 659.3  overnight hold
+2026-11-06 20:30:48,652 INFO overnight_qqq     value $191.32  cash $0.00  holding ['QQQ']
+2026-11-06 20:32:52,145 INFO live bot ran (exit 0): 2026-11-06 20:32:52,051 INFO ==== run end ====
+2026-11-06 20:44:03,885 INFO insider: checked 31 new Form 4 filings, found 0 insider purchases
