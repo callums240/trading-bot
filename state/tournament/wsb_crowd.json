@@ -1,16 +1,64 @@
 {
  "start_cash": 200.0,
- "cash": 200.0,
- "positions": {},
- "trades": [],
+ "cash": 0.0,
+ "positions": {
+  "NVDA": {
+   "qty": 0.3448217242375845,
+   "entry": 193.33662,
+   "since": "2026-11-06"
+  },
+  "AMD": {
+   "qty": 0.1465242105542942,
+   "entry": 454.98738,
+   "since": "2026-11-06"
+  },
+  "IREN": {
+   "qty": 3.1006677520554122,
+   "entry": 21.500745,
+   "since": "2026-11-06"
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-11-06T10:00-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.344822,
+   "price": 193.3366,
+   "usd": 66.67,
+   "reason": "WSB mentions spiking",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:00-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.146524,
+   "price": 454.9874,
+   "usd": 66.67,
+   "reason": "WSB mentions spiking",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:00-05:00",
+   "side": "buy",
+   "sym": "IREN",
+   "qty": 3.100668,
+   "price": 21.5007,
+   "usd": 66.67,
+   "reason": "WSB mentions spiking",
+   "mood": "calm"
+  }
+ ],
  "equity": {
   "2026-11-04": 200.0,
   "2026-11-05": 200.0,
-  "2026-11-06": 200.0
+  "2026-11-06": 199.64
  },
  "done": [
   "2026-11-04:close",
-  "2026-11-05:close"
+  "2026-11-05:close",
+  "2026-11-06:open"
  ],
  "memo": {},
  "stopped": null

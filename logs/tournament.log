@@ -145,3 +145,48 @@
 2026-11-06 14:56:24,329 INFO scalp_reversion   BUY  MARA  $  50.00 @ 5.826  reversion signal
 2026-11-06 14:56:24,330 INFO scalp_reversion   value $199.95  cash $150.00  holding ['MARA']
 2026-11-06 14:58:27,137 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
+2026-11-06 15:00:29,002 INFO gap_fade          BUY  NFLX  $ 100.00 @ 64.23  gap down, bouncing
+2026-11-06 15:00:29,002 INFO gap_fade          BUY  XLP   $ 100.00 @ 90  gap down, bouncing
+2026-11-06 15:00:29,003 INFO gap_fade          value $199.90  cash $0.00  holding ['NFLX', 'XLP']
+2026-11-06 15:00:29,073 INFO wsb_crowd         BUY  NVDA  $  66.67 @ 193.3  WSB mentions spiking
+2026-11-06 15:00:29,073 INFO wsb_crowd         BUY  AMD   $  66.67 @ 455  WSB mentions spiking
+2026-11-06 15:00:29,073 INFO wsb_crowd         BUY  IREN  $  66.67 @ 21.5  WSB mentions spiking
+2026-11-06 15:00:29,075 INFO wsb_crowd         value $199.90  cash $0.00  holding ['NVDA', 'AMD', 'IREN']
+2026-11-06 15:00:29,075 INFO overnight_qqq     SELL QQQ   $ 191.41 @ 662.6  morning exit  P/L $-8.59
+2026-11-06 15:00:29,076 INFO overnight_qqq     value $191.41  cash $191.41  holding -
+2026-11-06 15:00:29,149 INFO insider_buys      BUY  KNOP  $  50.00 @ 8.454  1 insider(s) bought $43,499,993
+2026-11-06 15:00:29,149 INFO insider_buys      BUY  LRN   $  50.00 @ 73.43  1 insider(s) bought $17,573,121
+2026-11-06 15:00:29,149 INFO insider_buys      BUY  ASPE  $  50.00 @ 11.53  1 insider(s) bought $15,000,000
+2026-11-06 15:00:29,149 INFO insider_buys      BUY  GLXY  $  50.00 @ 13.91  1 insider(s) bought $9,864,346
+2026-11-06 15:00:29,150 INFO insider_buys      value $199.90  cash $0.00  holding ['KNOP', 'LRN', 'ASPE', 'GLXY']
+2026-11-06 15:01:26,266 INFO put_credit_spread BUY  SPREAD:QQQ261111P00649000:QQQ261111P00648000:1 $ 156.00 @ 0.78  sold 2x 649/648 put spread for 0.22 credit
+2026-11-06 15:01:26,266 INFO put_credit_spread value $184.00  cash $44.00  holding ['SPREAD:QQQ261111P00649000:QQQ261111P00648000:1']
+2026-11-06 15:01:28,407 INFO scalp_reversion   SELL MARA  $  50.88 @ 5.929  reversion exit: target  P/L $+0.88
+2026-11-06 15:01:28,408 INFO scalp_reversion   value $200.88  cash $200.88  holding -
+2026-11-06 15:03:25,964 INFO scalp_reversion   BUY  SOUN  $  50.00 @ 4.001  reversion signal
+2026-11-06 15:03:25,965 INFO scalp_reversion   value $200.81  cash $150.88  holding ['SOUN']
+2026-11-06 15:04:25,663 INFO scalp_reversion   SELL SOUN  $  49.29 @ 3.944  reversion exit: stop  P/L $-0.71
+2026-11-06 15:04:25,663 INFO scalp_reversion   BUY  SOUN  $  50.00 @ 3.956  reversion signal
+2026-11-06 15:04:25,664 INFO scalp_reversion   value $200.10  cash $150.17  holding ['SOUN']
+2026-11-06 15:06:24,819 INFO scalp_vwap        BUY  NIO   $  50.00 @ 3.336  vwap signal
+2026-11-06 15:06:24,819 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.131  vwap signal
+2026-11-06 15:06:24,820 INFO scalp_vwap        value $200.72  cash $100.89  holding ['NIO', 'AMC']
+2026-11-06 15:07:24,209 WARNING put_credit_spread hit the stop and is out of the tournament
+2026-11-06 15:07:24,209 INFO put_credit_spread SELL SPREAD:QQQ261111P00649000:QQQ261111P00648000:1 $  68.00 @ 0.34  stop: loss 2x credit  P/L $-88.00
+2026-11-06 15:07:24,209 INFO put_credit_spread BUY  SPREAD:QQQ261111P00646000:QQQ261111P00645000:1 $  79.00 @ 0.79  sold 1x 646/645 put spread for 0.21 credit
+2026-11-06 15:07:24,209 INFO put_credit_spread SELL SPREAD:QQQ261111P00646000:QQQ261111P00645000:1 $  73.46 @ 0.7346  STOP: fell below $150  P/L $-5.54
+2026-11-06 15:07:24,209 INFO put_credit_spread value $106.46  cash $106.46  holding -
+2026-11-06 15:08:23,994 INFO scalp_orb5        BUY  SOFI  $  50.00 @ 16.23  orb5 signal
+2026-11-06 15:08:23,995 INFO scalp_orb5        value $199.97  cash $150.00  holding ['SOFI']
+2026-11-06 15:10:24,456 INFO scalp_orb5        BUY  RKLB  $  50.00 @ 48.79  orb5 signal
+2026-11-06 15:10:24,456 INFO scalp_orb5        BUY  HOOD  $  50.00 @ 79.86  orb5 signal
+2026-11-06 15:10:24,457 INFO scalp_orb5        value $200.17  cash $50.00  holding ['SOFI', 'RKLB', 'HOOD']
+2026-11-06 15:10:24,793 INFO scalp_reversion   SELL SOUN  $  50.74 @ 4.014  reversion exit: target  P/L $+0.74
+2026-11-06 15:10:24,794 INFO scalp_reversion   value $200.91  cash $200.91  holding -
+2026-11-06 15:11:24,592 INFO scalp_orb5        BUY  PLUG  $  50.00 @ 1.425  orb5 signal
+2026-11-06 15:11:24,592 INFO scalp_orb5        value $199.59  cash $0.00  holding ['SOFI', 'RKLB', 'HOOD', 'PLUG']
+2026-11-06 15:14:22,660 INFO scalp_orb5        SELL RKLB  $  50.77 @ 49.55  orb5 exit: target  P/L $+0.77
+2026-11-06 15:14:22,661 INFO scalp_orb5        value $201.48  cash $50.77  holding ['SOFI', 'HOOD', 'PLUG']
+2026-11-06 15:14:22,869 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.435  burst signal
+2026-11-06 15:14:22,869 INFO scalp_burst       value $201.21  cash $151.40  holding ['PLUG']
+2026-11-06 15:14:27,424 INFO insider: checked 19 new Form 4 filings, found 2 insider purchases

@@ -1,13 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 150.0,
- "positions": {
-  "MARA": {
-   "qty": 8.58197366863151,
-   "entry": 5.826165627,
-   "since": "2026-11-06"
-  }
- },
+ "cash": 200.91194390115788,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-06T09:56-05:00",
@@ -18,27 +12,76 @@
    "usd": 50.0,
    "reason": "reversion signal",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:01-05:00",
+   "side": "sell",
+   "sym": "MARA",
+   "qty": 8.581974,
+   "price": 5.9288,
+   "usd": 50.88,
+   "pnl": 0.88,
+   "reason": "reversion exit: target",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:03-05:00",
+   "side": "buy",
+   "sym": "SOUN",
+   "qty": 12.497498,
+   "price": 4.0008,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:04-05:00",
+   "side": "sell",
+   "sym": "SOUN",
+   "qty": 12.497498,
+   "price": 3.9442,
+   "usd": 49.29,
+   "pnl": -0.71,
+   "reason": "reversion exit: stop",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:04-05:00",
+   "side": "buy",
+   "sym": "SOUN",
+   "qty": 12.639694,
+   "price": 3.9558,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:10-05:00",
+   "side": "sell",
+   "sym": "SOUN",
+   "qty": 12.639694,
+   "price": 4.0142,
+   "usd": 50.74,
+   "pnl": 0.74,
+   "reason": "reversion exit: target",
+   "mood": "calm"
   }
  ],
  "equity": {
   "2026-11-05": 200.0,
-  "2026-11-06": 200.46
+  "2026-11-06": 200.91
  },
  "done": [],
  "memo": {
   "day": "2026-11-06",
-  "open": {
-   "MARA": {
-    "tp": 5.913558111404999,
-    "sl": 5.76790397073,
-    "until": "2026-11-06T11:26:20.880945-05:00"
-   }
-  },
+  "open": {},
   "count": {
-   "MARA": 1
+   "MARA": 1,
+   "SOUN": 2
   },
   "last_bar": {
-   "MARA": "2026-11-06T09:55:00-05:00"
+   "MARA": "2026-11-06T09:55:00-05:00",
+   "SOUN": "2026-11-06T10:03:00-05:00"
   }
  },
  "stopped": null
