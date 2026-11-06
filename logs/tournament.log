@@ -304,3 +304,6 @@
 2026-11-06 19:06:23,989 INFO scalp_burst       SELL RIOT  $  50.89 @ 17.11  burst exit: target  P/L $+0.89
 2026-11-06 19:06:23,990 INFO scalp_burst       value $199.79  cash $199.79  holding -
 2026-11-06 19:14:30,921 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
+2026-11-06 19:25:24,640 INFO scalp_burst       BUY  SOUN  $  50.00 @ 4.016  burst signal
+2026-11-06 19:25:24,641 INFO scalp_burst       value $199.72  cash $149.79  holding ['SOUN']
+2026-11-06 19:30:33,099 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
