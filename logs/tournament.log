@@ -244,3 +244,21 @@
 2026-11-06 16:48:23,437 INFO scalp_vwap        BUY  SOFI  $  50.00 @ 16.26  vwap signal
 2026-11-06 16:48:23,437 INFO scalp_vwap        value $201.39  cash $50.96  holding ['PLUG', 'HOOD', 'SOFI']
 2026-11-06 16:50:28,405 INFO insider: checked 13 new Form 4 filings, found 0 insider purchases
+2026-11-06 16:53:22,977 INFO scalp_vwap        SELL PLUG  $  50.69 @ 1.435  vwap exit: target  P/L $+0.69
+2026-11-06 16:53:22,977 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.131  vwap signal
+2026-11-06 16:53:22,978 INFO scalp_vwap        value $201.69  cash $51.65  holding ['HOOD', 'SOFI', 'AMC']
+2026-11-06 16:53:23,043 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.131  burst signal
+2026-11-06 16:53:23,044 INFO scalp_burst       value $199.61  cash $149.70  holding ['AMC']
+2026-11-06 16:54:23,156 INFO scalp_burst       BUY  RKLB  $  50.00 @ 51.14  burst signal
+2026-11-06 16:54:23,157 INFO scalp_burst       value $199.90  cash $99.70  holding ['AMC', 'RKLB']
+2026-11-06 16:54:23,222 INFO scalp_reversion   SELL AMC   $  50.95 @ 3.139  reversion exit: target  P/L $+0.95
+2026-11-06 16:54:23,223 INFO scalp_reversion   value $203.36  cash $203.36  holding -
+2026-11-06 16:55:23,897 INFO scalp_burst       BUY  RIOT  $  50.00 @ 16.31  burst signal
+2026-11-06 16:55:23,898 INFO scalp_burst       value $199.82  cash $49.70  holding ['AMC', 'RKLB', 'RIOT']
+2026-11-06 17:00:24,363 INFO scalp_burst       BUY  PLUG  $  49.70 @ 1.455  burst signal
+2026-11-06 17:00:24,364 INFO scalp_burst       value $200.33  cash $0.00  holding ['AMC', 'RKLB', 'RIOT', 'PLUG']
+2026-11-06 17:01:24,396 INFO scalp_burst       SELL RIOT  $  51.04 @ 16.65  burst exit: target  P/L $+1.04
+2026-11-06 17:01:24,397 INFO scalp_burst       value $200.69  cash $51.04  holding ['AMC', 'RKLB', 'PLUG']
+2026-11-06 17:05:24,486 INFO scalp_burst       SELL PLUG  $  49.00 @ 1.435  burst exit: stop  P/L $-0.70
+2026-11-06 17:05:24,487 INFO scalp_burst       value $199.60  cash $100.03  holding ['AMC', 'RKLB']
+2026-11-06 17:06:29,854 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
