@@ -307,3 +307,4 @@
 2026-11-06 19:25:24,640 INFO scalp_burst       BUY  SOUN  $  50.00 @ 4.016  burst signal
 2026-11-06 19:25:24,641 INFO scalp_burst       value $199.72  cash $149.79  holding ['SOUN']
 2026-11-06 19:30:33,099 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
+2026-11-06 19:46:30,858 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
