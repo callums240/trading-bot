@@ -119,3 +119,5 @@
 2026-11-05 17:22:30,937 INFO ==== session start ====
 2026-11-05 17:22:53,669 INFO insider: checked 72 new Form 4 filings, found 2 insider purchases
 2026-11-05 17:38:45,039 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-06 03:09:48,331 INFO ==== session start ====
+2026-11-06 03:09:48,549 INFO market closed (opens in 680 min); hourly snapshots
