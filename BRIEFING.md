@@ -1,4 +1,4 @@
-# Daily briefing: Friday 06 November 2026, 15:43 ET
+# Daily briefing: Friday 06 November 2026, 15:59 ET
 
 ## Market
 
@@ -6,27 +6,27 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +0.49% | +1.50% | +1.19% | -0.32% | -3.84% | 5 of 11 |
+| +0.33% | +1.33% | +1.00% | -0.42% | -1.83% | 4 of 11 |
 
-Sectors today: XLK +1.6%, XLC +0.7%, XLI +0.4%, XLE +0.2%, XLY +0.2%, XLU +0.0%, XLV -0.0%, XLF -0.4%, XLB -0.5%, XLRE -0.5%, XLP -1.1%
+Sectors today: XLK +1.5%, XLC +0.4%, XLI +0.2%, XLV +0.0%, XLE -0.1%, XLY -0.1%, XLU -0.4%, XLF -0.6%, XLRE -0.7%, XLB -0.7%, XLP -1.3%
 
 ## Real paper account (live bot)
 
-Equity $199.15 (started $200.00), cash $100.00. Holding: XLE (-0.8%).
+Equity $198.88 (started $200.00), cash $100.00. Holding: XLE (-1.1%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
+| insider_buys | $+5.50 | +2.8% | $205.50 | 4 | - | KNOP, LRN, ASPE, GLXY |
 | scalp_reversion | $+4.60 | +2.3% | $204.60 | 14 | 6/7 | cash |
-| weekly_momentum | $+3.64 | -5.6% | $188.87 | 0 | - | SOFI, TSLA, AMZN |
-| overnight_qqq | $+2.52 | -4.5% | $190.95 | 2 | 0/1 | QQQ |
-| insider_buys | $+2.48 | +1.2% | $202.48 | 4 | - | KNOP, LRN, ASPE, GLXY |
-| spy_hold | $+0.25 | -4.0% | $191.94 | 0 | - | SPY |
+| weekly_momentum | $+3.29 | -5.7% | $188.52 | 0 | - | SOFI, TSLA, AMZN |
+| overnight_qqq | $+2.21 | -4.7% | $190.64 | 2 | 0/1 | QQQ |
 | dip_buy_volatile | $+0.00 | -5.5% | $188.96 | 0 | - | cash |
 | options_orb | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | orb_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
+| spy_hold | $-0.06 | -4.2% | $191.63 | 0 | - | SPY |
 | scalp_vwap | $-0.47 | -0.5% | $198.90 | 19 | 4/11 | cash |
 | scalp_orb5 | $-0.76 | -0.4% | $199.24 | 14 | 3/7 | cash |
 | midday_momentum | $-0.79 | -0.4% | $199.21 | 4 | 1/2 | cash |
