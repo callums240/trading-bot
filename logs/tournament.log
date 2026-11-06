@@ -234,3 +234,6 @@
 2026-11-06 16:13:23,993 INFO scalp_orb5        SELL HOOD  $  48.92 @ 79.04  orb5 exit: stop  P/L $-0.53
 2026-11-06 16:13:23,994 INFO scalp_orb5        value $198.86  cash $48.92  holding ['SOFI', 'NIO', 'RIVN']
 2026-11-06 16:18:29,820 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
+2026-11-06 16:32:25,931 INFO scalp_vwap        BUY  HOOD  $  50.00 @ 80.03  vwap signal
+2026-11-06 16:32:25,932 INFO scalp_vwap        value $201.63  cash $100.96  holding ['PLUG', 'HOOD']
+2026-11-06 16:34:33,718 INFO insider: checked 36 new Form 4 filings, found 1 insider purchases
