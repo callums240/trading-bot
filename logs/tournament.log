@@ -281,3 +281,6 @@
 2026-11-06 17:38:23,696 INFO scalp_reversion   value $203.33  cash $153.36  holding ['RIOT']
 2026-11-06 17:38:32,526 INFO insider: checked 29 new Form 4 filings, found 0 insider purchases
 2026-11-06 17:54:31,029 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
+2026-11-06 18:03:24,746 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.051  burst signal
+2026-11-06 18:03:24,747 INFO scalp_burst       value $198.45  cash $148.50  holding ['MARA']
+2026-11-06 18:10:33,271 INFO insider: checked 32 new Form 4 filings, found 2 insider purchases
