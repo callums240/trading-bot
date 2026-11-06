@@ -316,3 +316,6 @@
 2026-11-06 20:05:23,929 INFO scalp_vwap        SELL SOFI  $  49.86 @ 16.19  vwap exit: time limit  P/L $-0.14
 2026-11-06 20:05:23,930 INFO scalp_vwap        value $198.90  cash $198.90  holding -
 2026-11-06 20:18:27,816 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-06 20:19:22,166 INFO scalp_burst       SELL SOUN  $  49.42 @ 3.969  burst exit: stop  P/L $-0.58
+2026-11-06 20:19:22,167 INFO scalp_burst       SELL MARA  $  49.43 @ 6.344  burst exit: stop  P/L $-0.57
+2026-11-06 20:19:22,167 INFO scalp_burst       value $198.65  cash $198.65  holding -
