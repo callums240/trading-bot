@@ -262,3 +262,6 @@
 2026-11-06 17:05:24,486 INFO scalp_burst       SELL PLUG  $  49.00 @ 1.435  burst exit: stop  P/L $-0.70
 2026-11-06 17:05:24,487 INFO scalp_burst       value $199.60  cash $100.03  holding ['AMC', 'RKLB']
 2026-11-06 17:06:29,854 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
+2026-11-06 17:20:23,611 INFO scalp_orb5        SELL RIVN  $  50.04 @ 13.48  orb5 exit: time limit  P/L $+0.04
+2026-11-06 17:20:23,612 INFO scalp_orb5        value $199.24  cash $199.24  holding -
+2026-11-06 17:22:27,225 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
