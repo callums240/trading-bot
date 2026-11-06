@@ -319,3 +319,5 @@
 2026-11-06 20:19:22,166 INFO scalp_burst       SELL SOUN  $  49.42 @ 3.969  burst exit: stop  P/L $-0.58
 2026-11-06 20:19:22,167 INFO scalp_burst       SELL MARA  $  49.43 @ 6.344  burst exit: stop  P/L $-0.57
 2026-11-06 20:19:22,167 INFO scalp_burst       value $198.65  cash $198.65  holding -
+2026-11-06 20:27:47,234 INFO ==== session start ====
+2026-11-06 20:27:52,498 INFO insider: checked 11 new Form 4 filings, found 0 insider purchases
