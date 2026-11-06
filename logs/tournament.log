@@ -133,3 +133,10 @@
 2026-11-06 11:57:54,472 INFO market closed (opens in 152 min); hourly snapshots
 2026-11-06 12:58:36,962 INFO market closed (opens in 91 min); hourly snapshots
 2026-11-06 13:59:15,487 INFO market closed (opens in 31 min); hourly snapshots
+2026-11-06 14:30:53,728 INFO scalp_vwap        SELL NIO   $  52.01 @ 3.298  missed close, flattening  P/L $+2.01
+2026-11-06 14:30:53,728 INFO scalp_vwap        SELL SOFI  $  50.15 @ 16.06  missed close, flattening  P/L $+0.15
+2026-11-06 14:30:53,728 INFO scalp_vwap        SELL LCID  $  49.48 @ 3.029  missed close, flattening  P/L $-0.52
+2026-11-06 14:30:53,729 INFO scalp_vwap        value $200.89  cash $200.89  holding -
+2026-11-06 14:30:53,835 INFO scalp_burst       SELL HOOD  $  50.68 @ 79.39  missed close, flattening  P/L $+0.68
+2026-11-06 14:30:53,835 INFO scalp_burst       value $201.40  cash $201.40  holding -
+2026-11-06 14:30:59,299 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
