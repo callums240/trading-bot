@@ -308,3 +308,6 @@
 2026-11-06 19:25:24,641 INFO scalp_burst       value $199.72  cash $149.79  holding ['SOUN']
 2026-11-06 19:30:33,099 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
 2026-11-06 19:46:30,858 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
+2026-11-06 20:02:26,422 INFO scalp_vwap        SELL PLUG  $  49.63 @ 1.435  vwap exit: time limit  P/L $-0.37
+2026-11-06 20:02:26,423 INFO scalp_vwap        value $198.94  cash $149.04  holding ['SOFI']
+2026-11-06 20:02:30,314 INFO insider: checked 13 new Form 4 filings, found 0 insider purchases
