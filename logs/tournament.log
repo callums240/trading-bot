@@ -285,3 +285,16 @@
 2026-11-06 18:03:24,747 INFO scalp_burst       value $198.45  cash $148.50  holding ['MARA']
 2026-11-06 18:10:33,271 INFO insider: checked 32 new Form 4 filings, found 2 insider purchases
 2026-11-06 18:26:33,726 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
+2026-11-06 18:32:24,548 INFO scalp_vwap        BUY  PLUG  $  50.00 @ 1.445  vwap signal
+2026-11-06 18:32:24,549 INFO scalp_vwap        value $199.22  cash $149.41  holding ['PLUG']
+2026-11-06 18:32:24,736 INFO scalp_burst       BUY  LCID  $  50.00 @ 3.201  burst signal
+2026-11-06 18:32:24,737 INFO scalp_burst       value $199.14  cash $98.50  holding ['MARA', 'LCID']
+2026-11-06 18:33:23,895 INFO scalp_burst       SELL MARA  $  51.05 @ 6.179  burst exit: target  P/L $+1.05
+2026-11-06 18:33:23,896 INFO scalp_burst       value $199.31  cash $149.55  holding ['LCID']
+2026-11-06 18:33:24,066 INFO scalp_reversion   SELL RIOT  $  51.25 @ 16.77  reversion exit: target  P/L $+1.25
+2026-11-06 18:33:24,067 INFO scalp_reversion   value $204.60  cash $204.60  holding -
+2026-11-06 18:34:23,929 INFO scalp_burst       BUY  RIOT  $  50.00 @ 16.81  burst signal
+2026-11-06 18:34:23,930 INFO scalp_burst       value $199.28  cash $99.55  holding ['LCID', 'RIOT']
+2026-11-06 18:35:24,690 INFO scalp_vwap        BUY  SOFI  $  50.00 @ 16.23  vwap signal
+2026-11-06 18:35:24,690 INFO scalp_vwap        value $199.37  cash $99.41  holding ['PLUG', 'SOFI']
+2026-11-06 18:42:30,885 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
