@@ -298,3 +298,6 @@
 2026-11-06 18:35:24,690 INFO scalp_vwap        BUY  SOFI  $  50.00 @ 16.23  vwap signal
 2026-11-06 18:35:24,690 INFO scalp_vwap        value $199.37  cash $99.41  holding ['PLUG', 'SOFI']
 2026-11-06 18:42:30,885 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-06 18:53:24,345 INFO scalp_burst       SELL LCID  $  49.36 @ 3.159  burst exit: stop  P/L $-0.64
+2026-11-06 18:53:24,346 INFO scalp_burst       value $199.31  cash $148.91  holding ['RIOT']
+2026-11-06 18:58:28,598 INFO insider: checked 15 new Form 4 filings, found 0 insider purchases
