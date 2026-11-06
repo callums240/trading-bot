@@ -265,3 +265,18 @@
 2026-11-06 17:20:23,611 INFO scalp_orb5        SELL RIVN  $  50.04 @ 13.48  orb5 exit: time limit  P/L $+0.04
 2026-11-06 17:20:23,612 INFO scalp_orb5        value $199.24  cash $199.24  holding -
 2026-11-06 17:22:27,225 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
+2026-11-06 17:30:26,398 INFO midday_momentum   BUY  SHOP  $ 100.00 @ 150.2  top gainer at midday
+2026-11-06 17:30:26,398 INFO midday_momentum   BUY  TSLA  $ 100.00 @ 359.8  top gainer at midday
+2026-11-06 17:30:26,399 INFO midday_momentum   value $199.90  cash $0.00  holding ['SHOP', 'TSLA']
+2026-11-06 17:37:23,376 INFO scalp_vwap        SELL AMC   $  49.26 @ 3.084  vwap exit: stop  P/L $-0.74
+2026-11-06 17:37:23,376 INFO scalp_vwap        value $200.00  cash $100.91  holding ['HOOD', 'SOFI']
+2026-11-06 17:37:23,501 INFO scalp_burst       SELL AMC   $  49.26 @ 3.084  burst exit: stop  P/L $-0.74
+2026-11-06 17:37:23,501 INFO scalp_burst       value $198.82  cash $149.29  holding ['RKLB']
+2026-11-06 17:38:23,409 INFO scalp_vwap        SELL HOOD  $  49.18 @ 78.71  vwap exit: stop  P/L $-0.82
+2026-11-06 17:38:23,409 INFO scalp_vwap        SELL SOFI  $  49.32 @ 16.04  vwap exit: stop  P/L $-0.68
+2026-11-06 17:38:23,409 INFO scalp_vwap        value $199.41  cash $199.41  holding -
+2026-11-06 17:38:23,540 INFO scalp_burst       SELL RKLB  $  49.20 @ 50.32  burst exit: stop  P/L $-0.80
+2026-11-06 17:38:23,541 INFO scalp_burst       value $198.50  cash $198.50  holding -
+2026-11-06 17:38:23,696 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 16.36  reversion signal
+2026-11-06 17:38:23,696 INFO scalp_reversion   value $203.33  cash $153.36  holding ['RIOT']
+2026-11-06 17:38:32,526 INFO insider: checked 29 new Form 4 filings, found 0 insider purchases
