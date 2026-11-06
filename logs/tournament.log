@@ -140,3 +140,5 @@
 2026-11-06 14:30:53,835 INFO scalp_burst       SELL HOOD  $  50.68 @ 79.39  missed close, flattening  P/L $+0.68
 2026-11-06 14:30:53,835 INFO scalp_burst       value $201.40  cash $201.40  holding -
 2026-11-06 14:30:59,299 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
+2026-11-06 14:42:20,702 INFO ==== session start ====
+2026-11-06 14:42:26,182 INFO insider: checked 10 new Form 4 filings, found 1 insider purchases
