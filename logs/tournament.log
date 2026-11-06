@@ -142,3 +142,6 @@
 2026-11-06 14:30:59,299 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
 2026-11-06 14:42:20,702 INFO ==== session start ====
 2026-11-06 14:42:26,182 INFO insider: checked 10 new Form 4 filings, found 1 insider purchases
+2026-11-06 14:56:24,329 INFO scalp_reversion   BUY  MARA  $  50.00 @ 5.826  reversion signal
+2026-11-06 14:56:24,330 INFO scalp_reversion   value $199.95  cash $150.00  holding ['MARA']
+2026-11-06 14:58:27,137 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
