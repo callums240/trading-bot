@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.67618989568248,
+ "cash": 199.69816277172535,
  "positions": {},
  "trades": [
   {
@@ -178,23 +178,67 @@
    "pnl": -1.06,
    "reason": "burst exit: stop",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:47-05:00",
+   "side": "buy",
+   "sym": "MARA",
+   "qty": 8.430016,
+   "price": 5.9312,
+   "usd": 50.0,
+   "reason": "burst signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:52-05:00",
+   "side": "sell",
+   "sym": "MARA",
+   "qty": 8.430016,
+   "price": 6.0188,
+   "usd": 50.74,
+   "pnl": 0.74,
+   "reason": "burst exit: target",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T10:59-05:00",
+   "side": "buy",
+   "sym": "PLUG",
+   "qty": 34.836207,
+   "price": 1.4353,
+   "usd": 50.0,
+   "reason": "burst signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-06T11:01-05:00",
+   "side": "sell",
+   "sym": "PLUG",
+   "qty": 34.836207,
+   "price": 1.4147,
+   "usd": 49.28,
+   "pnl": -0.72,
+   "reason": "burst exit: stop",
+   "mood": "calm"
   }
  ],
  "equity": {
   "2026-11-05": 200.88,
-  "2026-11-06": 199.68
+  "2026-11-06": 199.7
  },
  "done": [],
  "memo": {
   "day": "2026-11-06",
   "open": {},
   "count": {
-   "PLUG": 1,
-   "LCID": 1
+   "PLUG": 2,
+   "LCID": 1,
+   "MARA": 1
   },
   "last_bar": {
-   "PLUG": "2026-11-06T10:13:00-05:00",
-   "LCID": "2026-11-06T10:17:00-05:00"
+   "PLUG": "2026-11-06T10:58:00-05:00",
+   "LCID": "2026-11-06T10:17:00-05:00",
+   "MARA": "2026-11-06T10:46:00-05:00"
   }
  },
  "stopped": null

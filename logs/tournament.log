@@ -215,3 +215,19 @@
 2026-11-06 15:44:23,937 INFO scalp_reversion   SELL RIOT  $  50.80 @ 15.18  reversion exit: target  P/L $+0.80
 2026-11-06 15:44:23,938 INFO scalp_reversion   value $201.43  cash $101.71  holding ['PLUG', 'AMC']
 2026-11-06 15:46:28,885 INFO insider: checked 11 new Form 4 filings, found 0 insider purchases
+2026-11-06 15:47:24,739 INFO scalp_burst       BUY  MARA  $  50.00 @ 5.931  burst signal
+2026-11-06 15:47:24,739 INFO scalp_burst       value $199.62  cash $149.68  holding ['MARA']
+2026-11-06 15:50:25,864 INFO scalp_orb5        BUY  RIVN  $  50.00 @ 13.47  orb5 signal
+2026-11-06 15:50:25,865 INFO scalp_orb5        BUY  HOOD  $  49.45 @ 79.9  orb5 signal
+2026-11-06 15:50:25,865 INFO scalp_orb5        value $199.79  cash $0.00  holding ['SOFI', 'NIO', 'RIVN', 'HOOD']
+2026-11-06 15:50:26,011 INFO scalp_vwap        BUY  PLUG  $  50.00 @ 1.415  vwap signal
+2026-11-06 15:50:26,012 INFO scalp_vwap        value $200.78  cash $150.96  holding ['PLUG']
+2026-11-06 15:52:24,407 INFO scalp_burst       SELL MARA  $  50.74 @ 6.019  burst exit: target  P/L $+0.74
+2026-11-06 15:52:24,407 INFO scalp_burst       value $200.41  cash $200.41  holding -
+2026-11-06 15:59:23,532 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.435  burst signal
+2026-11-06 15:59:23,533 INFO scalp_burst       value $200.23  cash $150.41  holding ['PLUG']
+2026-11-06 15:59:23,662 INFO scalp_reversion   SELL PLUG  $  50.69 @ 1.425  reversion exit: target  P/L $+0.69
+2026-11-06 15:59:23,663 INFO scalp_reversion   value $202.15  cash $152.40  holding ['AMC']
+2026-11-06 16:01:26,711 INFO scalp_burst       SELL PLUG  $  49.28 @ 1.415  burst exit: stop  P/L $-0.72
+2026-11-06 16:01:26,712 INFO scalp_burst       value $199.70  cash $199.70  holding -
+2026-11-06 16:02:32,277 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
