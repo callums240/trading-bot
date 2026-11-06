@@ -190,3 +190,12 @@
 2026-11-06 15:14:22,869 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.435  burst signal
 2026-11-06 15:14:22,869 INFO scalp_burst       value $201.21  cash $151.40  holding ['PLUG']
 2026-11-06 15:14:27,424 INFO insider: checked 19 new Form 4 filings, found 2 insider purchases
+2026-11-06 15:16:23,736 INFO scalp_orb5        BUY  NIO   $  50.00 @ 3.371  orb5 signal
+2026-11-06 15:16:23,737 INFO scalp_orb5        value $201.73  cash $0.77  holding ['SOFI', 'HOOD', 'PLUG', 'NIO']
+2026-11-06 15:18:23,781 INFO scalp_burst       BUY  LCID  $  50.00 @ 3.146  burst signal
+2026-11-06 15:18:23,782 INFO scalp_burst       value $201.30  cash $101.40  holding ['PLUG', 'LCID']
+2026-11-06 15:20:24,279 INFO scalp_burst       SELL LCID  $  49.34 @ 3.104  burst exit: stop  P/L $-0.66
+2026-11-06 15:20:24,279 INFO scalp_burst       value $200.73  cash $150.74  holding ['PLUG']
+2026-11-06 15:23:23,538 INFO scalp_vwap        SELL NIO   $  50.73 @ 3.384  vwap exit: target  P/L $+0.73
+2026-11-06 15:23:23,538 INFO scalp_vwap        value $201.69  cash $151.62  holding ['AMC']
+2026-11-06 15:30:32,288 INFO insider: checked 24 new Form 4 filings, found 0 insider purchases
