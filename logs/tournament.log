@@ -199,3 +199,19 @@
 2026-11-06 15:23:23,538 INFO scalp_vwap        SELL NIO   $  50.73 @ 3.384  vwap exit: target  P/L $+0.73
 2026-11-06 15:23:23,538 INFO scalp_vwap        value $201.69  cash $151.62  holding ['AMC']
 2026-11-06 15:30:32,288 INFO insider: checked 24 new Form 4 filings, found 0 insider purchases
+2026-11-06 15:31:24,296 INFO scalp_orb5        SELL PLUG  $  49.28 @ 1.405  orb5 exit: stop  P/L $-0.72
+2026-11-06 15:31:24,297 INFO scalp_orb5        value $199.41  cash $50.05  holding ['SOFI', 'HOOD', 'NIO']
+2026-11-06 15:31:24,486 INFO scalp_burst       SELL PLUG  $  48.94 @ 1.405  burst exit: stop  P/L $-1.06
+2026-11-06 15:31:24,486 INFO scalp_burst       value $199.68  cash $199.68  holding -
+2026-11-06 15:32:25,045 INFO scalp_orb5        SELL HOOD  $  49.40 @ 78.9  orb5 exit: stop  P/L $-0.60
+2026-11-06 15:32:25,046 INFO scalp_orb5        value $199.11  cash $99.45  holding ['SOFI', 'NIO']
+2026-11-06 15:32:25,177 INFO scalp_vwap        SELL AMC   $  49.34 @ 3.089  vwap exit: stop  P/L $-0.66
+2026-11-06 15:32:25,178 INFO scalp_vwap        value $200.96  cash $200.96  holding -
+2026-11-06 15:33:26,125 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.405  reversion signal
+2026-11-06 15:33:26,125 INFO scalp_reversion   BUY  AMC   $  50.00 @ 3.081  reversion signal
+2026-11-06 15:33:26,126 INFO scalp_reversion   value $200.63  cash $100.91  holding ['PLUG', 'AMC']
+2026-11-06 15:35:27,912 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 14.94  reversion signal
+2026-11-06 15:35:27,913 INFO scalp_reversion   value $200.77  cash $50.91  holding ['PLUG', 'AMC', 'RIOT']
+2026-11-06 15:44:23,937 INFO scalp_reversion   SELL RIOT  $  50.80 @ 15.18  reversion exit: target  P/L $+0.80
+2026-11-06 15:44:23,938 INFO scalp_reversion   value $201.43  cash $101.71  holding ['PLUG', 'AMC']
+2026-11-06 15:46:28,885 INFO insider: checked 11 new Form 4 filings, found 0 insider purchases
