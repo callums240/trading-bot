@@ -254,8 +254,12 @@ def put_credit_spread(ctx):
     for sym in list(ctx.led.positions):
         credit = ctx.led.memo.get(sym, {}).get("credit", 0)
         width = float(sym.split(":")[3])
-        value = ctx.m.spread_value(sym, side="close")
-        if value is None:
+        # Decide on the mid price (what the spread is worth), but exit at the real
+        # buy-back price. Deciding on the buy-back price let the bid/ask gap alone
+        # trigger the stop minutes after entry (Nov 6 bug).
+        value = ctx.m.spread_value(sym, side="mid")
+        exit_value = ctx.m.spread_value(sym, side="close")
+        if value is None or exit_value is None:
             continue
         entry = width - credit
         short = sym.split(":")[1]
@@ -267,10 +271,10 @@ def put_credit_spread(ctx):
         elif occ_expiry(short) <= ctx.m.today and ctx.slot == "close":
             reason = "expiry day"
         if reason:
-            ctx.led.sell(sym, value / (1 - SLIPPAGE), ctx.now, reason)
+            ctx.led.sell(sym, exit_value / (1 - SLIPPAGE), ctx.now, reason)
             ctx.led.memo.pop(sym, None)
-    if ctx.led.positions or ctx.slot != "open":
-        return
+    if ctx.led.positions or ctx.slot != "open" or ctx.led.memo.get("last_entry") == str(ctx.m.today):
+        return            # at most one new spread a day
     price = ctx.m.price("QQQ")
     chain = ctx.m.chain("QQQ", max_days=9, type="put")
     exps = sorted({occ_expiry(c) for c in chain if (occ_expiry(c) - ctx.m.today).days >= 5})
@@ -290,14 +294,17 @@ def put_credit_spread(ctx):
     width, credit = k_short - k_long, sb - la
     if credit < 0.10 or credit >= width:
         return
+    if (sa - sb) + (la - lb) > credit:     # quotes too wide: the round trip would cost more than we collect
+        return
     risk = width - credit
-    n = int(ctx.led.cash // (risk * 100))
-    if n < 1:
+    n = 1                                  # one contract: keeps a worst case inside the $150 stop budget
+    if risk * 100 > ctx.led.cash:
         return
     sym = f"SPREAD:{cs}:{cl}:{width:g}"
     ctx.led.buy(sym, n * risk * 100, risk / (1 + SLIPPAGE), ctx.now,
                 f"sold {n}x {k_short:g}/{k_long:g} put spread for {credit:.2f} credit")
     ctx.led.memo[sym] = {"credit": credit, "n": n}
+    ctx.led.memo["last_entry"] = str(ctx.m.today)
 
 
 INSIDER_FILE = Path(__file__).parent.parent / "data" / "insider" / "purchases.jsonl"
