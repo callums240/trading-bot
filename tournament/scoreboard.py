@@ -56,7 +56,8 @@ def write():
     lines += [f"- **{n}**: {a}" for n, a in about.items()]
     lines += ["", "Small / big wins: a big win made 5%+ on the money in that trade. The goal is roughly "
               "80 small : 20 big. Early results are mostly noise; judge after several weeks and dozens of trades.",
-              "", "Today's market and how each strategy did: [BRIEFING.md](BRIEFING.md)."]
+              "", "Today's market and how each strategy did: [BRIEFING.md](BRIEFING.md). "
+              "What's working, by style, stock group, time of day and market mood: [LEARNING.md](LEARNING.md)."]
     OUT.write_text("\n".join(lines) + "\n")
     return OUT
 

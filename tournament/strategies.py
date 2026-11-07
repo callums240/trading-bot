@@ -31,6 +31,8 @@ VOLATILE = ["TSLA", "NVDA", "AMD", "COIN", "MSTR", "PLTR", "SOFI", "MARA", "SMCI
             "RIVN", "SHOP", "META", "AMZN", "NFLX"]
 LEVERAGED = ["TQQQ", "SOXL"]
 SCALP = scalp_backtest.SMALL          # small, jumpy, high-volume tickers
+SCALP_LARGE = ["QQQ", "SPY", "TSLA", "NVDA", "AMD", "AAPL", "META", "AMZN", "MSFT", "PLTR",
+               "COIN", "MSTR", "AVGO", "NFLX"]   # big and cheap to trade (spread ~0.01-0.05%)
 FORUM_DIR = Path(__file__).parent.parent / "data" / "forum" / "wallstreetbets"
 
 
@@ -359,7 +361,23 @@ def _scalp_extra(price):
     return max(0.0, scalp_backtest.cost(price) - SLIPPAGE)
 
 
-def scalp(ctx, style):
+def _signals(m, sym, universe, burst, drop):
+    """Signals for one ticker's bars so far today, cached per pass (many scalpers share them)."""
+    cache = m.__dict__.setdefault("_scalp_sig", {})
+    key = (sym, burst, drop)
+    if key not in cache:
+        bars = m.today_bars(sym, universe=universe)
+        if len(bars) < 25:
+            cache[key] = None
+        else:
+            g = bars.reset_index().rename(columns={"timestamp": "ts"})
+            cache[key] = scalp_backtest.signals(g, burst=burst, drop=drop)
+    return cache[key]
+
+
+def scalp(ctx, style, universe=None, target=SCALP_TARGET, stop=SCALP_STOP, max_min=SCALP_MAX_MIN,
+          burst=0.01, drop=-0.015):
+    universe = universe or SCALP
     m, led, now = ctx.m, ctx.led, ctx.now
     memo = led.memo
     if memo.get("day") != str(m.today):
@@ -382,14 +400,13 @@ def scalp(ctx, style):
     if now.time() >= time(15, 15) or len(led.positions) >= SCALP_MAX_OPEN:
         return
     # entries: a signal on the latest completed 1-minute bar
-    for sym in SCALP:
+    for sym in universe:
         if sym in led.positions or memo["count"].get(sym, 0) >= scalp_backtest.MAX_TRADES_PER_DAY:
             continue
-        bars = m.today_bars(sym, universe=SCALP)
-        if len(bars) < 25:
+        got = _signals(m, sym, universe, burst, drop)
+        if got is None:
             continue
-        g = bars.reset_index().rename(columns={"timestamp": "ts"})
-        d, sig = scalp_backtest.signals(g)
+        d, sig = got
         last_t = d.ts.iloc[-1].isoformat()
         if not sig[style].iloc[-1] or memo["last_bar"].get(sym) == last_t:
             continue
@@ -398,8 +415,8 @@ def scalp(ctx, style):
         if not p or not led.buy(sym, SCALP_SIZE, p * (1 + _scalp_extra(p)), now, f"{style} signal"):
             continue
         entry = led.positions[sym]["entry"]
-        memo["open"][sym] = {"tp": entry * (1 + SCALP_TARGET), "sl": entry * (1 - SCALP_STOP),
-                             "until": (now + timedelta(minutes=SCALP_MAX_MIN)).isoformat()}
+        memo["open"][sym] = {"tp": entry * (1 + target), "sl": entry * (1 - stop),
+                             "until": (now + timedelta(minutes=max_min)).isoformat()}
         memo["count"][sym] = memo["count"].get(sym, 0) + 1
         if len(led.positions) >= SCALP_MAX_OPEN:
             break
@@ -409,6 +426,15 @@ def scalp_orb5(ctx): scalp(ctx, "orb5")
 def scalp_vwap(ctx): scalp(ctx, "vwap")
 def scalp_burst(ctx): scalp(ctx, "burst")
 def scalp_reversion(ctx): scalp(ctx, "reversion")
+
+
+# Large, cheap-to-trade stocks (added Nov 7). QUICK exits: +0.6% / -0.4% / 30 minutes.
+QUICK = dict(target=0.006, stop=0.004, max_min=30)
+def scalp_orb5_large(ctx): scalp(ctx, "orb5", SCALP_LARGE, **QUICK)
+def scalp_vwap_large(ctx): scalp(ctx, "vwap", SCALP_LARGE, **QUICK)
+def scalp_burst_large(ctx): scalp(ctx, "burst", SCALP_LARGE, burst=0.005)
+def scalp_reversion_large(ctx): scalp(ctx, "reversion", SCALP_LARGE)
+def scalp_reversion_large_fast(ctx): scalp(ctx, "reversion", SCALP_LARGE, target=0.004, stop=0.003, max_min=20, drop=-0.0075)
 
 
 def spy_hold(ctx):
@@ -434,4 +460,9 @@ PLAYERS = [
     Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),
     Strategy("scalp_burst", "Scalper: small caps up 1%+ in 5 min on 3x volume", (), scalp_burst, intraday=True, every_minute=True),
     Strategy("scalp_reversion", "Scalper: buys sharp 5-minute drops on small caps (RSI < 20)", (), scalp_reversion, intraday=True, every_minute=True),
+    Strategy("scalp_orb5_large", "Scalper: first-5-minute breakouts on big stocks, quick exits", (), scalp_orb5_large, intraday=True, every_minute=True),
+    Strategy("scalp_vwap_large", "Scalper: big stocks reclaiming VWAP on 2x volume, quick exits", (), scalp_vwap_large, intraday=True, every_minute=True),
+    Strategy("scalp_burst_large", "Scalper: big stocks up 0.5%+ in 5 min on 3x volume", (), scalp_burst_large, intraday=True, every_minute=True),
+    Strategy("scalp_reversion_large", "Scalper: buys sharp 1.5% 5-minute drops on big stocks", (), scalp_reversion_large, intraday=True, every_minute=True),
+    Strategy("scalp_reversion_large_fast", "Scalper: buys any 0.75% 5-minute drop on big stocks, tight exits (more trades, smaller edge?)", (), scalp_reversion_large_fast, intraday=True, every_minute=True),
 ]

@@ -27,6 +27,7 @@ sys.path.insert(0, str(ROOT))
 from tournament.run import log, tick          # noqa: E402  (also sets up logging/.env)
 from tournament.market import Market          # noqa: E402
 import briefing                                # noqa: E402
+import learn                                   # noqa: E402
 
 PY = sys.executable
 
@@ -38,7 +39,7 @@ def sh(cmd, timeout=600):
 
 
 def save_and_push(msg):
-    sh("git add state logs data SCOREBOARD.md BRIEFING.md")
+    sh("git add state logs data SCOREBOARD.md BRIEFING.md LEARNING.md")
     code, _ = sh("git diff --cached --quiet")
     if code == 0:
         return
@@ -101,10 +102,11 @@ def main():
             code, out = sh(f"{PY} forum_collector.py", timeout=180)
             last_forum_hour = hour
         if clock.time() - last_save >= 15 * 60:
-            try:
-                briefing.write(m)
-            except Exception as e:
-                log.warning("briefing failed: %s", e)
+            for name, fn in (("briefing", lambda: briefing.write(m)), ("learning report", learn.write)):
+                try:
+                    fn()
+                except Exception as e:
+                    log.warning("%s failed: %s", name, e)
             save_and_push(f"session {datetime.now(timezone.utc):%F_%H%M}")
             last_save = clock.time()
 

@@ -1,6 +1,6 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-06 23:21 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-06 23:28 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
@@ -39,7 +39,12 @@ Updated 2026-11-06 23:21 UTC. Each strategy trades its own virtual $200 at live 
 - **scalp_vwap**: Scalper: small caps reclaiming VWAP on 2x volume
 - **scalp_burst**: Scalper: small caps up 1%+ in 5 min on 3x volume
 - **scalp_reversion**: Scalper: buys sharp 5-minute drops on small caps (RSI < 20)
+- **scalp_orb5_large**: Scalper: first-5-minute breakouts on big stocks, quick exits
+- **scalp_vwap_large**: Scalper: big stocks reclaiming VWAP on 2x volume, quick exits
+- **scalp_burst_large**: Scalper: big stocks up 0.5%+ in 5 min on 3x volume
+- **scalp_reversion_large**: Scalper: buys sharp 1.5% 5-minute drops on big stocks
+- **scalp_reversion_large_fast**: Scalper: buys any 0.75% 5-minute drop on big stocks, tight exits (more trades, smaller edge?)
 
 Small / big wins: a big win made 5%+ on the money in that trade. The goal is roughly 80 small : 20 big. Early results are mostly noise; judge after several weeks and dozens of trades.
 
-Today's market and how each strategy did: [BRIEFING.md](BRIEFING.md).
+Today's market and how each strategy did: [BRIEFING.md](BRIEFING.md). What's working, by style, stock group, time of day and market mood: [LEARNING.md](LEARNING.md).

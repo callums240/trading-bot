@@ -13,6 +13,7 @@ If one bar touches both the stop and the target, we assume the stop hit first.
 Usage: python scalp_backtest.py [--days 25]
 """
 import argparse
+import hashlib
 import os
 from datetime import datetime, time, timedelta
 from pathlib import Path
@@ -47,7 +48,8 @@ def cost(price):
 
 def load(symbols, days):
     CACHE.mkdir(exist_ok=True)
-    f = CACHE / f"scalp_1min_{days}d_{datetime.now():%Y%m%d}.parquet"
+    tag = hashlib.md5(",".join(sorted(symbols)).encode()).hexdigest()[:8]
+    f = CACHE / f"scalp_1min_{days}d_{tag}_{datetime.now():%Y%m%d}.parquet"
     if f.exists():
         return pd.read_parquet(f)
     c = StockHistoricalDataClient(os.environ["ALPACA_API_KEY"], os.environ["ALPACA_SECRET_KEY"])
@@ -73,8 +75,10 @@ def rsi(s, n=7):
     return 100 - 100 / (1 + up / dn.replace(0, np.nan))
 
 
-def signals(d):
-    """d = one ticker, one day of 1-min bars. Returns {style: boolean Series} at bar close."""
+def signals(d, burst=0.01, drop=-0.015):
+    """d = one ticker, one day of 1-min bars. Returns {style: boolean Series} at bar close.
+    burst / drop: the 5-minute move that counts as a burst up / a sharp drop (large, calmer
+    stocks use smaller thresholds than small caps)."""
     d = d.reset_index(drop=True)
     t = d.ts.dt.time
     vwap = (d.vwap * d.volume).cumsum() / d.volume.cumsum()
@@ -88,8 +92,8 @@ def signals(d):
     out = {
         "orb5": above & ~above.shift(1, fill_value=False) & (t >= time(9, 35)) & (t < time(11, 0)),
         "vwap": (d.close > vwap) & (below_run >= 10) & (d.volume > 2 * vol20) & (t >= time(10, 0)) & (t < time(15, 0)),
-        "burst": (r5 > 0.01) & (d.volume > 3 * vol20) & (t >= time(9, 45)) & (t < time(15, 15)),
-        "reversion": (r5 < -0.015) & (rsi(d.close) < 20) & (t >= time(9, 45)) & (t < time(15, 15)),
+        "burst": (r5 > burst) & (d.volume > 3 * vol20) & (t >= time(9, 45)) & (t < time(15, 15)),
+        "reversion": (r5 < drop) & (rsi(d.close) < 20) & (t >= time(9, 45)) & (t < time(15, 15)),
     }
     return d, out
 
