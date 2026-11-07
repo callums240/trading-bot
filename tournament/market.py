@@ -118,6 +118,8 @@ class Market:
     @lru_cache(maxsize=None)
     def _intraday(self, symbols: tuple):
         start = datetime.combine(self.today, time(9, 30), tzinfo=ET)
+        if self.now < start:                      # before today's open: no bars yet
+            return pd.DataFrame()
         df = self.data.get_stock_bars(StockBarsRequest(
             symbol_or_symbols=list(symbols), timeframe=TimeFrame.Minute,
             start=start, feed=DataFeed.IEX)).df
