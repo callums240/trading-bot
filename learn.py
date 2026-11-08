@@ -25,12 +25,20 @@ def round_trips():
     rows = []
     for f in sorted(STATE.glob("*.json")):
         d = json.loads(f.read_text())
-        open_buys = {}
+        open_buys, partial = {}, {}
         for t in d["trades"]:
             if t["side"] == "buy":
                 open_buys.setdefault(t["sym"], t)
             elif t["side"] == "sell" and t["sym"] in open_buys:
+                # a position can be sold in pieces (options: half at double, rest later);
+                # add the pieces up into one completed trade
+                acc = partial.setdefault(t["sym"], {"qty": 0.0, "usd": 0.0, "pnl": 0.0})
+                acc["qty"] += t["qty"]; acc["usd"] += t["usd"]; acc["pnl"] += t.get("pnl", 0)
+                if acc["qty"] < open_buys[t["sym"]]["qty"] * 0.999:
+                    continue                                   # still partly open
                 b = open_buys.pop(t["sym"])
+                partial.pop(t["sym"])
+                t = dict(t, usd=acc["usd"], pnl=acc["pnl"])
                 cost = t["usd"] - t.get("pnl", 0)
                 if cost <= 0:
                     continue

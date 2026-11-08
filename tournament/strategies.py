@@ -202,24 +202,99 @@ def _opt_buy(ctx, sym, contracts, ask, reason):
     ctx.led.buy(sym, contracts * 100 * ask, ask / (1 + SLIPPAGE), ctx.now, reason)
 
 
-def _opt_sell(ctx, sym, bid, reason):
-    ctx.led.sell(sym, max(bid, 0.0001) / (1 - SLIPPAGE), ctx.now, reason)
+def _opt_sell(ctx, sym, bid, reason, fraction=1.0):
+    ctx.led.sell(sym, max(bid, 0.0001) / (1 - SLIPPAGE), ctx.now, reason, fraction)
 
 
-def options_orb(ctx):
-    """Opening range breakout with same-day QQQ options: calls on a breakout above the
-    9:30-10:00 high, puts on a breakdown below the low. Whole contracts, sold by the close."""
-    if ctx.slot == "close":
-        held = list(ctx.led.positions)
-        quotes = ctx.m.option_quotes(held) if held else {}
-        for sym in held:
-            if sym in quotes:
-                _opt_sell(ctx, sym, quotes[sym][0], "close")
+# ---- buying options: small bets that can multiply -------------------------
+# Each trade spends at most OPT_BUDGET (so a loss can't blow through the $150 stop in
+# one go) and sells if the option loses half its value. Winners run: when a contract
+# doubles, half is sold (the stake is back, the rest is a free ride), and the rest is
+# sold if it falls OPT_TRAIL from its best price, or at 15:50 (same-day options expire
+# worthless at 16:00 if out of the money).
+# Decisions use the bid/ask midpoint; sells fill at the bid (what you'd really get).
+OPT_BUDGET = 40.0
+OPT_STOP, OPT_DOUBLE, OPT_TRAIL = 0.5, 2.0, 0.5
+OPT_MAX_SPREAD = 0.25        # skip contracts whose bid/ask gap is over 25% of the price
+
+
+def _opt_day(ctx):
+    memo = ctx.led.memo
+    if memo.get("day") != str(ctx.m.today):
+        memo.clear()
+        memo.update(day=str(ctx.m.today), entries=0, held={})
+    return memo
+
+
+def _opt_manage(ctx):
+    """Check every held contract once a minute: stop, half off at double, trailing exit, 15:50."""
+    memo = _opt_day(ctx)
+    held = list(ctx.led.positions)
+    if not held:
         return
-    if ctx.led.positions:
+    quotes = ctx.m.option_quotes(held)
+    for sym in held:
+        if sym not in quotes:
+            continue
+        bid, ask = quotes[sym]
+        mid = (bid + ask) / 2
+        plan = memo["held"].setdefault(sym, {"entry": ctx.led.positions[sym]["entry"], "peak": mid})
+        plan["peak"] = max(plan["peak"], mid)
+        entry, peak = plan["entry"], plan["peak"]
+        if ctx.now.time() >= time(15, 50):
+            _opt_sell(ctx, sym, bid, f"end of day ({mid / entry - 1:+.0%})")
+        elif not plan.get("halved") and mid <= entry * OPT_STOP:
+            _opt_sell(ctx, sym, bid, f"stop: down {1 - mid / entry:.0%}")
+        elif not plan.get("halved") and mid >= entry * OPT_DOUBLE:
+            _opt_sell(ctx, sym, bid, f"doubled ({mid / entry - 1:+.0%}): sold half, stake back", fraction=0.5)
+            plan["halved"] = True
+            continue
+        elif plan.get("halved") and mid <= peak * OPT_TRAIL:
+            _opt_sell(ctx, sym, bid, f"trailing exit: peaked {peak / entry - 1:+.0%}, now {mid / entry - 1:+.0%}")
+        else:
+            continue
+        memo["held"].pop(sym, None)
+
+
+def _opt_buy_dir(ctx, underlying, kind, reason, budget=None):
+    """Buy the nearest out-of-the-money same-day call ("C") or put ("P") we can afford,
+    falling back to the nearest expiry within 4 days if there's no same-day one."""
+    price = ctx.m.price(underlying)
+    if not price:
+        return False
+    chain = ctx.m.chain(underlying, max_days=0) or ctx.m.chain(underlying, max_days=4)
+    exp = min((occ_expiry(c) for c in chain), default=None)
+    if exp is None:
+        return False
+    cands = [(c, q) for c, q in chain.items() if occ_expiry(c) == exp and c[-9] == kind]
+    if kind == "C":
+        cands = sorted((x for x in cands if occ_strike(x[0]) >= price * 1.001), key=lambda x: occ_strike(x[0]))
+    else:
+        cands = sorted((x for x in cands if occ_strike(x[0]) <= price * 0.999), key=lambda x: -occ_strike(x[0]))
+    budget = min(budget or OPT_BUDGET, ctx.led.cash)
+    for c, (bid, ask) in cands:
+        if ask < 0.10:
+            break                                     # too far out: a lottery ticket
+        if ask * 100 > budget or (ask - bid) > OPT_MAX_SPREAD * ask:
+            continue
+        n = int(budget // (ask * 100))
+        _opt_buy(ctx, c, n, ask, f"{reason}; {n}x {c} @ {ask:.2f}")
+        memo = _opt_day(ctx)
+        memo["entries"] += 1
+        memo["held"][c] = {"entry": ctx.led.positions[c]["entry"], "peak": (bid + ask) / 2}
+        return True
+    return False
+
+
+def _options_orb(ctx, underlying):
+    """Opening range breakout with same-day options: a call when the price breaks above
+    the 9:30-10:00 high, a put when it breaks below the low. One trade a day, 10:00-11:30."""
+    _opt_manage(ctx)
+    memo = _opt_day(ctx)
+    if memo["entries"] or ctx.led.positions or not (time(10, 0) <= ctx.now.time() < time(11, 30)):
         return
-    bars = ctx.m.today_bars("QQQ")
-    price = ctx.m.price("QQQ")
+    bars = ctx.m.today_bars(underlying)
+    price = ctx.m.price(underlying)
     if bars.empty or not price:
         return
     rng = bars[bars.index.time < time(10, 0)]
@@ -227,26 +302,61 @@ def options_orb(ctx):
         return
     hi, lo = rng["high"].max(), rng["low"].min()
     if price > hi:
-        kind, reason = "C", f"QQQ {price:.2f} broke above {hi:.2f}"
+        _opt_buy_dir(ctx, underlying, "C", f"{underlying} {price:.2f} broke above {hi:.2f}")
     elif price < lo:
-        kind, reason = "P", f"QQQ {price:.2f} broke below {lo:.2f}"
-    else:
+        _opt_buy_dir(ctx, underlying, "P", f"{underlying} {price:.2f} broke below {lo:.2f}")
+
+
+def options_orb(ctx):
+    _options_orb(ctx, "QQQ")
+
+
+def options_orb_spy(ctx):
+    _options_orb(ctx, "SPY")
+
+
+def options_dip_calls(ctx):
+    """Same-day QQQ calls after a sharp intraday drop (the pattern our stock scalpers do
+    best with): QQQ 1%+ below its high of the last 30 minutes with 1-minute RSI(7) under 25.
+    10:00-14:30, not on panic days (dips keep dipping), one trade a day."""
+    _opt_manage(ctx)
+    memo = _opt_day(ctx)
+    if memo["entries"] or ctx.led.positions or ctx.mood == "panic":
         return
-    chain = ctx.m.chain("QQQ", max_days=4)
-    exp = min((occ_expiry(c) for c in chain), default=None)
-    if exp is None:
+    if not (time(10, 0) <= ctx.now.time() < time(14, 30)):
         return
-    cands = [(c, q) for c, q in chain.items() if occ_expiry(c) == exp and c[-9] == kind]
-    if kind == "C":   # nearest out-of-the-money first, moving further out until affordable
-        cands = sorted((x for x in cands if occ_strike(x[0]) >= price * 1.002), key=lambda x: occ_strike(x[0]))
-    else:
-        cands = sorted((x for x in cands if occ_strike(x[0]) <= price * 0.998), key=lambda x: -occ_strike(x[0]))
-    for c, (bid, ask) in cands:
-        if ask < 0.05:
-            break
-        n = int(ctx.led.cash // (ask * 100))
-        if n >= 1:
-            return _opt_buy(ctx, c, n, ask, f"{reason}; {n}x {c} @ {ask:.2f}")
+    bars = ctx.m.today_bars("QQQ")
+    if len(bars) < 30:
+        return
+    last30 = bars.iloc[-30:]
+    px = float(bars["close"].iloc[-1])
+    drop = px / float(last30["high"].max()) - 1
+    r = float(rsi(bars["close"], 7).iloc[-1])
+    if drop <= -0.01 and r < 25:
+        _opt_buy_dir(ctx, "QQQ", "C", f"QQQ {drop:+.1%} in 30 min, RSI {r:.0f}")
+
+
+def options_late_trend(ctx):
+    """Late-day trend ride: at 14:00-15:00, if QQQ is 1%+ up (or down) on the day and on
+    the same side of VWAP, buy same-day calls (or puts). Same-day options are cheapest and
+    move fastest late in the day. One trade a day."""
+    _opt_manage(ctx)
+    memo = _opt_day(ctx)
+    if memo["entries"] or ctx.led.positions or not (time(14, 0) <= ctx.now.time() < time(15, 0)):
+        return
+    bars = ctx.m.today_bars("QQQ")
+    opens = ctx.m.today_opens(["QQQ"])
+    if bars.empty or "QQQ" not in opens:
+        return
+    prev = ctx.m.daily_closes(["QQQ"], 10)["QQQ"].dropna()     # completed days only
+    px = float(bars["close"].iloc[-1])
+    base = float(prev.iloc[-1]) if len(prev) else opens["QQQ"]
+    day = px / base - 1
+    vwap = float((bars["vwap"] * bars["volume"]).sum() / bars["volume"].sum())
+    if day >= 0.01 and px > vwap:
+        _opt_buy_dir(ctx, "QQQ", "C", f"QQQ {day:+.1%} today, above VWAP {vwap:.2f}")
+    elif day <= -0.01 and px < vwap:
+        _opt_buy_dir(ctx, "QQQ", "P", f"QQQ {day:+.1%} today, below VWAP {vwap:.2f}")
 
 
 def put_credit_spread(ctx):
@@ -454,7 +564,10 @@ PLAYERS = [
     Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
     Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
-    Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break, out by close", ("open", "close"), options_orb, intraday=True),
+    Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run", (), options_orb, intraday=True, every_minute=True),
+    Strategy("options_orb_spy", "Same as options_orb but on SPY (S&P 500)", (), options_orb_spy, intraday=True, every_minute=True),
+    Strategy("options_dip_calls", "Same-day QQQ calls after a sharp 30-minute drop (not on panic days)", (), options_dip_calls, intraday=True, every_minute=True),
+    Strategy("options_late_trend", "Same-day QQQ calls/puts at 2-3pm when QQQ is 1%+ up/down and holding", (), options_late_trend, intraday=True, every_minute=True),
     Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller); risk checked every minute", ("open", "midday", "close"), put_credit_spread, every_minute=True),
     Strategy("scalp_orb5", "Scalper: breakout above the first 5-minute high on small caps", (), scalp_orb5, intraday=True, every_minute=True),
     Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),

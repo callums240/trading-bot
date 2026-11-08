@@ -43,18 +43,23 @@ class Ledger:
                             "reason": reason})
         return True
 
-    def sell(self, sym, price, when, reason=""):
+    def sell(self, sym, price, when, reason="", fraction=1.0):
+        """Sell the position (or `fraction` of it, e.g. 0.5 = half)."""
         p = self.positions.get(sym)
         if not p or not price:
             return False
+        qty = p["qty"] * min(max(fraction, 0.0), 1.0)
         fill = price * (1 - SLIPPAGE)
-        proceeds = p["qty"] * fill
+        proceeds = qty * fill
         self.cash += proceeds
-        pnl = proceeds - p["qty"] * p["entry"]
+        pnl = proceeds - qty * p["entry"]
         self.trades.append({"t": when.isoformat(timespec="minutes"), "side": "sell", "sym": sym,
-                            "qty": round(p["qty"], 6), "price": round(fill, 4),
+                            "qty": round(qty, 6), "price": round(fill, 4),
                             "usd": round(proceeds, 2), "pnl": round(pnl, 2), "reason": reason})
-        del self.positions[sym]
+        if fraction >= 1.0 or p["qty"] - qty < 1e-9:
+            del self.positions[sym]
+        else:
+            p["qty"] -= qty
         return True
 
     def sell_all(self, prices, when, reason=""):
