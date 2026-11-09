@@ -543,3 +543,6 @@
 2026-11-09 16:59:25,214 INFO scalp_burst       value $197.95  cash $197.95  holding -
 2026-11-09 17:09:34,337 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
 2026-11-09 17:25:32,814 INFO insider: checked 18 new Form 4 filings, found 2 insider purchases
+2026-11-09 17:30:26,570 INFO midday_momentum   BUY  AMD   $  99.60 @ 502.7  top gainer at midday
+2026-11-09 17:30:26,570 INFO midday_momentum   BUY  PLTR  $  99.60 @ 169.6  top gainer at midday
+2026-11-09 17:30:26,570 INFO midday_momentum   value $199.11  cash $0.00  holding ['AMD', 'PLTR']
