@@ -636,3 +636,5 @@
 2026-11-09 20:30:59,069 INFO weekly_momentum   value $197.73  cash $0.00  holding ['SOFI', 'AMZN', 'RIVN']
 2026-11-09 20:32:58,158 INFO live bot ran (exit 0): 2026-11-09 20:32:58,051 INFO ==== run end ====
 2026-11-09 20:34:59,434 INFO insider: checked 12 new Form 4 filings, found 1 insider purchases
+2026-11-09 23:25:10,275 INFO ==== session start ====
+2026-11-09 23:25:10,359 INFO market closed (opens in 905 min); hourly snapshots
