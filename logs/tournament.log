@@ -548,3 +548,6 @@
 2026-11-09 17:30:26,570 INFO midday_momentum   value $199.11  cash $0.00  holding ['AMD', 'PLTR']
 2026-11-09 17:38:54,115 INFO ==== session start ====
 2026-11-09 17:38:59,970 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
+2026-11-09 17:39:56,248 INFO scalp_burst_large SELL MSTR  $  49.38 @ 125.4  burst exit: stop  P/L $-0.62
+2026-11-09 17:39:56,249 INFO scalp_burst_large value $198.84  cash $198.84  holding -
+2026-11-09 17:55:00,718 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
