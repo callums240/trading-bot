@@ -497,3 +497,21 @@
 2026-11-09 16:05:28,250 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 177.1  reversion signal
 2026-11-09 16:05:28,250 INFO scalp_reversion_large_fast value $199.98  cash $150.00  holding ['NVDA']
 2026-11-09 16:05:42,413 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
+2026-11-09 16:07:25,317 INFO options_orb       SELL QQQ261109C00681000 $  23.50 @ 0.47  trailing exit: peaked +176%, now +32%  P/L $+5.50
+2026-11-09 16:07:25,318 INFO options_orb       value $227.00  cash $227.00  holding -
+2026-11-09 16:07:27,851 INFO scalp_reversion_large BUY  NVDA  $  50.00 @ 176.6  reversion signal
+2026-11-09 16:07:27,851 INFO scalp_reversion_large value $199.98  cash $150.00  holding ['NVDA']
+2026-11-09 16:07:27,932 INFO scalp_reversion_large_fast SELL NVDA  $  49.80 @ 176.5  reversion exit: stop  P/L $-0.20
+2026-11-09 16:07:27,932 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 176.6  reversion signal
+2026-11-09 16:07:27,933 INFO scalp_reversion_large_fast value $199.78  cash $149.80  holding ['NVDA']
+2026-11-09 16:11:27,010 INFO scalp_burst       BUY  LCID  $  50.00 @ 3.546  burst signal
+2026-11-09 16:11:27,011 INFO scalp_burst       value $200.39  cash $50.15  holding ['RIOT', 'PLUG', 'LCID']
+2026-11-09 16:14:27,639 INFO scalp_reversion_large_fast SELL NVDA  $  49.71 @ 175.6  reversion exit: stop  P/L $-0.29
+2026-11-09 16:14:27,640 INFO scalp_reversion_large_fast value $199.52  cash $199.52  holding -
+2026-11-09 16:16:29,513 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 175.8  reversion signal
+2026-11-09 16:16:29,514 INFO scalp_reversion_large_fast value $199.49  cash $149.52  holding ['NVDA']
+2026-11-09 16:17:28,352 INFO scalp_orb5_large  SELL META  $  50.02 @ 640  orb5 exit: time limit  P/L $+0.02
+2026-11-09 16:17:28,353 INFO scalp_orb5_large  value $200.38  cash $200.38  holding -
+2026-11-09 16:21:28,103 INFO scalp_reversion_large_fast SELL NVDA  $  50.18 @ 176.5  reversion exit: target  P/L $+0.18
+2026-11-09 16:21:28,104 INFO scalp_reversion_large_fast value $199.70  cash $199.70  holding -
+2026-11-09 16:21:35,331 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases

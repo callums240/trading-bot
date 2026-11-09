@@ -1,17 +1,44 @@
 {
  "start_cash": 200.0,
- "cash": 200.0,
- "positions": {},
- "trades": [],
+ "cash": 150.0,
+ "positions": {
+  "NVDA": {
+   "qty": 0.2830803925102137,
+   "entry": 176.62827,
+   "since": "2026-11-09"
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-11-09T11:07-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.28308,
+   "price": 176.6283,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "strong"
+  }
+ ],
  "equity": {
-  "2026-11-09": 200.0
+  "2026-11-09": 199.98
  },
  "done": [],
  "memo": {
   "day": "2026-11-09",
-  "open": {},
-  "count": {},
-  "last_bar": {}
+  "open": {
+   "NVDA": {
+    "tp": 179.27769404999998,
+    "sl": 174.86198729999998,
+    "until": "2026-11-09T12:37:23.717447-05:00"
+   }
+  },
+  "count": {
+   "NVDA": 1
+  },
+  "last_bar": {
+   "NVDA": "2026-11-09T11:06:00-05:00"
+  }
  },
  "stopped": null
 }

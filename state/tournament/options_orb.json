@@ -1,13 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 203.5,
- "positions": {
-  "QQQ261109C00681000": {
-   "qty": 50.0,
-   "entry": 0.36,
-   "since": "2026-11-09"
-  }
- },
+ "cash": 227.0,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-09T10:12-05:00",
@@ -29,13 +23,24 @@
    "pnl": 21.5,
    "reason": "doubled (+121%): sold half, stake back",
    "mood": "strong"
+  },
+  {
+   "t": "2026-11-09T11:07-05:00",
+   "side": "sell",
+   "sym": "QQQ261109C00681000",
+   "qty": 50.0,
+   "price": 0.47,
+   "usd": 23.5,
+   "pnl": 5.5,
+   "reason": "trailing exit: peaked +176%, now +32%",
+   "mood": "strong"
   }
  ],
  "equity": {
   "2026-11-04": 200.0,
   "2026-11-05": 200.0,
   "2026-11-06": 200.0,
-  "2026-11-09": 232.75
+  "2026-11-09": 227.0
  },
  "done": [
   "2026-11-04:close",
@@ -44,13 +49,7 @@
  "memo": {
   "day": "2026-11-09",
   "entries": 1,
-  "held": {
-   "QQQ261109C00681000": {
-    "entry": 0.36,
-    "peak": 0.995,
-    "halved": true
-   }
-  }
+  "held": {}
  },
  "stopped": null
 }
