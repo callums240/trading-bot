@@ -574,3 +574,6 @@
 2026-11-09 19:12:56,706 INFO scalp_vwap_large  SELL AAPL  $  50.23 @ 351.6  vwap exit: time limit  P/L $+0.23
 2026-11-09 19:12:56,707 INFO scalp_vwap_large  value $200.23  cash $200.23  holding -
 2026-11-09 19:15:06,057 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
+2026-11-09 19:19:55,405 INFO options_late_trend SELL QQQ261109C00680000 $  10.00 @ 0.1  stop: down 54%  P/L $-13.00
+2026-11-09 19:19:55,406 INFO options_late_trend value $187.00  cash $187.00  holding -
+2026-11-09 19:31:10,448 INFO insider: checked 28 new Form 4 filings, found 2 insider purchases
