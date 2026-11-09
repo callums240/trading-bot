@@ -1,20 +1,44 @@
 {
  "start_cash": 200.0,
- "cash": 200.0,
+ "cash": 153.00000000000003,
  "positions": {},
- "trades": [],
+ "trades": [
+  {
+   "t": "2026-11-09T10:02-05:00",
+   "side": "buy",
+   "sym": "SPREAD:QQQ261116P00659000:QQQ261116P00658000:1",
+   "qty": 100.0,
+   "price": 0.86,
+   "usd": 86.0,
+   "reason": "sold 1x 659/658 put spread for 0.14 credit",
+   "mood": "strong"
+  },
+  {
+   "t": "2026-11-09T10:06-05:00",
+   "side": "sell",
+   "sym": "SPREAD:QQQ261116P00659000:QQQ261116P00658000:1",
+   "qty": 100.0,
+   "price": 0.39,
+   "usd": 39.0,
+   "pnl": -47.0,
+   "reason": "stop: loss 2x credit",
+   "mood": "strong"
+  }
+ ],
  "equity": {
   "2026-11-04": 200.0,
   "2026-11-05": 200.0,
   "2026-11-06": 200.0,
-  "2026-11-09": 200.0
+  "2026-11-09": 153.0
  },
  "done": [
   "2026-11-04:close",
   "2026-11-05:midday",
   "2026-11-05:close"
  ],
- "memo": {},
+ "memo": {
+  "last_entry": "2026-11-09"
+ },
  "stopped": null,
  "voided": {
   "why": "2026-11-06 bug: stop decided on buy-back price (bid/ask gap triggered it), instant re-entry, and oversized position. Fixed in code; trades voided, wallet reset to $200.",

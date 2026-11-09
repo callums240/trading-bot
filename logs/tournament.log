@@ -433,3 +433,28 @@
 2026-11-09 15:00:34,588 INFO scalp_orb5        SELL RIOT  $  49.28 @ 17.01  orb5 exit: stop  P/L $-0.72
 2026-11-09 15:00:34,589 INFO scalp_orb5        value $198.52  cash $198.52  holding -
 2026-11-09 15:01:36,847 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-09 15:02:26,697 INFO options_orb_spy   BUY  SPY261109C00754000 $  33.00 @ 0.33  SPY 748.15 broke above 747.95; 1x SPY261109C00754000 @ 0.33
+2026-11-09 15:02:26,698 INFO options_orb_spy   value $199.50  cash $167.00  holding ['SPY261109C00754000']
+2026-11-09 15:02:27,678 INFO put_credit_spread BUY  SPREAD:QQQ261116P00659000:QQQ261116P00658000:1 $  86.00 @ 0.86  sold 1x 659/658 put spread for 0.14 credit
+2026-11-09 15:02:27,679 INFO put_credit_spread value $193.50  cash $114.00  holding ['SPREAD:QQQ261116P00659000:QQQ261116P00658000:1']
+2026-11-09 15:03:27,276 INFO scalp_burst       BUY  LCID  $  50.00 @ 3.396  burst signal
+2026-11-09 15:03:27,277 INFO scalp_burst       value $198.56  cash $148.65  holding ['LCID']
+2026-11-09 15:05:30,043 INFO scalp_orb5_large  SELL MSTR  $  50.34 @ 126.4  orb5 exit: target  P/L $+0.34
+2026-11-09 15:05:30,043 INFO scalp_orb5_large  value $200.62  cash $150.34  holding ['NFLX']
+2026-11-09 15:06:26,362 INFO put_credit_spread SELL SPREAD:QQQ261116P00659000:QQQ261116P00658000:1 $  39.00 @ 0.39  stop: loss 2x credit  P/L $-47.00
+2026-11-09 15:06:26,363 INFO put_credit_spread value $153.00  cash $153.00  holding -
+2026-11-09 15:06:28,897 INFO scalp_orb5_large  BUY  AAPL  $  50.00 @ 348.8  orb5 signal
+2026-11-09 15:06:28,898 INFO scalp_orb5_large  value $200.47  cash $100.34  holding ['NFLX', 'AAPL']
+2026-11-09 15:08:26,677 INFO scalp_orb5        BUY  NIO   $  50.00 @ 3.341  orb5 signal
+2026-11-09 15:08:26,678 INFO scalp_orb5        value $198.44  cash $148.52  holding ['NIO']
+2026-11-09 15:11:26,899 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.511  burst signal
+2026-11-09 15:11:26,900 INFO scalp_burst       value $198.74  cash $98.65  holding ['LCID', 'MARA']
+2026-11-09 15:11:27,785 INFO scalp_orb5_large  BUY  META  $  50.00 @ 641.7  orb5 signal
+2026-11-09 15:11:27,786 INFO scalp_orb5_large  value $200.43  cash $50.34  holding ['NFLX', 'AAPL', 'META']
+2026-11-09 15:12:25,185 INFO orb_tqqq          BUY  TQQQ  $ 200.00 @ 56.49  QQQ 673.90 > OR high 673.64
+2026-11-09 15:12:25,186 INFO orb_tqqq          value $199.90  cash $0.00  holding ['TQQQ']
+2026-11-09 15:12:26,061 INFO options_orb       BUY  QQQ261109C00681000 $  36.00 @ 0.36  QQQ 673.90 broke above 673.64; 1x QQQ261109C00681000 @ 0.36
+2026-11-09 15:12:26,061 INFO options_orb       value $197.50  cash $164.00  holding ['QQQ261109C00681000']
+2026-11-09 15:12:27,022 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.28  orb5 signal
+2026-11-09 15:12:27,023 INFO scalp_orb5        value $198.41  cash $98.52  holding ['NIO', 'RIOT']
+2026-11-09 15:17:37,522 INFO insider: checked 30 new Form 4 filings, found 3 insider purchases
