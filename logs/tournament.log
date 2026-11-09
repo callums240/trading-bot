@@ -602,3 +602,16 @@
 2026-11-09 19:55:58,693 INFO scalp_vwap_large  SELL MSTR  $  50.32 @ 128.1  vwap exit: target  P/L $+0.32
 2026-11-09 19:55:58,694 INFO scalp_vwap_large  value $200.54  cash $150.54  holding ['NVDA']
 2026-11-09 20:03:03,660 INFO insider: checked 23 new Form 4 filings, found 1 insider purchases
+2026-11-09 20:06:56,239 INFO scalp_reversion   SELL SOUN  $  50.72 @ 4.129  reversion exit: target  P/L $+0.72
+2026-11-09 20:06:56,239 INFO scalp_reversion   value $205.32  cash $205.32  holding -
+2026-11-09 20:07:55,812 INFO scalp_burst       BUY  SOUN  $  49.32 @ 4.146  burst signal
+2026-11-09 20:07:55,813 INFO scalp_burst       value $197.94  cash $0.00  holding ['MARA', 'LCID', 'AMC', 'SOUN']
+2026-11-09 20:08:55,664 INFO scalp_burst       SELL AMC   $  48.09 @ 3.379  burst exit: stop  P/L $-0.59
+2026-11-09 20:08:55,665 INFO scalp_burst       value $198.12  cash $48.09  holding ['MARA', 'LCID', 'SOUN']
+2026-11-09 20:10:57,603 INFO scalp_vwap_large  SELL NVDA  $  50.12 @ 177.3  vwap exit: time limit  P/L $+0.12
+2026-11-09 20:10:57,604 INFO scalp_vwap_large  value $200.66  cash $200.66  holding -
+2026-11-09 20:15:55,275 INFO scalp_vwap        SELL MARA  $  50.70 @ 6.649  vwap exit: target  P/L $+0.70
+2026-11-09 20:15:55,276 INFO scalp_vwap        value $201.01  cash $150.32  holding ['RIVN']
+2026-11-09 20:15:55,317 INFO scalp_burst       SELL MARA  $  50.70 @ 6.649  burst exit: target  P/L $+0.70
+2026-11-09 20:15:55,318 INFO scalp_burst       value $198.88  cash $98.79  holding ['LCID', 'SOUN']
+2026-11-09 20:19:00,740 INFO insider: checked 22 new Form 4 filings, found 2 insider purchases
