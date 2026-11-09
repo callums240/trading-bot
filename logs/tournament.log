@@ -546,3 +546,5 @@
 2026-11-09 17:30:26,570 INFO midday_momentum   BUY  AMD   $  99.60 @ 502.7  top gainer at midday
 2026-11-09 17:30:26,570 INFO midday_momentum   BUY  PLTR  $  99.60 @ 169.6  top gainer at midday
 2026-11-09 17:30:26,570 INFO midday_momentum   value $199.11  cash $0.00  holding ['AMD', 'PLTR']
+2026-11-09 17:38:54,115 INFO ==== session start ====
+2026-11-09 17:38:59,970 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
