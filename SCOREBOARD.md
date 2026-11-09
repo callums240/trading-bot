@@ -1,33 +1,33 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-09 17:09 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-09 17:25 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **options_orb** | $227.00 | +13.5% | +15.6 pts | 3 | 100% | 0 / 2 | cash | 2026-11-04 |
-| 2 | **insider_buys** | $210.19 | +5.1% | +7.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
-| 3 | **scalp_reversion** | $204.60 | +2.3% | +4.4 pts | 14 | 86% | 6 / 0 | cash | 2026-11-05 |
-| 4 | **orb_tqqq** | $202.84 | +1.4% | +3.5 pts | 1 | - | 0 / 0 | TQQQ | 2026-11-04 |
-| 5 | **scalp_orb5_large** | $200.38 | +0.2% | +2.3 pts | 12 | 83% | 5 / 0 | cash | 2026-11-09 |
-| 6 | **options_dip_calls** | $200.00 | +0.0% | +2.1 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
-| 7 | **options_late_trend** | $200.00 | +0.0% | +2.1 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
-| 8 | **scalp_vwap_large** | $200.00 | +0.0% | +2.1 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
-| 9 | **trend_tqqq** | $200.00 | +0.0% | +2.1 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
+| 1 | **options_orb** | $227.00 | +13.5% | +15.5 pts | 3 | 100% | 0 / 2 | cash | 2026-11-04 |
+| 2 | **insider_buys** | $209.64 | +4.8% | +6.9 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 3 | **scalp_reversion** | $204.60 | +2.3% | +4.3 pts | 14 | 86% | 6 / 0 | cash | 2026-11-05 |
+| 4 | **orb_tqqq** | $203.02 | +1.5% | +3.6 pts | 1 | - | 0 / 0 | TQQQ | 2026-11-04 |
+| 5 | **scalp_orb5_large** | $200.38 | +0.2% | +2.2 pts | 12 | 83% | 5 / 0 | cash | 2026-11-09 |
+| 6 | **options_dip_calls** | $200.00 | +0.0% | +2.0 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
+| 7 | **options_late_trend** | $200.00 | +0.0% | +2.0 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
+| 8 | **scalp_vwap_large** | $200.00 | +0.0% | +2.0 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
+| 9 | **trend_tqqq** | $200.00 | +0.0% | +2.0 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
 | 10 | **scalp_reversion_large_fast** | $199.88 | -0.1% | +2.0 pts | 8 | 50% | 2 / 0 | cash | 2026-11-09 |
 | 11 | **scalp_orb5** | $199.62 | -0.2% | +1.9 pts | 24 | 50% | 6 / 0 | cash | 2026-11-05 |
-| 12 | **scalp_reversion_large** | $199.44 | -0.3% | +1.8 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 13 | **wsb_crowd** | $199.33 | -0.3% | +1.8 pts | 9 | 0% | 0 / 0 | NVDA, AMD, MU | 2026-11-04 |
+| 12 | **wsb_crowd** | $199.49 | -0.3% | +1.8 pts | 9 | 0% | 0 / 0 | NVDA, AMD, MU | 2026-11-04 |
+| 13 | **scalp_reversion_large** | $199.44 | -0.3% | +1.8 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
 | 14 | **midday_momentum** | $199.21 | -0.4% | +1.7 pts | 4 | 50% | 1 / 0 | cash | 2026-11-04 |
-| 15 | **scalp_burst_large** | $199.21 | -0.4% | +1.7 pts | 3 | 0% | 0 / 0 | MSTR | 2026-11-09 |
-| 16 | **gap_fade** | $198.93 | -0.5% | +1.6 pts | 6 | 50% | 1 / 0 | NVDA, MSTR | 2026-11-04 |
-| 17 | **scalp_vwap** | $198.90 | -0.5% | +1.5 pts | 24 | 33% | 4 / 0 | cash | 2026-11-05 |
-| 18 | **scalp_burst** | $197.95 | -1.0% | +1.1 pts | 52 | 38% | 10 / 0 | cash | 2026-11-05 |
-| 19 | **weekly_momentum** | $196.76 | -1.6% | +0.5 pts | 3 | - | 0 / 0 | SOFI, TSLA, AMZN | 2026-11-04 |
-| 20 | **spy_hold** | $195.81 | -2.1% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 15 | **scalp_burst_large** | $199.10 | -0.5% | +1.6 pts | 3 | 0% | 0 / 0 | MSTR | 2026-11-09 |
+| 16 | **scalp_vwap** | $198.90 | -0.5% | +1.5 pts | 24 | 33% | 4 / 0 | cash | 2026-11-05 |
+| 17 | **gap_fade** | $198.84 | -0.6% | +1.5 pts | 6 | 50% | 1 / 0 | NVDA, MSTR | 2026-11-04 |
+| 18 | **scalp_burst** | $197.95 | -1.0% | +1.0 pts | 52 | 38% | 10 / 0 | cash | 2026-11-05 |
+| 19 | **weekly_momentum** | $196.87 | -1.6% | +0.5 pts | 3 | - | 0 / 0 | SOFI, TSLA, AMZN | 2026-11-04 |
+| 20 | **spy_hold** | $195.90 | -2.0% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
 | 21 | **overnight_qqq** | $195.24 | -2.4% | -0.3 pts | 4 | 50% | 1 / 0 | cash | 2026-11-04 |
-| 22 | **dip_buy_volatile** | $188.96 | -5.5% | -3.4 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
-| 23 | **options_orb_spy** | $183.00 | -8.5% | -6.4 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 24 | **put_credit_spread** | $153.00 | -23.5% | -21.4 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
+| 22 | **dip_buy_volatile** | $188.96 | -5.5% | -3.5 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
+| 23 | **options_orb_spy** | $183.00 | -8.5% | -6.5 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 24 | **put_credit_spread** | $153.00 | -23.5% | -21.5 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
 
 ## What each strategy does
 
