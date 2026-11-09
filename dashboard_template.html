@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading bot dashboard</title>
+<style>
+:root{
+  color-scheme:light;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10); --wash:rgba(11,11,11,.04);
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300;
+  --gain:#2a78d6; --loss:#e34948; --up:#006300; --down:#b42c2c;
+  --good:#0ca30c; --warn:#fab219; --crit:#d03b3b; --mid:#f0efec;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10); --wash:rgba(255,255,255,.05);
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300;
+    --gain:#3987e5; --loss:#e66767; --up:#0ca30c; --down:#e66767; --mid:#383835;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px solid var(--border)}
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px}
+.top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-top:14px}
+h1{font-size:18px;margin:0;font-weight:650}
+.sub{color:var(--ink2);font-size:12.5px}
+nav{display:flex;gap:2px;overflow-x:auto;margin-top:8px}
+nav button{background:none;border:0;border-bottom:2px solid transparent;color:var(--ink2);font:inherit;padding:8px 12px;cursor:pointer;white-space:nowrap}
+nav button:hover{color:var(--ink)}
+nav button.on{color:var(--ink);border-bottom-color:var(--s1);font-weight:600}
+main{padding:18px 0 60px}
+section{display:none}
+section.on{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:16px;min-width:0}
+.card h2{font-size:14px;margin:0 0 2px;font-weight:650}
+.card .note{color:var(--ink2);font-size:12.5px;margin:0 0 12px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:start}
+.grid2e{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+.side{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:980px){.grid2,.grid2e,.side{grid-template-columns:minmax(0,1fr)}}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.tile .l{color:var(--ink2);font-size:12px}
+.tile .v{font-size:22px;font-weight:650;margin-top:2px;overflow-wrap:anywhere}
+.tile .v.small{font-size:16px}
+.tile .d{font-size:12px;color:var(--ink2);margin-top:2px}
+.pos{color:var(--up)} .neg{color:var(--down)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th{text-align:left;color:var(--ink2);font-weight:500;font-size:12px;padding:6px 8px;border-bottom:1px solid var(--axis);white-space:nowrap}
+td{padding:6px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.w{overflow-wrap:anywhere;min-width:120px}
+td.sym{white-space:nowrap} td.sym.long{white-space:normal;overflow-wrap:anywhere;min-width:170px}
+tr.click{cursor:pointer} tr.click:hover td{background:var(--wash)}
+.scroll{overflow-x:auto} .tall{max-height:560px;overflow:auto}
+.tall th{position:sticky;top:0;background:var(--surface)}
+.chip{display:inline-block;border:1px solid var(--border);border-radius:99px;padding:1px 8px;font-size:11.5px;color:var(--ink2);white-space:nowrap}
+.chip i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);margin-bottom:6px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:3px}
+.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0 0}
+button.btn,select,input[type=search]{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--axis);border-radius:7px;padding:5px 10px}
+button.btn{cursor:pointer} button.btn:hover{background:var(--wash)} button.btn.on{border-color:var(--s1);box-shadow:inset 0 0 0 1px var(--s1)}
+input[type=range]{flex:1;min-width:140px;accent-color:var(--s1)}
+.board .row{display:grid;grid-template-columns:22px minmax(0,1.1fr) minmax(70px,1fr) 62px 58px;gap:8px;align-items:center;padding:4px 6px;border-radius:6px;cursor:pointer;font-size:13px}
+.board .row:hover{background:var(--wash)} .board .row.on{background:var(--wash);box-shadow:inset 2px 0 0 var(--s1)}
+.board .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .rk{color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.board .num{text-align:right;font-variant-numeric:tabular-nums}
+.dv{position:relative;height:12px}
+.dv::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+.dv b{position:absolute;top:0;height:12px;min-width:1px}
+.dv b.p{left:50%;background:var(--gain);border-radius:0 4px 4px 0}
+.dv b.m{right:50%;background:var(--loss);border-radius:4px 0 0 4px}
+.hb{display:grid;grid-template-columns:44px minmax(0,1fr) 52px;gap:8px;align-items:center;font-size:12.5px;padding:2px 0}
+.meter{height:6px;border-radius:3px;background:var(--mid);overflow:hidden;min-width:50px}
+.meter b{display:block;height:100%;background:var(--s1);border-radius:3px}
+.seg{display:flex;gap:2px;height:22px;border-radius:5px;overflow:hidden}
+.seg b{display:block;height:100%}
+.list button{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;background:none;border:0;border-radius:6px;padding:6px 8px;font:inherit;color:var(--ink);cursor:pointer}
+.list button:hover{background:var(--wash)} .list button.on{background:var(--wash);box-shadow:inset 2px 0 0 var(--s1);font-weight:600}
+.rules{margin:0;padding-left:20px} .rules li{margin:4px 0}
+.log{font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+.log div{padding:2px 6px;border-bottom:1px solid var(--grid)} .log .t{color:var(--muted)}
+.log .buy{box-shadow:inset 3px 0 0 var(--gain)} .log .sell{box-shadow:inset 3px 0 0 var(--s2)} .log .warnl{box-shadow:inset 3px 0 0 var(--crit)}
+.run{border-top:1px solid var(--grid);padding:8px 0}
+.empty{color:var(--muted);margin:8px 0}
+svg{display:block;width:100%} svg text{font:11px system-ui,-apple-system,"Segoe UI",sans-serif;fill:var(--muted)}
+svg text.lab{fill:var(--ink2);font-size:12px}
+#tip{position:fixed;z-index:20;pointer-events:none;background:var(--surface);border:1px solid var(--axis);border-radius:8px;padding:7px 10px;font-size:12.5px;box-shadow:0 4px 14px rgba(0,0,0,.14);max-width:320px;display:none}
+#tip b{font-weight:650} #tip i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+#tip .r{display:flex;justify-content:space-between;gap:14px}
+a{color:var(--s1)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="top"><h1>Trading bot</h1><span class="sub" id="stamp"></span></div>
+  <nav id="nav"></nav>
+</div></header>
+<main class="wrap" id="main"></main>
+<div id="tip"></div>
+<script>
+const D = /*__DATA__*/null;
+const $ = (s, r=document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const usd = (v, sign) => v == null ? "-" : (sign && v > 0 ? "+" : v < 0 ? "-" : "") + "$" + Math.abs(v).toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2});
+const pct = (v, d=1, sign=true) => v == null ? "-" : (sign && v > 0 ? "+" : "") + (v*100).toFixed(d) + "%";
+const cls = v => v > 0 ? "pos" : v < 0 ? "neg" : "";
+const big = v => v >= 1e9 ? "$" + (v/1e9).toFixed(1) + "B" : v >= 999500 ? "$" + (v/1e6).toFixed(1) + "M" : v >= 1e3 ? "$" + (v/1e3).toFixed(0) + "K" : "$" + Math.round(v);
+const etFmt = new Intl.DateTimeFormat("en-GB", {timeZone:"America/New_York", weekday:"short", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
+const etDay = new Intl.DateTimeFormat("en-GB", {timeZone:"America/New_York", weekday:"short", day:"numeric", month:"short"});
+const tradeT = s => { const m = /^\d{4}-(\d\d)-(\d\d)T(\d\d:\d\d)/.exec(s || ""); return m ? `${+m[2]} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m[1]-1]} ${m[3]}` : esc(s); };
+const held = m => m < 60 ? Math.round(m) + " min" : m < 1440 ? (m/60).toFixed(1) + " h" : (m/1440).toFixed(1) + " d";
+const store = { get(k){ try { return sessionStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { sessionStorage.setItem(k,v); } catch(e){} } };
+const S = D.strategies, byName = Object.fromEntries(S.map(s => [s.name, s]));
+const H = D.history, HN = H.t.length;
+const spy = byName.spy_hold;
+let focus = byName[store.get("focus")] ? store.get("focus") : (S[0] || {}).name;
+let picked = byName[store.get("picked")] ? store.get("picked") : focus;
+let playing = null;
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(html, ev){ tip.innerHTML = html; tip.style.display = "block";
+  const r = tip.getBoundingClientRect(); let x = ev.clientX + 14, y = ev.clientY + 14;
+  if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - 14;
+  if (y + r.height > innerHeight - 8) y = ev.clientY - r.height - 14;
+  tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px"; }
+const hideTip = () => tip.style.display = "none";
+document.addEventListener("mousemove", ev => { const t = ev.target.closest && ev.target.closest("[data-tip]"); if (t) showTip(t.dataset.tip, ev); else if (!ev.target.closest || !ev.target.closest("svg.chart")) hideTip(); });
+
+/* ---------- charts ---------- */
+function niceTicks(lo, hi, n){ const raw = (hi - lo) / n, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p;
+  const step = (f < 1.5 ? 1 : f < 3 ? 2 : f < 7 ? 5 : 10) * p, out = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10)); return out; }
+let clipN = 0;
+function lineChart(host, o){
+  const W = Math.max(host.clientWidth, 300), Ht = o.height || 300, m = {l:50, r:o.padRight || 14, t:10, b:24};
+  const n = o.n, iw = W - m.l - m.r, ih = Ht - m.t - m.b;
+  let lo = Infinity, hi = -Infinity;
+  o.series.forEach(s => s.vals.forEach(v => { if (v != null){ lo = Math.min(lo, v); hi = Math.max(hi, v); } }));
+  (o.refs || []).forEach(r => { lo = Math.min(lo, r.v); hi = Math.max(hi, r.v); });
+  if (!isFinite(lo) || n < 1){ host.innerHTML = '<p class="empty">No data yet.</p>'; return; }
+  if (o.domain){ lo = o.domain[0]; hi = o.domain[1]; }
+  if (lo === hi){ lo -= 1; hi += 1; }
+  const pad = (hi - lo) * .07; lo -= pad; hi += pad;
+  const x = i => m.l + (n > 1 ? i / (n - 1) : .5) * iw, y = v => m.t + (hi - v) / (hi - lo) * ih;
+  const upto = o.upto == null ? n - 1 : o.upto, yf = o.yFmt || (v => v);
+  const cid = "clip" + (++clipN);
+  let g = `<clipPath id="${cid}"><rect x="${m.l}" y="${m.t}" width="${iw + 8}" height="${ih}"/></clipPath>`;
+  niceTicks(lo, hi, 5).forEach(v => g += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${m.l-6}" y="${y(v)+4}" text-anchor="end">${yf(v)}</text>`);
+  (o.xTicks || []).filter((t, k, a) => k === a.length - 1 ? x(t.i) < W - m.r - 30 || a.length === 1 : x(a[k+1].i) - x(t.i) > 64).forEach(t => g += `<line x1="${x(t.i)}" x2="${x(t.i)}" y1="${m.t}" y2="${Ht-m.b}" stroke="var(--grid)"/><text x="${x(t.i)+4}" y="${Ht-7}">${esc(t.label)}</text>`);
+  (o.refs || []).forEach(r => g += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(r.v)}" y2="${y(r.v)}" stroke="var(--axis)" stroke-width="1.5"/><text x="${m.l+4}" y="${y(r.v)-4}">${esc(r.label)}</text>`);
+  const ends = [];
+  o.series.forEach(s => { let d = "", pen = false, last = null;
+    for (let i = 0; i <= upto && i < s.vals.length; i++){ const v = s.vals[i]; if (v == null){ pen = false; continue; } d += (pen ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1); pen = true; last = i; }
+    if (!d) return;
+    g += `<path clip-path="url(#${cid})" d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.w || 2}" stroke-linejoin="round" stroke-linecap="round" opacity="${s.op || 1}"/>`;
+    if (s.mark) ends.push({s, i:last, y:Math.max(m.t, Math.min(Ht - m.b, y(s.vals[last])))}); });
+  ends.sort((a, b) => a.y - b.y); ends.forEach((e, k) => { e.ly = e.y; if (k && e.ly - ends[k-1].ly < 14) e.ly = ends[k-1].ly + 14; });
+  ends.forEach(e => g += `<circle cx="${x(e.i)}" cy="${e.y}" r="4.5" fill="${e.s.color}" stroke="var(--surface)" stroke-width="2"/>` + (e.s.label ? `<text class="lab" x="${x(e.i)+9}" y="${e.ly+4}">${esc(e.s.label)}</text>` : ""));
+  host.innerHTML = `<svg class="chart" height="${Ht}" viewBox="0 0 ${W} ${Ht}" role="img" aria-label="${esc(o.aria || "Line chart")}">${g}<line class="xh" y1="${m.t}" y2="${Ht-m.b}" stroke="var(--muted)" style="display:none"/><rect x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
+  const svg = host.firstChild, xh = $(".xh", svg);
+  svg.addEventListener("mousemove", ev => { const r = svg.getBoundingClientRect(), mx = (ev.clientX - r.left) * W / r.width, my = (ev.clientY - r.top) * Ht / r.height;
+    const i = Math.max(0, Math.min(upto, Math.round((mx - m.l) / iw * (n - 1))));
+    let near = null, best = 1e9; o.series.forEach(s => { const v = s.vals[i]; if (v != null && Math.abs(y(v) - my) < best){ best = Math.abs(y(v) - my); near = s; } });
+    xh.setAttribute("x1", x(i)); xh.setAttribute("x2", x(i)); xh.style.display = "";
+    if (o.tip) showTip(o.tip(i, near), ev); });
+  svg.addEventListener("mouseleave", () => { xh.style.display = "none"; hideTip(); });
+}
+const tipRow = (color, name, val) => `<div class="r"><span><i style="background:${color}"></i>${esc(name)}</span><b>${val}</b></div>`;
+const dayTicks = (labels) => { const out = []; labels.forEach((d, i) => { if (!i || d !== labels[i-1]) out.push({i, label:d}); }); return out; };
+const official = S.flatMap(s => [s.value, s.start, ...Object.values(s.equity)]);
+const raceDomain = [Math.min(150, ...official), Math.max(...official)];
+const histDays = H.t.map(t => etDay.format(new Date(t * 1000)));
+
+/* ---------- shell ---------- */
+const TABS = [["overview","Overview"],["strategies","Strategies"],["trades","Trades"],["learning","What's working"],["live","Live bot"],["crowd","WSB crowd"],["insiders","Insider buys"],["activity","Activity log"]];
+const render = {};
+$("#nav").innerHTML = TABS.map(([id, t]) => `<button data-tab="${id}">${t}</button>`).join("");
+$("#main").innerHTML = TABS.map(([id]) => `<section id="${id}"></section>`).join("");
+function go(id){ if (!render[id]) id = "overview"; document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.tab === id));
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("on", s.id === id)); if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id); render[id](); }
+$("#nav").addEventListener("click", ev => { const b = ev.target.closest("button"); if (b) go(b.dataset.tab); });
+const current = () => (location.hash.slice(1) || "overview");
+let rz, lastW = 0; new ResizeObserver(() => { const w = $("#main").clientWidth; if (w === lastW) return; const first = !lastW; lastW = w; if (first) return;
+  clearTimeout(rz); rz = setTimeout(() => { if (!playing) go(current()); }, 150); }).observe($("#main"));
+{ const c = D.commit, gen = new Date(D.generated);
+  $("#stamp").textContent = "Paper trading · bot data as of " + (c ? etFmt.format(new Date(c.t * 1000)) + " ET" : "unknown") + " · page built " + gen.toLocaleTimeString([], {hour:"2-digit", minute:"2-digit"}); }
+
+/* ---------- overview ---------- */
+function statusChip(s){ if (s.stopped) return `<span class="chip"><i style="background:var(--crit)"></i>Stopped ${esc(s.stopped)}</span>`;
+  if (s.value < s.start * .8) return `<span class="chip"><i style="background:var(--warn)"></i>Near $${(s.start*.75).toFixed(0)} stop</span>`;
+  return `<span class="chip"><i style="background:var(--good)"></i>Running</span>`; }
+render.overview = () => {
+  const el = $("#overview"), tot = S.reduce((a, s) => a + s.value, 0), st = S.reduce((a, s) => a + s.start, 0), today = S.reduce((a, s) => a + s.today, 0);
+  const L = D.learning, B = D.briefing || {}, acct = B.account, beat = spy ? S.filter(s => s !== spy && s.ret > spy.ret).length : null;
+  const lead = S[0], last = S[S.length - 1];
+  el.innerHTML = `<div class="tiles">
+    <div class="tile"><div class="l">Tournament total (${S.length} strategies)</div><div class="v">${usd(tot)}</div><div class="d"><span class="${cls(tot-st)}">${usd(tot-st, true)} (${pct(tot/st-1)})</span> vs ${usd(st)} start</div></div>
+    <div class="tile"><div class="l">Change on latest day</div><div class="v ${cls(today)}">${usd(today, true)}</div><div class="d">${S.filter(s => s.today > 0).length} up · ${S.filter(s => s.today < 0).length} down</div></div>
+    <div class="tile"><div class="l">Leader</div><div class="v small">${esc(lead.name)}</div><div class="d"><span class="${cls(lead.ret)}">${pct(lead.ret)}</span> · ${usd(lead.value)}</div></div>
+    <div class="tile"><div class="l">Last place</div><div class="v small">${esc(last.name)}</div><div class="d"><span class="${cls(last.ret)}">${pct(last.ret)}</span> · ${usd(last.value)}</div></div>
+    ${beat == null ? "" : `<div class="tile"><div class="l">Beating SPY buy-and-hold</div><div class="v">${beat} of ${S.length - 1}</div><div class="d">SPY is ${pct(spy.ret)}</div></div>`}
+    ${L && L.total ? `<div class="tile"><div class="l">Completed trades</div><div class="v">${L.total.n}</div><div class="d">${pct(L.total.win, 0, false)} won · <span class="${cls(L.total.pnl)}">${usd(L.total.pnl, true)}</span></div></div>` : ""}
+    ${acct ? `<div class="tile"><div class="l">Live paper account</div><div class="v">${usd(acct.equity)}</div><div class="d"><span class="${cls(acct.equity-acct.start)}">${usd(acct.equity-acct.start, true)}</span> · holding ${esc(acct.holding)}</div></div>` : ""}
+    ${B.mood ? `<div class="tile"><div class="l">Market mood</div><div class="v" style="text-transform:capitalize">${esc(B.mood)}</div><div class="d">SPY ${esc((B.indexes || [{}])[0].chg || "")}</div></div>` : ""}
+  </div>
+  <div class="grid2">
+    <div class="card"><h2>The race: every strategy's value over time</h2><p class="note">Each strategy started with a virtual $200. Click a strategy on the right to highlight it, or press Play to replay the tournament.</p>
+      <div class="legend" id="raceLegend"></div><div id="race"></div>
+      <div class="controls"><button class="btn" id="play">▶ Play</button><input type="range" id="scrub" min="0" max="${Math.max(HN-1, 0)}" value="${Math.max(HN-1, 0)}" aria-label="Replay position"><span class="sub" id="when" style="min-width:150px;text-align:right"></span></div></div>
+    <div class="card"><h2>Leaderboard</h2><p class="note" id="boardNote"></p><div class="board" id="board"></div></div>
+  </div>
+  <div class="grid2e">
+    <div class="card"><h2>Market today</h2><p class="note">${B.title ? "From the bot's briefing, " + esc(B.title) + ". " + esc(B.mood_words || "") : "No briefing yet."}</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">${(B.indexes || []).map(i => `<span class="chip">${esc(i.name)} <b class="${cls(parseFloat(i.chg))}">${esc(i.chg)}</b></span>`).join("")}${B.sectors_up ? `<span class="chip">Sectors up: ${esc(B.sectors_up)}</span>` : ""}</div>
+      <div id="sectors"></div></div>
+    <div class="card"><h2>Open positions</h2><p class="note">What every tournament strategy is holding right now.</p><div class="scroll tall" id="openpos"></div></div>
+  </div>`;
+  const sec = B.sectors || [], smax = Math.max(1, ...sec.map(s => Math.abs(s.chg)));
+  $("#sectors").innerHTML = sec.map(s => `<div class="hb" data-tip="${esc(s.sym)}: ${s.chg > 0 ? "+" : ""}${s.chg}% today"><span>${esc(s.sym)}</span><div class="dv"><b class="${s.chg >= 0 ? "p" : "m"}" style="width:${Math.abs(s.chg)/smax*50}%"></b></div><span class="num ${cls(s.chg)}" style="text-align:right">${s.chg > 0 ? "+" : ""}${s.chg.toFixed(1)}%</span></div>`).join("") || '<p class="empty">No sector data.</p>';
+  const rows = S.flatMap(s => s.positions.map(p => ({s, p})));
+  $("#openpos").innerHTML = rows.length ? `<table><tr><th>Strategy</th><th>Holding</th><th class="n">Qty</th><th class="n">Entry</th><th class="n">Cost</th><th>Since</th></tr>${rows.map(({s, p}) => `<tr class="click" data-s="${esc(s.name)}"><td>${esc(s.name)}</td><td class="sym${p.sym.includes(":") ? " long" : ""}">${esc(p.sym)}</td><td class="n">${p.qty.toFixed(3)}</td><td class="n">${usd(p.entry)}</td><td class="n">${usd(p.cost)}</td><td>${esc(p.since || "")}</td></tr>`).join("")}</table>` : '<p class="empty">Everything is in cash.</p>';
+  $("#openpos").onclick = ev => { const r = ev.target.closest("tr[data-s]"); if (r){ picked = r.dataset.s; store.set("picked", picked); go("strategies"); } };
+  const scrub = $("#scrub"), play = $("#play");
+  scrub.oninput = () => { stop(); draw(+scrub.value); };
+  function stop(){ if (playing){ clearInterval(playing); playing = null; play.textContent = "▶ Play"; } }
+  play.onclick = () => { if (playing) return stop(); if (+scrub.value >= HN - 1) scrub.value = 0; play.textContent = "❚❚ Pause";
+    playing = setInterval(() => { if (+scrub.value >= HN - 1) return stop(); scrub.value = +scrub.value + 1; draw(+scrub.value); }, 140); draw(+scrub.value); };
+  $("#board").onclick = ev => { const r = ev.target.closest(".row"); if (r){ focus = r.dataset.s; store.set("focus", focus); draw(+scrub.value); } };
+  function draw(i){
+    const others = S.filter(s => s.name !== focus && s.name !== "spy_hold").map(s => ({name:s.name, color:"var(--muted)", w:1.2, op:.38, vals:H.series[s.name] || []}));
+    const hi = []; if (spy && focus !== "spy_hold") hi.push({name:"SPY buy-and-hold", color:"var(--s2)", vals:H.series.spy_hold || [], mark:true, label:"SPY"});
+    hi.push({name:focus, color:"var(--s1)", w:2.5, vals:H.series[focus] || [], mark:true, label:focus});
+    $("#raceLegend").innerHTML = `<span><i style="background:var(--s1)"></i>${esc(focus)} (<a href="#strategies" id="toDetail">details</a>)</span>${spy && focus !== "spy_hold" ? '<span><i style="background:var(--s2)"></i>SPY buy-and-hold benchmark</span>' : ""}<span><i style="background:var(--muted);opacity:.5"></i>Every other strategy</span>`;
+    $("#toDetail").onclick = ev => { ev.preventDefault(); picked = focus; store.set("picked", picked); go("strategies"); };
+    lineChart($("#race"), {n:HN, height:340, padRight:150, series:[...others, ...hi], upto:i, xTicks:dayTicks(histDays), yFmt:v => "$" + v,
+      domain:raceDomain,
+      refs:[{v:200, label:"$200 start"}, {v:150, label:"$150 stop rule"}], aria:"Value of every strategy over time",
+      tip:(k, near) => `<div class="sub">${etFmt.format(new Date(H.t[k] * 1000))} ET</div>` + hi.slice().reverse().filter(s => s.vals[k] != null).map(s => tipRow(s.color, s.name, usd(s.vals[k]))).join("") + (near && !hi.includes(near) ? tipRow("var(--muted)", near.name, usd(near.vals[k])) : "")});
+    $("#when").textContent = HN ? etFmt.format(new Date(H.t[i] * 1000)) + " ET" : "";
+    const atEnd = i >= HN - 1, rows = S.map(s => { const v = atEnd ? s.value : (H.series[s.name] || [])[i]; return v == null ? null : {s, v, r:v / s.start - 1}; }).filter(Boolean).sort((a, b) => b.r - a.r);
+    const mx = Math.max(.05, ...S.map(s => Math.abs(s.ret)), ...rows.map(r => Math.abs(r.r)));
+    $("#boardNote").textContent = atEnd ? "Ranked by return since each strategy started. Latest values." : "Standings at " + $("#when").textContent + ".";
+    $("#board").innerHTML = rows.map((r, k) => `<div class="row${r.s.name === focus ? " on" : ""}" data-s="${esc(r.s.name)}" data-tip="<b>${esc(r.s.name)}</b><br>${esc(r.s.about)}<br>${usd(r.v)} · ${pct(r.r)}${atEnd ? " · holding " + esc(r.s.positions.map(p => p.sym.length > 8 ? "options" : p.sym).join(", ") || "cash") : ""}">
+      <span class="rk">${k + 1}</span><span class="nm">${esc(r.s.name)}</span><div class="dv"><b class="${r.r >= 0 ? "p" : "m"}" style="width:${Math.abs(r.r)/mx*50}%"></b></div><span class="num">${usd(r.v)}</span><span class="num ${cls(r.r)}">${pct(r.r)}</span></div>`).join("");
+  }
+  draw(HN - 1);
+};
+
+/* ---------- strategies ---------- */
+render.strategies = () => {
+  const el = $("#strategies"), s = byName[picked] || S[0];
+  const closedP = s.closed ? pct(s.wins / s.closed, 0, false) : "-", vals = H.series[s.name] || [];
+  el.innerHTML = `<div class="side"><div class="card list" style="padding:8px">${S.map(x => `<button data-s="${esc(x.name)}" class="${x === s ? "on" : ""}"><span>${esc(x.name)}</span><span class="${cls(x.ret)}">${pct(x.ret)}</span></button>`).join("")}</div>
+  <div>
+    <div class="card"><h2 style="font-size:17px">${esc(s.name)} ${statusChip(s)} <span class="chip">${esc(s.family)}</span></h2><p class="note" style="margin:4px 0 0">${esc(s.about) || "No description"}. Trading since ${esc(s.since || "-")}.</p></div>
+    <div class="tiles">
+      <div class="tile"><div class="l">Value</div><div class="v">${usd(s.value)}</div><div class="d ${cls(s.ret)}">${pct(s.ret)} since start</div></div>
+      <div class="tile"><div class="l">Latest day</div><div class="v ${cls(s.today)}">${usd(s.today, true)}</div><div class="d">${esc(s.day || "")}</div></div>
+      <div class="tile"><div class="l">Cash</div><div class="v">${usd(s.cash)}</div><div class="d">${usd(Math.max(s.value - s.cash, 0))} invested</div></div>
+      <div class="tile"><div class="l">Completed trades</div><div class="v">${s.closed}</div><div class="d">${closedP} won · ${s.n_trades} orders</div></div>
+      <div class="tile"><div class="l">Realised profit/loss</div><div class="v ${cls(s.realized)}">${usd(s.realized, true)}</div><div class="d">${spy && s !== spy ? ((s.ret - spy.ret) * 100 > 0 ? "+" : "") + ((s.ret - spy.ret) * 100).toFixed(1) + " pts vs SPY" : "benchmark"}</div></div>
+    </div>
+    <div class="card"><h2>Value over time</h2><p class="note">Rebuilt from the state the cloud bot saves about every 15 minutes.</p><div id="sChart"></div></div>
+    <div class="card"><h2>Holding now</h2><div class="scroll">${s.positions.length ? `<table><tr><th>Symbol</th><th class="n">Qty</th><th class="n">Entry price</th><th class="n">Cost</th><th>Since</th></tr>${s.positions.map(p => `<tr><td class="sym${p.sym.includes(":") ? " long" : ""}">${esc(p.sym)}</td><td class="n">${p.qty.toFixed(4)}</td><td class="n">${usd(p.entry)}</td><td class="n">${usd(p.cost)}</td><td>${esc(p.since || "")}</td></tr>`).join("")}</table>` : '<p class="empty">Nothing, all cash.</p>'}</div></div>
+    <div class="card"><h2>Every order (${s.trades.length})</h2><p class="note">Newest first. Times are US Eastern.</p><div class="scroll tall">${s.trades.length ? `<table><tr><th>Time</th><th>Side</th><th>Symbol</th><th class="n">Qty</th><th class="n">Price</th><th class="n">Amount</th><th class="n">P/L</th><th>Why</th><th>Mood</th></tr>${s.trades.slice().reverse().map(t => `<tr><td style="white-space:nowrap">${tradeT(t.t)}</td><td>${t.side === "buy" ? "Buy" : "Sell"}</td><td class="sym${t.sym.includes(":") ? " long" : ""}">${esc(t.sym)}</td><td class="n">${(+t.qty).toFixed(3)}</td><td class="n">${usd(t.price)}</td><td class="n">${usd(t.usd)}</td><td class="n ${cls(t.pnl)}">${t.pnl == null ? "" : usd(t.pnl, true)}</td><td class="w">${esc(t.reason)}</td><td>${esc(t.mood || "")}</td></tr>`).join("")}</table>` : '<p class="empty">No orders yet.</p>'}</div></div>
+  </div></div>`;
+  $(".list", el).onclick = ev => { const b = ev.target.closest("button"); if (b){ picked = b.dataset.s; store.set("picked", picked); render.strategies(); } };
+  lineChart($("#sChart"), {n:HN, height:240, padRight:20, series:[{name:s.name, color:"var(--s1)", vals, mark:true}], xTicks:dayTicks(histDays), yFmt:v => "$" + v, refs:[{v:s.start, label:"$" + s.start + " start"}], aria:s.name + " value over time",
+    tip:k => `<div class="sub">${etFmt.format(new Date(H.t[k] * 1000))} ET</div>` + (vals[k] == null ? "Not started yet" : tipRow("var(--s1)", s.name, usd(vals[k])))});
+};
+
+/* ---------- trades ---------- */
+let tf = {s:"", r:"", q:""};
+render.trades = () => {
+  const el = $("#trades"), T = D.trips, L = D.learning && D.learning.total;
+  if (!T.length){ el.innerHTML = '<div class="card"><p class="empty">No completed trades yet.</p></div>'; return; }
+  const wins = T.filter(t => t.pnl > 0), losses = T.filter(t => t.pnl <= 0), sum = a => a.reduce((x, t) => x + t.pnl, 0);
+  el.innerHTML = `<div class="tiles">
+    <div class="tile"><div class="l">Completed trades</div><div class="v">${T.length}</div><div class="d">${wins.length} wins · ${losses.length} losses</div></div>
+    <div class="tile"><div class="l">Win rate</div><div class="v">${pct(wins.length / T.length, 0, false)}</div></div>
+    <div class="tile"><div class="l">Total profit/loss</div><div class="v ${cls(sum(T))}">${usd(sum(T), true)}</div></div>
+    <div class="tile"><div class="l">Average trade</div><div class="v ${cls(L && L.mean)}">${L ? pct(L.mean, 2) : "-"}</div><div class="d">after costs</div></div>
+    <div class="tile"><div class="l">Average win / loss</div><div class="v small">${L ? pct(L.avg_win, 2) + " / " + pct(L.avg_loss, 2) : "-"}</div></div>
+  </div>
+  <div class="grid2e">
+    <div class="card"><h2>Running total of realised profit/loss</h2><p class="note">All strategies together, one step per completed trade, in time order.</p><div id="cum"></div></div>
+    <div class="card"><h2>How big are the wins and losses?</h2><p class="note">Number of trades by return on the money put in.</p><div id="hist"></div></div>
+  </div>
+  <div class="card"><h2>Trade log</h2>
+    <div class="controls" style="margin:8px 0 12px"><select id="fS" aria-label="Strategy"><option value="">All strategies</option>${S.map(s => `<option${tf.s === s.name ? " selected" : ""}>${esc(s.name)}</option>`).join("")}</select>
+    <select id="fR" aria-label="Result"><option value="">Wins and losses</option><option value="w"${tf.r === "w" ? " selected" : ""}>Wins only</option><option value="l"${tf.r === "l" ? " selected" : ""}>Losses only</option></select>
+    <input type="search" id="fQ" placeholder="Ticker" value="${esc(tf.q)}" aria-label="Ticker"><span class="sub" id="fN"></span></div>
+    <div class="scroll tall" id="tlog"></div></div>`;
+  let run = 0; const cum = T.map(t => run += t.pnl), days = T.map(t => tradeT(t.t_out).split(" ").slice(0, 2).join(" "));
+  lineChart($("#cum"), {n:T.length, height:260, series:[{name:"Realised P/L", color:"var(--s1)", vals:cum, mark:true}], xTicks:dayTicks(days), yFmt:v => (v < 0 ? "-$" : "$") + Math.abs(v), refs:[{v:0, label:"break-even"}], aria:"Cumulative realised profit and loss",
+    tip:k => `<div class="sub">${tradeT(T[k].t_out)} ET</div><b>${esc(T[k].strategy)}</b> · ${esc(T[k].ticker)}<br>This trade: <b class="${cls(T[k].pnl)}">${usd(T[k].pnl, true)}</b> (${pct(T[k].ret, 2)})<br>Running total: <b>${usd(cum[k], true)}</b>`});
+  const edges = [-5,-4,-3,-2,-1,0,1,2,3,4,5], bins = Array.from({length:12}, () => 0);
+  T.forEach(t => { const r = t.ret * 100; bins[r < -5 ? 0 : r >= 5 ? 11 : Math.floor(r) + 6]++; });
+  const lab = i => i === 0 ? "under -5%" : i === 11 ? "5% or more" : `${edges[i-1]}% to ${edges[i]}%`, bm = Math.max(...bins), W = Math.max($("#hist").clientWidth, 300), Hh = 260, bl = Hh - 26, bw = (W - 20) / 12;
+  $("#hist").innerHTML = `<svg class="chart" height="${Hh}" viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Histogram of trade returns"><line x1="10" x2="${W-10}" y1="${bl}" y2="${bl}" stroke="var(--axis)"/>${bins.map((c, i) => { const h = c / bm * (bl - 26), w = Math.min(bw - 2, 24), cx = 10 + bw * i + bw / 2, col = i < 6 ? "var(--loss)" : "var(--gain)";
+    return `<g data-tip="<b>${c}</b> trade${c === 1 ? "" : "s"} returned ${lab(i)}">${c ? `<path d="M${cx-w/2} ${bl}V${bl-h+4}q0 -4 4 -4h${w-8}q4 0 4 4V${bl}z" fill="${col}"/><text class="lab" x="${cx}" y="${bl-h-5}" text-anchor="middle">${c}</text>` : ""}<rect x="${cx-bw/2}" y="0" width="${bw}" height="${Hh}" fill="transparent"/>${i === 0 || i === 11 ? `<text x="${cx}" y="${Hh-8}" text-anchor="middle">${i ? "more" : "less"}</text>` : ""}</g>`; }).join("")}${edges.map((e, i) => `<text x="${10 + bw * (i + 1)}" y="${Hh-8}" text-anchor="middle">${e}%</text>`).join("")}<text x="${W-10}" y="12" text-anchor="end">return per trade, %</text></svg>`;
+  const draw = () => { const q = tf.q.trim().toUpperCase(), rows = T.filter(t => (!tf.s || t.strategy === tf.s) && (!tf.r || (tf.r === "w") === (t.pnl > 0)) && (!q || t.sym.toUpperCase().includes(q))).reverse();
+    $("#fN").textContent = rows.length + " trades · " + usd(sum(rows), true);
+    $("#tlog").innerHTML = rows.length ? `<table><tr><th>Closed (ET)</th><th>Strategy</th><th>Symbol</th><th class="n">Held</th><th class="n">Cost</th><th class="n">P/L</th><th class="n">Return</th><th>Why bought</th><th>Why sold</th><th>Mood</th></tr>${rows.map(t => `<tr><td style="white-space:nowrap">${tradeT(t.t_out)}</td><td>${esc(t.strategy)}</td><td class="sym${t.sym.includes(":") ? " long" : ""}">${esc(t.sym)}</td><td class="n">${held(t.mins)}</td><td class="n">${usd(t.cost)}</td><td class="n ${cls(t.pnl)}">${usd(t.pnl, true)}</td><td class="n ${cls(t.ret)}">${pct(t.ret, 2)}</td><td class="w">${esc(t.why_in)}</td><td class="w">${esc(t.why_out)}</td><td>${esc(t.mood)}</td></tr>`).join("")}</table>` : '<p class="empty">No trades match.</p>'; };
+  $("#fS").onchange = e => { tf.s = e.target.value; draw(); }; $("#fR").onchange = e => { tf.r = e.target.value; draw(); }; $("#fQ").oninput = e => { tf.q = e.target.value; draw(); };
+  draw();
+};
+
+/* ---------- learning ---------- */
+render.learning = () => {
+  const el = $("#learning"), L = D.learning;
+  if (!L || !L.total){ el.innerHTML = '<div class="card"><p class="empty">No completed trades to learn from yet.</p></div>'; return; }
+  const small = L.wins - L.big_wins, sp = L.wins ? small / L.wins * 100 : 0;
+  const verdict = v => { const c = v.startsWith("working") ? "var(--good)" : v.startsWith("losing") ? "var(--crit)" : v.startsWith("too early") ? "var(--axis)" : "var(--warn)"; return `<span class="chip"><i style="background:${c}"></i>${esc(v)}</span>`; };
+  el.innerHTML = `<div class="card"><h2>How to read this</h2><p class="note" style="margin:4px 0 0">${L.total.n} completed trades over ${L.days.length} trading day(s). A group is only called <b>working</b> or <b>losing</b> once it has ${L.min_trades}+ trades and its average is about 2 standard errors from zero, so it is unlikely to be luck. Until then it is "too early" or "no clear edge yet".</p></div>
+  <div class="card"><h2>Your 80/20 goal</h2><p class="note">Of ${L.wins} winning trades, ${small} were small and ${L.big_wins} were big (5%+). Target mix is 80 small : 20 big.</p>
+    <div class="seg" data-tip="${small} small wins (${sp.toFixed(0)}%) · ${L.big_wins} big wins (${(100-sp).toFixed(0)}%)"><b style="width:${sp}%;background:var(--s1)"></b><b style="width:${100-sp}%;background:var(--s2)"></b></div>
+    <div class="legend" style="margin:8px 0 0"><span><i style="background:var(--s1)"></i>Small wins ${sp.toFixed(0)}%</span><span><i style="background:var(--s2)"></i>Big wins ${(100-sp).toFixed(0)}%</span></div></div>
+  ${L.tables.filter(t => t.rows.length).map(t => { const mx = Math.min(.05, Math.max(.002, ...t.rows.map(r => Math.abs(r.mean))));
+    return `<div class="card"><h2>${esc(t.title)}</h2><div class="scroll"><table><tr><th></th><th>Trades (of ${L.min_trades} needed)</th><th class="n">Win rate</th><th style="width:22%">Average trade</th><th class="n"></th><th class="n">Avg win</th><th class="n">Avg loss</th><th class="n">Total</th><th>Verdict</th></tr>
+    ${t.rows.map(r => `<tr><td>${esc(r.key)}</td><td><div style="display:flex;gap:8px;align-items:center"><span style="min-width:22px;text-align:right">${r.n}</span><div class="meter" style="flex:1" data-tip="${r.n} of ${L.min_trades} trades needed for a verdict"><b style="width:${Math.min(r.n / L.min_trades, 1) * 100}%"></b></div></div></td><td class="n">${pct(r.win, 0, false)}</td>
+      <td><div class="dv" data-tip="Average trade ${pct(r.mean, 2)}"><b class="${r.mean >= 0 ? "p" : "m"}" style="width:${Math.min(Math.abs(r.mean) / mx, 1) * 50}%"></b></div></td><td class="n ${cls(r.mean)}">${pct(r.mean, 2)}</td><td class="n">${pct(r.avg_win, 2)}</td><td class="n">${pct(r.avg_loss, 2)}</td><td class="n ${cls(r.pnl)}">${usd(r.pnl, true)}</td><td>${verdict(r.verdict)}</td></tr>`).join("")}</table></div></div>`; }).join("")}`;
+};
+
+/* ---------- live bot ---------- */
+render.live = () => {
+  const el = $("#live"), V = D.live, C = V.config || {}, st = V.state || {}, acct = (D.briefing || {}).account, ent = Object.entries(st.entries || {});
+  const real = V.runs.filter(r => r.lines.some(l => !/min to close/.test(l.msg))).reverse(), skipped = V.runs.length - real.length;
+  const kill = st.start_equity != null && C.KILL_SWITCH_DRAWDOWN != null ? st.start_equity * (1 - C.KILL_SWITCH_DRAWDOWN) : null;
+  el.innerHTML = `<div class="tiles">
+    <div class="tile"><div class="l">Paper account equity</div><div class="v">${acct ? usd(acct.equity) : "-"}</div><div class="d">${acct ? `<span class="${cls(acct.equity - acct.start)}">${usd(acct.equity - acct.start, true)}</span> vs ${usd(acct.start)} start` : "from the latest briefing"}</div></div>
+    <div class="tile"><div class="l">Cash</div><div class="v">${acct ? usd(acct.cash) : "-"}</div><div class="d">${(st.unsettled || []).length ? (st.unsettled.length + " sale(s) still settling") : "nothing waiting to settle"}</div></div>
+    <div class="tile"><div class="l">Holding</div><div class="v small">${ent.length ? ent.map(([s]) => esc(s)).join(", ") : "Cash"}</div><div class="d">${ent.map(([s, d]) => esc(s) + " since " + esc(d)).join(" · ") || "no open positions"}</div></div>
+    <div class="tile"><div class="l">Last traded run</div><div class="v small">${esc(st.last_run || "never")}</div><div class="d">runs once a day near the close</div></div>
+    ${kill != null ? `<div class="tile"><div class="l">Kill switch</div><div class="v small">below ${usd(kill)}</div><div class="d">no new buys under this equity</div></div>` : ""}
+  </div>
+  <div class="grid2e">
+    <div class="card"><h2>How the live bot decides</h2><p class="note">Short-term mean reversion: buy dips in uptrends. Read straight from config.py.</p>
+      <ol class="rules"><li><b>Buy</b> when the ${C.RSI_PERIOD}-day RSI drops below ${C.RSI_ENTRY} while the price is above its ${C.TREND_SMA}-day average.</li>
+      <li><b>Sell</b> when the price closes back above its ${C.EXIT_SMA}-day average.</li><li><b>Stop loss</b>: sell if down ${(C.STOP_LOSS * 100).toFixed(0)}% from entry.</li>
+      <li><b>Time stop</b>: sell after ${C.MAX_HOLD_DAYS} trading days regardless.</li><li>At most <b>${C.MAX_POSITIONS} positions</b>, equal slots, settled cash only, minimum order ${usd(C.MIN_ORDER_USD)}.</li>
+      <li><b>Kill switch</b>: no new buys if equity falls ${(C.KILL_SWITCH_DRAWDOWN * 100).toFixed(0)}% below the start.</li></ol>
+      <p class="note" style="margin:12px 0 6px">Universe it can trade (${(C.UNIVERSE || []).length} ETFs)</p><div style="display:flex;gap:6px;flex-wrap:wrap">${(C.UNIVERSE || []).map(u => `<span class="chip">${st.entries && st.entries[u] ? '<i style="background:var(--s1)"></i>' : ""}${esc(u)}</span>`).join("")}</div></div>
+    <div class="card"><h2>Run history</h2><p class="note">From logs/bot.log, newest first. Log times are UTC.${skipped ? ` ${skipped} early run(s) that exited because it was not yet the last 30 minutes are hidden.` : ""}</p>
+      <div class="tall">${real.map(r => `<div class="run"><b>${esc(r.t)}</b> <span class="chip">${esc(r.mode)}</span>${r.equity != null ? ` <span class="sub">equity ${usd(r.equity)} · cash ${usd(r.cash)}</span>` : ""}<div class="log" style="margin-top:6px">${r.lines.map(l => `<div class="${/^BUY/.test(l.msg) ? "buy" : /^SELL/.test(l.msg) ? "sell" : l.level !== "INFO" ? "warnl" : ""}">${esc(l.msg)}</div>`).join("")}</div></div>`).join("") || '<p class="empty">No runs logged yet.</p>'}</div></div>
+  </div>`;
+};
+
+/* ---------- crowd ---------- */
+render.crowd = () => {
+  const el = $("#crowd"), F = D.forum;
+  if (!F){ el.innerHTML = '<div class="card"><p class="empty">No forum data collected yet.</p></div>'; return; }
+  const names = Object.keys(F.series), col = i => `var(--s${i + 1})`, heldNow = new Set(((byName.wsb_crowd || {}).positions || []).map(p => p.sym));
+  const days = F.t.map(t => etDay.format(new Date(t)));
+  el.innerHTML = `<div class="card"><h2>WallStreetBets mentions over time</h2><p class="note">The ${names.length} most-mentioned tickers right now, across ${F.snapshots} snapshots. This is the data the wsb_crowd strategy trades on.</p>
+    <div class="legend">${names.map((n, i) => `<span><i style="background:${col(i)}"></i>${esc(n)}</span>`).join("")}</div><div id="fChart"></div></div>
+  <div class="card"><h2>Most mentioned right now</h2><p class="note">Snapshot from ${etFmt.format(new Date(F.captured))} ET.${heldNow.size ? " Marked tickers are held by wsb_crowd." : ""}</p><div class="scroll"><table><tr><th class="n">#</th><th>Rank 24h ago</th><th>Ticker</th><th>Name</th><th class="n">Mentions</th><th class="n">24h ago</th><th class="n">Upvotes</th></tr>
+    ${F.top.map(r => { const mv = r.rank_24h_ago ? r.rank_24h_ago - r.rank : null; return `<tr><td class="n">${r.rank}</td><td>${mv == null ? "new" : mv > 0 ? `<span class="pos">▲ ${mv}</span> from ${r.rank_24h_ago}` : mv < 0 ? `<span class="neg">▼ ${-mv}</span> from ${r.rank_24h_ago}` : "same"}</td><td><b>${esc(r.ticker)}</b>${heldNow.has(r.ticker) ? ' <span class="chip"><i style="background:var(--s1)"></i>held</span>' : ""}</td><td>${esc(r.name)}</td><td class="n">${(r.mentions ?? 0).toLocaleString()}</td><td class="n">${(r.mentions_24h_ago ?? 0).toLocaleString()}</td><td class="n">${(r.upvotes ?? 0).toLocaleString()}</td></tr>`; }).join("")}</table></div></div>`;
+  const series = names.map((n, i) => ({name:n, color:col(i), vals:F.series[n], mark:true, label:n}));
+  lineChart($("#fChart"), {n:F.t.length, height:320, padRight:70, series, xTicks:dayTicks(days), yFmt:v => v.toLocaleString(), aria:"WallStreetBets mentions over time",
+    tip:k => `<div class="sub">${etFmt.format(new Date(F.t[k]))} ET</div>` + series.filter(s => s.vals[k] != null).sort((a, b) => b.vals[k] - a.vals[k]).map(s => tipRow(s.color, s.name, s.vals[k].toLocaleString())).join("")});
+};
+
+/* ---------- insiders ---------- */
+let inf = {q:"", sort:"new", big:false};
+render.insiders = () => {
+  const el = $("#insiders"), I = D.insiders, heldNow = new Set(((byName.insider_buys || {}).positions || []).map(p => p.sym));
+  if (!I.length){ el.innerHTML = '<div class="card"><p class="empty">No insider purchases collected yet.</p></div>'; return; }
+  const role = r => [r.officer ? (r.title || "Officer") : "", r.director ? "Director" : "", r.ten_pct ? "10% owner" : ""].filter(Boolean).join(", ") || "-";
+  el.innerHTML = `<div class="tiles"><div class="tile"><div class="l">Insider purchases seen</div><div class="v">${I.length}</div><div class="d">SEC Form 4 open-market buys</div></div>
+    <div class="tile"><div class="l">Total bought</div><div class="v">${big(I.reduce((a, r) => a + (r.value || 0), 0))}</div></div>
+    <div class="tile"><div class="l">Officer or director buys of $100k+</div><div class="v">${I.filter(r => (r.officer || r.director) && r.value >= 1e5).length}</div><div class="d">the kind insider_buys copies</div></div>
+    <div class="tile"><div class="l">insider_buys is holding</div><div class="v small">${[...heldNow].map(esc).join(", ") || "Cash"}</div></div></div>
+  <div class="card"><h2>Insider purchases</h2><div class="controls" style="margin:8px 0 12px"><input type="search" id="iQ" placeholder="Ticker, company or person" value="${esc(inf.q)}" aria-label="Search">
+    <select id="iS" aria-label="Sort"><option value="new">Newest first</option><option value="val"${inf.sort === "val" ? " selected" : ""}>Largest first</option></select>
+    <button class="btn${inf.big ? " on" : ""}" id="iB">Officer/director $100k+ only</button><span class="sub" id="iN"></span></div><div class="scroll tall" id="iT"></div></div>`;
+  const draw = () => { const q = inf.q.trim().toLowerCase(); let rows = I.filter(r => (!inf.big || ((r.officer || r.director) && r.value >= 1e5)) && (!q || [r.ticker, r.company, r.owner].join(" ").toLowerCase().includes(q)));
+    if (inf.sort === "val") rows = rows.slice().sort((a, b) => b.value - a.value); $("#iN").textContent = rows.length + " purchases";
+    $("#iT").innerHTML = `<table><tr><th>Seen (UTC)</th><th>Traded</th><th>Ticker</th><th>Company</th><th>Buyer</th><th>Role</th><th class="n">Shares</th><th class="n">Avg price</th><th class="n">Value</th></tr>${rows.map(r => `<tr><td style="white-space:nowrap">${esc((r.seen_utc || "").slice(0, 16).replace("T", " "))}</td><td style="white-space:nowrap">${esc(r.trade_date)}</td><td><b>${esc(r.ticker)}</b>${heldNow.has(r.ticker) ? ' <span class="chip"><i style="background:var(--s1)"></i>held</span>' : ""}</td><td class="w">${esc(r.company)}</td><td class="w">${esc(r.owner)}</td><td>${esc(role(r))}</td><td class="n">${(r.shares ?? 0).toLocaleString()}</td><td class="n">${usd(r.avg_price)}</td><td class="n">${big(r.value || 0)}</td></tr>`).join("")}</table>`; };
+  $("#iQ").oninput = e => { inf.q = e.target.value; draw(); }; $("#iS").onchange = e => { inf.sort = e.target.value; draw(); }; $("#iB").onclick = e => { inf.big = !inf.big; e.target.classList.toggle("on", inf.big); draw(); };
+  draw();
+};
+
+/* ---------- activity ---------- */
+let af = {k:"trades", q:""};
+render.activity = () => {
+  const el = $("#activity"), A = D.activity, kind = l => / BUY /.test(l.msg) ? "buy" : / SELL /.test(l.msg) ? "sell" : l.level !== "INFO" ? "warnl" : "";
+  el.innerHTML = `<div class="card"><h2>Tournament activity</h2><p class="note">The last ${A.length} lines of logs/tournament.log, newest first. Log times are UTC.</p>
+    <div class="controls" style="margin:0 0 12px">${[["trades","Buys and sells"],["buy","Buys"],["sell","Sells"],["warnl","Warnings"],["","Everything"]].map(([k, t]) => `<button class="btn${af.k === k ? " on" : ""}" data-k="${k}">${t}</button>`).join("")}<input type="search" id="aQ" placeholder="Search" value="${esc(af.q)}" aria-label="Search log"><span class="sub" id="aN"></span></div><div class="log tall" id="aL"></div></div>`;
+  const draw = () => { const q = af.q.trim().toLowerCase(), rows = A.filter(l => { const k = kind(l); return (af.k === "" || (af.k === "trades" ? (k === "buy" || k === "sell") : k === af.k)) && (!q || l.msg.toLowerCase().includes(q)); });
+    $("#aN").textContent = rows.length + " lines"; $("#aL").innerHTML = rows.map(l => `<div class="${kind(l)}"><span class="t">${esc(l.t.slice(5, 16))}</span>  ${esc(l.msg)}</div>`).join("") || '<p class="empty">Nothing matches.</p>'; };
+  el.querySelector(".controls").onclick = e => { const b = e.target.closest("button[data-k]"); if (b){ af.k = b.dataset.k; el.querySelectorAll("button[data-k]").forEach(x => x.classList.toggle("on", x === b)); draw(); } };
+  $("#aQ").oninput = e => { af.q = e.target.value; draw(); };
+  draw();
+};
+
+go(current());
+addEventListener("hashchange", () => go(current()));
+/* Live mode (python3 dashboard.py --serve): pick up fresh data every minute, unless a replay is running. */
+if (location.protocol.startsWith("http")) setInterval(() => { if (!playing && !document.hidden && !document.querySelector("input:focus")) location.reload(); }, 60000);
+</script>
+</body>
+</html>
