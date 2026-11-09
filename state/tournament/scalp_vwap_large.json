@@ -1,17 +1,44 @@
 {
  "start_cash": 200.0,
- "cash": 200.0,
- "positions": {},
- "trades": [],
+ "cash": 150.0,
+ "positions": {
+  "AAPL": {
+   "qty": 0.14286738848986028,
+   "entry": 349.9749,
+   "since": "2026-11-09"
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-11-09T13:41-05:00",
+   "side": "buy",
+   "sym": "AAPL",
+   "qty": 0.142867,
+   "price": 349.9749,
+   "usd": 50.0,
+   "reason": "vwap signal",
+   "mood": "strong"
+  }
+ ],
  "equity": {
   "2026-11-09": 200.0
  },
  "done": [],
  "memo": {
   "day": "2026-11-09",
-  "open": {},
-  "count": {},
-  "last_bar": {}
+  "open": {
+   "AAPL": {
+    "tp": 352.0747494,
+    "sl": 348.57500039999996,
+    "until": "2026-11-09T14:11:54.255684-05:00"
+   }
+  },
+  "count": {
+   "AAPL": 1
+  },
+  "last_bar": {
+   "AAPL": "2026-11-09T13:40:00-05:00"
+  }
  },
  "stopped": null
 }

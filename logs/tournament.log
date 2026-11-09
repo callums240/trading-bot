@@ -555,3 +555,8 @@
 2026-11-09 18:21:55,767 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 124.3  reversion signal
 2026-11-09 18:21:55,768 INFO scalp_reversion_large_fast value $199.85  cash $149.88  holding ['MSTR']
 2026-11-09 18:27:00,675 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
+2026-11-09 18:30:57,157 INFO scalp_reversion_large_fast SELL MSTR  $  50.24 @ 124.9  reversion exit: target  P/L $+0.24
+2026-11-09 18:30:57,158 INFO scalp_reversion_large_fast value $200.12  cash $200.12  holding -
+2026-11-09 18:41:56,067 INFO scalp_vwap_large  BUY  AAPL  $  50.00 @ 350  vwap signal
+2026-11-09 18:41:56,067 INFO scalp_vwap_large  value $199.98  cash $150.00  holding ['AAPL']
+2026-11-09 18:42:59,749 INFO insider: checked 13 new Form 4 filings, found 0 insider purchases
