@@ -539,3 +539,6 @@
 2026-11-09 16:53:26,577 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 127  burst signal
 2026-11-09 16:53:26,577 INFO scalp_burst_large value $199.44  cash $149.46  holding ['MSTR']
 2026-11-09 16:53:31,751 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-09 16:59:25,213 INFO scalp_burst       SELL RIOT  $  49.99 @ 17.6  burst exit: time limit  P/L $-0.01
+2026-11-09 16:59:25,214 INFO scalp_burst       value $197.95  cash $197.95  holding -
+2026-11-09 17:09:34,337 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
