@@ -362,7 +362,28 @@ def options_late_trend(ctx):
 def put_credit_spread(ctx):
     """Option SELLING: sell a QQQ put ~2% below the price, buy the next strike down for
     protection, 5-9 days out. Take profit at 50% of the credit, stop at 2x the credit,
-    otherwise close on expiry day. Max loss per spread = (width - credit) x 100."""
+    otherwise close on expiry day. Max loss per spread = (width - credit) x 100.
+
+    RETIRED on 9 Nov 2026. With $200 it can only sell $1-wide spreads, where a few cents
+    of bid/ask noise on thinly traded weekly puts looks like a 2x-credit loss: it was
+    stopped out 4 minutes after entry on a day QQQ rose 3.7% (and on 6 Nov the same way).
+    A real $200 cash account can't sell spreads anyway (that needs a $2,000 margin account).
+    The 9 Nov trade is voided as a pricing artifact, and the ledger is closed."""
+    led = ctx.led
+    if not led.memo.get("retired"):
+        bad = [t for t in led.trades if t["t"].startswith("2026-11-09")]
+        if bad:
+            led.trades = [t for t in led.trades if t not in bad]
+            led.cash = led.start_cash
+            led.positions.clear()
+            led.equity["2026-11-09"] = led.start_cash
+            v = getattr(led, "voided", None)
+            if isinstance(v, dict):
+                v["trades"] = v.get("trades", []) + bad
+                v["why"] = v.get("why", "") + " | 9 Nov: stopped 4 min after entry on bad option quotes (QQQ was flat)."
+        led.memo["retired"] = "2026-11-09"
+        led.stopped = "retired 2026-11-09"
+        return
     for sym in list(ctx.led.positions):
         credit = ctx.led.memo.get(sym, {}).get("credit", 0)
         width = float(sym.split(":")[3])
@@ -568,7 +589,7 @@ PLAYERS = [
     Strategy("options_orb_spy", "Same as options_orb but on SPY (S&P 500)", (), options_orb_spy, intraday=True, every_minute=True),
     Strategy("options_dip_calls", "Same-day QQQ calls after a sharp 30-minute drop (not on panic days)", (), options_dip_calls, intraday=True, every_minute=True),
     Strategy("options_late_trend", "Same-day QQQ calls/puts at 2-3pm when QQQ is 1%+ up/down and holding", (), options_late_trend, intraday=True, every_minute=True),
-    Strategy("put_credit_spread", "Sells weekly QQQ put spreads ~2% below the price (option seller); risk checked every minute", ("open", "midday", "close"), put_credit_spread, every_minute=True),
+    Strategy("put_credit_spread", "RETIRED 9 Nov: sold weekly QQQ put spreads; too small for real quotes, and a $200 cash account can't sell spreads", ("open", "midday", "close"), put_credit_spread, every_minute=True),
     Strategy("scalp_orb5", "Scalper: breakout above the first 5-minute high on small caps", (), scalp_orb5, intraday=True, every_minute=True),
     Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),
     Strategy("scalp_burst", "Scalper: small caps up 1%+ in 5 min on 3x volume", (), scalp_burst, intraday=True, every_minute=True),
