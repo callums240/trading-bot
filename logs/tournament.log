@@ -615,3 +615,24 @@
 2026-11-09 20:15:55,317 INFO scalp_burst       SELL MARA  $  50.70 @ 6.649  burst exit: target  P/L $+0.70
 2026-11-09 20:15:55,318 INFO scalp_burst       value $198.88  cash $98.79  holding ['LCID', 'SOUN']
 2026-11-09 20:19:00,740 INFO insider: checked 22 new Form 4 filings, found 2 insider purchases
+2026-11-09 20:23:55,130 INFO scalp_vwap        SELL RIVN  $  50.64 @ 14.1  vwap exit: time limit  P/L $+0.64
+2026-11-09 20:23:55,130 INFO scalp_vwap        value $200.97  cash $200.97  holding -
+2026-11-09 20:30:55,544 INFO orb_tqqq          SELL TQQQ  $ 205.89 @ 58.15  close  P/L $+5.89
+2026-11-09 20:30:55,545 INFO orb_tqqq          value $205.89  cash $205.89  holding -
+2026-11-09 20:30:55,610 INFO gap_fade          SELL NVDA  $  99.36 @ 178.1  close  P/L $-0.15
+2026-11-09 20:30:55,611 INFO gap_fade          SELL MSTR  $ 100.32 @ 126.8  close  P/L $+0.82
+2026-11-09 20:30:55,611 INFO gap_fade          value $199.68  cash $199.68  holding -
+2026-11-09 20:30:55,649 INFO midday_momentum   SELL AMD   $ 101.96 @ 514.6  close  P/L $+2.35
+2026-11-09 20:30:55,649 INFO midday_momentum   SELL PLTR  $ 100.14 @ 170.5  close  P/L $+0.53
+2026-11-09 20:30:55,650 INFO midday_momentum   value $202.09  cash $202.09  holding -
+2026-11-09 20:30:55,694 INFO wsb_crowd         SELL NVDA  $  65.62 @ 178.1  close  P/L $-0.10
+2026-11-09 20:30:55,694 INFO wsb_crowd         SELL AMD   $  69.47 @ 514.6  close  P/L $+3.76
+2026-11-09 20:30:55,694 INFO wsb_crowd         SELL MU    $  66.84 @ 739.4  close  P/L $+1.12
+2026-11-09 20:30:55,695 INFO wsb_crowd         value $201.93  cash $201.93  holding -
+2026-11-09 20:30:55,695 INFO overnight_qqq     BUY  QQQ   $ 195.24 @ 681.6  overnight hold
+2026-11-09 20:30:55,695 INFO overnight_qqq     value $195.14  cash $0.00  holding ['QQQ']
+2026-11-09 20:30:59,069 INFO weekly_momentum   SELL TSLA  $  66.18 @ 381  dropped out of top 3  P/L $-0.49
+2026-11-09 20:30:59,069 INFO weekly_momentum   BUY  RIVN  $  66.18 @ 14.13  top 20-day return 2026-W46
+2026-11-09 20:30:59,069 INFO weekly_momentum   value $197.73  cash $0.00  holding ['SOFI', 'AMZN', 'RIVN']
+2026-11-09 20:32:58,158 INFO live bot ran (exit 0): 2026-11-09 20:32:58,051 INFO ==== run end ====
+2026-11-09 20:34:59,434 INFO insider: checked 12 new Form 4 filings, found 1 insider purchases
