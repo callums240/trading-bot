@@ -415,3 +415,21 @@
 2026-11-09 13:53:54,054 INFO market closed (opens in 36 min); hourly snapshots
 2026-11-09 14:30:36,110 INFO insider: checked 26 new Form 4 filings, found 4 insider purchases
 2026-11-09 14:46:30,681 INFO insider: checked 10 new Form 4 filings, found 0 insider purchases
+2026-11-09 14:57:26,593 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 125.5  orb5 signal
+2026-11-09 14:57:26,594 INFO scalp_orb5_large  value $199.98  cash $150.00  holding ['MSTR']
+2026-11-09 14:59:24,983 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.26  orb5 signal
+2026-11-09 14:59:24,984 INFO scalp_orb5        value $199.21  cash $149.24  holding ['RIOT']
+2026-11-09 14:59:25,637 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 63.65  orb5 signal
+2026-11-09 14:59:25,638 INFO scalp_orb5_large  value $200.12  cash $100.00  holding ['MSTR', 'NFLX']
+2026-11-09 15:00:30,279 INFO gap_fade          BUY  NVDA  $  99.51 @ 178.3  gap down, bouncing
+2026-11-09 15:00:30,279 INFO gap_fade          BUY  MSTR  $  99.51 @ 125.7  gap down, bouncing
+2026-11-09 15:00:30,279 INFO gap_fade          value $198.91  cash $0.00  holding ['NVDA', 'MSTR']
+2026-11-09 15:00:30,363 INFO wsb_crowd         BUY  NVDA  $  65.71 @ 178.3  WSB mentions spiking
+2026-11-09 15:00:30,363 INFO wsb_crowd         BUY  AMD   $  65.71 @ 486.7  WSB mentions spiking
+2026-11-09 15:00:30,363 INFO wsb_crowd         BUY  MU    $  65.71 @ 727  WSB mentions spiking
+2026-11-09 15:00:30,363 INFO wsb_crowd         value $197.05  cash $0.00  holding ['NVDA', 'AMD', 'MU']
+2026-11-09 15:00:30,364 INFO overnight_qqq     SELL QQQ   $ 195.24 @ 672.5  morning exit  P/L $+3.82
+2026-11-09 15:00:30,364 INFO overnight_qqq     value $195.24  cash $195.24  holding -
+2026-11-09 15:00:34,588 INFO scalp_orb5        SELL RIOT  $  49.28 @ 17.01  orb5 exit: stop  P/L $-0.72
+2026-11-09 15:00:34,589 INFO scalp_orb5        value $198.52  cash $198.52  holding -
+2026-11-09 15:01:36,847 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases

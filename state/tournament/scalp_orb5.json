@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.23779579241543,
+ "cash": 198.52182044675493,
  "positions": {},
  "trades": [
   {
@@ -149,19 +149,44 @@
    "pnl": 0.04,
    "reason": "orb5 exit: time limit",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-09T09:59-05:00",
+   "side": "buy",
+   "sym": "RIOT",
+   "qty": 2.897102,
+   "price": 17.2586,
+   "usd": 50.0,
+   "reason": "orb5 signal",
+   "mood": "strong"
+  },
+  {
+   "t": "2026-11-09T10:00-05:00",
+   "side": "sell",
+   "sym": "RIOT",
+   "qty": 2.897102,
+   "price": 17.0115,
+   "usd": 49.28,
+   "pnl": -0.72,
+   "reason": "orb5 exit: stop",
+   "mood": "strong"
   }
  ],
  "equity": {
   "2026-11-05": 200.0,
   "2026-11-06": 199.24,
-  "2026-11-09": 199.24
+  "2026-11-09": 198.52
  },
  "done": [],
  "memo": {
   "day": "2026-11-09",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "RIOT": 1
+  },
+  "last_bar": {
+   "RIOT": "2026-11-09T09:58:00-05:00"
+  }
  },
  "stopped": null
 }
