@@ -471,3 +471,16 @@
 2026-11-09 15:33:27,306 INFO scalp_burst       SELL MARA  $  50.71 @ 6.604  burst exit: target  P/L $+0.71
 2026-11-09 15:33:27,307 INFO scalp_burst       value $200.76  cash $150.15  holding ['RIOT']
 2026-11-09 15:33:31,865 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-09 15:34:26,834 INFO scalp_orb5        BUY  PLUG  $  50.00 @ 1.525  orb5 signal
+2026-11-09 15:34:26,835 INFO scalp_orb5        value $199.45  cash $99.41  holding ['NIO', 'PLUG']
+2026-11-09 15:35:28,388 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 63.64  orb5 signal
+2026-11-09 15:35:28,389 INFO scalp_orb5_large  value $200.32  cash $100.13  holding ['AAPL', 'NFLX']
+2026-11-09 15:36:26,897 INFO scalp_orb5        SELL PLUG  $  49.00 @ 1.495  orb5 exit: stop  P/L $-1.00
+2026-11-09 15:36:26,898 INFO scalp_orb5        value $198.62  cash $148.41  holding ['NIO']
+2026-11-09 15:36:26,992 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.505  burst signal
+2026-11-09 15:36:26,993 INFO scalp_burst       value $200.37  cash $100.15  holding ['RIOT', 'PLUG']
+2026-11-09 15:37:27,596 INFO scalp_orb5_large  SELL AAPL  $  50.21 @ 350.3  orb5 exit: time limit  P/L $+0.21
+2026-11-09 15:37:27,596 INFO scalp_orb5_large  value $200.35  cash $150.34  holding ['NFLX']
+2026-11-09 15:47:27,971 INFO scalp_orb5_large  BUY  META  $  50.00 @ 639.7  orb5 signal
+2026-11-09 15:47:27,972 INFO scalp_orb5_large  value $200.21  cash $100.34  holding ['NFLX', 'META']
+2026-11-09 15:49:33,172 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
