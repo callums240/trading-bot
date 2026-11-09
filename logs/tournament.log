@@ -599,3 +599,6 @@
 2026-11-09 19:45:57,538 INFO scalp_burst       SELL PLUG  $  49.32 @ 1.485  burst exit: stop  P/L $-0.68
 2026-11-09 19:45:57,539 INFO scalp_burst       value $198.00  cash $49.32  holding ['MARA', 'LCID', 'AMC']
 2026-11-09 19:47:06,395 INFO insider: checked 21 new Form 4 filings, found 3 insider purchases
+2026-11-09 19:55:58,693 INFO scalp_vwap_large  SELL MSTR  $  50.32 @ 128.1  vwap exit: target  P/L $+0.32
+2026-11-09 19:55:58,694 INFO scalp_vwap_large  value $200.54  cash $150.54  holding ['NVDA']
+2026-11-09 20:03:03,660 INFO insider: checked 23 new Form 4 filings, found 1 insider purchases
