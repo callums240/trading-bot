@@ -484,3 +484,16 @@
 2026-11-09 15:47:27,971 INFO scalp_orb5_large  BUY  META  $  50.00 @ 639.7  orb5 signal
 2026-11-09 15:47:27,972 INFO scalp_orb5_large  value $200.21  cash $100.34  holding ['NFLX', 'META']
 2026-11-09 15:49:33,172 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
+2026-11-09 15:54:27,043 INFO scalp_orb5        BUY  SOUN  $  50.00 @ 4.146  orb5 signal
+2026-11-09 15:54:27,044 INFO scalp_orb5        value $199.00  cash $98.41  holding ['NIO', 'SOUN']
+2026-11-09 15:57:25,224 INFO options_orb       SELL QQQ261109C00681000 $  39.50 @ 0.79  doubled (+121%): sold half, stake back  P/L $+21.50
+2026-11-09 15:57:25,225 INFO options_orb       value $243.25  cash $203.50  holding ['QQQ261109C00681000']
+2026-11-09 15:59:26,440 INFO scalp_orb5        SELL SOUN  $  50.70 @ 4.204  orb5 exit: target  P/L $+0.70
+2026-11-09 15:59:26,441 INFO scalp_orb5        value $199.78  cash $149.11  holding ['NIO']
+2026-11-09 16:03:27,508 INFO scalp_burst_large BUY  AMD   $  50.00 @ 504.8  burst signal
+2026-11-09 16:03:27,509 INFO scalp_burst_large value $199.98  cash $150.00  holding ['AMD']
+2026-11-09 16:05:28,083 INFO scalp_orb5_large  SELL NFLX  $  50.02 @ 63.67  orb5 exit: time limit  P/L $+0.02
+2026-11-09 16:05:28,083 INFO scalp_orb5_large  value $200.50  cash $150.36  holding ['META']
+2026-11-09 16:05:28,250 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 177.1  reversion signal
+2026-11-09 16:05:28,250 INFO scalp_reversion_large_fast value $199.98  cash $150.00  holding ['NVDA']
+2026-11-09 16:05:42,413 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
