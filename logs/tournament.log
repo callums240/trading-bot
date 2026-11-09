@@ -458,3 +458,16 @@
 2026-11-09 15:12:27,022 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.28  orb5 signal
 2026-11-09 15:12:27,023 INFO scalp_orb5        value $198.41  cash $98.52  holding ['NIO', 'RIOT']
 2026-11-09 15:17:37,522 INFO insider: checked 30 new Form 4 filings, found 3 insider purchases
+2026-11-09 15:28:26,572 INFO scalp_orb5        SELL RIOT  $  50.89 @ 17.59  orb5 exit: target  P/L $+0.89
+2026-11-09 15:28:26,573 INFO scalp_orb5        value $199.48  cash $149.41  holding ['NIO']
+2026-11-09 15:28:26,648 INFO scalp_burst       BUY  RIOT  $  50.00 @ 17.6  burst signal
+2026-11-09 15:28:26,648 INFO scalp_burst       value $199.20  cash $48.65  holding ['LCID', 'MARA', 'RIOT']
+2026-11-09 15:28:27,389 INFO scalp_orb5_large  SELL META  $  49.76 @ 638.6  orb5 exit: stop  P/L $-0.24
+2026-11-09 15:28:27,390 INFO scalp_orb5_large  value $200.37  cash $100.10  holding ['NFLX', 'AAPL']
+2026-11-09 15:30:32,046 INFO scalp_orb5_large  SELL NFLX  $  50.03 @ 63.69  orb5 exit: time limit  P/L $+0.03
+2026-11-09 15:30:32,046 INFO scalp_orb5_large  value $200.39  cash $150.13  holding ['AAPL']
+2026-11-09 15:32:27,659 INFO scalp_burst       SELL LCID  $  50.79 @ 3.449  burst exit: target  P/L $+0.79
+2026-11-09 15:32:27,660 INFO scalp_burst       value $200.56  cash $99.44  holding ['MARA', 'RIOT']
+2026-11-09 15:33:27,306 INFO scalp_burst       SELL MARA  $  50.71 @ 6.604  burst exit: target  P/L $+0.71
+2026-11-09 15:33:27,307 INFO scalp_burst       value $200.76  cash $150.15  holding ['RIOT']
+2026-11-09 15:33:31,865 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
