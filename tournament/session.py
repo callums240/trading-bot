@@ -2,7 +2,7 @@
 every minute, instead of relying on GitHub's unreliable 15-minute schedule.
 
 Each minute:   every strategy gets a pass (scalpers act each minute, the rest once per slot)
-Every 15 min:  insider filings collected, results saved and pushed to GitHub
+Every 15 min:  insider and activist (13D) filings collected, results saved and pushed to GitHub
 Hourly:        forum snapshot
 Last 30 min:   the live bot (bot.py) trades the real paper account, once per day
 
@@ -75,6 +75,7 @@ def main():
                 wait = (m.clock.next_open - m.clock.timestamp).total_seconds() / 60
                 log.info("market closed (opens in %.0f min); hourly snapshots", wait)
                 sh(f"{PY} insider_collector.py", timeout=300)
+                sh(f"{PY} activist_collector.py", timeout=300)
                 sh(f"{PY} forum_collector.py", timeout=180)
                 last_insider = clock.time()
                 save_and_push(f"snapshots {datetime.now(timezone.utc):%F_%H%M}")
@@ -96,6 +97,8 @@ def main():
         if now - last_insider >= 15 * 60:
             code, out = sh(f"{PY} insider_collector.py", timeout=300)
             log.info("insider: %s", out.splitlines()[0] if out else f"exit {code}")
+            code, out = sh(f"{PY} activist_collector.py", timeout=300)
+            log.info("activist: %s", out.splitlines()[0] if out else f"exit {code}")
             last_insider = clock.time()
         hour = datetime.now(timezone.utc).hour
         if hour != last_forum_hour:

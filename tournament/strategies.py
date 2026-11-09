@@ -482,6 +482,43 @@ def insider_buys(ctx):
         slots -= 1
 
 
+ACTIVIST_FILE = Path(__file__).parent.parent / "data" / "activist" / "stakes.jsonl"
+
+
+def activist_13d(ctx):
+    """Copy activists: buy companies where an investor has just disclosed a 5%+ stake with
+    plans to push for change (a new SEC Schedule 13D, filtered by activist_collector.py).
+    Filings seen in the last 3 days, $3+ stocks on a real exchange, up to 4 positions of
+    about $50, held ~4 weeks, 15% stop."""
+    prices = held_prices(ctx)
+    for sym, p in list(ctx.led.positions.items()):
+        held = (ctx.m.today - date.fromisoformat(p["since"])).days
+        px = prices.get(sym)
+        if px and (px <= p["entry"] * 0.85 or held >= 28):
+            ctx.led.sell(sym, px, ctx.now, "stop -15%" if px <= p["entry"] * 0.85 else "held 4 weeks")
+    if not ACTIVIST_FILE.exists() or len(ctx.led.positions) >= 4:
+        return
+    cutoff = (ctx.now - timedelta(days=3)).isoformat()[:16]
+    bought = {t["sym"] for t in ctx.led.trades if t["side"] == "buy"}
+    stakes = {}
+    for line in ACTIVIST_FILE.read_text().splitlines():
+        r = json.loads(line)
+        if r["activist"] and r["seen_utc"] >= cutoff and r["ticker"].isalpha() and r["ticker"] not in bought:
+            stakes.setdefault(r["ticker"], r)
+    if not stakes:
+        return
+    px = ctx.m.prices(list(stakes))
+    slots = 4 - len(ctx.led.positions)
+    for k in sorted(stakes, key=lambda k: -(stakes[k]["pct"] or 0)):
+        if slots <= 0:
+            break
+        if px.get(k, 0) < 3:
+            continue
+        r = stakes[k]
+        ctx.led.buy(k, ctx.led.cash / slots, px[k], ctx.now, f"{r['filer'][:40]} disclosed {r['pct']}% (13D)")
+        slots -= 1
+
+
 # ------------------------------------------------------------ scalpers ---
 SCALP_TARGET, SCALP_STOP, SCALP_MAX_MIN = 0.015, 0.01, 90
 SCALP_SIZE, SCALP_MAX_OPEN = 50.0, 4
@@ -584,6 +621,7 @@ PLAYERS = [
     Strategy("dip_buy_volatile", "RSI-2 dip-buy on volatile stocks", ("close",), dip_buy_volatile),
     Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
     Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
+    Strategy("activist_13d", "Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D", ("open",), activist_13d),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run", (), options_orb, intraday=True, every_minute=True),
     Strategy("options_orb_spy", "Same as options_orb but on SPY (S&P 500)", (), options_orb_spy, intraday=True, every_minute=True),
