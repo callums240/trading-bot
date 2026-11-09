@@ -563,3 +563,14 @@
 2026-11-09 18:53:55,934 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 13.92  vwap signal
 2026-11-09 18:53:55,935 INFO scalp_vwap        value $198.87  cash $148.90  holding ['RIVN']
 2026-11-09 18:59:02,834 INFO insider: checked 15 new Form 4 filings, found 0 insider purchases
+2026-11-09 18:59:56,048 INFO scalp_reversion   BUY  SOUN  $  50.00 @ 4.071  reversion signal
+2026-11-09 18:59:56,048 INFO scalp_reversion   value $204.53  cash $154.60  holding ['SOUN']
+2026-11-09 19:00:56,541 INFO options_late_trend BUY  QQQ261109C00680000 $  23.00 @ 0.23  QQQ +3.3% today, above VWAP 674.45; 1x QQQ261109C00680000 @ 0.23
+2026-11-09 19:00:56,542 INFO options_late_trend value $199.50  cash $177.00  holding ['QQQ261109C00680000']
+2026-11-09 19:01:57,660 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.361  vwap signal
+2026-11-09 19:01:57,661 INFO scalp_vwap        value $198.75  cash $98.90  holding ['RIVN', 'AMC']
+2026-11-09 19:01:57,662 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.361  burst signal
+2026-11-09 19:01:57,663 INFO scalp_burst       value $197.87  cash $147.95  holding ['AMC']
+2026-11-09 19:12:56,706 INFO scalp_vwap_large  SELL AAPL  $  50.23 @ 351.6  vwap exit: time limit  P/L $+0.23
+2026-11-09 19:12:56,707 INFO scalp_vwap_large  value $200.23  cash $200.23  holding -
+2026-11-09 19:15:06,057 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
