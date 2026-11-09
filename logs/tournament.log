@@ -551,3 +551,4 @@
 2026-11-09 17:39:56,248 INFO scalp_burst_large SELL MSTR  $  49.38 @ 125.4  burst exit: stop  P/L $-0.62
 2026-11-09 17:39:56,249 INFO scalp_burst_large value $198.84  cash $198.84  holding -
 2026-11-09 17:55:00,718 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
+2026-11-09 18:11:02,255 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
