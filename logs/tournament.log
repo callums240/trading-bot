@@ -528,3 +528,14 @@
 2026-11-09 16:35:26,632 INFO scalp_burst       SELL PLUG  $  49.15 @ 1.48  burst exit: stop  P/L $-0.85
 2026-11-09 16:35:26,633 INFO scalp_burst       value $198.65  cash $148.57  holding ['RIOT']
 2026-11-09 16:37:36,980 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
+2026-11-09 16:38:26,068 INFO scalp_orb5        SELL NIO   $  50.50 @ 3.374  orb5 exit: time limit  P/L $+0.50
+2026-11-09 16:38:26,069 INFO scalp_orb5        value $199.62  cash $199.62  holding -
+2026-11-09 16:38:26,210 INFO scalp_burst       BUY  SOUN  $  50.00 @ 4.226  burst signal
+2026-11-09 16:38:26,211 INFO scalp_burst       value $198.62  cash $98.57  holding ['RIOT', 'SOUN']
+2026-11-09 16:42:27,330 INFO scalp_reversion_large_fast SELL AMD   $  50.18 @ 497.9  reversion exit: target  P/L $+0.18
+2026-11-09 16:42:27,330 INFO scalp_reversion_large_fast value $199.88  cash $199.88  holding -
+2026-11-09 16:51:25,885 INFO scalp_burst       SELL SOUN  $  49.39 @ 4.174  burst exit: stop  P/L $-0.61
+2026-11-09 16:51:25,886 INFO scalp_burst       value $198.09  cash $147.96  holding ['RIOT']
+2026-11-09 16:53:26,577 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 127  burst signal
+2026-11-09 16:53:26,577 INFO scalp_burst_large value $199.44  cash $149.46  holding ['MSTR']
+2026-11-09 16:53:31,751 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
