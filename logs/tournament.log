@@ -880,3 +880,9 @@
 2026-11-10 20:32:49,985 INFO live bot ran (exit 0): 2026-11-10 20:32:49,869 INFO ==== run end ====
 2026-11-10 20:44:00,704 INFO insider: checked 32 new Form 4 filings, found 1 insider purchases
 2026-11-10 20:44:03,204 INFO activist: checked 13D feed: nothing new
+2026-11-10 20:53:47,345 INFO scalp_vwap        SELL SOFI  $  50.77 @ 16.35  vwap exit: target  P/L $+0.77
+2026-11-10 20:53:47,346 INFO scalp_vwap        value $201.36  cash $201.36  holding -
+2026-11-10 20:55:47,665 INFO scalp_burst_large SELL AMD   $  50.14 @ 517.1  burst exit: end of day  P/L $+0.14
+2026-11-10 20:55:47,666 INFO scalp_burst_large value $197.11  cash $197.11  holding -
+2026-11-10 21:00:08,301 INFO insider: checked 54 new Form 4 filings, found 0 insider purchases
+2026-11-10 21:00:13,050 INFO activist: checked 13D feed: nothing new
