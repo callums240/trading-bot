@@ -864,3 +864,19 @@
 2026-11-10 20:11:57,729 INFO activist: checked 13D feed: nothing new
 2026-11-10 20:27:59,646 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
 2026-11-10 20:28:01,487 INFO activist: checked 13D feed: nothing new
+2026-11-10 20:30:46,872 INFO orb_tqqq          SELL TQQQ  $ 199.86 @ 56.23  close  P/L $-6.03
+2026-11-10 20:30:46,873 INFO orb_tqqq          value $199.86  cash $199.86  holding -
+2026-11-10 20:30:46,929 INFO gap_fade          SELL MSTR  $  96.27 @ 120.9  close  P/L $-3.57
+2026-11-10 20:30:46,929 INFO gap_fade          SELL COIN  $  97.03 @ 132  close  P/L $-2.81
+2026-11-10 20:30:46,929 INFO gap_fade          value $193.30  cash $193.30  holding -
+2026-11-10 20:30:46,985 INFO midday_momentum   SELL MARA  $ 209.39 @ 7.256  close  P/L $+7.30
+2026-11-10 20:30:46,986 INFO midday_momentum   value $209.39  cash $209.39  holding -
+2026-11-10 20:30:47,045 INFO wsb_crowd         SELL RKLB  $  70.02 @ 61.06  close  P/L $+2.71
+2026-11-10 20:30:47,046 INFO wsb_crowd         SELL ASTS  $  62.56 @ 33.64  close  P/L $-4.75
+2026-11-10 20:30:47,046 INFO wsb_crowd         SELL DTE   $  68.19 @ 138.8  close  P/L $+0.88
+2026-11-10 20:30:47,046 INFO wsb_crowd         value $200.77  cash $200.77  holding -
+2026-11-10 20:30:47,047 INFO overnight_qqq     BUY  QQQ   $ 194.41 @ 674  overnight hold
+2026-11-10 20:30:47,047 INFO overnight_qqq     value $194.31  cash $0.00  holding ['QQQ']
+2026-11-10 20:32:49,985 INFO live bot ran (exit 0): 2026-11-10 20:32:49,869 INFO ==== run end ====
+2026-11-10 20:44:00,704 INFO insider: checked 32 new Form 4 filings, found 1 insider purchases
+2026-11-10 20:44:03,204 INFO activist: checked 13D feed: nothing new

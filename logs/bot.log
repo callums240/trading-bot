@@ -42,3 +42,9 @@
 2026-11-09 20:32:58,050 INFO HOLD XLE qty=1.603997561 entry=62.34 now=61.88 rsi=20.8 held=2d -> keep
 2026-11-09 20:32:58,051 INFO entry candidates: none
 2026-11-09 20:32:58,051 INFO ==== run end ====
+2026-11-10 20:32:48,426 INFO ==== run start (PAPER) ====
+2026-11-10 20:32:48,657 INFO equity $199.92 | cash $100.00 | unsettled $0.00 | settled $100.00
+2026-11-10 20:32:49,813 INFO HOLD XLE qty=1.603997561 entry=62.34 now=62.30 rsi=50.2 held=3d -> target
+2026-11-10 20:32:49,868 INFO SELL XLE (~$99.92, target), settles 2026-11-11
+2026-11-10 20:32:49,869 INFO entry candidates: none
+2026-11-10 20:32:49,869 INFO ==== run end ====
