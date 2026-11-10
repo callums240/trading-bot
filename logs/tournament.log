@@ -832,3 +832,9 @@
 2026-11-10 18:35:48,384 INFO scalp_reversion   value $204.72  cash $204.72  holding -
 2026-11-10 18:35:56,118 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
 2026-11-10 18:35:57,759 INFO activist: checked 13D feed: nothing new
+2026-11-10 18:48:48,204 INFO scalp_vwap        SELL AMC   $  50.79 @ 3.434  vwap exit: target  P/L $+0.79
+2026-11-10 18:48:48,205 INFO scalp_vwap        value $200.59  cash $200.59  holding -
+2026-11-10 18:49:47,802 INFO scalp_burst       SELL AMC   $  50.79 @ 3.444  burst exit: target  P/L $+0.79
+2026-11-10 18:49:47,804 INFO scalp_burst       value $199.66  cash $148.94  holding ['RIOT']
+2026-11-10 18:51:53,190 INFO insider: checked 10 new Form 4 filings, found 0 insider purchases
+2026-11-10 18:51:54,626 INFO activist: checked 13D feed: nothing new
