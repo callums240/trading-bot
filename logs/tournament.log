@@ -850,3 +850,11 @@
 2026-11-10 19:24:04,141 INFO activist: checked 13D feed: nothing new
 2026-11-10 19:39:54,243 INFO insider: checked 17 new Form 4 filings, found 0 insider purchases
 2026-11-10 19:39:55,667 INFO activist: checked 13D feed: nothing new
+2026-11-10 19:48:47,644 INFO scalp_vwap        BUY  SOFI  $  50.00 @ 16.1  vwap signal
+2026-11-10 19:48:47,644 INFO scalp_vwap        value $200.57  cash $150.59  holding ['SOFI']
+2026-11-10 19:48:49,278 INFO scalp_burst_large BUY  AMD   $  50.00 @ 515.7  burst signal
+2026-11-10 19:48:49,279 INFO scalp_burst_large value $196.95  cash $146.98  holding ['AMD']
+2026-11-10 19:54:48,305 INFO scalp_reversion   BUY  LCID  $  50.00 @ 3.846  reversion signal
+2026-11-10 19:54:48,306 INFO scalp_reversion   value $204.65  cash $154.72  holding ['LCID']
+2026-11-10 19:55:59,745 INFO insider: checked 18 new Form 4 filings, found 1 insider purchases
+2026-11-10 19:56:02,108 INFO activist: checked 13D feed: nothing new
