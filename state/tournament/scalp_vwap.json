@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 200.96842564782412,
+ "cash": 200.38261848029225,
  "positions": {},
  "trades": [
   {
@@ -312,20 +312,45 @@
    "pnl": 0.64,
    "reason": "vwap exit: time limit",
    "mood": "strong"
+  },
+  {
+   "t": "2026-11-10T11:52-05:00",
+   "side": "buy",
+   "sym": "LCID",
+   "qty": 12.576098,
+   "price": 3.9758,
+   "usd": 50.0,
+   "reason": "vwap signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T11:56-05:00",
+   "side": "sell",
+   "sym": "LCID",
+   "qty": 12.576098,
+   "price": 3.9292,
+   "usd": 49.41,
+   "pnl": -0.59,
+   "reason": "vwap exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
   "2026-11-05": 199.37,
   "2026-11-06": 198.9,
   "2026-11-09": 200.97,
-  "2026-11-10": 200.97
+  "2026-11-10": 200.38
  },
  "done": [],
  "memo": {
   "day": "2026-11-10",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "LCID": 1
+  },
+  "last_bar": {
+   "LCID": "2026-11-10T11:51:00-05:00"
+  }
  },
  "stopped": null
 }

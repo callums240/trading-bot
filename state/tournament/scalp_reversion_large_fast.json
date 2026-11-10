@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 200.01051223459075,
+ "cash": 199.64611012581582,
  "positions": {},
  "trades": [
   {
@@ -233,11 +233,53 @@
    "pnl": 0.2,
    "reason": "reversion exit: target",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T11:48-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.097684,
+   "price": 511.8558,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T11:50-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.097684,
+   "price": 509.9449,
+   "usd": 49.81,
+   "pnl": -0.19,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T11:50-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.097952,
+   "price": 510.4551,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T11:55-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.097952,
+   "price": 508.6406,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
   "2026-11-09": 200.12,
-  "2026-11-10": 200.01
+  "2026-11-10": 199.65
  },
  "done": [],
  "memo": {
@@ -247,13 +289,15 @@
    "NVDA": 2,
    "MSTR": 2,
    "COIN": 1,
-   "AVGO": 1
+   "AVGO": 1,
+   "AMD": 2
   },
   "last_bar": {
    "NVDA": "2026-11-10T10:46:00-05:00",
    "MSTR": "2026-11-10T11:37:00-05:00",
    "COIN": "2026-11-10T10:51:00-05:00",
-   "AVGO": "2026-11-10T10:53:00-05:00"
+   "AVGO": "2026-11-10T10:53:00-05:00",
+   "AMD": "2026-11-10T11:49:00-05:00"
   }
  },
  "stopped": null

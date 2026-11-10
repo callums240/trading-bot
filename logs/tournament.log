@@ -769,3 +769,16 @@
 2026-11-10 16:43:45,487 INFO ==== session start ====
 2026-11-10 16:43:51,939 INFO insider: checked 8 new Form 4 filings, found 1 insider purchases
 2026-11-10 16:43:53,800 INFO activist: checked 13D feed: nothing new
+2026-11-10 16:48:48,817 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 511.9  reversion signal
+2026-11-10 16:48:48,818 INFO scalp_reversion_large_fast value $199.99  cash $150.01  holding ['AMD']
+2026-11-10 16:50:50,096 INFO scalp_reversion_large_fast SELL AMD   $  49.81 @ 509.9  reversion exit: stop  P/L $-0.19
+2026-11-10 16:50:50,096 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 510.5  reversion signal
+2026-11-10 16:50:50,097 INFO scalp_reversion_large_fast value $199.80  cash $149.82  holding ['AMD']
+2026-11-10 16:52:47,652 INFO scalp_vwap        BUY  LCID  $  50.00 @ 3.976  vwap signal
+2026-11-10 16:52:47,653 INFO scalp_vwap        value $200.90  cash $150.97  holding ['LCID']
+2026-11-10 16:55:49,366 INFO scalp_reversion_large_fast SELL AMD   $  49.82 @ 508.6  reversion exit: stop  P/L $-0.18
+2026-11-10 16:55:49,367 INFO scalp_reversion_large_fast value $199.65  cash $199.65  holding -
+2026-11-10 16:56:47,676 INFO scalp_vwap        SELL LCID  $  49.41 @ 3.929  vwap exit: stop  P/L $-0.59
+2026-11-10 16:56:47,677 INFO scalp_vwap        value $200.38  cash $200.38  holding -
+2026-11-10 16:59:50,954 INFO insider: checked 8 new Form 4 filings, found 2 insider purchases
+2026-11-10 16:59:52,454 INFO activist: checked 13D feed: nothing new
