@@ -862,3 +862,5 @@
 2026-11-10 19:59:47,110 INFO scalp_reversion   value $203.99  cash $203.99  holding -
 2026-11-10 20:11:56,304 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
 2026-11-10 20:11:57,729 INFO activist: checked 13D feed: nothing new
+2026-11-10 20:27:59,646 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
+2026-11-10 20:28:01,487 INFO activist: checked 13D feed: nothing new
