@@ -1,0 +1,12 @@
+{
+ "start_cash": 200.0,
+ "cash": 200.0,
+ "positions": {},
+ "trades": [],
+ "equity": {
+  "2026-11-10": 200.0
+ },
+ "done": [],
+ "memo": {},
+ "stopped": null
+}
