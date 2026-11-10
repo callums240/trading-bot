@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 200.12157709586756,
+ "cash": 199.8241761542809,
  "positions": {},
  "trades": [
   {
@@ -107,18 +107,87 @@
    "pnl": 0.24,
    "reason": "reversion exit: target",
    "mood": "strong"
+  },
+  {
+   "t": "2026-11-10T10:45-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.294855,
+   "price": 169.5747,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T10:45-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.415368,
+   "price": 120.3752,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T10:47-05:00",
+   "side": "sell",
+   "sym": "NVDA",
+   "qty": 0.294855,
+   "price": 168.7706,
+   "usd": 49.76,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T10:47-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.415368,
+   "price": 120.8595,
+   "usd": 50.2,
+   "pnl": 0.2,
+   "reason": "reversion exit: target",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T10:47-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.295964,
+   "price": 168.9394,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T10:50-05:00",
+   "side": "sell",
+   "sym": "NVDA",
+   "qty": 0.295964,
+   "price": 168.0559,
+   "usd": 49.74,
+   "pnl": -0.26,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
   "2026-11-09": 200.12,
-  "2026-11-10": 200.12
+  "2026-11-10": 199.82
  },
  "done": [],
  "memo": {
   "day": "2026-11-10",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "NVDA": 2,
+   "MSTR": 1
+  },
+  "last_bar": {
+   "NVDA": "2026-11-10T10:46:00-05:00",
+   "MSTR": "2026-11-10T10:44:00-05:00"
+  }
  },
  "stopped": null
 }

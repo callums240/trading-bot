@@ -740,3 +740,29 @@
 2026-11-10 15:34:14,399 INFO scalp_burst       value $199.20  cash $149.43  holding ['AMC']
 2026-11-10 15:34:26,426 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
 2026-11-10 15:34:28,998 INFO activist: checked 13D feed: nothing new
+2026-11-10 15:37:17,201 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 122.1  orb5 signal
+2026-11-10 15:37:17,202 INFO scalp_orb5_large  value $199.93  cash $50.20  holding ['COIN', 'TSLA', 'MSTR']
+2026-11-10 15:38:16,964 INFO scalp_orb5_large  SELL COIN  $  49.63 @ 131.7  orb5 exit: stop  P/L $-0.37
+2026-11-10 15:38:16,964 INFO scalp_orb5_large  SELL MSTR  $  49.77 @ 121.6  orb5 exit: stop  P/L $-0.23
+2026-11-10 15:38:16,965 INFO scalp_orb5_large  value $199.42  cash $149.60  holding ['TSLA']
+2026-11-10 15:40:18,936 INFO scalp_orb5_large  SELL TSLA  $  49.72 @ 375.9  orb5 exit: stop  P/L $-0.28
+2026-11-10 15:40:18,936 INFO scalp_orb5_large  value $199.32  cash $199.32  holding -
+2026-11-10 15:41:15,747 INFO scalp_burst       SELL AMC   $  49.33 @ 3.404  burst exit: stop  P/L $-0.67
+2026-11-10 15:41:15,748 INFO scalp_burst       value $198.76  cash $198.76  holding -
+2026-11-10 15:45:18,286 INFO scalp_burst_large SELL QQQ   $  49.47 @ 673.4  burst exit: stop  P/L $-0.53
+2026-11-10 15:45:18,287 INFO scalp_burst_large value $196.98  cash $196.98  holding -
+2026-11-10 15:45:18,384 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 169.6  reversion signal
+2026-11-10 15:45:18,384 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 120.4  reversion signal
+2026-11-10 15:45:18,385 INFO scalp_reversion_large_fast value $200.07  cash $100.12  holding ['NVDA', 'MSTR']
+2026-11-10 15:47:16,980 INFO scalp_reversion_large_fast SELL NVDA  $  49.76 @ 168.8  reversion exit: stop  P/L $-0.24
+2026-11-10 15:47:16,981 INFO scalp_reversion_large_fast SELL MSTR  $  50.20 @ 120.9  reversion exit: target  P/L $+0.20
+2026-11-10 15:47:16,981 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 168.9  reversion signal
+2026-11-10 15:47:16,981 INFO scalp_reversion_large_fast value $200.06  cash $150.09  holding ['NVDA']
+2026-11-10 15:49:15,032 INFO scalp_orb5_large  BUY  QQQ   $  50.00 @ 674  orb5 signal
+2026-11-10 15:49:15,033 INFO scalp_orb5_large  value $199.30  cash $149.32  holding ['QQQ']
+2026-11-10 15:50:14,975 INFO scalp_orb5        SELL HOOD  $  49.27 @ 80.56  orb5 exit: stop  P/L $-0.73
+2026-11-10 15:50:14,976 INFO scalp_orb5        value $199.78  cash $199.78  holding -
+2026-11-10 15:50:17,023 INFO scalp_reversion_large_fast SELL NVDA  $  49.74 @ 168.1  reversion exit: stop  P/L $-0.26
+2026-11-10 15:50:17,024 INFO scalp_reversion_large_fast value $199.82  cash $199.82  holding -
+2026-11-10 15:50:25,236 INFO insider: checked 27 new Form 4 filings, found 1 insider purchases
+2026-11-10 15:50:26,479 INFO activist: checked 13D feed: nothing new
