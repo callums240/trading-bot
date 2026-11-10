@@ -659,3 +659,47 @@
 2026-11-10 14:30:27,912 INFO activist: checked 13D feed: nothing new
 2026-11-10 14:46:22,155 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
 2026-11-10 14:46:23,584 INFO activist: checked 13D feed: nothing new
+2026-11-10 14:55:13,956 INFO scalp_orb5        BUY  RKLB  $  50.00 @ 58.2  orb5 signal
+2026-11-10 14:55:13,957 INFO scalp_orb5        value $199.59  cash $149.62  holding ['RKLB']
+2026-11-10 14:56:13,743 INFO scalp_burst       BUY  MARA  $  50.00 @ 7.226  burst signal
+2026-11-10 14:56:13,744 INFO scalp_burst       value $198.20  cash $148.24  holding ['MARA']
+2026-11-10 14:56:14,751 INFO scalp_orb5_large  BUY  META  $  50.00 @ 641.9  orb5 signal
+2026-11-10 14:56:14,751 INFO scalp_orb5_large  BUY  PLTR  $  50.00 @ 169.1  orb5 signal
+2026-11-10 14:56:14,752 INFO scalp_orb5_large  value $200.33  cash $100.38  holding ['META', 'PLTR']
+2026-11-10 14:57:13,420 INFO scalp_burst       BUY  LCID  $  50.00 @ 4.006  burst signal
+2026-11-10 14:57:13,421 INFO scalp_burst       value $198.75  cash $98.24  holding ['MARA', 'LCID']
+2026-11-10 14:57:14,142 INFO scalp_orb5_large  BUY  SPY   $  50.00 @ 750.1  orb5 signal
+2026-11-10 14:57:14,142 INFO scalp_orb5_large  BUY  TSLA  $  50.00 @ 377.7  orb5 signal
+2026-11-10 14:57:14,143 INFO scalp_orb5_large  value $200.23  cash $0.38  holding ['META', 'PLTR', 'SPY', 'TSLA']
+2026-11-10 14:59:13,230 INFO scalp_burst       SELL MARA  $  51.05 @ 7.378  burst exit: target  P/L $+1.05
+2026-11-10 14:59:13,231 INFO scalp_burst       value $199.35  cash $149.29  holding ['LCID']
+2026-11-10 14:59:13,701 INFO scalp_orb5_large  SELL PLTR  $  49.74 @ 168.2  orb5 exit: stop  P/L $-0.26
+2026-11-10 14:59:13,702 INFO scalp_orb5_large  value $200.07  cash $50.12  holding ['META', 'SPY', 'TSLA']
+2026-11-10 15:00:16,780 INFO gap_fade          BUY  MSTR  $  99.84 @ 125.3  gap down, bouncing
+2026-11-10 15:00:16,780 INFO gap_fade          BUY  COIN  $  99.84 @ 135.8  gap down, bouncing
+2026-11-10 15:00:16,781 INFO gap_fade          value $199.58  cash $0.00  holding ['MSTR', 'COIN']
+2026-11-10 15:00:16,790 INFO wsb_crowd         BUY  RKLB  $  67.31 @ 58.7  WSB mentions spiking
+2026-11-10 15:00:16,790 INFO wsb_crowd         BUY  ASTS  $  67.31 @ 36.2  WSB mentions spiking
+2026-11-10 15:00:16,790 INFO wsb_crowd         BUY  DTE   $  67.31 @ 137  WSB mentions spiking
+2026-11-10 15:00:16,791 INFO wsb_crowd         value $201.83  cash $0.00  holding ['RKLB', 'ASTS', 'DTE']
+2026-11-10 15:00:16,791 INFO overnight_qqq     SELL QQQ   $ 194.41 @ 678.7  morning exit  P/L $-0.83
+2026-11-10 15:00:16,792 INFO overnight_qqq     value $194.41  cash $194.41  holding -
+2026-11-10 15:00:16,803 INFO activist_13d      BUY  ASPE  $  50.00 @ 12.55  ORBIMED ADVISORS LLC disclosed 12.3% (13D)
+2026-11-10 15:00:16,805 INFO activist_13d      value $199.98  cash $150.00  holding ['ASPE']
+2026-11-10 15:00:18,860 INFO options_orb_spy   BUY  SPY261110C00757000 $  35.00 @ 0.35  SPY 750.76 broke above 750.74; 1x SPY261110C00757000 @ 0.35
+2026-11-10 15:00:18,860 INFO options_orb_spy   value $182.50  cash $148.00  holding ['SPY261110C00757000']
+2026-11-10 15:01:14,421 INFO orb_tqqq          BUY  TQQQ  $ 205.89 @ 57.93  QQQ 680.25 > OR high 679.17
+2026-11-10 15:01:14,421 INFO orb_tqqq          value $205.78  cash $0.00  holding ['TQQQ']
+2026-11-10 15:01:15,250 INFO options_orb       BUY  QQQ261110C00689000 $  40.00 @ 0.4  QQQ 680.25 broke above 679.17; 1x QQQ261110C00689000 @ 0.40
+2026-11-10 15:01:15,251 INFO options_orb       value $226.50  cash $187.00  holding ['QQQ261110C00689000']
+2026-11-10 15:01:16,510 INFO scalp_orb5        SELL RKLB  $  50.79 @ 59.13  orb5 exit: target  P/L $+0.79
+2026-11-10 15:01:16,510 INFO scalp_orb5        BUY  SOFI  $  50.00 @ 16.53  orb5 signal
+2026-11-10 15:01:16,511 INFO scalp_orb5        value $200.38  cash $150.41  holding ['SOFI']
+2026-11-10 15:01:16,530 INFO scalp_burst       BUY  RIOT  $  50.00 @ 18.56  burst signal
+2026-11-10 15:01:16,531 INFO scalp_burst       value $199.51  cash $99.29  holding ['LCID', 'RIOT']
+2026-11-10 15:01:20,230 INFO scalp_burst_large BUY  QQQ   $  50.00 @ 680.6  burst signal
+2026-11-10 15:01:20,231 INFO scalp_burst_large value $197.48  cash $147.51  holding ['QQQ']
+2026-11-10 15:02:17,510 INFO scalp_orb5_large  SELL META  $  50.30 @ 645.7  orb5 exit: target  P/L $+0.30
+2026-11-10 15:02:17,511 INFO scalp_orb5_large  value $200.37  cash $100.42  holding ['SPY', 'TSLA']
+2026-11-10 15:02:22,365 INFO insider: checked 17 new Form 4 filings, found 1 insider purchases
+2026-11-10 15:02:23,666 INFO activist: checked 13D feed: nothing new
