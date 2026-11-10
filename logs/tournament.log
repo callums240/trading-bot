@@ -766,3 +766,6 @@
 2026-11-10 15:50:17,024 INFO scalp_reversion_large_fast value $199.82  cash $199.82  holding -
 2026-11-10 15:50:25,236 INFO insider: checked 27 new Form 4 filings, found 1 insider purchases
 2026-11-10 15:50:26,479 INFO activist: checked 13D feed: nothing new
+2026-11-10 16:43:45,487 INFO ==== session start ====
+2026-11-10 16:43:51,939 INFO insider: checked 8 new Form 4 filings, found 1 insider purchases
+2026-11-10 16:43:53,800 INFO activist: checked 13D feed: nothing new
