@@ -786,3 +786,21 @@
 2026-11-10 17:15:48,988 INFO scalp_burst       value $198.68  cash $148.76  holding ['SOUN']
 2026-11-10 17:15:58,057 INFO insider: checked 17 new Form 4 filings, found 1 insider purchases
 2026-11-10 17:15:59,308 INFO activist: checked 13D feed: nothing new
+2026-11-10 17:18:47,984 INFO scalp_vwap        BUY  LCID  $  50.00 @ 3.986  vwap signal
+2026-11-10 17:18:47,985 INFO scalp_vwap        value $200.31  cash $150.38  holding ['LCID']
+2026-11-10 17:24:48,737 INFO scalp_reversion_large_fast BUY  MSFT  $  50.00 @ 537.7  reversion signal
+2026-11-10 17:24:48,738 INFO scalp_reversion_large_fast value $199.62  cash $149.65  holding ['MSFT']
+2026-11-10 17:25:50,957 INFO scalp_reversion_large_fast SELL MSFT  $  49.71 @ 534.6  reversion exit: stop  P/L $-0.29
+2026-11-10 17:25:50,957 INFO scalp_reversion_large_fast BUY  MSFT  $  50.00 @ 535.1  reversion signal
+2026-11-10 17:25:50,958 INFO scalp_reversion_large_fast value $199.33  cash $149.35  holding ['MSFT']
+2026-11-10 17:27:47,628 INFO scalp_burst       SELL SOUN  $  49.39 @ 3.759  burst exit: stop  P/L $-0.61
+2026-11-10 17:27:47,629 INFO scalp_burst       value $198.15  cash $198.15  holding -
+2026-11-10 17:27:49,014 INFO scalp_reversion_large_fast SELL MSFT  $  49.76 @ 532.5  reversion exit: stop  P/L $-0.24
+2026-11-10 17:27:49,015 INFO scalp_reversion_large_fast BUY  MSFT  $  50.00 @ 533.1  reversion signal
+2026-11-10 17:27:49,015 INFO scalp_reversion_large_fast value $199.09  cash $149.11  holding ['MSFT']
+2026-11-10 17:30:49,706 INFO midday_momentum   BUY  MARA  $ 202.09 @ 7.003  top gainer at midday
+2026-11-10 17:30:49,707 INFO midday_momentum   value $201.99  cash $0.00  holding ['MARA']
+2026-11-10 17:30:55,497 INFO scalp_reversion_large_fast SELL MSFT  $  50.22 @ 535.4  reversion exit: target  P/L $+0.22
+2026-11-10 17:30:55,498 INFO scalp_reversion_large_fast value $199.33  cash $199.33  holding -
+2026-11-10 17:31:58,105 INFO insider: checked 19 new Form 4 filings, found 0 insider purchases
+2026-11-10 17:31:59,466 INFO activist: checked 13D feed: nothing new

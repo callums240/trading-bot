@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.64611012581582,
+ "cash": 199.3284128198219,
  "positions": {},
  "trades": [
   {
@@ -275,11 +275,74 @@
    "pnl": -0.18,
    "reason": "reversion exit: stop",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:24-05:00",
+   "side": "buy",
+   "sym": "MSFT",
+   "qty": 0.092985,
+   "price": 537.7237,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:25-05:00",
+   "side": "sell",
+   "sym": "MSFT",
+   "qty": 0.092985,
+   "price": 534.5726,
+   "usd": 49.71,
+   "pnl": -0.29,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:25-05:00",
+   "side": "buy",
+   "sym": "MSFT",
+   "qty": 0.093439,
+   "price": 535.1074,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:27-05:00",
+   "side": "sell",
+   "sym": "MSFT",
+   "qty": 0.093439,
+   "price": 532.5336,
+   "usd": 49.76,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:27-05:00",
+   "side": "buy",
+   "sym": "MSFT",
+   "qty": 0.093797,
+   "price": 533.0664,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T12:30-05:00",
+   "side": "sell",
+   "sym": "MSFT",
+   "qty": 0.093797,
+   "price": 535.3672,
+   "usd": 50.22,
+   "pnl": 0.22,
+   "reason": "reversion exit: target",
+   "mood": "nervous"
   }
  ],
  "equity": {
   "2026-11-09": 200.12,
-  "2026-11-10": 199.65
+  "2026-11-10": 199.33
  },
  "done": [],
  "memo": {
@@ -290,14 +353,16 @@
    "MSTR": 2,
    "COIN": 1,
    "AVGO": 1,
-   "AMD": 2
+   "AMD": 2,
+   "MSFT": 3
   },
   "last_bar": {
    "NVDA": "2026-11-10T10:46:00-05:00",
    "MSTR": "2026-11-10T11:37:00-05:00",
    "COIN": "2026-11-10T10:51:00-05:00",
    "AVGO": "2026-11-10T10:53:00-05:00",
-   "AMD": "2026-11-10T11:49:00-05:00"
+   "AMD": "2026-11-10T11:49:00-05:00",
+   "MSFT": "2026-11-10T12:26:00-05:00"
   }
  },
  "stopped": null
