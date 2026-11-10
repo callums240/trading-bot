@@ -814,3 +814,13 @@
 2026-11-10 17:41:50,340 INFO scalp_reversion_large_fast value $198.99  cash $149.02  holding ['COIN']
 2026-11-10 17:48:05,271 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
 2026-11-10 17:48:07,338 INFO activist: checked 13D feed: nothing new
+2026-11-10 17:51:50,115 INFO scalp_reversion_large_fast SELL COIN  $  50.20 @ 130.4  reversion exit: target  P/L $+0.20
+2026-11-10 17:51:50,116 INFO scalp_reversion_large_fast value $199.22  cash $199.22  holding -
+2026-11-10 17:53:48,015 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.381  vwap signal
+2026-11-10 17:53:48,016 INFO scalp_vwap        value $199.71  cash $149.80  holding ['AMC']
+2026-11-10 17:57:47,766 INFO scalp_burst       BUY  RIOT  $  50.00 @ 17.63  burst signal
+2026-11-10 17:57:47,767 INFO scalp_burst       value $198.12  cash $148.15  holding ['RIOT']
+2026-11-10 18:00:50,469 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.391  burst signal
+2026-11-10 18:00:50,470 INFO scalp_burst       value $198.05  cash $98.15  holding ['RIOT', 'AMC']
+2026-11-10 18:04:01,670 INFO insider: checked 24 new Form 4 filings, found 0 insider purchases
+2026-11-10 18:04:03,378 INFO activist: checked 13D feed: nothing new
