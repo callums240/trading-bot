@@ -1,4 +1,4 @@
-# Daily briefing: Tuesday 10 November 2026, 10:50 ET
+# Daily briefing: Tuesday 10 November 2026, 11:06 ET
 
 ## Market
 
@@ -6,13 +6,13 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.86% | -1.04% | -1.59% | -0.76% | +3.79% | 0 of 11 |
+| -0.70% | -0.75% | -1.40% | -0.62% | +2.80% | 0 of 11 |
 
-Sectors today: XLF -0.2%, XLP -0.2%, XLE -0.4%, XLC -0.4%, XLY -0.5%, XLV -0.6%, XLRE -0.8%, XLU -0.8%, XLI -1.3%, XLB -1.3%, XLK -1.5%
+Sectors today: XLF -0.0%, XLP -0.2%, XLY -0.3%, XLC -0.3%, XLV -0.6%, XLU -0.6%, XLRE -0.7%, XLE -0.8%, XLB -0.9%, XLK -0.9%, XLI -0.9%
 
 ## Real paper account (live bot)
 
-Equity $199.03 (started $200.00), cash $100.00. Holding: XLE (-1.0%).
+Equity $198.63 (started $200.00), cash $100.00. Holding: XLE (-1.4%).
 
 ## Tournament today
 
@@ -31,16 +31,16 @@ Equity $199.03 (started $200.00), cash $100.00. Holding: XLE (-1.0%).
 | scalp_vwap_large | $+0.00 | +0.3% | $200.66 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | overnight_qqq | $-0.10 | -2.8% | $194.41 | 1 | 0/1 | cash |
-| scalp_reversion_large_fast | $-0.30 | -0.1% | $199.82 | 6 | 1/3 | cash |
+| scalp_reversion_large_fast | $-0.30 | -0.1% | $199.82 | 10 | 2/5 | cash |
 | scalp_burst_large | $-0.53 | -1.5% | $196.98 | 2 | 0/1 | cash |
-| scalp_orb5_large | $-1.23 | -0.4% | $199.15 | 15 | 1/7 | QQQ |
-| activist_13d | $-1.40 | -0.7% | $198.60 | 1 | - | ASPE |
-| spy_hold | $-1.72 | -2.8% | $194.34 | 0 | - | SPY |
-| insider_buys | $-2.91 | +3.5% | $207.02 | 0 | - | KNOP, LRN, ASPE, GLXY |
-| weekly_momentum | $-3.05 | -3.6% | $192.87 | 0 | - | SOFI, AMZN, RIVN |
-| wsb_crowd | $-4.37 | -1.2% | $197.56 | 3 | - | RKLB, ASTS, DTE |
-| orb_tqqq | $-7.55 | -0.8% | $198.34 | 1 | - | TQQQ |
-| gap_fade | $-7.88 | -4.1% | $191.80 | 2 | - | MSTR, COIN |
+| scalp_orb5_large | $-1.11 | -0.4% | $199.27 | 16 | 1/7 | QQQ, TSLA |
+| activist_13d | $-1.12 | -0.6% | $198.88 | 1 | - | ASPE |
+| spy_hold | $-1.40 | -2.7% | $194.66 | 0 | - | SPY |
+| insider_buys | $-2.28 | +3.8% | $207.65 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| weekly_momentum | $-2.82 | -3.4% | $193.10 | 0 | - | SOFI, AMZN, RIVN |
+| wsb_crowd | $-4.36 | -1.2% | $197.57 | 3 | - | RKLB, ASTS, DTE |
+| orb_tqqq | $-6.22 | -0.2% | $199.67 | 1 | - | TQQQ |
+| gap_fade | $-8.02 | -4.2% | $191.66 | 2 | - | MSTR, COIN |
 | options_orb_spy | $-20.00 | -18.5% | $163.00 | 2 | 0/1 | cash |
 | options_orb | $-23.00 | +2.0% | $204.00 | 2 | 0/1 | cash |
 
