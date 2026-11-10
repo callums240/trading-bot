@@ -838,3 +838,9 @@
 2026-11-10 18:49:47,804 INFO scalp_burst       value $199.66  cash $148.94  holding ['RIOT']
 2026-11-10 18:51:53,190 INFO insider: checked 10 new Form 4 filings, found 0 insider purchases
 2026-11-10 18:51:54,626 INFO activist: checked 13D feed: nothing new
+2026-11-10 18:52:48,375 INFO scalp_burst       SELL RIOT  $  50.80 @ 17.92  burst exit: target  P/L $+0.80
+2026-11-10 18:52:48,376 INFO scalp_burst       value $199.74  cash $199.74  holding -
+2026-11-10 19:00:50,405 INFO options_late_trend BUY  QQQ261110P00668000 $  28.00 @ 0.28  QQQ -1.1% today, below VWAP 673.73; 1x QQQ261110P00668000 @ 0.28
+2026-11-10 19:00:50,406 INFO options_late_trend value $186.50  cash $159.00  holding ['QQQ261110P00668000']
+2026-11-10 19:07:56,176 INFO insider: checked 17 new Form 4 filings, found 0 insider purchases
+2026-11-10 19:07:57,702 INFO activist: checked 13D feed: nothing new
