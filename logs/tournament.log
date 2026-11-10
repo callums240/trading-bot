@@ -703,3 +703,17 @@
 2026-11-10 15:02:17,511 INFO scalp_orb5_large  value $200.37  cash $100.42  holding ['SPY', 'TSLA']
 2026-11-10 15:02:22,365 INFO insider: checked 17 new Form 4 filings, found 1 insider purchases
 2026-11-10 15:02:23,666 INFO activist: checked 13D feed: nothing new
+2026-11-10 15:03:14,637 INFO scalp_orb5        BUY  AMC   $  50.00 @ 3.386  orb5 signal
+2026-11-10 15:03:14,638 INFO scalp_orb5        value $200.25  cash $100.41  holding ['SOFI', 'AMC']
+2026-11-10 15:03:14,663 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.386  burst signal
+2026-11-10 15:03:14,665 INFO scalp_burst       value $199.52  cash $49.29  holding ['LCID', 'RIOT', 'AMC']
+2026-11-10 15:04:14,852 INFO scalp_burst       SELL LCID  $  50.73 @ 4.064  burst exit: target  P/L $+0.73
+2026-11-10 15:04:14,853 INFO scalp_burst       value $199.75  cash $100.02  holding ['RIOT', 'AMC']
+2026-11-10 15:05:15,316 INFO scalp_burst       SELL RIOT  $  49.37 @ 18.33  burst exit: stop  P/L $-0.63
+2026-11-10 15:05:15,317 INFO scalp_burst       value $199.31  cash $149.39  holding ['AMC']
+2026-11-10 15:12:14,296 INFO scalp_orb5        SELL SOFI  $  49.39 @ 16.33  orb5 exit: stop  P/L $-0.61
+2026-11-10 15:12:14,297 INFO scalp_orb5        value $199.49  cash $149.80  holding ['AMC']
+2026-11-10 15:14:12,925 INFO options_orb       SELL QQQ261110C00689000 $  17.00 @ 0.17  stop: down 56%  P/L $-23.00
+2026-11-10 15:14:12,925 INFO options_orb       value $204.00  cash $204.00  holding -
+2026-11-10 15:18:19,111 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
+2026-11-10 15:18:20,422 INFO activist: checked 13D feed: nothing new
