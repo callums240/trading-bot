@@ -8,7 +8,8 @@ around and after the filing.
 
 Many 13Ds aren't activism (stakes received in a merger, a private share sale to an
 insider...), so each filing is labelled from its own structured data: who filed it,
-where the money came from, and the stated purpose (Item 4).
+where the money came from, and the stated purpose (Item 4). Only filings whose purpose
+uses activist language (board seats, a sale, buybacks, "undervalued"...) count.
 
 Source: the SEC's free EDGAR "latest filings" feed (same rules as insider_collector.py).
 Output: data/activist/stakes.jsonl (one new 13D per line, activist or not, with the
@@ -123,9 +124,13 @@ def parse(acc, folder, filed, tickers):
         why.append("stake came from a deal with the company")
     if "OO" in funds and not funds & {"WC", "AF", "BK", "PF"}:
         why.append("shares not bought with cash")
-    looks = bool(ACTIVIST.search(purpose)) or (bool(kinds & {"IA", "PN", "HF"}) and bool(funds & {"WC", "AF"}))
-    if not looks:
-        why.append("no activist language or fund buyer")
+    if re.search(r"\bventures?\b", tag(doc, "reportingPersonName"), re.I):
+        why.append("venture investor (shares usually held from before the company listed)")
+    # A fund buying with its own cash isn't enough on its own: venture and healthcare funds
+    # file 13Ds after an IPO too (seen 9 Nov: OrbiMed and ARCH on ASPE). Activists say what
+    # they want in Item 4, so require that language.
+    if not ACTIVIST.search(purpose):
+        why.append("no activist language in the stated purpose")
     return {
         "acc": acc, "filed": filed, "ticker": ticker, "exchange": exchange,
         "company": tag(doc, "issuerName"), "filer": tag(doc, "reportingPersonName"),
