@@ -717,3 +717,26 @@
 2026-11-10 15:14:12,925 INFO options_orb       value $204.00  cash $204.00  holding -
 2026-11-10 15:18:19,111 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
 2026-11-10 15:18:20,422 INFO activist: checked 13D feed: nothing new
+2026-11-10 15:21:13,654 INFO scalp_burst       BUY  MARA  $  50.00 @ 7.542  burst signal
+2026-11-10 15:21:13,655 INFO scalp_burst       value $199.34  cash $99.39  holding ['AMC', 'MARA']
+2026-11-10 15:22:13,036 INFO options_orb_spy   SELL SPY261110C00757000 $  15.00 @ 0.15  stop: down 56%  P/L $-20.00
+2026-11-10 15:22:13,036 INFO options_orb_spy   value $163.00  cash $163.00  holding -
+2026-11-10 15:25:15,393 INFO scalp_orb5_large  BUY  COIN  $  50.00 @ 132.6  orb5 signal
+2026-11-10 15:25:15,394 INFO scalp_orb5_large  value $200.18  cash $50.42  holding ['SPY', 'TSLA', 'COIN']
+2026-11-10 15:27:14,467 INFO scalp_orb5_large  SELL SPY   $  49.96 @ 749.5  orb5 exit: time limit  P/L $-0.04
+2026-11-10 15:27:14,467 INFO scalp_orb5_large  SELL TSLA  $  49.82 @ 376.3  orb5 exit: time limit  P/L $-0.18
+2026-11-10 15:27:14,468 INFO scalp_orb5_large  value $200.32  cash $150.20  holding ['COIN']
+2026-11-10 15:30:14,706 INFO scalp_orb5        SELL AMC   $  50.72 @ 3.434  orb5 exit: target  P/L $+0.72
+2026-11-10 15:30:14,707 INFO scalp_orb5        value $200.52  cash $200.52  holding -
+2026-11-10 15:30:14,761 INFO scalp_burst       SELL AMC   $  50.72 @ 3.434  burst exit: target  P/L $+0.72
+2026-11-10 15:30:14,763 INFO scalp_burst       value $199.84  cash $150.11  holding ['MARA']
+2026-11-10 15:31:14,504 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.451  burst signal
+2026-11-10 15:31:14,506 INFO scalp_burst       value $199.85  cash $100.11  holding ['MARA', 'AMC']
+2026-11-10 15:32:16,112 INFO scalp_orb5_large  BUY  TSLA  $  50.00 @ 378  orb5 signal
+2026-11-10 15:32:16,113 INFO scalp_orb5_large  value $200.12  cash $100.20  holding ['COIN', 'TSLA']
+2026-11-10 15:33:14,363 INFO scalp_orb5        BUY  HOOD  $  50.00 @ 81.76  orb5 signal
+2026-11-10 15:33:14,364 INFO scalp_orb5        value $200.49  cash $150.52  holding ['HOOD']
+2026-11-10 15:34:14,398 INFO scalp_burst       SELL MARA  $  49.32 @ 7.439  burst exit: stop  P/L $-0.68
+2026-11-10 15:34:14,399 INFO scalp_burst       value $199.20  cash $149.43  holding ['AMC']
+2026-11-10 15:34:26,426 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-10 15:34:28,998 INFO activist: checked 13D feed: nothing new
