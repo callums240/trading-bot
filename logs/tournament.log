@@ -858,3 +858,7 @@
 2026-11-10 19:54:48,306 INFO scalp_reversion   value $204.65  cash $154.72  holding ['LCID']
 2026-11-10 19:55:59,745 INFO insider: checked 18 new Form 4 filings, found 1 insider purchases
 2026-11-10 19:56:02,108 INFO activist: checked 13D feed: nothing new
+2026-11-10 19:59:47,109 INFO scalp_reversion   SELL LCID  $  49.27 @ 3.789  reversion exit: stop  P/L $-0.73
+2026-11-10 19:59:47,110 INFO scalp_reversion   value $203.99  cash $203.99  holding -
+2026-11-10 20:11:56,304 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
+2026-11-10 20:11:57,729 INFO activist: checked 13D feed: nothing new
