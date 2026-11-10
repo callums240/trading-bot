@@ -782,3 +782,7 @@
 2026-11-10 16:56:47,677 INFO scalp_vwap        value $200.38  cash $200.38  holding -
 2026-11-10 16:59:50,954 INFO insider: checked 8 new Form 4 filings, found 2 insider purchases
 2026-11-10 16:59:52,454 INFO activist: checked 13D feed: nothing new
+2026-11-10 17:15:48,987 INFO scalp_burst       BUY  SOUN  $  50.00 @ 3.806  burst signal
+2026-11-10 17:15:48,988 INFO scalp_burst       value $198.68  cash $148.76  holding ['SOUN']
+2026-11-10 17:15:58,057 INFO insider: checked 17 new Form 4 filings, found 1 insider purchases
+2026-11-10 17:15:59,308 INFO activist: checked 13D feed: nothing new
