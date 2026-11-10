@@ -804,3 +804,13 @@
 2026-11-10 17:30:55,498 INFO scalp_reversion_large_fast value $199.33  cash $199.33  holding -
 2026-11-10 17:31:58,105 INFO insider: checked 19 new Form 4 filings, found 0 insider purchases
 2026-11-10 17:31:59,466 INFO activist: checked 13D feed: nothing new
+2026-11-10 17:36:48,139 INFO scalp_vwap        SELL LCID  $  49.42 @ 3.939  vwap exit: stop  P/L $-0.58
+2026-11-10 17:36:48,140 INFO scalp_vwap        value $199.80  cash $199.80  holding -
+2026-11-10 17:36:50,246 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 504.1  reversion signal
+2026-11-10 17:36:50,247 INFO scalp_reversion_large_fast value $199.30  cash $149.33  holding ['AMD']
+2026-11-10 17:39:49,095 INFO scalp_reversion_large_fast SELL AMD   $  49.69 @ 501  reversion exit: stop  P/L $-0.31
+2026-11-10 17:39:49,096 INFO scalp_reversion_large_fast value $199.02  cash $199.02  holding -
+2026-11-10 17:41:50,339 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 129.8  reversion signal
+2026-11-10 17:41:50,340 INFO scalp_reversion_large_fast value $198.99  cash $149.02  holding ['COIN']
+2026-11-10 17:48:05,271 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
+2026-11-10 17:48:07,338 INFO activist: checked 13D feed: nothing new
