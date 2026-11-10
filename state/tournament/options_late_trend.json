@@ -1,13 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 159.0,
- "positions": {
-  "QQQ261110P00668000": {
-   "qty": 100.0,
-   "entry": 0.28,
-   "since": "2026-11-10"
-  }
- },
+ "cash": 170.0,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-09T14:00-05:00",
@@ -39,22 +33,28 @@
    "usd": 28.0,
    "reason": "QQQ -1.1% today, below VWAP 673.73; 1x QQQ261110P00668000 @ 0.28",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-10T14:10-05:00",
+   "side": "sell",
+   "sym": "QQQ261110P00668000",
+   "qty": 100.0,
+   "price": 0.11,
+   "usd": 11.0,
+   "pnl": -17.0,
+   "reason": "stop: down 59%",
+   "mood": "nervous"
   }
  ],
  "equity": {
   "2026-11-09": 187.0,
-  "2026-11-10": 177.5
+  "2026-11-10": 170.0
  },
  "done": [],
  "memo": {
   "day": "2026-11-10",
   "entries": 1,
-  "held": {
-   "QQQ261110P00668000": {
-    "entry": 0.28,
-    "peak": 0.275
-   }
-  }
+  "held": {}
  },
  "stopped": null
 }
