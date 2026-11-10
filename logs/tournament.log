@@ -824,3 +824,5 @@
 2026-11-10 18:00:50,470 INFO scalp_burst       value $198.05  cash $98.15  holding ['RIOT', 'AMC']
 2026-11-10 18:04:01,670 INFO insider: checked 24 new Form 4 filings, found 0 insider purchases
 2026-11-10 18:04:03,378 INFO activist: checked 13D feed: nothing new
+2026-11-10 18:19:59,877 INFO insider: checked 30 new Form 4 filings, found 3 insider purchases
+2026-11-10 18:20:01,927 INFO activist: checked 13D feed: nothing new
