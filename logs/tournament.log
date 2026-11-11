@@ -1048,3 +1048,10 @@
 2026-11-11 16:14:26,014 INFO scalp_orb5_large  value $198.19  cash $100.32  holding ['AAPL', 'NVDA']
 2026-11-11 16:19:27,729 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 16:19:28,949 INFO activist: checked 13D feed: nothing new
+2026-11-11 16:21:28,640 INFO scalp_orb5_large  SELL AAPL  $  50.06 @ 353.9  orb5 exit: time limit  P/L $+0.06
+2026-11-11 16:21:28,640 INFO scalp_orb5_large  SELL NVDA  $  47.87 @ 175.3  orb5 exit: time limit  P/L $+0.04
+2026-11-11 16:21:28,641 INFO scalp_orb5_large  value $198.24  cash $198.24  holding -
+2026-11-11 16:23:26,141 INFO scalp_burst       SELL RIOT  $  49.46 @ 18.51  burst exit: stop  P/L $-0.54
+2026-11-11 16:23:26,142 INFO scalp_burst       value $198.52  cash $198.52  holding -
+2026-11-11 16:35:30,102 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 16:35:31,214 INFO activist: checked 13D feed: nothing new
