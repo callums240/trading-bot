@@ -48,3 +48,7 @@
 2026-11-10 20:32:49,868 INFO SELL XLE (~$99.92, target), settles 2026-11-11
 2026-11-10 20:32:49,869 INFO entry candidates: none
 2026-11-10 20:32:49,869 INFO ==== run end ====
+2026-11-11 20:32:26,765 INFO ==== run start (PAPER) ====
+2026-11-11 20:32:26,899 INFO equity $199.89 | cash $199.89 | unsettled $0.00 | settled $199.89
+2026-11-11 20:32:28,276 INFO entry candidates: none
+2026-11-11 20:32:28,277 INFO ==== run end ====

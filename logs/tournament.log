@@ -1120,3 +1120,17 @@
 2026-11-11 20:04:26,343 INFO scalp_vwap        value $201.55  cash $201.55  holding -
 2026-11-11 20:19:24,461 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 20:19:25,627 INFO activist: checked 13D feed: nothing new
+2026-11-11 20:30:23,963 INFO orb_tqqq          SELL TQQQ  $ 201.30 @ 60.68  close  P/L $+1.44
+2026-11-11 20:30:23,964 INFO orb_tqqq          value $201.30  cash $201.30  holding -
+2026-11-11 20:30:24,005 INFO midday_momentum   SELL SMCI  $ 102.14 @ 30.37  close  P/L $-2.56
+2026-11-11 20:30:24,005 INFO midday_momentum   SELL HOOD  $ 104.18 @ 85.06  close  P/L $-0.52
+2026-11-11 20:30:24,007 INFO midday_momentum   value $206.31  cash $206.31  holding -
+2026-11-11 20:30:24,041 INFO wsb_crowd         SELL CRWV  $  69.80 @ 59.95  close  P/L $+2.88
+2026-11-11 20:30:24,041 INFO wsb_crowd         SELL NBIS  $  68.01 @ 155.6  close  P/L $+1.09
+2026-11-11 20:30:24,041 INFO wsb_crowd         SELL MSFT  $  65.77 @ 519.1  close  P/L $-1.15
+2026-11-11 20:30:24,042 INFO wsb_crowd         value $203.59  cash $203.59  holding -
+2026-11-11 20:30:24,042 INFO overnight_qqq     BUY  QQQ   $ 197.62 @ 691.3  overnight hold
+2026-11-11 20:30:24,043 INFO overnight_qqq     value $197.53  cash $0.00  holding ['QQQ']
+2026-11-11 20:32:28,354 INFO live bot ran (exit 0): 2026-11-11 20:32:28,277 INFO ==== run end ====
+2026-11-11 20:34:26,659 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 20:34:28,173 INFO activist: checked 13D feed: nothing new
