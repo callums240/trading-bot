@@ -1015,3 +1015,24 @@
 2026-11-11 15:48:26,938 INFO scalp_orb5_large  value $197.81  cash $147.83  holding ['QQQ']
 2026-11-11 15:48:27,617 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 15:48:28,969 INFO activist: checked 13D feed: nothing new
+2026-11-11 15:50:29,708 INFO scalp_orb5_large  BUY  AAPL  $  50.00 @ 353.5  orb5 signal
+2026-11-11 15:50:29,708 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 122.4  orb5 signal
+2026-11-11 15:50:29,709 INFO scalp_orb5_large  value $197.82  cash $47.83  holding ['QQQ', 'AAPL', 'MSTR']
+2026-11-11 15:51:27,508 INFO scalp_orb5_large  BUY  NVDA  $  47.83 @ 175.1  orb5 signal
+2026-11-11 15:51:27,509 INFO scalp_orb5_large  value $197.77  cash $0.00  holding ['QQQ', 'AAPL', 'MSTR', 'NVDA']
+2026-11-11 15:52:24,583 INFO options_orb       SELL QQQ261111C00693000 $  39.50 @ 0.79  doubled (+109%): sold half, stake back  P/L $+20.50
+2026-11-11 15:52:24,584 INFO options_orb       value $245.25  cash $205.50  holding ['QQQ261111C00693000']
+2026-11-11 15:52:24,861 INFO options_orb_spy   BUY  SPY261111C00760000 $  38.00 @ 0.38  SPY 758.13 broke above 757.90; 1x SPY261111C00760000 @ 0.38
+2026-11-11 15:52:24,862 INFO options_orb_spy   value $160.50  cash $125.00  holding ['SPY261111C00760000']
+2026-11-11 15:54:25,710 INFO scalp_vwap        SELL RIOT  $  50.75 @ 18.72  vwap exit: target  P/L $+0.75
+2026-11-11 15:54:25,710 INFO scalp_vwap        value $201.69  cash $151.44  holding ['SOFI']
+2026-11-11 15:54:27,067 INFO scalp_burst_large BUY  AMD   $  50.00 @ 553  burst signal
+2026-11-11 15:54:27,068 INFO scalp_burst_large value $196.39  cash $46.46  holding ['MSTR', 'COIN', 'AMD']
+2026-11-11 15:55:26,443 INFO scalp_orb5        BUY  MARA  $  50.00 @ 7.857  orb5 signal
+2026-11-11 15:55:26,444 INFO scalp_orb5        value $199.99  cash $99.91  holding ['HOOD', 'MARA']
+2026-11-11 15:55:26,497 INFO scalp_burst       BUY  RIOT  $  50.00 @ 18.71  burst signal
+2026-11-11 15:55:26,498 INFO scalp_burst       value $199.04  cash $149.06  holding ['RIOT']
+2026-11-11 16:00:35,626 INFO scalp_vwap_large  BUY  PLTR  $  50.00 @ 173.3  vwap signal
+2026-11-11 16:00:35,627 INFO scalp_vwap_large  value $200.43  cash $150.45  holding ['PLTR']
+2026-11-11 16:03:30,541 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 16:03:31,742 INFO activist: checked 13D feed: nothing new
