@@ -1036,3 +1036,15 @@
 2026-11-11 16:00:35,627 INFO scalp_vwap_large  value $200.43  cash $150.45  holding ['PLTR']
 2026-11-11 16:03:30,541 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 16:03:31,742 INFO activist: checked 13D feed: nothing new
+2026-11-11 16:08:25,359 INFO options_orb       SELL QQQ261111C00693000 $  27.00 @ 0.54  trailing exit: peaked +199%, now +49%  P/L $+8.00
+2026-11-11 16:08:25,360 INFO options_orb       value $232.50  cash $232.50  holding -
+2026-11-11 16:09:25,896 INFO scalp_orb5        SELL MARA  $  49.44 @ 7.768  orb5 exit: stop  P/L $-0.56
+2026-11-11 16:09:25,897 INFO scalp_orb5        value $199.27  cash $149.35  holding ['HOOD']
+2026-11-11 16:10:29,687 INFO scalp_orb5_large  SELL MSTR  $  50.28 @ 123.1  orb5 exit: target  P/L $+0.28
+2026-11-11 16:10:29,688 INFO scalp_orb5_large  value $198.12  cash $50.28  holding ['QQQ', 'AAPL', 'NVDA']
+2026-11-11 16:10:29,708 INFO scalp_vwap_large  SELL PLTR  $  49.74 @ 172.4  vwap exit: stop  P/L $-0.26
+2026-11-11 16:10:29,709 INFO scalp_vwap_large  value $200.20  cash $200.20  holding -
+2026-11-11 16:14:26,013 INFO scalp_orb5_large  SELL QQQ   $  50.04 @ 690.3  orb5 exit: time limit  P/L $+0.04
+2026-11-11 16:14:26,014 INFO scalp_orb5_large  value $198.19  cash $100.32  holding ['AAPL', 'NVDA']
+2026-11-11 16:19:27,729 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 16:19:28,949 INFO activist: checked 13D feed: nothing new
