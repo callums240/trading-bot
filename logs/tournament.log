@@ -1116,3 +1116,7 @@
 2026-11-11 19:47:29,769 INFO activist: checked 13D feed: nothing new
 2026-11-11 20:03:27,807 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 20:03:29,000 INFO activist: checked 13D feed: nothing new
+2026-11-11 20:04:26,342 INFO scalp_vwap        SELL RIVN  $  49.72 @ 13.53  vwap exit: time limit  P/L $-0.28
+2026-11-11 20:04:26,343 INFO scalp_vwap        value $201.55  cash $201.55  holding -
+2026-11-11 20:19:24,461 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 20:19:25,627 INFO activist: checked 13D feed: nothing new
