@@ -1096,3 +1096,7 @@
 2026-11-11 18:41:26,513 INFO scalp_burst       value $198.44  cash $148.52  holding ['LCID']
 2026-11-11 18:43:27,312 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 18:43:29,692 INFO activist: checked 13D feed: nothing new
+2026-11-11 18:48:26,768 INFO scalp_burst_large SELL MSTR  $  49.77 @ 122.9  burst exit: time limit  P/L $-0.23
+2026-11-11 18:48:26,769 INFO scalp_burst_large value $196.87  cash $196.87  holding -
+2026-11-11 18:59:27,402 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 18:59:28,457 INFO activist: checked 13D feed: nothing new
