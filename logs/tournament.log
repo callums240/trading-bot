@@ -1088,3 +1088,11 @@
 2026-11-11 18:11:28,200 INFO activist: checked 13D feed: nothing new
 2026-11-11 18:27:25,948 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 18:27:27,182 INFO activist: checked 13D feed: nothing new
+2026-11-11 18:32:29,327 INFO scalp_burst_large SELL NVDA  $  46.63 @ 177.3  burst exit: time limit  P/L $+0.16
+2026-11-11 18:32:29,327 INFO scalp_burst_large value $196.90  cash $147.10  holding ['MSTR']
+2026-11-11 18:34:25,645 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 13.6  vwap signal
+2026-11-11 18:34:25,646 INFO scalp_vwap        value $201.80  cash $151.83  holding ['RIVN']
+2026-11-11 18:41:26,512 INFO scalp_burst       BUY  LCID  $  50.00 @ 3.696  burst signal
+2026-11-11 18:41:26,513 INFO scalp_burst       value $198.44  cash $148.52  holding ['LCID']
+2026-11-11 18:43:27,312 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 18:43:29,692 INFO activist: checked 13D feed: nothing new
