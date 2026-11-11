@@ -1075,3 +1075,10 @@
 2026-11-11 17:17:28,191 INFO scalp_burst_large value $196.62  cash $50.05  holding ['AMD', 'NVDA', 'MSTR']
 2026-11-11 17:23:26,291 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 17:23:27,702 INFO activist: checked 13D feed: nothing new
+2026-11-11 17:25:26,272 INFO scalp_burst_large SELL AMD   $  50.42 @ 557.7  burst exit: time limit  P/L $+0.42
+2026-11-11 17:25:26,273 INFO scalp_burst_large value $196.77  cash $100.47  holding ['NVDA', 'MSTR']
+2026-11-11 17:30:26,591 INFO midday_momentum   BUY  SMCI  $ 104.70 @ 31.14  top gainer at midday
+2026-11-11 17:30:26,592 INFO midday_momentum   BUY  HOOD  $ 104.70 @ 85.48  top gainer at midday
+2026-11-11 17:30:26,592 INFO midday_momentum   value $209.29  cash $0.00  holding ['SMCI', 'HOOD']
+2026-11-11 17:39:26,636 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 17:39:28,121 INFO activist: checked 13D feed: nothing new
