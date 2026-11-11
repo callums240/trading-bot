@@ -930,3 +930,34 @@
 2026-11-11 15:02:05,662 INFO scalp_orb5        value $199.33  cash $99.17  holding ['RKLB', 'LCID']
 2026-11-11 15:02:12,952 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 15:02:14,411 INFO activist: checked 13D feed: nothing new
+2026-11-11 15:06:02,912 INFO scalp_orb5        SELL LCID  $  49.20 @ 3.774  orb5 exit: stop  P/L $-0.80
+2026-11-11 15:06:02,913 INFO scalp_orb5        value $198.17  cash $148.37  holding ['RKLB']
+2026-11-11 15:06:02,918 INFO scalp_vwap        BUY  MARA  $  50.00 @ 7.646  vwap signal
+2026-11-11 15:06:02,918 INFO scalp_vwap        value $201.32  cash $151.36  holding ['MARA']
+2026-11-11 15:06:02,919 INFO scalp_burst       BUY  MARA  $  50.00 @ 7.646  burst signal
+2026-11-11 15:06:02,920 INFO scalp_burst       value $199.69  cash $149.74  holding ['MARA']
+2026-11-11 15:07:02,217 INFO scalp_orb5        BUY  LCID  $  50.00 @ 3.796  orb5 signal
+2026-11-11 15:07:02,218 INFO scalp_orb5        value $198.36  cash $98.37  holding ['RKLB', 'LCID']
+2026-11-11 15:07:04,617 INFO scalp_vwap_large  BUY  NFLX  $  50.00 @ 63.37  vwap signal
+2026-11-11 15:07:04,618 INFO scalp_vwap_large  value $200.64  cash $150.66  holding ['NFLX']
+2026-11-11 15:08:03,171 INFO scalp_orb5_large  BUY  AMD   $  50.00 @ 545.1  orb5 signal
+2026-11-11 15:08:03,172 INFO scalp_orb5_large  value $198.87  cash $148.90  holding ['AMD']
+2026-11-11 15:08:03,231 INFO scalp_burst_large BUY  AMD   $  50.00 @ 545.1  burst signal
+2026-11-11 15:08:03,231 INFO scalp_burst_large value $197.09  cash $147.11  holding ['AMD']
+2026-11-11 15:11:06,142 INFO scalp_orb5        SELL LCID  $  50.70 @ 3.849  orb5 exit: target  P/L $+0.70
+2026-11-11 15:11:06,143 INFO scalp_orb5        value $199.12  cash $149.07  holding ['RKLB']
+2026-11-11 15:11:06,152 INFO scalp_vwap        SELL MARA  $  49.33 @ 7.543  vwap exit: stop  P/L $-0.67
+2026-11-11 15:11:06,153 INFO scalp_vwap        value $200.69  cash $200.69  holding -
+2026-11-11 15:11:06,154 INFO scalp_burst       SELL MARA  $  49.33 @ 7.543  burst exit: stop  P/L $-0.67
+2026-11-11 15:11:06,155 INFO scalp_burst       value $199.06  cash $199.06  holding -
+2026-11-11 15:11:13,749 INFO scalp_orb5_large  SELL AMD   $  49.63 @ 541.1  orb5 exit: stop  P/L $-0.37
+2026-11-11 15:11:13,750 INFO scalp_orb5_large  value $198.53  cash $198.53  holding -
+2026-11-11 15:12:12,279 INFO scalp_burst_large SELL AMD   $  49.35 @ 538  burst exit: stop  P/L $-0.65
+2026-11-11 15:12:12,280 INFO scalp_burst_large value $196.46  cash $196.46  holding -
+2026-11-11 15:13:12,450 INFO scalp_orb5_large  BUY  TSLA  $  50.00 @ 393.2  orb5 signal
+2026-11-11 15:13:12,450 INFO scalp_orb5_large  BUY  AAPL  $  50.00 @ 353.7  orb5 signal
+2026-11-11 15:13:12,451 INFO scalp_orb5_large  value $198.48  cash $98.53  holding ['TSLA', 'AAPL']
+2026-11-11 15:13:12,452 INFO scalp_vwap_large  BUY  COIN  $  50.00 @ 134.8  vwap signal
+2026-11-11 15:13:12,452 INFO scalp_vwap_large  value $200.69  cash $100.66  holding ['NFLX', 'COIN']
+2026-11-11 15:18:04,864 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 15:18:06,259 INFO activist: checked 13D feed: nothing new
