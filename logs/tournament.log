@@ -1010,3 +1010,8 @@
 2026-11-11 15:45:00,925 INFO scalp_orb5_large  value $197.72  cash $47.80  holding ['AMD', 'QQQ', 'MSTR']
 2026-11-11 15:47:03,310 INFO scalp_orb5_large  SELL MSTR  $  49.70 @ 121.8  orb5 exit: stop  P/L $-0.27
 2026-11-11 15:47:03,311 INFO scalp_orb5_large  value $197.62  cash $97.49  holding ['AMD', 'QQQ']
+2026-11-11 15:48:22,684 INFO ==== session start ====
+2026-11-11 15:48:26,938 INFO scalp_orb5_large  SELL AMD   $  50.34 @ 548  orb5 exit: target  P/L $+0.34
+2026-11-11 15:48:26,938 INFO scalp_orb5_large  value $197.81  cash $147.83  holding ['QQQ']
+2026-11-11 15:48:27,617 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 15:48:28,969 INFO activist: checked 13D feed: nothing new

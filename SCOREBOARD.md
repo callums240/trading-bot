@@ -1,30 +1,30 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-11 15:47 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-11 15:48 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **insider_buys** | $215.47 | +7.7% | +9.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 1 | **insider_buys** | $215.74 | +7.9% | +9.3 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
 | 2 | **midday_momentum** | $209.39 | +4.7% | +6.1 pts | 10 | 80% | 4 / 0 | cash | 2026-11-04 |
-| 3 | **scalp_reversion** | $203.99 | +2.0% | +3.4 pts | 20 | 70% | 7 / 0 | cash | 2026-11-05 |
-| 4 | **wsb_crowd** | $203.21 | +1.6% | +3.0 pts | 21 | 44% | 3 / 1 | CRWV, NBIS, MSFT | 2026-11-04 |
-| 5 | **scalp_vwap** | $200.81 | +0.4% | +1.8 pts | 42 | 45% | 9 / 0 | RIOT, SOFI | 2026-11-05 |
-| 6 | **activist_13d** | $200.59 | +0.3% | +1.7 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
-| 7 | **scalp_vwap_large** | $200.45 | +0.2% | +1.6 pts | 10 | 80% | 4 / 0 | cash | 2026-11-09 |
-| 8 | **options_dip_calls** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
-| 9 | **put_credit_spread** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | STOPPED retired 2026-11-09 | 2026-11-04 |
-| 10 | **trend_tqqq** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
-| 11 | **scalp_orb5** | $199.74 | -0.1% | +1.3 pts | 41 | 50% | 10 / 0 | HOOD | 2026-11-05 |
-| 12 | **orb_tqqq** | $199.67 | -0.2% | +1.3 pts | 5 | 50% | 1 / 0 | TQQQ | 2026-11-04 |
-| 13 | **scalp_reversion_large** | $199.44 | -0.3% | +1.1 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 14 | **scalp_reversion_large_fast** | $199.22 | -0.4% | +1.0 pts | 36 | 44% | 8 / 0 | cash | 2026-11-09 |
-| 15 | **scalp_burst** | $199.06 | -0.5% | +0.9 pts | 84 | 43% | 18 / 0 | cash | 2026-11-05 |
-| 16 | **options_orb** | $198.50 | -0.7% | +0.7 pts | 6 | 67% | 0 / 2 | QQQ261111C00693000 | 2026-11-04 |
-| 17 | **overnight_qqq** | $197.62 | -1.2% | +0.2 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
-| 18 | **scalp_orb5_large** | $197.62 | -1.2% | +0.2 pts | 52 | 28% | 7 / 0 | AMD, QQQ | 2026-11-09 |
-| 19 | **spy_hold** | $197.16 | -1.4% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 20 | **scalp_burst_large** | $195.93 | -2.0% | -0.6 pts | 20 | 11% | 1 / 0 | MSTR, COIN | 2026-11-09 |
-| 21 | **gap_fade** | $193.30 | -3.3% | -1.9 pts | 12 | 33% | 2 / 0 | cash | 2026-11-04 |
+| 3 | **options_orb** | $206.50 | +3.2% | +4.6 pts | 6 | 67% | 0 / 2 | QQQ261111C00693000 | 2026-11-04 |
+| 4 | **scalp_reversion** | $203.99 | +2.0% | +3.4 pts | 20 | 70% | 7 / 0 | cash | 2026-11-05 |
+| 5 | **wsb_crowd** | $203.91 | +2.0% | +3.3 pts | 21 | 44% | 3 / 1 | CRWV, NBIS, MSFT | 2026-11-04 |
+| 6 | **scalp_vwap** | $200.79 | +0.4% | +1.8 pts | 42 | 45% | 9 / 0 | RIOT, SOFI | 2026-11-05 |
+| 7 | **activist_13d** | $200.59 | +0.3% | +1.7 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
+| 8 | **scalp_vwap_large** | $200.45 | +0.2% | +1.6 pts | 10 | 80% | 4 / 0 | cash | 2026-11-09 |
+| 9 | **options_dip_calls** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
+| 10 | **put_credit_spread** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | STOPPED retired 2026-11-09 | 2026-11-04 |
+| 11 | **trend_tqqq** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
+| 12 | **orb_tqqq** | $199.84 | -0.1% | +1.3 pts | 5 | 50% | 1 / 0 | TQQQ | 2026-11-04 |
+| 13 | **scalp_orb5** | $199.69 | -0.2% | +1.2 pts | 41 | 50% | 10 / 0 | HOOD | 2026-11-05 |
+| 14 | **scalp_reversion_large** | $199.44 | -0.3% | +1.1 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 15 | **scalp_reversion_large_fast** | $199.22 | -0.4% | +1.0 pts | 36 | 44% | 8 / 0 | cash | 2026-11-09 |
+| 16 | **scalp_burst** | $199.06 | -0.5% | +0.9 pts | 84 | 43% | 18 / 0 | cash | 2026-11-05 |
+| 17 | **scalp_orb5_large** | $197.81 | -1.1% | +0.3 pts | 53 | 31% | 8 / 0 | QQQ | 2026-11-09 |
+| 18 | **overnight_qqq** | $197.62 | -1.2% | +0.2 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
+| 19 | **spy_hold** | $197.23 | -1.4% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 20 | **scalp_burst_large** | $195.99 | -2.0% | -0.6 pts | 20 | 11% | 1 / 0 | MSTR, COIN | 2026-11-09 |
+| 21 | **gap_fade** | $193.30 | -3.3% | -2.0 pts | 12 | 33% | 2 / 0 | cash | 2026-11-04 |
 | 22 | **weekly_momentum** | $192.36 | -3.8% | -2.4 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
 | 23 | **dip_buy_volatile** | $188.96 | -5.5% | -4.1 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
 | 24 | **options_late_trend** | $170.00 | -15.0% | -13.6 pts | 4 | 0% | 0 / 0 | cash | 2026-11-09 |
