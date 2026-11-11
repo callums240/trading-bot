@@ -1057,3 +1057,15 @@
 2026-11-11 16:35:31,214 INFO activist: checked 13D feed: nothing new
 2026-11-11 16:51:27,103 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 16:51:28,451 INFO activist: checked 13D feed: nothing new
+2026-11-11 16:55:24,374 INFO options_orb_spy   SELL SPY261111C00760000 $  40.50 @ 0.81  doubled (+114%): sold half, stake back  P/L $+21.50
+2026-11-11 16:55:24,375 INFO options_orb_spy   value $206.25  cash $165.50  holding ['SPY261111C00760000']
+2026-11-11 17:01:31,752 INFO scalp_burst_large BUY  NVDA  $  46.46 @ 176.6  burst signal
+2026-11-11 17:01:31,753 INFO scalp_burst_large value $196.89  cash $0.00  holding ['MSTR', 'COIN', 'AMD', 'NVDA']
+2026-11-11 17:06:25,985 INFO scalp_orb5        SELL HOOD  $  50.18 @ 84.77  orb5 exit: time limit  P/L $+0.18
+2026-11-11 17:06:25,986 INFO scalp_orb5        value $199.53  cash $199.53  holding -
+2026-11-11 17:06:25,991 INFO scalp_vwap        SELL SOFI  $  50.39 @ 16.59  vwap exit: time limit  P/L $+0.39
+2026-11-11 17:06:25,991 INFO scalp_vwap        value $201.83  cash $201.83  holding -
+2026-11-11 17:06:28,021 INFO scalp_burst_large SELL MSTR  $  49.80 @ 122.6  burst exit: time limit  P/L $-0.20
+2026-11-11 17:06:28,022 INFO scalp_burst_large value $196.62  cash $49.80  holding ['COIN', 'AMD', 'NVDA']
+2026-11-11 17:07:27,934 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 17:07:29,426 INFO activist: checked 13D feed: nothing new
