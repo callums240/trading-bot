@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.12348212612324,
+ "cash": 198.8965606344956,
  "positions": {},
  "trades": [
   {
@@ -317,19 +317,44 @@
    "pnl": -0.16,
    "reason": "orb5 exit: time limit",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-11T09:54-05:00",
+   "side": "buy",
+   "sym": "NFLX",
+   "qty": 0.786822,
+   "price": 63.5468,
+   "usd": 50.0,
+   "reason": "orb5 signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-11T09:56-05:00",
+   "side": "sell",
+   "sym": "NFLX",
+   "qty": 0.786822,
+   "price": 63.2584,
+   "usd": 49.77,
+   "pnl": -0.23,
+   "reason": "orb5 exit: stop",
+   "mood": "calm"
   }
  ],
  "equity": {
   "2026-11-09": 200.38,
   "2026-11-10": 199.12,
-  "2026-11-11": 199.12
+  "2026-11-11": 198.9
  },
  "done": [],
  "memo": {
   "day": "2026-11-11",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "NFLX": 1
+  },
+  "last_bar": {
+   "NFLX": "2026-11-11T09:54:00-05:00"
+  }
  },
  "stopped": null
 }

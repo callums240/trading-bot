@@ -911,3 +911,22 @@
 2026-11-11 14:31:11,620 INFO activist: checked 13D feed: nothing new
 2026-11-11 14:47:03,342 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 14:47:04,852 INFO activist: checked 13D feed: nothing new
+2026-11-11 14:55:02,323 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 63.55  orb5 signal
+2026-11-11 14:55:02,324 INFO scalp_orb5_large  value $199.10  cash $149.12  holding ['NFLX']
+2026-11-11 14:57:02,587 INFO scalp_orb5_large  SELL NFLX  $  49.77 @ 63.26  orb5 exit: stop  P/L $-0.23
+2026-11-11 14:57:02,588 INFO scalp_orb5_large  value $198.90  cash $198.90  holding -
+2026-11-11 14:58:59,529 INFO scalp_orb5        BUY  LCID  $  50.00 @ 3.806  orb5 signal
+2026-11-11 14:58:59,529 INFO scalp_orb5        BUY  RKLB  $  50.00 @ 66.25  orb5 signal
+2026-11-11 14:58:59,530 INFO scalp_orb5        value $199.68  cash $99.78  holding ['LCID', 'RKLB']
+2026-11-11 15:01:10,482 INFO wsb_crowd         BUY  CRWV  $  66.92 @ 57.48  WSB mentions spiking
+2026-11-11 15:01:10,482 INFO wsb_crowd         BUY  NBIS  $  66.92 @ 153.1  WSB mentions spiking
+2026-11-11 15:01:10,482 INFO wsb_crowd         BUY  MSFT  $  66.92 @ 528.2  WSB mentions spiking
+2026-11-11 15:01:10,483 INFO wsb_crowd         value $200.67  cash $0.00  holding ['CRWV', 'NBIS', 'MSFT']
+2026-11-11 15:01:10,483 INFO overnight_qqq     SELL QQQ   $ 197.62 @ 685.2  morning exit  P/L $+3.22
+2026-11-11 15:01:10,484 INFO overnight_qqq     value $197.62  cash $197.62  holding -
+2026-11-11 15:01:11,281 INFO scalp_orb5        SELL LCID  $  49.39 @ 3.759  orb5 exit: stop  P/L $-0.61
+2026-11-11 15:01:11,282 INFO scalp_orb5        value $199.45  cash $149.17  holding ['RKLB']
+2026-11-11 15:02:05,661 INFO scalp_orb5        BUY  LCID  $  50.00 @ 3.836  orb5 signal
+2026-11-11 15:02:05,662 INFO scalp_orb5        value $199.33  cash $99.17  holding ['RKLB', 'LCID']
+2026-11-11 15:02:12,952 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 15:02:14,411 INFO activist: checked 13D feed: nothing new
