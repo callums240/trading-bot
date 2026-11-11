@@ -1069,3 +1069,9 @@
 2026-11-11 17:06:28,022 INFO scalp_burst_large value $196.62  cash $49.80  holding ['COIN', 'AMD', 'NVDA']
 2026-11-11 17:07:27,934 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 17:07:29,426 INFO activist: checked 13D feed: nothing new
+2026-11-11 17:08:26,581 INFO scalp_burst_large SELL COIN  $  50.25 @ 137.1  burst exit: time limit  P/L $+0.25
+2026-11-11 17:08:26,581 INFO scalp_burst_large value $196.48  cash $100.05  holding ['AMD', 'NVDA']
+2026-11-11 17:17:28,191 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 123.5  burst signal
+2026-11-11 17:17:28,191 INFO scalp_burst_large value $196.62  cash $50.05  holding ['AMD', 'NVDA', 'MSTR']
+2026-11-11 17:23:26,291 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 17:23:27,702 INFO activist: checked 13D feed: nothing new
