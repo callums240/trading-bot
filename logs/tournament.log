@@ -1100,3 +1100,13 @@
 2026-11-11 18:48:26,769 INFO scalp_burst_large value $196.87  cash $196.87  holding -
 2026-11-11 18:59:27,402 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-11 18:59:28,457 INFO activist: checked 13D feed: nothing new
+2026-11-11 19:00:28,120 INFO options_late_trend BUY  QQQ261111C00696000 $  36.00 @ 0.36  QQQ +2.9% today, above VWAP 690.97; 1x QQQ261111C00696000 @ 0.36
+2026-11-11 19:00:28,121 INFO options_late_trend value $169.50  cash $134.00  holding ['QQQ261111C00696000']
+2026-11-11 19:05:24,855 INFO options_late_trend SELL QQQ261111C00696000 $  17.00 @ 0.17  stop: down 51%  P/L $-19.00
+2026-11-11 19:05:24,856 INFO options_late_trend value $151.00  cash $151.00  holding -
+2026-11-11 19:09:24,006 INFO options_orb_spy   SELL SPY261111C00760000 $  60.00 @ 1.2  trailing exit: peaked +588%, now +218%  P/L $+41.00
+2026-11-11 19:09:24,007 INFO options_orb_spy   value $225.50  cash $225.50  holding -
+2026-11-11 19:15:26,465 INFO scalp_burst       SELL LCID  $  49.37 @ 3.649  burst exit: stop  P/L $-0.63
+2026-11-11 19:15:26,466 INFO scalp_burst       value $197.89  cash $197.89  holding -
+2026-11-11 19:15:28,802 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-11 19:15:30,321 INFO activist: checked 13D feed: nothing new
