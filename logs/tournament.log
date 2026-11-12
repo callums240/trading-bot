@@ -1164,3 +1164,32 @@
 2026-11-12 14:51:50,358 INFO ==== session start ====
 2026-11-12 14:51:58,019 INFO insider: checked 8 new Form 4 filings, found 0 insider purchases
 2026-11-12 14:51:59,524 INFO activist: checked 13D feed: nothing new
+2026-11-12 14:56:54,968 INFO scalp_orb5_large  BUY  AAPL  $  50.00 @ 359.4  orb5 signal
+2026-11-12 14:56:54,969 INFO scalp_orb5_large  value $198.22  cash $148.24  holding ['AAPL']
+2026-11-12 14:57:54,451 INFO scalp_orb5_large  BUY  MSFT  $  50.00 @ 525.8  orb5 signal
+2026-11-12 14:57:54,452 INFO scalp_orb5_large  value $198.16  cash $98.24  holding ['AAPL', 'MSFT']
+2026-11-12 14:58:54,072 INFO scalp_orb5_large  BUY  COIN  $  50.00 @ 131.8  orb5 signal
+2026-11-12 14:58:54,073 INFO scalp_orb5_large  value $198.14  cash $48.24  holding ['AAPL', 'MSFT', 'COIN']
+2026-11-12 15:00:59,916 INFO gap_fade          BUY  NVDA  $  96.65 @ 161.9  gap down, bouncing
+2026-11-12 15:00:59,916 INFO gap_fade          BUY  SMCI  $  96.65 @ 28.04  gap down, bouncing
+2026-11-12 15:00:59,917 INFO gap_fade          value $193.21  cash $0.00  holding ['NVDA', 'SMCI']
+2026-11-12 15:00:59,988 INFO wsb_crowd         BUY  NBIS  $  67.86 @ 128  WSB mentions spiking
+2026-11-12 15:00:59,988 INFO wsb_crowd         BUY  AMD   $  67.86 @ 564.8  WSB mentions spiking
+2026-11-12 15:00:59,988 INFO wsb_crowd         BUY  HR    $  67.86 @ 19.08  WSB mentions spiking
+2026-11-12 15:00:59,989 INFO wsb_crowd         value $203.48  cash $0.00  holding ['NBIS', 'AMD', 'HR']
+2026-11-12 15:00:59,989 INFO overnight_qqq     SELL QQQ   $ 196.08 @ 685.9  morning exit  P/L $-1.55
+2026-11-12 15:00:59,990 INFO overnight_qqq     value $196.08  cash $196.08  holding -
+2026-11-12 15:01:05,624 INFO scalp_orb5_large  SELL COIN  $  49.71 @ 131  orb5 exit: stop  P/L $-0.29
+2026-11-12 15:01:05,625 INFO scalp_orb5_large  value $197.83  cash $97.96  holding ['AAPL', 'MSFT']
+2026-11-12 15:02:54,740 INFO scalp_reversion   BUY  MARA  $  50.00 @ 7.126  reversion signal
+2026-11-12 15:02:54,741 INFO scalp_reversion   value $203.94  cash $153.99  holding ['MARA']
+2026-11-12 15:02:57,208 INFO scalp_reversion_large_fast BUY  TSLA  $  50.00 @ 391.4  reversion signal
+2026-11-12 15:02:57,209 INFO scalp_reversion_large_fast value $199.19  cash $149.22  holding ['TSLA']
+2026-11-12 15:03:52,123 INFO scalp_reversion   BUY  LCID  $  50.00 @ 3.331  reversion signal
+2026-11-12 15:03:52,124 INFO scalp_reversion   value $204.14  cash $103.99  holding ['MARA', 'LCID']
+2026-11-12 15:04:55,302 INFO scalp_reversion   BUY  RIVN  $  50.00 @ 12.92  reversion signal
+2026-11-12 15:04:55,303 INFO scalp_reversion   value $204.28  cash $53.99  holding ['MARA', 'LCID', 'RIVN']
+2026-11-12 15:07:57,628 INFO scalp_reversion   SELL LCID  $  49.30 @ 3.284  reversion exit: stop  P/L $-0.70
+2026-11-12 15:07:57,629 INFO scalp_reversion   value $203.13  cash $103.29  holding ['MARA', 'RIVN']
+2026-11-12 15:08:07,998 INFO insider: checked 39 new Form 4 filings, found 1 insider purchases
+2026-11-12 15:08:10,269 INFO activist: checked 13D feed: nothing new
