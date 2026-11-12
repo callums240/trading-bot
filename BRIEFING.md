@@ -1,4 +1,4 @@
-# Daily briefing: Thursday 12 November 2026, 09:30 ET
+# Daily briefing: Thursday 12 November 2026, 09:46 ET
 
 ## Market
 
@@ -6,9 +6,9 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.75% | -1.45% | -0.48% | +0.05% | +3.09% | 9 of 11 |
+| -0.32% | -0.57% | -0.82% | +0.06% | +1.71% | 6 of 11 |
 
-Sectors today: XLP +0.7%, XLF +0.6%, XLU +0.5%, XLV +0.5%, XLY +0.4%, XLE +0.4%, XLRE +0.3%, XLB +0.2%, XLC +0.1%, XLI -0.1%, XLK -2.6%
+Sectors today: XLY +0.7%, XLE +0.5%, XLU +0.5%, XLF +0.2%, XLB +0.0%, XLP +0.0%, XLRE +0.0%, XLV -0.1%, XLI -0.2%, XLC -0.2%, XLK -1.3%
 
 ## Real paper account (live bot)
 
@@ -38,10 +38,10 @@ Equity $199.89 (started $200.00), cash $199.89. Holding: nothing, all cash.
 | scalp_vwap_large | $+0.00 | +0.1% | $200.20 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | wsb_crowd | $+0.00 | +1.8% | $203.59 | 0 | - | cash |
-| spy_hold | $-1.43 | -1.8% | $196.40 | 0 | - | SPY |
-| activist_13d | $-1.65 | +1.7% | $203.36 | 0 | - | ASPE |
-| weekly_momentum | $-2.02 | -5.2% | $189.63 | 0 | - | SOFI, AMZN, RIVN |
-| overnight_qqq | $-2.77 | -2.7% | $194.51 | 0 | - | QQQ |
-| insider_buys | $-6.39 | +8.2% | $216.39 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| spy_hold | $-0.59 | -1.4% | $197.24 | 0 | - | SPY |
+| overnight_qqq | $-1.04 | -1.9% | $196.24 | 0 | - | QQQ |
+| activist_13d | $-1.29 | +1.9% | $203.72 | 0 | - | ASPE |
+| weekly_momentum | $-1.40 | -4.9% | $190.25 | 0 | - | SOFI, AMZN, RIVN |
+| insider_buys | $-5.30 | +8.7% | $217.48 | 0 | - | KNOP, LRN, ASPE, GLXY |
 
 Stop rule: a strategy that falls to $150 is stopped for good. Close to it: options_late_trend.
