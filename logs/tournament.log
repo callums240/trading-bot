@@ -1396,3 +1396,7 @@
 2026-11-12 20:30:52,741 INFO overnight_qqq     BUY  QQQ   $ 196.08 @ 687.2  overnight hold
 2026-11-12 20:30:52,742 INFO overnight_qqq     value $195.98  cash $0.00  holding ['QQQ']
 2026-11-12 20:33:01,520 INFO live bot ran (exit 0): 2026-11-12 20:33:01,434 INFO ==== run end ====
+2026-11-12 20:37:24,773 INFO ==== session start ====
+2026-11-12 20:37:30,702 INFO live bot ran (exit 0): 2026-11-12 20:37:30,634 INFO already ran today, exiting
+2026-11-12 20:37:36,261 INFO insider: checked 11 new Form 4 filings, found 0 insider purchases
+2026-11-12 20:37:40,309 INFO activist: checked 13D feed: nothing new
