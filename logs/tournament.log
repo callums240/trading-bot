@@ -1304,3 +1304,11 @@
 2026-11-12 16:11:57,899 INFO scalp_orb5_large  value $199.43  cash $199.43  holding -
 2026-11-12 16:12:07,722 INFO insider: checked 43 new Form 4 filings, found 2 insider purchases
 2026-11-12 16:12:10,946 INFO activist: checked 13D feed: nothing new
+2026-11-12 16:12:54,575 INFO scalp_vwap_large  BUY  AMZN  $  50.00 @ 270.6  vwap signal
+2026-11-12 16:12:54,576 INFO scalp_vwap_large  value $200.17  cash $150.20  holding ['AMZN']
+2026-11-12 16:13:55,823 INFO scalp_vwap        BUY  PLUG  $  50.00 @ 1.25  vwap signal
+2026-11-12 16:13:55,824 INFO scalp_vwap        value $203.85  cash $53.09  holding ['AMC', 'SOUN', 'PLUG']
+2026-11-12 16:16:55,066 INFO scalp_reversion   SELL RIVN  $  50.81 @ 13.13  reversion exit: target  P/L $+0.81
+2026-11-12 16:16:55,067 INFO scalp_reversion   value $205.17  cash $205.17  holding -
+2026-11-12 16:28:00,752 INFO insider: checked 29 new Form 4 filings, found 0 insider purchases
+2026-11-12 16:28:05,256 INFO activist: checked 13D feed: nothing new
