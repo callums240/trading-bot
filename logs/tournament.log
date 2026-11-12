@@ -1349,3 +1349,9 @@
 2026-11-12 17:30:54,473 INFO midday_momentum   value $206.21  cash $0.00  holding ['NVDA', 'MARA']
 2026-11-12 17:32:02,510 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
 2026-11-12 17:32:06,967 INFO activist: checked 13D feed: nothing new
+2026-11-12 17:38:54,877 INFO scalp_reversion_large_fast SELL AMD   $  50.21 @ 579.7  reversion exit: target  P/L $+0.21
+2026-11-12 17:38:54,878 INFO scalp_reversion_large_fast value $199.69  cash $199.69  holding -
+2026-11-12 17:43:52,741 INFO scalp_vwap        SELL PLUG  $  49.58 @ 1.24  vwap exit: time limit  P/L $-0.42
+2026-11-12 17:43:52,742 INFO scalp_vwap        value $202.72  cash $202.72  holding -
+2026-11-12 17:48:01,212 INFO insider: checked 30 new Form 4 filings, found 0 insider purchases
+2026-11-12 17:48:06,140 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
