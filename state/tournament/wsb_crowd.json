@@ -1,23 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 0.0,
- "positions": {
-  "NBIS": {
-   "qty": 0.530153487456214,
-   "entry": 128.00396999999998,
-   "since": "2026-11-12"
-  },
-  "AMD": {
-   "qty": 0.12015347325140037,
-   "entry": 564.792255,
-   "since": "2026-11-12"
-  },
-  "HR": {
-   "qty": 3.556782233096381,
-   "entry": 19.079535,
-   "since": "2026-11-12"
-  }
- },
+ "cash": 204.9537915245943,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-06T10:00-05:00",
@@ -300,6 +284,39 @@
    "usd": 67.86,
    "reason": "WSB mentions spiking",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-12T15:30-05:00",
+   "side": "sell",
+   "sym": "NBIS",
+   "qty": 0.530153,
+   "price": 126.2369,
+   "usd": 66.92,
+   "pnl": -0.94,
+   "reason": "close",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-12T15:30-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.120153,
+   "price": 582.0288,
+   "usd": 69.93,
+   "pnl": 2.07,
+   "reason": "close",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-12T15:30-05:00",
+   "side": "sell",
+   "sym": "HR",
+   "qty": 3.556782,
+   "price": 19.1454,
+   "usd": 68.1,
+   "pnl": 0.23,
+   "reason": "close",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -322,7 +339,8 @@
   "2026-11-10:close",
   "2026-11-11:open",
   "2026-11-11:close",
-  "2026-11-12:open"
+  "2026-11-12:open",
+  "2026-11-12:close"
  ],
  "memo": {},
  "stopped": null

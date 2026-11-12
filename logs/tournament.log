@@ -1381,3 +1381,18 @@
 2026-11-12 20:25:52,283 INFO scalp_burst_large value $200.00  cash $200.00  holding -
 2026-11-12 20:27:57,006 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
 2026-11-12 20:28:01,268 INFO activist: checked 13D feed: nothing new
+2026-11-12 20:30:52,507 INFO orb_tqqq          SELL TQQQ  $ 199.75 @ 59.52  close  P/L $-1.54
+2026-11-12 20:30:52,507 INFO orb_tqqq          value $199.75  cash $199.75  holding -
+2026-11-12 20:30:52,580 INFO gap_fade          SELL NVDA  $  97.63 @ 163.5  close  P/L $+0.98
+2026-11-12 20:30:52,580 INFO gap_fade          SELL SMCI  $  93.58 @ 27.15  close  P/L $-3.08
+2026-11-12 20:30:52,581 INFO gap_fade          value $191.21  cash $191.21  holding -
+2026-11-12 20:30:52,666 INFO midday_momentum   SELL NVDA  $ 102.84 @ 163.5  close  P/L $-0.32
+2026-11-12 20:30:52,666 INFO midday_momentum   SELL MARA  $  98.91 @ 7.276  close  P/L $-4.25
+2026-11-12 20:30:52,667 INFO midday_momentum   value $201.75  cash $201.75  holding -
+2026-11-12 20:30:52,740 INFO wsb_crowd         SELL NBIS  $  66.92 @ 126.2  close  P/L $-0.94
+2026-11-12 20:30:52,740 INFO wsb_crowd         SELL AMD   $  69.93 @ 582  close  P/L $+2.07
+2026-11-12 20:30:52,740 INFO wsb_crowd         SELL HR    $  68.10 @ 19.15  close  P/L $+0.23
+2026-11-12 20:30:52,741 INFO wsb_crowd         value $204.95  cash $204.95  holding -
+2026-11-12 20:30:52,741 INFO overnight_qqq     BUY  QQQ   $ 196.08 @ 687.2  overnight hold
+2026-11-12 20:30:52,742 INFO overnight_qqq     value $195.98  cash $0.00  holding ['QQQ']
+2026-11-12 20:33:01,520 INFO live bot ran (exit 0): 2026-11-12 20:33:01,434 INFO ==== run end ====
