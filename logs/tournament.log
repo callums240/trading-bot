@@ -1211,3 +1211,16 @@
 2026-11-12 15:22:54,147 INFO scalp_reversion   value $202.24  cash $102.67  holding ['MARA', 'RIVN']
 2026-11-12 15:24:12,074 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
 2026-11-12 15:24:14,826 INFO activist: checked 13D feed: nothing new
+2026-11-12 15:27:56,249 INFO scalp_orb5_large  BUY  MSFT  $  50.00 @ 525.9  orb5 signal
+2026-11-12 15:27:56,250 INFO scalp_orb5_large  value $197.75  cash $147.77  holding ['MSFT']
+2026-11-12 15:29:56,849 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 114.8  orb5 signal
+2026-11-12 15:29:56,851 INFO scalp_orb5_large  value $197.74  cash $97.77  holding ['MSFT', 'MSTR']
+2026-11-12 15:32:54,907 INFO scalp_reversion   BUY  SOUN  $  50.00 @ 3.656  reversion signal
+2026-11-12 15:32:54,908 INFO scalp_reversion   value $202.02  cash $52.67  holding ['MARA', 'RIVN', 'SOUN']
+2026-11-12 15:34:55,602 INFO scalp_orb5_large  SELL MSTR  $  49.75 @ 114.3  orb5 exit: stop  P/L $-0.25
+2026-11-12 15:34:55,603 INFO scalp_orb5_large  value $197.43  cash $147.53  holding ['MSFT']
+2026-11-12 15:36:55,831 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 114.6  orb5 signal
+2026-11-12 15:36:55,832 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 363.3  orb5 signal
+2026-11-12 15:36:55,833 INFO scalp_orb5_large  value $197.44  cash $47.53  holding ['MSFT', 'MSTR', 'AVGO']
+2026-11-12 15:40:00,939 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
+2026-11-12 15:40:04,492 INFO activist: checked 13D feed: nothing new
