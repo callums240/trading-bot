@@ -1373,3 +1373,7 @@
 2026-11-12 19:40:07,380 INFO activist: checked 13D feed: nothing new
 2026-11-12 19:56:00,534 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
 2026-11-12 19:56:06,025 INFO activist: checked 13D feed: nothing new
+2026-11-12 20:09:55,040 INFO scalp_burst_large BUY  TSLA  $  50.00 @ 394.5  burst signal
+2026-11-12 20:09:55,040 INFO scalp_burst_large value $199.22  cash $149.24  holding ['TSLA']
+2026-11-12 20:11:57,727 INFO insider: checked 8 new Form 4 filings, found 0 insider purchases
+2026-11-12 20:12:00,371 INFO activist: checked 13D feed: nothing new
