@@ -1322,3 +1322,13 @@
 2026-11-12 16:42:55,317 INFO scalp_reversion_large_fast value $198.96  cash $148.99  holding ['MSTR']
 2026-11-12 16:44:02,552 INFO insider: checked 28 new Form 4 filings, found 3 insider purchases
 2026-11-12 16:44:05,247 INFO activist: checked 13D feed: nothing new
+2026-11-12 16:46:54,791 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 584.2  reversion signal
+2026-11-12 16:46:54,792 INFO scalp_reversion_large_fast value $199.08  cash $98.99  holding ['MSTR', 'AMD']
+2026-11-12 16:49:54,766 INFO scalp_reversion_large_fast SELL MSTR  $  50.23 @ 117.7  reversion exit: target  P/L $+0.23
+2026-11-12 16:49:54,767 INFO scalp_reversion_large_fast value $199.29  cash $149.21  holding ['AMD']
+2026-11-12 16:51:53,917 INFO scalp_reversion_large_fast SELL AMD   $  50.27 @ 587.4  reversion exit: target  P/L $+0.27
+2026-11-12 16:51:53,918 INFO scalp_reversion_large_fast value $199.48  cash $199.48  holding -
+2026-11-12 16:55:53,128 INFO scalp_orb5        SELL SOFI  $  49.47 @ 15.91  orb5 exit: stop  P/L $-0.53
+2026-11-12 16:55:53,129 INFO scalp_orb5        value $201.24  cash $151.48  holding ['RKLB']
+2026-11-12 17:00:00,562 INFO insider: checked 25 new Form 4 filings, found 1 insider purchases
+2026-11-12 17:00:07,306 INFO activist: checked 13D feed: nothing new
