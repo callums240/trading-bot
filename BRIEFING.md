@@ -1,4 +1,4 @@
-# Daily briefing: Thursday 12 November 2026, 14:39 ET
+# Daily briefing: Thursday 12 November 2026, 14:55 ET
 
 ## Market
 
@@ -6,9 +6,9 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.28% | -0.39% | -1.43% | -0.16% | +3.06% | 2 of 11 |
+| -0.23% | -0.34% | -1.39% | -0.16% | +2.95% | 2 of 11 |
 
-Sectors today: XLE +2.1%, XLU +0.6%, XLRE -0.1%, XLP -0.1%, XLV -0.3%, XLF -0.3%, XLK -0.5%, XLI -0.6%, XLY -0.6%, XLC -0.6%, XLB -0.7%
+Sectors today: XLE +2.1%, XLU +0.3%, XLRE -0.1%, XLP -0.3%, XLK -0.4%, XLV -0.4%, XLF -0.4%, XLI -0.6%, XLC -0.7%, XLY -0.7%, XLB -0.7%
 
 ## Real paper account (live bot)
 
@@ -20,8 +20,8 @@ Equity $199.89 (started $200.00), cash $199.89. Holding: nothing, all cash.
 |---|---|---|---|---|---|---|
 | options_orb | $+49.00 | +40.8% | $281.50 | 3 | 2/2 | cash |
 | options_orb_spy | $+35.50 | +30.5% | $261.00 | 3 | 2/2 | cash |
+| wsb_crowd | $+2.62 | +3.1% | $206.21 | 3 | - | NBIS, AMD, HR |
 | scalp_burst_large | $+2.37 | -0.4% | $199.24 | 6 | 3/3 | cash |
-| wsb_crowd | $+1.57 | +2.6% | $205.16 | 3 | - | NBIS, AMD, HR |
 | scalp_orb5 | $+1.32 | +0.4% | $200.85 | 10 | 3/5 | cash |
 | scalp_orb5_large | $+1.19 | -0.3% | $199.43 | 26 | 8/13 | cash |
 | scalp_vwap | $+1.17 | +1.4% | $202.72 | 10 | 3/5 | cash |
@@ -34,14 +34,14 @@ Equity $199.89 (started $200.00), cash $199.89. Holding: nothing, all cash.
 | put_credit_spread | $+0.00 | +0.0% | $200.00 | 0 | - | STOPPED retired 2026-11-09 |
 | scalp_reversion_large | $+0.00 | -0.3% | $199.44 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
+| gap_fade | $-0.08 | -3.4% | $193.22 | 2 | - | NVDA, SMCI |
 | scalp_vwap_large | $-0.23 | -0.0% | $199.97 | 2 | 0/1 | cash |
-| spy_hold | $-0.50 | -1.3% | $197.33 | 0 | - | SPY |
-| orb_tqqq | $-0.91 | +0.2% | $200.39 | 1 | - | TQQQ |
-| gap_fade | $-0.92 | -3.8% | $192.38 | 2 | - | NVDA, SMCI |
+| orb_tqqq | $-0.39 | +0.5% | $200.91 | 1 | - | TQQQ |
+| spy_hold | $-0.41 | -1.3% | $197.42 | 0 | - | SPY |
 | overnight_qqq | $-1.20 | -2.0% | $196.08 | 1 | 0/1 | cash |
 | activist_13d | $-1.93 | +1.5% | $203.08 | 0 | - | ASPE |
-| midday_momentum | $-3.53 | +1.4% | $202.78 | 2 | - | NVDA, MARA |
-| weekly_momentum | $-4.66 | -6.5% | $186.99 | 0 | - | SOFI, AMZN, RIVN |
-| insider_buys | $-4.89 | +8.9% | $217.89 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| midday_momentum | $-2.66 | +1.8% | $203.65 | 2 | - | NVDA, MARA |
+| weekly_momentum | $-4.67 | -6.5% | $186.98 | 0 | - | SOFI, AMZN, RIVN |
+| insider_buys | $-4.81 | +9.0% | $217.97 | 0 | - | KNOP, LRN, ASPE, GLXY |
 
 Stop rule: a strategy that falls to $150 is stopped for good. Close to it: options_late_trend.
