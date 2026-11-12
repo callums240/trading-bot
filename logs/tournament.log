@@ -1193,3 +1193,21 @@
 2026-11-12 15:07:57,629 INFO scalp_reversion   value $203.13  cash $103.29  holding ['MARA', 'RIVN']
 2026-11-12 15:08:07,998 INFO insider: checked 39 new Form 4 filings, found 1 insider purchases
 2026-11-12 15:08:10,269 INFO activist: checked 13D feed: nothing new
+2026-11-12 15:09:55,124 INFO scalp_reversion   BUY  LCID  $  50.00 @ 3.291  reversion signal
+2026-11-12 15:09:55,125 INFO scalp_reversion   value $203.07  cash $53.29  holding ['MARA', 'RIVN', 'LCID']
+2026-11-12 15:10:59,225 INFO scalp_reversion_large_fast SELL TSLA  $  49.77 @ 389.6  reversion exit: stop  P/L $-0.23
+2026-11-12 15:10:59,226 INFO scalp_reversion_large_fast value $198.99  cash $198.99  holding -
+2026-11-12 15:12:54,825 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 361.2  orb5 signal
+2026-11-12 15:12:54,826 INFO scalp_orb5_large  value $197.78  cash $47.96  holding ['AAPL', 'MSFT', 'AVGO']
+2026-11-12 15:13:53,718 INFO scalp_orb5_large  SELL AAPL  $  49.74 @ 357.6  orb5 exit: stop  P/L $-0.26
+2026-11-12 15:13:53,719 INFO scalp_orb5_large  value $197.80  cash $97.70  holding ['MSFT', 'AVGO']
+2026-11-12 15:15:56,484 INFO scalp_orb5_large  SELL AVGO  $  50.31 @ 363.4  orb5 exit: target  P/L $+0.31
+2026-11-12 15:15:56,485 INFO scalp_orb5_large  value $197.88  cash $148.00  holding ['MSFT']
+2026-11-12 15:16:55,188 INFO scalp_orb5        BUY  HOOD  $  50.00 @ 82.08  orb5 signal
+2026-11-12 15:16:55,189 INFO scalp_orb5        value $199.50  cash $149.53  holding ['HOOD']
+2026-11-12 15:20:54,845 INFO scalp_orb5_large  SELL MSFT  $  49.77 @ 523.4  orb5 exit: stop  P/L $-0.23
+2026-11-12 15:20:54,846 INFO scalp_orb5_large  value $197.77  cash $197.77  holding -
+2026-11-12 15:22:54,146 INFO scalp_reversion   SELL LCID  $  49.37 @ 3.249  reversion exit: stop  P/L $-0.63
+2026-11-12 15:22:54,147 INFO scalp_reversion   value $202.24  cash $102.67  holding ['MARA', 'RIVN']
+2026-11-12 15:24:12,074 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
+2026-11-12 15:24:14,826 INFO activist: checked 13D feed: nothing new
