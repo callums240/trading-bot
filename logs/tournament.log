@@ -1357,3 +1357,5 @@
 2026-11-12 17:48:06,140 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
 2026-11-12 18:03:56,329 INFO insider: checked 4 new Form 4 filings, found 0 insider purchases
 2026-11-12 18:03:58,701 INFO activist: checked 13D feed: nothing new
+2026-11-12 18:19:58,846 INFO insider: checked 10 new Form 4 filings, found 1 insider purchases
+2026-11-12 18:20:04,310 INFO activist: checked 13D feed: nothing new
