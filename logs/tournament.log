@@ -1377,3 +1377,7 @@
 2026-11-12 20:09:55,040 INFO scalp_burst_large value $199.22  cash $149.24  holding ['TSLA']
 2026-11-12 20:11:57,727 INFO insider: checked 8 new Form 4 filings, found 0 insider purchases
 2026-11-12 20:12:00,371 INFO activist: checked 13D feed: nothing new
+2026-11-12 20:25:52,282 INFO scalp_burst_large SELL TSLA  $  50.76 @ 400.5  burst exit: target  P/L $+0.76
+2026-11-12 20:25:52,283 INFO scalp_burst_large value $200.00  cash $200.00  holding -
+2026-11-12 20:27:57,006 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-12 20:28:01,268 INFO activist: checked 13D feed: nothing new
