@@ -1332,3 +1332,11 @@
 2026-11-12 16:55:53,129 INFO scalp_orb5        value $201.24  cash $151.48  holding ['RKLB']
 2026-11-12 17:00:00,562 INFO insider: checked 25 new Form 4 filings, found 1 insider purchases
 2026-11-12 17:00:07,306 INFO activist: checked 13D feed: nothing new
+2026-11-12 17:02:52,477 INFO scalp_reversion   BUY  LCID  $  50.00 @ 3.366  reversion signal
+2026-11-12 17:02:52,478 INFO scalp_reversion   value $205.08  cash $155.17  holding ['LCID']
+2026-11-12 17:10:53,868 INFO scalp_vwap        SELL AMC   $  50.67 @ 3.299  vwap exit: target  P/L $+0.67
+2026-11-12 17:10:53,869 INFO scalp_vwap        value $203.41  cash $103.76  holding ['SOUN', 'PLUG']
+2026-11-12 17:11:53,564 INFO scalp_orb5        SELL RKLB  $  49.38 @ 65.29  orb5 exit: stop  P/L $-0.62
+2026-11-12 17:11:53,565 INFO scalp_orb5        value $200.85  cash $200.85  holding -
+2026-11-12 17:16:00,582 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
+2026-11-12 17:16:03,212 INFO activist: checked 13D feed: nothing new
