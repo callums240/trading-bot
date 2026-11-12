@@ -1,4 +1,4 @@
-# Daily briefing: Thursday 12 November 2026, 15:37 ET
+# Daily briefing: Thursday 12 November 2026, 15:53 ET
 
 ## Market
 
@@ -6,13 +6,13 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.40% | -0.53% | -1.62% | -0.28% | +3.62% | 2 of 11 |
+| -0.42% | -0.42% | -1.68% | -0.36% | +3.59% | 1 of 11 |
 
-Sectors today: XLE +1.8%, XLU +0.2%, XLRE -0.1%, XLP -0.2%, XLV -0.4%, XLY -0.4%, XLF -0.5%, XLI -0.7%, XLK -0.8%, XLC -0.9%, XLB -1.1%
+Sectors today: XLE +1.6%, XLU -0.0%, XLP -0.3%, XLRE -0.4%, XLY -0.4%, XLV -0.5%, XLK -0.6%, XLF -0.7%, XLI -0.9%, XLB -1.1%, XLC -1.1%
 
 ## Real paper account (live bot)
 
-Equity $199.36 (started $200.00), cash $99.90. Holding: NVDA (-0.5%).
+Equity $200.69 (started $200.00), cash $99.90. Holding: NVDA (+0.8%).
 
 ## Tournament today
 
@@ -35,13 +35,13 @@ Equity $199.36 (started $200.00), cash $99.90. Holding: NVDA (-0.5%).
 | scalp_reversion_large | $+0.00 | -0.3% | $199.44 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | scalp_vwap_large | $-0.23 | -0.0% | $199.97 | 2 | 0/1 | cash |
-| spy_hold | $-0.75 | -1.5% | $197.08 | 0 | - | SPY |
-| overnight_qqq | $-1.33 | -2.0% | $195.95 | 2 | 0/1 | QQQ |
+| activist_13d | $-0.55 | +2.2% | $204.46 | 0 | - | ASPE |
+| spy_hold | $-0.78 | -1.5% | $197.05 | 0 | - | SPY |
+| overnight_qqq | $-1.12 | -1.9% | $196.16 | 2 | 0/1 | QQQ |
 | orb_tqqq | $-1.55 | -0.1% | $199.75 | 2 | 0/1 | cash |
-| activist_13d | $-2.03 | +1.5% | $202.98 | 0 | - | ASPE |
 | gap_fade | $-2.09 | -4.4% | $191.21 | 4 | 1/2 | cash |
+| insider_buys | $-3.75 | +9.5% | $219.03 | 0 | - | KNOP, LRN, ASPE, GLXY |
 | midday_momentum | $-4.56 | +0.9% | $201.75 | 4 | 0/2 | cash |
-| weekly_momentum | $-5.22 | -6.8% | $186.43 | 0 | - | SOFI, AMZN, RIVN |
-| insider_buys | $-5.54 | +8.6% | $217.24 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| weekly_momentum | $-5.31 | -6.8% | $186.34 | 0 | - | SOFI, AMZN, RIVN |
 
 Stop rule: a strategy that falls to $150 is stopped for good. Close to it: options_late_trend.
