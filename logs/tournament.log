@@ -1340,3 +1340,12 @@
 2026-11-12 17:11:53,565 INFO scalp_orb5        value $200.85  cash $200.85  holding -
 2026-11-12 17:16:00,582 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
 2026-11-12 17:16:03,212 INFO activist: checked 13D feed: nothing new
+2026-11-12 17:16:54,381 INFO scalp_vwap        SELL SOUN  $  49.37 @ 3.669  vwap exit: stop  P/L $-0.63
+2026-11-12 17:16:54,382 INFO scalp_vwap        value $202.93  cash $153.14  holding ['PLUG']
+2026-11-12 17:25:54,336 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 577.3  reversion signal
+2026-11-12 17:25:54,337 INFO scalp_reversion_large_fast value $199.46  cash $149.48  holding ['AMD']
+2026-11-12 17:30:54,472 INFO midday_momentum   BUY  NVDA  $ 103.16 @ 164  top gainer at midday
+2026-11-12 17:30:54,472 INFO midday_momentum   BUY  MARA  $ 103.16 @ 7.589  top gainer at midday
+2026-11-12 17:30:54,473 INFO midday_momentum   value $206.21  cash $0.00  holding ['NVDA', 'MARA']
+2026-11-12 17:32:02,510 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
+2026-11-12 17:32:06,967 INFO activist: checked 13D feed: nothing new
