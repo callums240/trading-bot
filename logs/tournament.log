@@ -1261,3 +1261,46 @@
 2026-11-12 15:55:56,353 INFO scalp_orb5_large  value $198.29  cash $48.40  holding ['MSFT', 'COIN', 'AVGO']
 2026-11-12 15:56:11,218 INFO insider: checked 50 new Form 4 filings, found 2 insider purchases
 2026-11-12 15:56:15,401 INFO activist: checked 13D feed: nothing new
+2026-11-12 15:56:55,415 INFO scalp_burst_large SELL AMD   $  50.76 @ 579  burst exit: target  P/L $+0.76
+2026-11-12 15:56:55,416 INFO scalp_burst_large BUY  COIN  $  50.00 @ 131.8  burst signal
+2026-11-12 15:56:55,416 INFO scalp_burst_large value $197.60  cash $147.63  holding ['COIN']
+2026-11-12 15:57:54,148 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 18.28  orb5 signal
+2026-11-12 15:57:54,149 INFO scalp_orb5        value $200.18  cash $99.53  holding ['HOOD', 'RIOT']
+2026-11-12 15:57:55,629 INFO scalp_orb5_large  SELL MSFT  $  50.06 @ 526.5  orb5 exit: time limit  P/L $+0.06
+2026-11-12 15:57:55,630 INFO scalp_orb5_large  value $198.72  cash $98.46  holding ['COIN', 'AVGO']
+2026-11-12 15:58:52,685 INFO options_orb       SELL QQQ261112C00695000 $  42.50 @ 0.85  doubled (+144%): sold half, stake back  P/L $+25.00
+2026-11-12 15:58:52,685 INFO options_orb       value $282.75  cash $240.00  holding ['QQQ261112C00695000']
+2026-11-12 15:58:54,139 INFO scalp_orb5        SELL HOOD  $  50.86 @ 83.48  orb5 exit: target  P/L $+0.86
+2026-11-12 15:58:54,139 INFO scalp_orb5        BUY  RKLB  $  50.00 @ 66.11  orb5 signal
+2026-11-12 15:58:54,140 INFO scalp_orb5        value $200.69  cash $100.39  holding ['RIOT', 'RKLB']
+2026-11-12 15:58:54,226 INFO scalp_vwap        SELL RIOT  $  50.83 @ 18.39  vwap exit: target  P/L $+0.83
+2026-11-12 15:58:54,229 INFO scalp_vwap        value $203.31  cash $153.09  holding ['AMC']
+2026-11-12 15:59:52,459 INFO options_orb_spy   SELL SPY261112C00763000 $  32.50 @ 0.65  doubled (+126%): sold half, stake back  P/L $+18.00
+2026-11-12 15:59:52,459 INFO options_orb_spy   value $261.75  cash $229.00  holding ['SPY261112C00763000']
+2026-11-12 15:59:52,973 INFO scalp_orb5        BUY  SOFI  $  50.00 @ 16.08  orb5 signal
+2026-11-12 15:59:52,974 INFO scalp_orb5        BUY  MARA  $  50.00 @ 7.426  orb5 signal
+2026-11-12 15:59:52,975 INFO scalp_orb5        value $200.57  cash $0.39  holding ['RIOT', 'RKLB', 'SOFI', 'MARA']
+2026-11-12 15:59:53,190 INFO scalp_vwap        BUY  SOUN  $  50.00 @ 3.716  vwap signal
+2026-11-12 15:59:53,191 INFO scalp_vwap        value $203.24  cash $103.09  holding ['AMC', 'SOUN']
+2026-11-12 15:59:55,540 INFO scalp_orb5_large  BUY  PLTR  $  50.00 @ 171.3  orb5 signal
+2026-11-12 15:59:55,541 INFO scalp_orb5_large  value $198.79  cash $48.46  holding ['COIN', 'AVGO', 'PLTR']
+2026-11-12 16:00:59,578 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 117.3  burst signal
+2026-11-12 16:00:59,579 INFO scalp_burst_large value $197.83  cash $97.63  holding ['COIN', 'MSTR']
+2026-11-12 16:05:56,246 INFO scalp_orb5_large  SELL COIN  $  50.38 @ 132.8  orb5 exit: target  P/L $+0.38
+2026-11-12 16:05:56,247 INFO scalp_orb5_large  value $198.73  cash $98.84  holding ['AVGO', 'PLTR']
+2026-11-12 16:06:55,684 INFO scalp_orb5        SELL RIOT  $  50.77 @ 18.56  orb5 exit: target  P/L $+0.77
+2026-11-12 16:06:55,685 INFO scalp_orb5        value $201.84  cash $51.16  holding ['RKLB', 'SOFI', 'MARA']
+2026-11-12 16:06:55,786 INFO scalp_reversion   SELL SOUN  $  50.94 @ 3.724  reversion exit: target  P/L $+0.94
+2026-11-12 16:06:55,787 INFO scalp_reversion   value $204.71  cash $154.35  holding ['RIVN']
+2026-11-12 16:07:52,351 INFO scalp_orb5        SELL MARA  $  50.86 @ 7.553  orb5 exit: target  P/L $+0.86
+2026-11-12 16:07:52,352 INFO scalp_orb5        value $202.31  cash $102.01  holding ['RKLB', 'SOFI']
+2026-11-12 16:08:55,250 INFO scalp_burst_large SELL COIN  $  50.77 @ 133.8  burst exit: target  P/L $+0.77
+2026-11-12 16:08:55,251 INFO scalp_burst_large value $198.92  cash $148.40  holding ['MSTR']
+2026-11-12 16:10:54,629 INFO scalp_orb5_large  SELL AVGO  $  50.29 @ 364.5  orb5 exit: target  P/L $+0.29
+2026-11-12 16:10:54,631 INFO scalp_orb5_large  value $199.38  cash $149.13  holding ['PLTR']
+2026-11-12 16:10:54,803 INFO scalp_burst_large SELL MSTR  $  50.84 @ 119.3  burst exit: target  P/L $+0.84
+2026-11-12 16:10:54,804 INFO scalp_burst_large value $199.24  cash $199.24  holding -
+2026-11-12 16:11:57,898 INFO scalp_orb5_large  SELL PLTR  $  50.30 @ 172.3  orb5 exit: target  P/L $+0.30
+2026-11-12 16:11:57,899 INFO scalp_orb5_large  value $199.43  cash $199.43  holding -
+2026-11-12 16:12:07,722 INFO insider: checked 43 new Form 4 filings, found 2 insider purchases
+2026-11-12 16:12:10,946 INFO activist: checked 13D feed: nothing new
