@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 197.8909469591652,
+ "cash": 198.5978068118774,
  "positions": {},
  "trades": [
   {
@@ -913,6 +913,27 @@
    "pnl": -0.63,
    "reason": "burst exit: stop",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-12T10:43-05:00",
+   "side": "buy",
+   "sym": "MARA",
+   "qty": 6.923823,
+   "price": 7.2214,
+   "usd": 50.0,
+   "reason": "burst signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-12T10:53-05:00",
+   "side": "sell",
+   "sym": "MARA",
+   "qty": 6.923823,
+   "price": 7.3235,
+   "usd": 50.71,
+   "pnl": 0.71,
+   "reason": "burst exit: target",
+   "mood": "calm"
   }
  ],
  "equity": {
@@ -921,14 +942,18 @@
   "2026-11-09": 198.24,
   "2026-11-10": 199.74,
   "2026-11-11": 197.89,
-  "2026-11-12": 197.89
+  "2026-11-12": 198.6
  },
  "done": [],
  "memo": {
   "day": "2026-11-12",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "MARA": 1
+  },
+  "last_bar": {
+   "MARA": "2026-11-12T10:42:00-05:00"
+  }
  },
  "stopped": null
 }

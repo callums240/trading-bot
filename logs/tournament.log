@@ -1224,3 +1224,40 @@
 2026-11-12 15:36:55,833 INFO scalp_orb5_large  value $197.44  cash $47.53  holding ['MSFT', 'MSTR', 'AVGO']
 2026-11-12 15:40:00,939 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
 2026-11-12 15:40:04,492 INFO activist: checked 13D feed: nothing new
+2026-11-12 15:40:55,460 INFO scalp_orb5_large  SELL AVGO  $  49.67 @ 360.8  orb5 exit: stop  P/L $-0.33
+2026-11-12 15:40:55,461 INFO scalp_orb5_large  value $197.29  cash $97.19  holding ['MSFT', 'MSTR']
+2026-11-12 15:41:55,887 INFO scalp_orb5_large  BUY  COIN  $  50.00 @ 130.7  orb5 signal
+2026-11-12 15:41:55,888 INFO scalp_orb5_large  value $197.24  cash $47.19  holding ['MSFT', 'MSTR', 'COIN']
+2026-11-12 15:43:53,856 INFO scalp_vwap        BUY  MARA  $  50.00 @ 7.221  vwap signal
+2026-11-12 15:43:53,856 INFO scalp_vwap        value $201.51  cash $151.55  holding ['MARA']
+2026-11-12 15:43:53,858 INFO scalp_burst       BUY  MARA  $  50.00 @ 7.221  burst signal
+2026-11-12 15:43:53,859 INFO scalp_burst       value $197.85  cash $147.89  holding ['MARA']
+2026-11-12 15:44:55,080 INFO scalp_orb5_large  BUY  AMD   $  47.19 @ 570.3  orb5 signal
+2026-11-12 15:44:55,081 INFO scalp_orb5_large  value $197.45  cash $0.00  holding ['MSFT', 'MSTR', 'COIN', 'AMD']
+2026-11-12 15:44:55,215 INFO scalp_burst_large BUY  AMD   $  50.00 @ 570.3  burst signal
+2026-11-12 15:44:55,216 INFO scalp_burst_large value $196.84  cash $146.87  holding ['AMD']
+2026-11-12 15:45:55,078 INFO scalp_reversion   SELL MARA  $  50.75 @ 7.234  reversion exit: target  P/L $+0.75
+2026-11-12 15:45:55,078 INFO scalp_reversion   value $203.43  cash $103.42  holding ['RIVN', 'SOUN']
+2026-11-12 15:51:54,570 INFO orb_tqqq          BUY  TQQQ  $ 201.30 @ 59.98  QQQ 688.46 > OR high 688.40
+2026-11-12 15:51:54,571 INFO orb_tqqq          value $201.20  cash $0.00  holding ['TQQQ']
+2026-11-12 15:51:55,490 INFO options_orb       BUY  QQQ261112C00695000 $  35.00 @ 0.35  QQQ 688.46 broke above 688.40; 1x QQQ261112C00695000 @ 0.35
+2026-11-12 15:51:55,490 INFO options_orb       value $230.00  cash $197.50  holding ['QQQ261112C00695000']
+2026-11-12 15:51:55,850 INFO options_orb_spy   BUY  SPY261112C00763000 $  29.00 @ 0.29  SPY 758.92 broke above 758.84; 1x SPY261112C00763000 @ 0.29
+2026-11-12 15:51:55,851 INFO options_orb_spy   value $223.00  cash $196.50  holding ['SPY261112C00763000']
+2026-11-12 15:51:59,582 INFO scalp_orb5_large  SELL MSTR  $  50.52 @ 115.8  orb5 exit: target  P/L $+0.52
+2026-11-12 15:51:59,583 INFO scalp_orb5_large  SELL COIN  $  50.28 @ 131.4  orb5 exit: target  P/L $+0.28
+2026-11-12 15:51:59,583 INFO scalp_orb5_large  SELL AMD   $  47.61 @ 575.3  orb5 exit: target  P/L $+0.41
+2026-11-12 15:51:59,584 INFO scalp_orb5_large  value $198.33  cash $148.40  holding ['MSFT']
+2026-11-12 15:52:54,209 INFO scalp_vwap        BUY  RIOT  $  50.00 @ 18.09  vwap signal
+2026-11-12 15:52:54,210 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.256  vwap signal
+2026-11-12 15:52:54,211 INFO scalp_vwap        value $202.12  cash $51.55  holding ['MARA', 'RIOT', 'AMC']
+2026-11-12 15:52:55,434 INFO scalp_orb5_large  BUY  COIN  $  50.00 @ 131.8  orb5 signal
+2026-11-12 15:52:55,435 INFO scalp_orb5_large  value $198.26  cash $98.40  holding ['MSFT', 'COIN']
+2026-11-12 15:53:52,891 INFO scalp_vwap        SELL MARA  $  50.71 @ 7.324  vwap exit: target  P/L $+0.71
+2026-11-12 15:53:52,892 INFO scalp_vwap        value $202.11  cash $102.26  holding ['RIOT', 'AMC']
+2026-11-12 15:53:52,894 INFO scalp_burst       SELL MARA  $  50.71 @ 7.324  burst exit: target  P/L $+0.71
+2026-11-12 15:53:52,895 INFO scalp_burst       value $198.60  cash $198.60  holding -
+2026-11-12 15:55:56,351 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 362.4  orb5 signal
+2026-11-12 15:55:56,353 INFO scalp_orb5_large  value $198.29  cash $48.40  holding ['MSFT', 'COIN', 'AVGO']
+2026-11-12 15:56:11,218 INFO insider: checked 50 new Form 4 filings, found 2 insider purchases
+2026-11-12 15:56:15,401 INFO activist: checked 13D feed: nothing new
