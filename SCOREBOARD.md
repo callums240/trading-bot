@@ -1,34 +1,34 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-12 20:59 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-13 14:30 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **options_orb** | $281.50 | +40.8% | +42.2 pts | 11 | 86% | 0 / 6 | cash | 2026-11-04 |
-| 2 | **options_orb_spy** | $261.00 | +30.5% | +31.9 pts | 10 | 67% | 0 / 4 | cash | 2026-11-09 |
-| 3 | **insider_buys** | $219.51 | +9.8% | +11.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
-| 4 | **wsb_crowd** | $204.95 | +2.5% | +3.9 pts | 30 | 53% | 7 / 1 | cash | 2026-11-04 |
-| 5 | **scalp_reversion** | $204.85 | +2.4% | +3.8 pts | 32 | 62% | 10 / 0 | cash | 2026-11-05 |
-| 6 | **activist_13d** | $204.42 | +2.2% | +3.6 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
-| 7 | **scalp_vwap** | $202.72 | +1.4% | +2.8 pts | 56 | 50% | 14 / 0 | cash | 2026-11-05 |
-| 8 | **midday_momentum** | $201.75 | +0.9% | +2.3 pts | 18 | 44% | 4 / 0 | cash | 2026-11-04 |
-| 9 | **scalp_orb5** | $200.85 | +0.4% | +1.8 pts | 54 | 52% | 14 / 0 | cash | 2026-11-05 |
-| 10 | **options_dip_calls** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
-| 11 | **put_credit_spread** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | STOPPED retired 2026-11-09 | 2026-11-04 |
-| 12 | **scalp_burst_large** | $200.00 | +0.0% | +1.4 pts | 36 | 44% | 8 / 0 | cash | 2026-11-09 |
-| 13 | **trend_tqqq** | $200.00 | +0.0% | +1.4 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
-| 14 | **scalp_vwap_large** | $199.97 | -0.0% | +1.4 pts | 14 | 57% | 4 / 0 | cash | 2026-11-09 |
-| 15 | **orb_tqqq** | $199.75 | -0.1% | +1.3 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
-| 16 | **scalp_reversion_large_fast** | $199.69 | -0.2% | +1.2 pts | 44 | 50% | 11 / 0 | cash | 2026-11-09 |
-| 17 | **scalp_reversion_large** | $199.44 | -0.3% | +1.1 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 18 | **scalp_orb5_large** | $199.43 | -0.3% | +1.1 pts | 86 | 47% | 20 / 0 | cash | 2026-11-09 |
-| 19 | **scalp_burst** | $198.60 | -0.7% | +0.7 pts | 90 | 42% | 19 / 0 | cash | 2026-11-05 |
-| 20 | **spy_hold** | $197.19 | -1.4% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 21 | **overnight_qqq** | $196.40 | -1.8% | -0.4 pts | 11 | 40% | 2 / 0 | QQQ | 2026-11-04 |
-| 22 | **gap_fade** | $191.21 | -4.4% | -3.0 pts | 16 | 38% | 3 / 0 | cash | 2026-11-04 |
-| 23 | **dip_buy_volatile** | $188.96 | -5.5% | -4.1 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
-| 24 | **weekly_momentum** | $186.10 | -7.0% | -5.5 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
-| 25 | **options_late_trend** | $151.00 | -24.5% | -23.1 pts | 6 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 1 | **options_orb** | $281.50 | +40.8% | +41.9 pts | 11 | 86% | 0 / 6 | cash | 2026-11-04 |
+| 2 | **options_orb_spy** | $261.00 | +30.5% | +31.6 pts | 10 | 67% | 0 / 4 | cash | 2026-11-09 |
+| 3 | **insider_buys** | $218.20 | +9.1% | +10.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 4 | **wsb_crowd** | $204.95 | +2.5% | +3.6 pts | 30 | 53% | 7 / 1 | cash | 2026-11-04 |
+| 5 | **scalp_reversion** | $204.85 | +2.4% | +3.6 pts | 32 | 62% | 10 / 0 | cash | 2026-11-05 |
+| 6 | **activist_13d** | $204.18 | +2.1% | +3.2 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
+| 7 | **scalp_vwap** | $202.72 | +1.4% | +2.5 pts | 56 | 50% | 14 / 0 | cash | 2026-11-05 |
+| 8 | **midday_momentum** | $201.75 | +0.9% | +2.0 pts | 18 | 44% | 4 / 0 | cash | 2026-11-04 |
+| 9 | **scalp_orb5** | $200.85 | +0.4% | +1.6 pts | 54 | 52% | 14 / 0 | cash | 2026-11-05 |
+| 10 | **options_dip_calls** | $200.00 | +0.0% | +1.1 pts | 0 | - | 0 / 0 | cash | 2026-11-09 |
+| 11 | **put_credit_spread** | $200.00 | +0.0% | +1.1 pts | 0 | - | 0 / 0 | STOPPED retired 2026-11-09 | 2026-11-04 |
+| 12 | **scalp_burst_large** | $200.00 | +0.0% | +1.1 pts | 36 | 44% | 8 / 0 | cash | 2026-11-09 |
+| 13 | **trend_tqqq** | $200.00 | +0.0% | +1.1 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
+| 14 | **scalp_vwap_large** | $199.97 | -0.0% | +1.1 pts | 14 | 57% | 4 / 0 | cash | 2026-11-09 |
+| 15 | **orb_tqqq** | $199.75 | -0.1% | +1.0 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
+| 16 | **scalp_reversion_large_fast** | $199.69 | -0.2% | +1.0 pts | 44 | 50% | 11 / 0 | cash | 2026-11-09 |
+| 17 | **scalp_reversion_large** | $199.44 | -0.3% | +0.8 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 18 | **scalp_orb5_large** | $199.43 | -0.3% | +0.8 pts | 86 | 47% | 20 / 0 | cash | 2026-11-09 |
+| 19 | **scalp_burst** | $198.60 | -0.7% | +0.4 pts | 90 | 42% | 19 / 0 | cash | 2026-11-05 |
+| 20 | **spy_hold** | $197.74 | -1.1% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 21 | **overnight_qqq** | $195.99 | -2.0% | -0.9 pts | 11 | 40% | 2 / 0 | QQQ | 2026-11-04 |
+| 22 | **gap_fade** | $191.21 | -4.4% | -3.3 pts | 16 | 38% | 3 / 0 | cash | 2026-11-04 |
+| 23 | **dip_buy_volatile** | $188.96 | -5.5% | -4.4 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
+| 24 | **weekly_momentum** | $185.69 | -7.2% | -6.0 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
+| 25 | **options_late_trend** | $151.00 | -24.5% | -23.4 pts | 6 | 0% | 0 / 0 | cash | 2026-11-09 |
 
 ## What each strategy does
 
@@ -43,7 +43,7 @@ Updated 2026-11-12 20:59 UTC. Each strategy trades its own virtual $200 at live 
 - **trend_tqqq**: TQQQ while QQQ is above its 50-day average
 - **activist_13d**: Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D
 - **insider_buys**: Copies $100k+ open-market buys by company officers/directors (SEC Form 4)
-- **options_orb**: Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run
+- **options_orb**: Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run; a second opposite trade if the first is stopped
 - **options_orb_spy**: Same as options_orb but on SPY (S&P 500)
 - **options_dip_calls**: Same-day QQQ calls after a sharp 30-minute drop (not on panic days)
 - **options_late_trend**: Same-day QQQ calls/puts at 2-3pm when QQQ is 1%+ up/down and holding
