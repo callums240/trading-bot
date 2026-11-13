@@ -1603,3 +1603,9 @@
 2026-11-13 18:40:51,272 INFO scalp_burst       value $197.88  cash $197.88  holding -
 2026-11-13 18:46:58,610 INFO insider: checked 27 new Form 4 filings, found 2 insider purchases
 2026-11-13 18:47:02,309 INFO activist: checked 13D feed: nothing new
+2026-11-13 18:47:50,951 INFO scalp_vwap_large  SELL PLTR  $  50.12 @ 168.2  vwap exit: time limit  P/L $+0.12
+2026-11-13 18:47:50,954 INFO scalp_vwap_large  value $200.01  cash $150.00  holding ['SPY']
+2026-11-13 18:57:50,749 INFO scalp_vwap_large  SELL SPY   $  50.04 @ 753.1  vwap exit: time limit  P/L $+0.04
+2026-11-13 18:57:50,750 INFO scalp_vwap_large  value $200.04  cash $200.04  holding -
+2026-11-13 19:03:07,036 INFO insider: checked 42 new Form 4 filings, found 0 insider purchases
+2026-11-13 19:03:28,570 INFO activist: checked 13D feed: nothing new
