@@ -1581,3 +1581,9 @@
 2026-11-13 17:36:51,237 INFO scalp_vwap_large  value $199.94  cash $149.97  holding ['SPY']
 2026-11-13 17:43:14,939 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
 2026-11-13 17:43:19,651 INFO activist: checked 13D feed: nothing new
+2026-11-13 17:53:50,446 INFO midday_momentum   BUY  META  $ 201.75 @ 638.9  top gainer at midday
+2026-11-13 17:53:50,447 INFO midday_momentum   value $201.65  cash $0.00  holding ['META']
+2026-11-13 17:56:51,048 INFO scalp_burst_large SELL PLTR  $  50.19 @ 167.8  burst exit: time limit  P/L $+0.19
+2026-11-13 17:56:51,049 INFO scalp_burst_large value $200.73  cash $150.19  holding ['COIN']
+2026-11-13 17:58:59,956 INFO insider: checked 23 new Form 4 filings, found 2 insider purchases
+2026-11-13 17:59:03,558 INFO activist: checked 13D feed: nothing new
