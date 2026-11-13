@@ -1575,3 +1575,5 @@
 2026-11-13 17:10:50,904 INFO scalp_burst       value $198.07  cash $148.11  holding ['MARA']
 2026-11-13 17:11:00,247 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
 2026-11-13 17:11:05,559 INFO activist: checked 13D feed: nothing new
+2026-11-13 17:26:56,279 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-13 17:27:00,440 INFO activist: checked 13D feed: nothing new
