@@ -1,4 +1,4 @@
-# Daily briefing: Friday 13 November 2026, 09:30 ET
+# Daily briefing: Friday 13 November 2026, 09:46 ET
 
 ## Market
 
@@ -6,19 +6,18 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +0.28% | -0.19% | +0.19% | +0.45% | +0.00% | 10 of 11 |
+| -0.07% | -0.38% | -0.20% | +0.19% | +0.29% | 7 of 11 |
 
-Sectors today: XLE +0.8%, XLC +0.7%, XLF +0.7%, XLI +0.7%, XLP +0.6%, XLB +0.5%, XLRE +0.4%, XLU +0.4%, XLV +0.3%, XLY +0.3%, XLK -0.3%
+Sectors today: XLC +1.4%, XLP +0.7%, XLF +0.7%, XLRE +0.3%, XLU +0.2%, XLY +0.2%, XLB +0.1%, XLI +0.0%, XLE -0.0%, XLV -0.2%, XLK -1.1%
 
 ## Real paper account (live bot)
 
-Equity $201.94 (started $200.00), cash $99.89. Holding: NVDA (+2.1%).
+Equity $199.36 (started $200.00), cash $99.89. Holding: NVDA (-0.5%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| spy_hold | $+0.55 | -1.1% | $197.74 | 0 | - | SPY |
 | dip_buy_volatile | $+0.00 | -5.5% | $188.96 | 0 | - | cash |
 | gap_fade | $+0.00 | -4.4% | $191.21 | 0 | - | cash |
 | midday_momentum | $+0.00 | +0.9% | $201.75 | 0 | - | cash |
@@ -39,9 +38,10 @@ Equity $201.94 (started $200.00), cash $99.89. Holding: NVDA (+2.1%).
 | scalp_vwap_large | $+0.00 | -0.0% | $199.97 | 0 | - | cash |
 | trend_tqqq | $+0.00 | +0.0% | $200.00 | 0 | - | cash |
 | wsb_crowd | $+0.00 | +2.5% | $204.95 | 0 | - | cash |
+| weekly_momentum | $-0.11 | -7.0% | $185.99 | 0 | - | SOFI, AMZN, RIVN |
+| spy_hold | $-0.13 | -1.5% | $197.06 | 0 | - | SPY |
 | activist_13d | $-0.24 | +2.1% | $204.18 | 0 | - | ASPE |
-| overnight_qqq | $-0.41 | -2.0% | $195.99 | 0 | - | QQQ |
-| weekly_momentum | $-0.41 | -7.2% | $185.69 | 0 | - | SOFI, AMZN, RIVN |
-| insider_buys | $-1.31 | +9.1% | $218.20 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| overnight_qqq | $-0.77 | -2.2% | $195.63 | 0 | - | QQQ |
+| insider_buys | $-1.14 | +9.2% | $218.37 | 0 | - | KNOP, LRN, ASPE, GLXY |
 
 Stop rule: a strategy that falls to $150 is stopped for good. Close to it: options_late_trend.
