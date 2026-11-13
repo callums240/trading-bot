@@ -245,6 +245,7 @@ def _opt_manage(ctx):
             _opt_sell(ctx, sym, bid, f"end of day ({mid / entry - 1:+.0%})")
         elif not plan.get("halved") and mid <= entry * OPT_STOP:
             _opt_sell(ctx, sym, bid, f"stop: down {1 - mid / entry:.0%}")
+            memo["stops"] = memo.get("stops", 0) + 1
         elif not plan.get("halved") and mid >= entry * OPT_DOUBLE:
             _opt_sell(ctx, sym, bid, f"doubled ({mid / entry - 1:+.0%}): sold half, stake back", fraction=0.5)
             plan["halved"] = True
@@ -288,10 +289,17 @@ def _opt_buy_dir(ctx, underlying, kind, reason, budget=None):
 
 def _options_orb(ctx, underlying):
     """Opening range breakout with same-day options: a call when the price breaks above
-    the 9:30-10:00 high, a put when it breaks below the low. One trade a day, 10:00-11:30."""
+    the 9:30-10:00 high, a put when it breaks below the low, 10:00-11:30.
+    Second shot (from 13 Nov): if that first trade was stopped out and the price then
+    breaks the OTHER side of the range before 12:30, take the opposite trade. Max 2 a day."""
     _opt_manage(ctx)
     memo = _opt_day(ctx)
-    if memo["entries"] or ctx.led.positions or not (time(10, 0) <= ctx.now.time() < time(11, 30)):
+    if ctx.led.positions:
+        return
+    first = memo["entries"] == 0
+    second = memo["entries"] == 1 and memo.get("stops") and memo.get("dir")
+    if not (first and time(10, 0) <= ctx.now.time() < time(11, 30)) and \
+       not (second and time(10, 0) <= ctx.now.time() < time(12, 30)):
         return
     bars = ctx.m.today_bars(underlying)
     price = ctx.m.price(underlying)
@@ -301,10 +309,13 @@ def _options_orb(ctx, underlying):
     if len(rng) < 10:
         return
     hi, lo = rng["high"].max(), rng["low"].min()
-    if price > hi:
-        _opt_buy_dir(ctx, underlying, "C", f"{underlying} {price:.2f} broke above {hi:.2f}")
-    elif price < lo:
-        _opt_buy_dir(ctx, underlying, "P", f"{underlying} {price:.2f} broke below {lo:.2f}")
+    tag = "" if first else " (second shot after a stop)"
+    if price > hi and (first or memo["dir"] == "P"):
+        if _opt_buy_dir(ctx, underlying, "C", f"{underlying} {price:.2f} broke above {hi:.2f}{tag}"):
+            memo["dir"] = "C"
+    elif price < lo and (first or memo["dir"] == "C"):
+        if _opt_buy_dir(ctx, underlying, "P", f"{underlying} {price:.2f} broke below {lo:.2f}{tag}"):
+            memo["dir"] = "P"
 
 
 def options_orb(ctx):
@@ -623,7 +634,7 @@ PLAYERS = [
     Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
     Strategy("activist_13d", "Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D", ("open",), activist_13d),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
-    Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run", (), options_orb, intraday=True, every_minute=True),
+    Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run; a second opposite trade if the first is stopped", (), options_orb, intraday=True, every_minute=True),
     Strategy("options_orb_spy", "Same as options_orb but on SPY (S&P 500)", (), options_orb_spy, intraday=True, every_minute=True),
     Strategy("options_dip_calls", "Same-day QQQ calls after a sharp 30-minute drop (not on panic days)", (), options_dip_calls, intraday=True, every_minute=True),
     Strategy("options_late_trend", "Same-day QQQ calls/puts at 2-3pm when QQQ is 1%+ up/down and holding", (), options_late_trend, intraday=True, every_minute=True),
