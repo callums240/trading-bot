@@ -1,13 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 264.5,
- "positions": {
-  "SPY261113P00745000": {
-   "qty": 50.0,
-   "entry": 0.35,
-   "since": "2026-11-13"
-  }
- },
+ "cash": 297.0,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-09T10:02-05:00",
@@ -135,6 +129,17 @@
    "pnl": 21.0,
    "reason": "doubled (+121%): sold half, stake back",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:32-05:00",
+   "side": "sell",
+   "sym": "SPY261113P00745000",
+   "qty": 50.0,
+   "price": 0.65,
+   "usd": 32.5,
+   "pnl": 15.0,
+   "reason": "trailing exit: peaked +344%, now +87%",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -142,19 +147,13 @@
   "2026-11-10": 163.0,
   "2026-11-11": 225.5,
   "2026-11-12": 261.0,
-  "2026-11-13": 334.25
+  "2026-11-13": 297.0
  },
  "done": [],
  "memo": {
   "day": "2026-11-13",
   "entries": 1,
-  "held": {
-   "SPY261113P00745000": {
-    "entry": 0.35,
-    "peak": 1.395,
-    "halved": true
-   }
-  },
+  "held": {},
   "dir": "P"
  },
  "stopped": null

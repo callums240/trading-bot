@@ -1485,3 +1485,27 @@
 2026-11-13 15:18:51,449 INFO scalp_reversion   value $203.76  cash $104.26  holding ['MARA', 'SOFI']
 2026-11-13 15:18:59,690 INFO insider: checked 18 new Form 4 filings, found 0 insider purchases
 2026-11-13 15:19:05,686 INFO activist: checked 13D feed: nothing new
+2026-11-13 15:20:51,136 INFO options_dip_calls SELL QQQ261113C00688000 $  13.00 @ 0.13  stop: down 61%  P/L $-22.00
+2026-11-13 15:20:51,136 INFO options_dip_calls value $178.00  cash $178.00  holding -
+2026-11-13 15:20:52,806 INFO scalp_reversion_large_fast SELL NVDA  $  49.79 @ 160.1  reversion exit: stop  P/L $-0.21
+2026-11-13 15:20:52,806 INFO scalp_reversion_large_fast SELL PLTR  $  49.79 @ 165.6  reversion exit: stop  P/L $-0.21
+2026-11-13 15:20:52,807 INFO scalp_reversion_large_fast value $199.07  cash $199.07  holding -
+2026-11-13 15:22:52,776 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 165.8  reversion signal
+2026-11-13 15:22:52,776 INFO scalp_reversion_large_fast BUY  AVGO  $  50.00 @ 341.9  reversion signal
+2026-11-13 15:22:52,777 INFO scalp_reversion_large_fast value $199.02  cash $99.07  holding ['PLTR', 'AVGO']
+2026-11-13 15:26:51,745 INFO scalp_reversion_large_fast SELL PLTR  $  49.71 @ 164.9  reversion exit: stop  P/L $-0.29
+2026-11-13 15:26:51,746 INFO scalp_reversion_large_fast value $198.70  cash $148.79  holding ['AVGO']
+2026-11-13 15:27:51,383 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 62.92  orb5 signal
+2026-11-13 15:27:51,384 INFO scalp_orb5_large  value $199.05  cash $99.17  holding ['MSFT', 'NFLX']
+2026-11-13 15:28:51,815 INFO scalp_reversion_large_fast SELL AVGO  $  50.25 @ 343.7  reversion exit: target  P/L $+0.25
+2026-11-13 15:28:51,816 INFO scalp_reversion_large_fast value $199.04  cash $199.04  holding -
+2026-11-13 15:29:50,628 INFO options_orb       SELL QQQ261113P00667000 $  41.50 @ 0.83  trailing exit: peaked +349%, now +114%  P/L $+22.00
+2026-11-13 15:29:50,629 INFO options_orb       value $323.00  cash $323.00  holding -
+2026-11-13 15:31:51,378 INFO scalp_vwap        BUY  SOUN  $  50.00 @ 3.506  vwap signal
+2026-11-13 15:31:51,379 INFO scalp_vwap        value $202.64  cash $152.72  holding ['SOUN']
+2026-11-13 15:31:51,380 INFO scalp_burst       BUY  SOUN  $  50.00 @ 3.506  burst signal
+2026-11-13 15:31:51,381 INFO scalp_burst       value $197.91  cash $147.99  holding ['SOUN']
+2026-11-13 15:32:50,574 INFO options_orb_spy   SELL SPY261113P00745000 $  32.50 @ 0.65  trailing exit: peaked +344%, now +87%  P/L $+15.00
+2026-11-13 15:32:50,574 INFO options_orb_spy   value $297.00  cash $297.00  holding -
+2026-11-13 15:34:56,821 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
+2026-11-13 15:34:59,713 INFO activist: checked 13D feed: nothing new
