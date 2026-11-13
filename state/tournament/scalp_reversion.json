@@ -1,12 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 104.25681701782042,
+ "cash": 150.53528197581562,
  "positions": {
-  "MARA": {
-   "qty": 7.422419949462671,
-   "entry": 6.7363474905,
-   "since": "2026-11-13"
-  },
   "SOFI": {
    "qty": 3.287734598061183,
    "entry": 15.208040219999997,
@@ -390,6 +385,80 @@
    "pnl": -0.59,
    "reason": "reversion exit: stop",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:36-05:00",
+   "side": "sell",
+   "sym": "MARA",
+   "qty": 7.42242,
+   "price": 6.6487,
+   "usd": 49.35,
+   "pnl": -0.65,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:38-05:00",
+   "side": "buy",
+   "sym": "PLUG",
+   "qty": 42.544635,
+   "price": 1.1752,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:39-05:00",
+   "side": "sell",
+   "sym": "PLUG",
+   "qty": 42.544635,
+   "price": 1.1548,
+   "usd": 49.13,
+   "pnl": -0.87,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:39-05:00",
+   "side": "buy",
+   "sym": "PLUG",
+   "qty": 42.909824,
+   "price": 1.1652,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:40-05:00",
+   "side": "sell",
+   "sym": "PLUG",
+   "qty": 42.909824,
+   "price": 1.1348,
+   "usd": 48.69,
+   "pnl": -1.31,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:40-05:00",
+   "side": "buy",
+   "sym": "PLUG",
+   "qty": 43.65934,
+   "price": 1.1452,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-13T10:41-05:00",
+   "side": "sell",
+   "sym": "PLUG",
+   "qty": 43.65934,
+   "price": 1.1248,
+   "usd": 49.11,
+   "pnl": -0.89,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -399,17 +468,12 @@
   "2026-11-10": 203.99,
   "2026-11-11": 203.99,
   "2026-11-12": 204.85,
-  "2026-11-13": 204.46
+  "2026-11-13": 200.82
  },
  "done": [],
  "memo": {
   "day": "2026-11-13",
   "open": {
-   "MARA": {
-    "tp": 6.8373927028575,
-    "sl": 6.668984015595,
-    "until": "2026-11-13T11:33:49.902473-05:00"
-   },
    "SOFI": {
     "tp": 15.436160823299996,
     "sl": 15.055959817799998,
@@ -419,12 +483,14 @@
   "count": {
    "MARA": 1,
    "SOFI": 1,
-   "SOUN": 1
+   "SOUN": 1,
+   "PLUG": 3
   },
   "last_bar": {
    "MARA": "2026-11-13T10:02:00-05:00",
    "SOFI": "2026-11-13T10:10:00-05:00",
-   "SOUN": "2026-11-13T10:11:00-05:00"
+   "SOUN": "2026-11-13T10:11:00-05:00",
+   "PLUG": "2026-11-13T10:39:00-05:00"
   }
  },
  "stopped": null

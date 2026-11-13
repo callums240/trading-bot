@@ -1,32 +1,32 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-13 15:34 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-13 15:50 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **options_orb** | $323.00 | +61.5% | +63.7 pts | 14 | 89% | 0 / 8 | cash | 2026-11-04 |
 | 2 | **options_orb_spy** | $297.00 | +48.5% | +50.7 pts | 13 | 75% | 0 / 6 | cash | 2026-11-09 |
-| 3 | **insider_buys** | $216.33 | +8.2% | +10.4 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
-| 4 | **scalp_reversion** | $204.46 | +2.2% | +4.5 pts | 36 | 59% | 10 / 0 | MARA, SOFI | 2026-11-05 |
-| 5 | **activist_13d** | $203.22 | +1.6% | +3.9 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
-| 6 | **scalp_vwap** | $202.99 | +1.5% | +3.7 pts | 57 | 50% | 14 / 0 | SOUN | 2026-11-05 |
-| 7 | **midday_momentum** | $201.75 | +0.9% | +3.1 pts | 18 | 44% | 4 / 0 | cash | 2026-11-04 |
-| 8 | **scalp_orb5** | $200.85 | +0.4% | +2.7 pts | 54 | 52% | 14 / 0 | cash | 2026-11-05 |
-| 9 | **wsb_crowd** | $200.47 | +0.2% | +2.5 pts | 33 | 53% | 7 / 1 | MSFT, SMCI, CBRS | 2026-11-04 |
+| 3 | **insider_buys** | $217.37 | +8.7% | +10.9 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 4 | **activist_13d** | $203.22 | +1.6% | +3.8 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
+| 5 | **scalp_vwap** | $202.77 | +1.4% | +3.6 pts | 58 | 50% | 14 / 0 | SOUN, MARA | 2026-11-05 |
+| 6 | **midday_momentum** | $201.75 | +0.9% | +3.1 pts | 18 | 44% | 4 / 0 | cash | 2026-11-04 |
+| 7 | **wsb_crowd** | $201.74 | +0.9% | +3.1 pts | 33 | 53% | 7 / 1 | MSFT, SMCI, CBRS | 2026-11-04 |
+| 8 | **scalp_orb5** | $200.85 | +0.4% | +2.6 pts | 54 | 52% | 14 / 0 | cash | 2026-11-05 |
+| 9 | **scalp_reversion** | $200.82 | +0.4% | +2.6 pts | 43 | 48% | 10 / 0 | SOFI | 2026-11-05 |
 | 10 | **put_credit_spread** | $200.00 | +0.0% | +2.2 pts | 0 | - | 0 / 0 | STOPPED retired 2026-11-09 | 2026-11-04 |
 | 11 | **scalp_burst_large** | $200.00 | +0.0% | +2.2 pts | 36 | 44% | 8 / 0 | cash | 2026-11-09 |
 | 12 | **trend_tqqq** | $200.00 | +0.0% | +2.2 pts | 0 | - | 0 / 0 | cash | 2026-11-04 |
 | 13 | **scalp_vwap_large** | $199.97 | -0.0% | +2.2 pts | 14 | 57% | 4 / 0 | cash | 2026-11-09 |
 | 14 | **orb_tqqq** | $199.75 | -0.1% | +2.1 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
-| 15 | **scalp_reversion_large** | $199.36 | -0.3% | +1.9 pts | 3 | 0% | 0 / 0 | AMD | 2026-11-09 |
-| 16 | **scalp_orb5_large** | $199.24 | -0.4% | +1.9 pts | 90 | 45% | 20 / 0 | MSFT, NFLX | 2026-11-09 |
-| 17 | **scalp_reversion_large_fast** | $199.04 | -0.5% | +1.8 pts | 58 | 45% | 13 / 0 | cash | 2026-11-09 |
-| 18 | **scalp_burst** | $198.27 | -0.9% | +1.4 pts | 93 | 41% | 19 / 0 | SOUN | 2026-11-05 |
-| 19 | **spy_hold** | $195.51 | -2.2% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 15 | **scalp_orb5_large** | $199.39 | -0.3% | +1.9 pts | 91 | 47% | 21 / 0 | NFLX | 2026-11-09 |
+| 16 | **scalp_reversion_large_fast** | $199.04 | -0.5% | +1.7 pts | 58 | 45% | 13 / 0 | cash | 2026-11-09 |
+| 17 | **scalp_reversion_large** | $198.87 | -0.6% | +1.6 pts | 4 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 18 | **scalp_burst** | $198.05 | -1.0% | +1.2 pts | 94 | 41% | 19 / 0 | SOUN, MARA | 2026-11-05 |
+| 19 | **spy_hold** | $195.60 | -2.2% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
 | 20 | **overnight_qqq** | $193.95 | -3.0% | -0.8 pts | 12 | 33% | 2 / 0 | cash | 2026-11-04 |
-| 21 | **dip_buy_volatile** | $188.96 | -5.5% | -3.3 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
-| 22 | **gap_fade** | $188.81 | -5.6% | -3.3 pts | 17 | 38% | 3 / 0 | COIN | 2026-11-04 |
-| 23 | **weekly_momentum** | $183.16 | -8.4% | -6.2 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
+| 21 | **gap_fade** | $190.15 | -4.9% | -2.7 pts | 17 | 38% | 3 / 0 | COIN | 2026-11-04 |
+| 22 | **dip_buy_volatile** | $188.96 | -5.5% | -3.3 pts | 2 | 0% | 0 / 0 | cash | 2026-11-04 |
+| 23 | **weekly_momentum** | $183.00 | -8.5% | -6.3 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
 | 24 | **options_dip_calls** | $178.00 | -11.0% | -8.8 pts | 2 | 0% | 0 / 0 | cash | 2026-11-09 |
 | 25 | **options_late_trend** | $151.00 | -24.5% | -22.3 pts | 6 | 0% | 0 / 0 | cash | 2026-11-09 |
 

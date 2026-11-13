@@ -1509,3 +1509,25 @@
 2026-11-13 15:32:50,574 INFO options_orb_spy   value $297.00  cash $297.00  holding -
 2026-11-13 15:34:56,821 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
 2026-11-13 15:34:59,713 INFO activist: checked 13D feed: nothing new
+2026-11-13 15:36:51,592 INFO scalp_reversion   SELL MARA  $  49.35 @ 6.649  reversion exit: stop  P/L $-0.65
+2026-11-13 15:36:51,593 INFO scalp_reversion   value $203.66  cash $153.61  holding ['SOFI']
+2026-11-13 15:36:52,224 INFO scalp_reversion_large SELL AMD   $  49.44 @ 525.2  reversion exit: stop  P/L $-0.56
+2026-11-13 15:36:52,224 INFO scalp_reversion_large value $198.87  cash $198.87  holding -
+2026-11-13 15:38:51,280 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.175  reversion signal
+2026-11-13 15:38:51,281 INFO scalp_reversion   value $203.36  cash $103.61  holding ['SOFI', 'PLUG']
+2026-11-13 15:39:51,484 INFO scalp_reversion   SELL PLUG  $  49.13 @ 1.155  reversion exit: stop  P/L $-0.87
+2026-11-13 15:39:51,484 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.165  reversion signal
+2026-11-13 15:39:51,484 INFO scalp_reversion   value $202.62  cash $102.74  holding ['SOFI', 'PLUG']
+2026-11-13 15:40:51,801 INFO scalp_reversion   SELL PLUG  $  48.69 @ 1.135  reversion exit: stop  P/L $-1.31
+2026-11-13 15:40:51,801 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.145  reversion signal
+2026-11-13 15:40:51,802 INFO scalp_reversion   value $201.31  cash $101.43  holding ['SOFI', 'PLUG']
+2026-11-13 15:41:51,008 INFO scalp_reversion   SELL PLUG  $  49.11 @ 1.125  reversion exit: stop  P/L $-0.89
+2026-11-13 15:41:51,009 INFO scalp_reversion   value $200.61  cash $150.54  holding ['SOFI']
+2026-11-13 15:45:52,545 INFO scalp_orb5_large  SELL MSFT  $  50.28 @ 523.2  orb5 exit: target  P/L $+0.28
+2026-11-13 15:45:52,546 INFO scalp_orb5_large  value $199.34  cash $149.45  holding ['NFLX']
+2026-11-13 15:46:51,541 INFO scalp_vwap        BUY  MARA  $  50.00 @ 6.831  vwap signal
+2026-11-13 15:46:51,542 INFO scalp_vwap        value $202.59  cash $102.72  holding ['SOUN', 'MARA']
+2026-11-13 15:46:51,543 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.831  burst signal
+2026-11-13 15:46:51,544 INFO scalp_burst       value $197.86  cash $97.99  holding ['SOUN', 'MARA']
+2026-11-13 15:50:57,267 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
+2026-11-13 15:51:09,894 INFO activist: checked 13D feed: nothing new
