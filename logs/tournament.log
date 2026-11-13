@@ -1449,3 +1449,39 @@
 2026-11-13 15:02:53,138 INFO scalp_reversion_large_fast value $199.22  cash $199.22  holding -
 2026-11-13 15:02:56,832 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
 2026-11-13 15:02:58,318 INFO activist: checked 13D feed: nothing new
+2026-11-13 15:03:52,447 INFO options_dip_calls BUY  QQQ261113C00688000 $  35.00 @ 0.35  QQQ -1.4% in 30 min, RSI 24; 1x QQQ261113C00688000 @ 0.35
+2026-11-13 15:03:52,448 INFO options_dip_calls value $199.50  cash $165.00  holding ['QQQ261113C00688000']
+2026-11-13 15:03:52,766 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.736  reversion signal
+2026-11-13 15:03:52,767 INFO scalp_reversion   value $204.80  cash $154.85  holding ['MARA']
+2026-11-13 15:03:53,354 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 536.4  reversion signal
+2026-11-13 15:03:53,354 INFO scalp_reversion_large_fast value $199.20  cash $149.22  holding ['AMD']
+2026-11-13 15:05:54,627 INFO scalp_orb5_large  BUY  MSFT  $  50.00 @ 521.7  orb5 signal
+2026-11-13 15:05:54,628 INFO scalp_orb5_large  value $199.41  cash $149.43  holding ['MSFT']
+2026-11-13 15:05:54,745 INFO scalp_reversion_large_fast SELL AMD   $  50.27 @ 539.3  reversion exit: target  P/L $+0.27
+2026-11-13 15:05:54,745 INFO scalp_reversion_large_fast value $199.49  cash $199.49  holding -
+2026-11-13 15:06:52,134 INFO scalp_burst       BUY  RIOT  $  50.00 @ 17.02  burst signal
+2026-11-13 15:06:52,134 INFO scalp_burst       value $198.57  cash $148.60  holding ['RIOT']
+2026-11-13 15:10:50,704 INFO options_orb       SELL QQQ261113P00667000 $  39.00 @ 0.78  doubled (+101%): sold half, stake back  P/L $+19.50
+2026-11-13 15:10:50,704 INFO options_orb       value $320.75  cash $281.50  holding ['QQQ261113P00667000']
+2026-11-13 15:10:50,881 INFO options_orb_spy   SELL SPY261113P00745000 $  38.50 @ 0.77  doubled (+121%): sold half, stake back  P/L $+21.00
+2026-11-13 15:10:50,881 INFO options_orb_spy   value $303.25  cash $264.50  holding ['SPY261113P00745000']
+2026-11-13 15:10:51,923 INFO scalp_burst       SELL RIOT  $  49.39 @ 16.82  burst exit: stop  P/L $-0.61
+2026-11-13 15:10:51,924 INFO scalp_burst       value $197.99  cash $197.99  holding -
+2026-11-13 15:11:51,946 INFO scalp_reversion   BUY  SOFI  $  50.00 @ 15.21  reversion signal
+2026-11-13 15:11:51,946 INFO scalp_reversion   value $204.59  cash $104.85  holding ['MARA', 'SOFI']
+2026-11-13 15:11:52,505 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 160.8  reversion signal
+2026-11-13 15:11:52,506 INFO scalp_reversion_large_fast value $199.47  cash $149.49  holding ['NVDA']
+2026-11-13 15:12:51,170 INFO scalp_reversion   BUY  SOUN  $  50.00 @ 3.496  reversion signal
+2026-11-13 15:12:51,170 INFO scalp_reversion   value $204.80  cash $54.85  holding ['MARA', 'SOFI', 'SOUN']
+2026-11-13 15:13:51,478 INFO scalp_orb5_large  SELL MSFT  $  49.73 @ 518.9  orb5 exit: stop  P/L $-0.27
+2026-11-13 15:13:51,479 INFO scalp_orb5_large  value $199.17  cash $199.17  holding -
+2026-11-13 15:13:51,556 INFO scalp_reversion_large BUY  AMD   $  50.00 @ 531.2  reversion signal
+2026-11-13 15:13:51,557 INFO scalp_reversion_large value $199.41  cash $149.44  holding ['AMD']
+2026-11-13 15:13:51,680 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 166.3  reversion signal
+2026-11-13 15:13:51,681 INFO scalp_reversion_large_fast value $199.35  cash $99.49  holding ['NVDA', 'PLTR']
+2026-11-13 15:16:52,780 INFO scalp_orb5_large  BUY  MSFT  $  50.00 @ 520.4  orb5 signal
+2026-11-13 15:16:52,781 INFO scalp_orb5_large  value $199.14  cash $149.17  holding ['MSFT']
+2026-11-13 15:18:51,448 INFO scalp_reversion   SELL SOUN  $  49.41 @ 3.454  reversion exit: stop  P/L $-0.59
+2026-11-13 15:18:51,449 INFO scalp_reversion   value $203.76  cash $104.26  holding ['MARA', 'SOFI']
+2026-11-13 15:18:59,690 INFO insider: checked 18 new Form 4 filings, found 0 insider purchases
+2026-11-13 15:19:05,686 INFO activist: checked 13D feed: nothing new

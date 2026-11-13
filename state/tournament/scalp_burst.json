@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 198.5978068118774,
+ "cash": 197.99005896672858,
  "positions": {},
  "trades": [
   {
@@ -934,6 +934,27 @@
    "pnl": 0.71,
    "reason": "burst exit: target",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T10:06-05:00",
+   "side": "buy",
+   "sym": "RIOT",
+   "qty": 2.937115,
+   "price": 17.0235,
+   "usd": 50.0,
+   "reason": "burst signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T10:10-05:00",
+   "side": "sell",
+   "sym": "RIOT",
+   "qty": 2.937115,
+   "price": 16.8166,
+   "usd": 49.39,
+   "pnl": -0.61,
+   "reason": "burst exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -943,14 +964,18 @@
   "2026-11-10": 199.74,
   "2026-11-11": 197.89,
   "2026-11-12": 198.6,
-  "2026-11-13": 198.6
+  "2026-11-13": 197.99
  },
  "done": [],
  "memo": {
   "day": "2026-11-13",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "RIOT": 1
+  },
+  "last_bar": {
+   "RIOT": "2026-11-13T10:05:00-05:00"
+  }
  },
  "stopped": null
 }
