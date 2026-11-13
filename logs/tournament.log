@@ -1567,3 +1567,7 @@
 2026-11-13 16:28:52,361 INFO scalp_burst_large value $200.16  cash $100.00  holding ['PLTR', 'COIN']
 2026-11-13 16:38:59,279 INFO insider: checked 28 new Form 4 filings, found 0 insider purchases
 2026-11-13 16:39:03,368 INFO activist: checked 13D feed: nothing new
+2026-11-13 16:43:51,172 INFO scalp_reversion_large_fast SELL NFLX  $  50.08 @ 62.31  reversion exit: time limit  P/L $+0.08
+2026-11-13 16:43:51,173 INFO scalp_reversion_large_fast value $199.52  cash $199.52  holding -
+2026-11-13 16:54:56,772 INFO insider: checked 17 new Form 4 filings, found 0 insider purchases
+2026-11-13 16:55:02,321 INFO activist: checked 13D feed: nothing new
