@@ -1551,3 +1551,19 @@
 2026-11-13 16:22:51,544 INFO scalp_reversion_large_fast value $199.24  cash $99.24  holding ['TSLA', 'NFLX']
 2026-11-13 16:23:02,357 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
 2026-11-13 16:23:05,146 INFO activist: checked 13D feed: nothing new
+2026-11-13 16:23:51,512 INFO scalp_orb5_large  SELL META  $  49.97 @ 630.6  orb5 exit: time limit  P/L $-0.03
+2026-11-13 16:23:51,513 INFO scalp_orb5_large  value $199.35  cash $199.35  holding -
+2026-11-13 16:23:51,650 INFO scalp_reversion_large_fast SELL TSLA  $  50.20 @ 387.9  reversion exit: target  P/L $+0.20
+2026-11-13 16:23:51,651 INFO scalp_reversion_large_fast value $199.49  cash $149.44  holding ['NFLX']
+2026-11-13 16:25:51,456 INFO scalp_burst_large BUY  PLTR  $  50.00 @ 167.1  burst signal
+2026-11-13 16:25:51,457 INFO scalp_burst_large value $199.98  cash $150.00  holding ['PLTR']
+2026-11-13 16:27:51,452 INFO scalp_reversion   SELL SOFI  $  50.75 @ 15.44  reversion exit: target  P/L $+0.75
+2026-11-13 16:27:51,453 INFO scalp_reversion   value $201.29  cash $201.29  holding -
+2026-11-13 16:28:52,051 INFO scalp_vwap        SELL MARA  $  50.78 @ 6.939  vwap exit: target  P/L $+0.78
+2026-11-13 16:28:52,052 INFO scalp_vwap        value $202.84  cash $202.84  holding -
+2026-11-13 16:28:52,052 INFO scalp_burst       SELL MARA  $  50.78 @ 6.939  burst exit: target  P/L $+0.78
+2026-11-13 16:28:52,053 INFO scalp_burst       value $198.11  cash $198.11  holding -
+2026-11-13 16:28:52,360 INFO scalp_burst_large BUY  COIN  $  50.00 @ 127.3  burst signal
+2026-11-13 16:28:52,361 INFO scalp_burst_large value $200.16  cash $100.00  holding ['PLTR', 'COIN']
+2026-11-13 16:38:59,279 INFO insider: checked 28 new Form 4 filings, found 0 insider purchases
+2026-11-13 16:39:03,368 INFO activist: checked 13D feed: nothing new
