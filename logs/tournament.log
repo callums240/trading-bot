@@ -1616,3 +1616,9 @@
 2026-11-13 19:42:26,261 INFO ==== session start ====
 2026-11-13 19:42:34,365 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
 2026-11-13 19:42:37,638 INFO activist: checked 13D feed: nothing new
+2026-11-13 19:51:27,663 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 112.2  reversion signal
+2026-11-13 19:51:27,664 INFO scalp_reversion_large_fast value $199.50  cash $149.52  holding ['MSTR']
+2026-11-13 19:58:28,267 INFO scalp_reversion_large_fast SELL MSTR  $  50.19 @ 112.6  reversion exit: target  P/L $+0.19
+2026-11-13 19:58:28,268 INFO scalp_reversion_large_fast value $199.71  cash $199.71  holding -
+2026-11-13 19:58:50,882 INFO insider: checked 41 new Form 4 filings, found 0 insider purchases
+2026-11-13 19:58:55,948 INFO activist: checked 13D feed: nothing new
