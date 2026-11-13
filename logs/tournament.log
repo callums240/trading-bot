@@ -1577,3 +1577,7 @@
 2026-11-13 17:11:05,559 INFO activist: checked 13D feed: nothing new
 2026-11-13 17:26:56,279 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
 2026-11-13 17:27:00,440 INFO activist: checked 13D feed: nothing new
+2026-11-13 17:36:51,236 INFO scalp_vwap_large  BUY  SPY   $  50.00 @ 752.5  vwap signal
+2026-11-13 17:36:51,237 INFO scalp_vwap_large  value $199.94  cash $149.97  holding ['SPY']
+2026-11-13 17:43:14,939 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
+2026-11-13 17:43:19,651 INFO activist: checked 13D feed: nothing new
