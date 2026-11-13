@@ -1626,3 +1626,17 @@
 2026-11-13 19:59:27,587 INFO scalp_vwap        value $202.81  cash $152.84  holding ['RIVN']
 2026-11-13 20:14:49,407 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
 2026-11-13 20:14:52,895 INFO activist: checked 13D feed: nothing new
+2026-11-13 20:16:27,093 INFO scalp_vwap        SELL RIVN  $  49.36 @ 12.41  vwap exit: stop  P/L $-0.64
+2026-11-13 20:16:27,094 INFO scalp_vwap        value $202.21  cash $202.21  holding -
+2026-11-13 20:30:27,145 INFO gap_fade          SELL COIN  $ 192.54 @ 128.7  close  P/L $+1.33
+2026-11-13 20:30:27,146 INFO gap_fade          value $192.54  cash $192.54  holding -
+2026-11-13 20:30:27,189 INFO midday_momentum   SELL META  $ 202.47 @ 641.2  close  P/L $+0.72
+2026-11-13 20:30:27,189 INFO midday_momentum   value $202.47  cash $202.47  holding -
+2026-11-13 20:30:27,224 INFO wsb_crowd         SELL MSFT  $  68.72 @ 524.5  close  P/L $+0.40
+2026-11-13 20:30:27,224 INFO wsb_crowd         SELL SMCI  $  68.55 @ 26.59  close  P/L $+0.23
+2026-11-13 20:30:27,224 INFO wsb_crowd         SELL CBRS  $  67.88 @ 108.1  close  P/L $-0.44
+2026-11-13 20:30:27,225 INFO wsb_crowd         value $205.15  cash $205.15  holding -
+2026-11-13 20:30:27,225 INFO overnight_qqq     BUY  QQQ   $ 193.95 @ 679.3  overnight hold
+2026-11-13 20:30:27,225 INFO overnight_qqq     value $193.85  cash $0.00  holding ['QQQ']
+2026-11-13 20:30:40,433 INFO insider: checked 29 new Form 4 filings, found 3 insider purchases
+2026-11-13 20:30:44,225 INFO activist: checked 13D feed: nothing new
