@@ -1,4 +1,4 @@
-# Daily briefing: Friday 13 November 2026, 15:30 ET
+# Daily briefing: Friday 13 November 2026, 15:46 ET
 
 ## Market
 
@@ -6,13 +6,13 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.55% | -1.34% | -0.44% | +0.01% | +3.17% | 6 of 11 |
+| -0.56% | -1.34% | -0.41% | -0.01% | +3.28% | 6 of 11 |
 
-Sectors today: XLP +1.2%, XLC +1.0%, XLE +0.6%, XLV +0.6%, XLF +0.5%, XLU +0.3%, XLRE -0.0%, XLB -0.3%, XLY -0.5%, XLI -0.6%, XLK -2.2%
+Sectors today: XLP +1.3%, XLC +1.0%, XLE +0.8%, XLF +0.5%, XLV +0.4%, XLU +0.4%, XLRE -0.0%, XLB -0.3%, XLY -0.5%, XLI -0.6%, XLK -2.2%
 
 ## Real paper account (live bot)
 
-Equity $198.60 (started $200.00), cash $99.89. Holding: NVDA (-1.3%).
+Equity $198.57 (started $200.00), cash $99.89. Holding: NVDA (-1.3%).
 
 ## Tournament today
 
@@ -36,12 +36,12 @@ Equity $198.60 (started $200.00), cash $99.89. Holding: NVDA (-1.3%).
 | scalp_vwap | $-0.51 | +1.1% | $202.21 | 6 | 1/3 | cash |
 | scalp_reversion_large | $-0.57 | -0.6% | $198.87 | 2 | 0/1 | cash |
 | scalp_burst | $-0.72 | -1.1% | $197.88 | 8 | 1/4 | cash |
-| spy_hold | $-1.08 | -1.9% | $196.11 | 0 | - | SPY |
-| overnight_qqq | $-2.55 | -3.1% | $193.85 | 2 | 0/1 | QQQ |
-| weekly_momentum | $-3.21 | -8.6% | $182.89 | 0 | - | SOFI, AMZN, RIVN |
+| spy_hold | $-1.11 | -2.0% | $196.08 | 0 | - | SPY |
+| overnight_qqq | $-2.54 | -3.1% | $193.86 | 2 | 0/1 | QQQ |
 | scalp_reversion | $-3.56 | +0.6% | $201.29 | 12 | 1/6 | cash |
-| activist_13d | $-5.50 | -0.5% | $198.92 | 0 | - | ASPE |
-| insider_buys | $-9.41 | +5.0% | $210.10 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| weekly_momentum | $-3.61 | -8.8% | $182.49 | 0 | - | SOFI, AMZN, RIVN |
+| activist_13d | $-4.80 | -0.2% | $199.62 | 0 | - | ASPE |
+| insider_buys | $-8.39 | +5.6% | $211.12 | 0 | - | KNOP, LRN, ASPE, GLXY |
 | options_dip_calls | $-22.00 | -11.0% | $178.00 | 2 | 0/1 | cash |
 
 Stop rule: a strategy that falls to $150 is stopped for good. Close to it: options_late_trend.

@@ -59,3 +59,8 @@
 2026-11-12 20:33:01,434 INFO ==== run end ====
 2026-11-12 20:37:30,383 INFO ==== run start (PAPER) ====
 2026-11-12 20:37:30,634 INFO already ran today, exiting
+2026-11-13 20:32:28,260 INFO ==== run start (PAPER) ====
+2026-11-13 20:32:28,425 INFO equity $198.44 | cash $99.89 | unsettled $0.00 | settled $99.89
+2026-11-13 20:32:28,532 INFO ignoring your manual positions: ['NVDA']
+2026-11-13 20:32:29,223 INFO entry candidates: none
+2026-11-13 20:32:29,223 INFO ==== run end ====
