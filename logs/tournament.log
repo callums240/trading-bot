@@ -1427,3 +1427,25 @@
 2026-11-13 14:31:07,800 INFO activist: checked 13D feed: nothing new
 2026-11-13 14:46:55,884 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
 2026-11-13 14:46:58,509 INFO activist: checked 13D feed: nothing new
+2026-11-13 14:59:51,229 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 540.4  reversion signal
+2026-11-13 14:59:51,230 INFO scalp_reversion_large_fast value $199.67  cash $149.69  holding ['AMD']
+2026-11-13 15:00:53,418 INFO gap_fade          BUY  COIN  $ 191.21 @ 127.9  gap down, bouncing
+2026-11-13 15:00:53,419 INFO gap_fade          value $191.11  cash $0.00  holding ['COIN']
+2026-11-13 15:00:53,470 INFO wsb_crowd         BUY  MSFT  $  68.32 @ 521.4  WSB mentions spiking
+2026-11-13 15:00:53,470 INFO wsb_crowd         BUY  SMCI  $  68.32 @ 26.5  WSB mentions spiking
+2026-11-13 15:00:53,471 INFO wsb_crowd         BUY  CBRS  $  68.32 @ 108.8  WSB mentions spiking
+2026-11-13 15:00:53,471 INFO wsb_crowd         value $204.85  cash $0.00  holding ['MSFT', 'SMCI', 'CBRS']
+2026-11-13 15:00:53,471 INFO overnight_qqq     SELL QQQ   $ 193.95 @ 679.7  morning exit  P/L $-2.13
+2026-11-13 15:00:53,471 INFO overnight_qqq     value $193.95  cash $193.95  holding -
+2026-11-13 15:00:54,718 INFO options_orb       BUY  QQQ261113P00667000 $  39.00 @ 0.39  QQQ 680.06 broke below 680.72; 1x QQQ261113P00667000 @ 0.39
+2026-11-13 15:00:54,718 INFO options_orb       value $281.00  cash $242.50  holding ['QQQ261113P00667000']
+2026-11-13 15:00:55,795 INFO options_orb_spy   BUY  SPY261113P00745000 $  35.00 @ 0.35  SPY 753.74 broke below 753.95; 1x SPY261113P00745000 @ 0.35
+2026-11-13 15:00:55,796 INFO options_orb_spy   value $260.50  cash $226.00  holding ['SPY261113P00745000']
+2026-11-13 15:00:57,586 INFO scalp_reversion_large_fast SELL AMD   $  49.77 @ 537.9  reversion exit: stop  P/L $-0.23
+2026-11-13 15:00:57,587 INFO scalp_reversion_large_fast value $199.46  cash $199.46  holding -
+2026-11-13 15:01:52,450 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 539.7  reversion signal
+2026-11-13 15:01:52,451 INFO scalp_reversion_large_fast value $199.44  cash $149.46  holding ['AMD']
+2026-11-13 15:02:53,137 INFO scalp_reversion_large_fast SELL AMD   $  49.76 @ 537.1  reversion exit: stop  P/L $-0.24
+2026-11-13 15:02:53,138 INFO scalp_reversion_large_fast value $199.22  cash $199.22  holding -
+2026-11-13 15:02:56,832 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-13 15:02:58,318 INFO activist: checked 13D feed: nothing new

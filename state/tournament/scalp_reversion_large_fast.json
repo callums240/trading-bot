@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.69064347590933,
+ "cash": 199.22283326053895,
  "positions": {},
  "trades": [
   {
@@ -464,6 +464,48 @@
    "pnl": 0.21,
    "reason": "reversion exit: target",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T09:59-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.092526,
+   "price": 540.3901,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T10:00-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.092526,
+   "price": 537.9209,
+   "usd": 49.77,
+   "pnl": -0.23,
+   "reason": "reversion exit: stop",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T10:01-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.09265,
+   "price": 539.6647,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-13T10:02-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.09265,
+   "price": 537.0813,
+   "usd": 49.76,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "calm"
   }
  ],
  "equity": {
@@ -471,14 +513,18 @@
   "2026-11-10": 199.22,
   "2026-11-11": 199.22,
   "2026-11-12": 199.69,
-  "2026-11-13": 199.69
+  "2026-11-13": 199.22
  },
  "done": [],
  "memo": {
   "day": "2026-11-13",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "AMD": 2
+  },
+  "last_bar": {
+   "AMD": "2026-11-13T10:00:00-05:00"
+  }
  },
  "stopped": null
 }
