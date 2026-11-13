@@ -1539,3 +1539,15 @@
 2026-11-13 16:06:52,606 INFO scalp_reversion_large_fast value $199.01  cash $149.04  holding ['NVDA']
 2026-11-13 16:07:00,736 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
 2026-11-13 16:07:04,626 INFO activist: checked 13D feed: nothing new
+2026-11-13 16:08:51,399 INFO scalp_vwap        SELL SOUN  $  49.34 @ 3.459  vwap exit: stop  P/L $-0.66
+2026-11-13 16:08:51,400 INFO scalp_vwap        value $202.60  cash $152.06  holding ['MARA']
+2026-11-13 16:08:51,401 INFO scalp_burst       SELL SOUN  $  49.34 @ 3.459  burst exit: stop  P/L $-0.66
+2026-11-13 16:08:51,402 INFO scalp_burst       value $197.87  cash $147.33  holding ['MARA']
+2026-11-13 16:10:52,147 INFO scalp_reversion_large_fast SELL NVDA  $  50.21 @ 159.8  reversion exit: target  P/L $+0.21
+2026-11-13 16:10:52,148 INFO scalp_reversion_large_fast value $199.24  cash $199.24  holding -
+2026-11-13 16:16:51,296 INFO scalp_reversion_large_fast BUY  TSLA  $  50.00 @ 386.3  reversion signal
+2026-11-13 16:16:51,297 INFO scalp_reversion_large_fast value $199.22  cash $149.24  holding ['TSLA']
+2026-11-13 16:22:51,543 INFO scalp_reversion_large_fast BUY  NFLX  $  50.00 @ 62.21  reversion signal
+2026-11-13 16:22:51,544 INFO scalp_reversion_large_fast value $199.24  cash $99.24  holding ['TSLA', 'NFLX']
+2026-11-13 16:23:02,357 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
+2026-11-13 16:23:05,146 INFO activist: checked 13D feed: nothing new
