@@ -1599,3 +1599,7 @@
 2026-11-13 18:26:51,178 INFO scalp_vwap_large  value $199.95  cash $99.88  holding ['PLTR', 'SPY']
 2026-11-13 18:30:58,564 INFO insider: checked 18 new Form 4 filings, found 1 insider purchases
 2026-11-13 18:31:00,278 INFO activist: checked 13D feed: nothing new
+2026-11-13 18:40:51,271 INFO scalp_burst       SELL MARA  $  49.76 @ 6.934  burst exit: time limit  P/L $-0.24
+2026-11-13 18:40:51,272 INFO scalp_burst       value $197.88  cash $197.88  holding -
+2026-11-13 18:46:58,610 INFO insider: checked 27 new Form 4 filings, found 2 insider purchases
+2026-11-13 18:47:02,309 INFO activist: checked 13D feed: nothing new
