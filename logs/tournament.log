@@ -1622,3 +1622,7 @@
 2026-11-13 19:58:28,268 INFO scalp_reversion_large_fast value $199.71  cash $199.71  holding -
 2026-11-13 19:58:50,882 INFO insider: checked 41 new Form 4 filings, found 0 insider purchases
 2026-11-13 19:58:55,948 INFO activist: checked 13D feed: nothing new
+2026-11-13 19:59:27,586 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 12.57  vwap signal
+2026-11-13 19:59:27,587 INFO scalp_vwap        value $202.81  cash $152.84  holding ['RIVN']
+2026-11-13 20:14:49,407 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
+2026-11-13 20:14:52,895 INFO activist: checked 13D feed: nothing new
