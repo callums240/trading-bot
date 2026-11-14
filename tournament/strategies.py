@@ -184,6 +184,27 @@ def dip_buy_volatile(ctx):
         slots -= 1
 
 
+def gold_fear(ctx):
+    """Gold as the fear trade: when the S&P 500 is down 1%+ on the day near the close, buy
+    gold miners (GDX) and hold 5 trading days; another fear day restarts the 5 days.
+    Backtest 2016-2026 (gold_bt, 14 Nov): the only one of ~10 simple gold rules that beat
+    just holding in both 2016-22 and 2023-26. Trend-following gold rules failed in 2016-22."""
+    closes = ctx.m.daily_closes(["SPY"], days=20)["SPY"].dropna()
+    px = ctx.m.price("SPY")
+    if closes.empty or not px:
+        return
+    memo = ctx.led.memo
+    chg = px / closes.iloc[-1] - 1
+    if chg <= -0.01:
+        memo["signal"] = str(ctx.m.today)
+        if not ctx.led.positions:
+            buy_equal(ctx, ["GDX"], f"S&P 500 {chg:+.1%} today (fear day): gold miners for 5 days")
+    elif ctx.led.positions and memo.get("signal"):
+        held = sum(1 for d in closes.index if str(d) > memo["signal"]) + 1    # days since the fear day, incl. today
+        if held >= 5:
+            go_flat(ctx, "5 days since the last fear day")
+
+
 def trend_tqqq(ctx):
     """Hold TQQQ (3x Nasdaq) while QQQ is above its 50-day average, otherwise cash."""
     closes = ctx.m.daily_closes(["QQQ"], days=90)["QQQ"].dropna()
@@ -632,6 +653,7 @@ PLAYERS = [
     Strategy("wsb_crowd", "Buys stocks with spiking WSB mentions, out by close", ("open", "close"), wsb_crowd, intraday=True),
     Strategy("overnight_qqq", "Buys QQQ at the close, sells next morning", ("open", "close"), overnight_qqq),
     Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
+    Strategy("gold_fear", "Gold as the fear trade: buys gold miners (GDX) after the S&P 500 drops 1%+ in a day, holds 5 days", ("close",), gold_fear),
     Strategy("activist_13d", "Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D", ("open",), activist_13d),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run; a second opposite trade if the first is stopped", (), options_orb, intraday=True, every_minute=True),
