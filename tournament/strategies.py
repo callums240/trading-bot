@@ -622,6 +622,8 @@ def spy_hold(ctx):
         buy_equal(ctx, ["SPY"], "benchmark")
 
 
+# Retired 13 Nov 2026 (ledgers kept in state/retired/): trend_tqqq (no trades), dip_buy_volatile
+# (1 trade), scalp_reversion_large (2 trades; the _fast twin covers it), put_credit_spread.
 PLAYERS = [
     Strategy("spy_hold", "Benchmark: buy SPY and hold", ("open", "midday", "close"), spy_hold),
     Strategy("orb_tqqq", "Opening range breakout on QQQ, trades TQQQ, out by close", ("open", "close"), orb_tqqq, intraday=True),
@@ -629,16 +631,13 @@ PLAYERS = [
     Strategy("midday_momentum", "Buys midday top gainers, out by close", ("midday", "close"), midday_momentum, intraday=True),
     Strategy("wsb_crowd", "Buys stocks with spiking WSB mentions, out by close", ("open", "close"), wsb_crowd, intraday=True),
     Strategy("overnight_qqq", "Buys QQQ at the close, sells next morning", ("open", "close"), overnight_qqq),
-    Strategy("dip_buy_volatile", "RSI-2 dip-buy on volatile stocks", ("close",), dip_buy_volatile),
     Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
-    Strategy("trend_tqqq", "TQQQ while QQQ is above its 50-day average", ("close",), trend_tqqq),
     Strategy("activist_13d", "Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D", ("open",), activist_13d),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run; a second opposite trade if the first is stopped", (), options_orb, intraday=True, every_minute=True),
     Strategy("options_orb_spy", "Same as options_orb but on SPY (S&P 500)", (), options_orb_spy, intraday=True, every_minute=True),
     Strategy("options_dip_calls", "Same-day QQQ calls after a sharp 30-minute drop (not on panic days)", (), options_dip_calls, intraday=True, every_minute=True),
     Strategy("options_late_trend", "Same-day QQQ calls/puts at 2-3pm when QQQ is 1%+ up/down and holding", (), options_late_trend, intraday=True, every_minute=True),
-    Strategy("put_credit_spread", "RETIRED 9 Nov: sold weekly QQQ put spreads; too small for real quotes, and a $200 cash account can't sell spreads", ("open", "midday", "close"), put_credit_spread, every_minute=True),
     Strategy("scalp_orb5", "Scalper: breakout above the first 5-minute high on small caps", (), scalp_orb5, intraday=True, every_minute=True),
     Strategy("scalp_vwap", "Scalper: small caps reclaiming VWAP on 2x volume", (), scalp_vwap, intraday=True, every_minute=True),
     Strategy("scalp_burst", "Scalper: small caps up 1%+ in 5 min on 3x volume", (), scalp_burst, intraday=True, every_minute=True),
@@ -646,6 +645,5 @@ PLAYERS = [
     Strategy("scalp_orb5_large", "Scalper: first-5-minute breakouts on big stocks, quick exits", (), scalp_orb5_large, intraday=True, every_minute=True),
     Strategy("scalp_vwap_large", "Scalper: big stocks reclaiming VWAP on 2x volume, quick exits", (), scalp_vwap_large, intraday=True, every_minute=True),
     Strategy("scalp_burst_large", "Scalper: big stocks up 0.5%+ in 5 min on 3x volume", (), scalp_burst_large, intraday=True, every_minute=True),
-    Strategy("scalp_reversion_large", "Scalper: buys sharp 1.5% 5-minute drops on big stocks", (), scalp_reversion_large, intraday=True, every_minute=True),
     Strategy("scalp_reversion_large_fast", "Scalper: buys any 0.75% 5-minute drop on big stocks, tight exits (more trades, smaller edge?)", (), scalp_reversion_large_fast, intraday=True, every_minute=True),
 ]
