@@ -39,7 +39,7 @@ def sh(cmd, timeout=600):
 
 
 def save_and_push(msg):
-    sh("git add state logs data SCOREBOARD.md BRIEFING.md LEARNING.md")
+    sh("git add state logs data SCOREBOARD.md BRIEFING.md LEARNING.md REAL.md")
     code, _ = sh("git diff --cached --quiet")
     if code == 0:
         return

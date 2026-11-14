@@ -231,11 +231,12 @@ def _opt_sell(ctx, sym, bid, reason, fraction=1.0):
 # Each trade spends at most OPT_BUDGET (so a loss can't blow through the $150 stop in
 # one go) and sells if the option loses half its value. Winners run: when a contract
 # doubles, half is sold (the stake is back, the rest is a free ride), and the rest is
-# sold if it falls OPT_TRAIL from its best price, or at 15:50 (same-day options expire
-# worthless at 16:00 if out of the money).
+# sold if it falls OPT_TRAIL from its best price, or at 15:25 (a small account can't hold an
+# expiring option into the close). Whole contracts only: a single contract isn't halved.
 # Decisions use the bid/ask midpoint; sells fill at the bid (what you'd really get).
 OPT_BUDGET = 40.0
 OPT_STOP, OPT_DOUBLE, OPT_TRAIL = 0.5, 2.0, 0.5
+OPT_EXIT = time(15, 25)      # out before 15:30 ET, when the broker starts force-selling expiring options
 OPT_MAX_SPREAD = 0.25        # skip contracts whose bid/ask gap is over 25% of the price
 
 
@@ -248,7 +249,7 @@ def _opt_day(ctx):
 
 
 def _opt_manage(ctx):
-    """Check every held contract once a minute: stop, half off at double, trailing exit, 15:50."""
+    """Check every held contract once a minute: stop, half off at double, trailing exit, 15:25."""
     memo = _opt_day(ctx)
     held = list(ctx.led.positions)
     if not held:
@@ -262,13 +263,18 @@ def _opt_manage(ctx):
         plan = memo["held"].setdefault(sym, {"entry": ctx.led.positions[sym]["entry"], "peak": mid})
         plan["peak"] = max(plan["peak"], mid)
         entry, peak = plan["entry"], plan["peak"]
-        if ctx.now.time() >= time(15, 50):
+        if ctx.now.time() >= OPT_EXIT:
             _opt_sell(ctx, sym, bid, f"end of day ({mid / entry - 1:+.0%})")
         elif not plan.get("halved") and mid <= entry * OPT_STOP:
             _opt_sell(ctx, sym, bid, f"stop: down {1 - mid / entry:.0%}")
             memo["stops"] = memo.get("stops", 0) + 1
         elif not plan.get("halved") and mid >= entry * OPT_DOUBLE:
-            _opt_sell(ctx, sym, bid, f"doubled ({mid / entry - 1:+.0%}): sold half, stake back", fraction=0.5)
+            # whole contracts only (you can't sell half a contract): sell half rounded down;
+            # with a single contract nothing is sold and the trailing exit takes over
+            n = int(round(ctx.led.positions[sym]["qty"] / 100))
+            if n >= 2:
+                _opt_sell(ctx, sym, bid, f"doubled ({mid / entry - 1:+.0%}): sold {n // 2} of {n}, stake back",
+                          fraction=(n // 2) / n)
             plan["halved"] = True
             continue
         elif plan.get("halved") and mid <= peak * OPT_TRAIL:

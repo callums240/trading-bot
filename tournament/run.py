@@ -24,6 +24,7 @@ from tournament import context                  # noqa: E402
 from tournament.market import Market            # noqa: E402
 from tournament.strategies import PLAYERS       # noqa: E402
 from tournament import scoreboard               # noqa: E402
+from tournament import real                     # noqa: E402
 
 (ROOT / "logs").mkdir(exist_ok=True)
 _logname = "tournament-dryrun.log" if "--dry-run" in sys.argv else "tournament.log"
@@ -56,6 +57,8 @@ def tick(m, slot=None, dry_run=False, only=None, quiet=False):
     if not quiet:
         log.info("==== tick %s ET, slot=%s%s ====", m.now.strftime("%Y-%m-%d %H:%M"), slot,
                  " (DRY-RUN)" if dry_run else "")
+    if not dry_run:
+        real.sync(m)            # dress rehearsal: catch up on real orders sent to the paper account
     for p in PLAYERS:
         if only and p.name != only:
             continue
@@ -94,6 +97,8 @@ def tick(m, slot=None, dry_run=False, only=None, quiet=False):
         new = led.trades[before:]
         for t in new:
             t["mood"] = mood
+        if not dry_run:
+            real.mirror(m, p.name, led, new)
         for t in new:
             log.info("%-17s %-4s %-5s $%7.2f @ %.4g  %s%s", p.name, t["side"].upper(), t["sym"],
                      t["usd"], t["price"], t["reason"],
