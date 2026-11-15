@@ -16,7 +16,7 @@ short in-and-out trades (minutes, never overnight); see scalp_backtest.py.
 Add a strategy: write a function, then add a Strategy(...) line to PLAYERS.
 """
 from dataclasses import dataclass, field
-from datetime import date, time, timedelta
+from datetime import date, datetime, time, timedelta
 import glob
 import json
 from pathlib import Path
@@ -203,6 +203,64 @@ def gold_fear(ctx):
         held = sum(1 for d in closes.index if str(d) > memo["signal"]) + 1    # days since the fear day, incl. today
         if held >= 5:
             go_flat(ctx, "5 days since the last fear day")
+
+
+# ---- our own find: drops with no news behind them tend to come back -------------
+# From event_study.py (11,500 gaps on 148 stocks, 2019-2026): a stock that opens 4%+ down
+# with NO company headline averaged +1.3% to +2% better than normal over the next 5-10
+# days, in both the 2019-24 and 2025-26 halves. Drops WITH company news did not bounce.
+# Exit rule picked on 2019-24 only: sell at +8% or after 15 trading days; a price stop made
+# results worse. Weak spots: it lost in 2022-23 (falling market) and can drop 40%+.
+DIP_GAP, DIP_TARGET, DIP_MAX_DAYS, DIP_SLOTS = -0.04, 0.08, 15, 4
+
+
+def nonews_dip(ctx):
+    led, memo = ctx.led, ctx.led.memo
+    if ctx.slot == "close":
+        if not led.positions:
+            return
+        prices = held_prices(ctx)
+        cal = list(ctx.m.daily_closes(["SPY"], days=40).index)
+        for sym, p in list(led.positions.items()):
+            px = prices.get(sym)
+            if not px:
+                continue
+            since = date.fromisoformat(p["since"])
+            held = sum(1 for d in cal if d > since) + (1 if ctx.m.today > since else 0)
+            ret = px / p["entry"] - 1
+            if ret >= DIP_TARGET:
+                led.sell(sym, px, ctx.now, f"target hit ({ret:+.1%} in {held} days)")
+            elif held >= DIP_MAX_DAYS:
+                led.sell(sym, px, ctx.now, f"time up: {held} days ({ret:+.1%})")
+        return
+    # entries: only in the first five minutes after 10:00 ET (as in the study)
+    if ctx.slot != "open" or ctx.now.time() >= time(10, 5) or len(led.positions) >= DIP_SLOTS:
+        return
+    if memo.get("day") != str(ctx.m.today):
+        memo.clear()
+        memo.update(day=str(ctx.m.today), checked=[])
+    from event_study import UNIVERSE
+    from tournament.context import company_headlines
+    closes = ctx.m.daily_closes(UNIVERSE, days=10)
+    if closes.empty:
+        return
+    prev_day, prev = closes.index[-1], closes.iloc[-1]
+    opens = ctx.m.today_opens(UNIVERSE)
+    gaps = sorted((opens[s] / prev[s] - 1, s) for s in UNIVERSE
+                  if s in opens and s in prev and prev[s] >= 5 and s not in led.positions and s not in memo["checked"])
+    news_from = datetime.combine(prev_day, time(16, 0), tzinfo=ctx.now.tzinfo)
+    for gap, sym in gaps:
+        if gap > DIP_GAP or len(led.positions) >= DIP_SLOTS:
+            break
+        memo["checked"].append(sym)
+        heads = company_headlines(sym, news_from)
+        if heads:
+            continue                       # dropped for a reason of its own: no bounce on average
+        px = ctx.m.price(sym)
+        if not px:
+            continue
+        stake = min(led.cash, led.value(held_prices(ctx)) / DIP_SLOTS)
+        led.buy(sym, stake, px, ctx.now, f"opened {gap:+.1%} with no company news")
 
 
 def trend_tqqq(ctx):
@@ -660,6 +718,7 @@ PLAYERS = [
     Strategy("overnight_qqq", "Buys QQQ at the close, sells next morning", ("open", "close"), overnight_qqq),
     Strategy("weekly_momentum", "Holds the 3 hottest volatile names, rebalanced weekly", ("close",), weekly_momentum),
     Strategy("gold_fear", "Gold as the fear trade: buys gold miners (GDX) after the S&P 500 drops 1%+ in a day, holds 5 days", ("close",), gold_fear),
+    Strategy("nonews_dip", "Our own find: buys big stocks that open 4%+ down with no company news; sells at +8% or after 15 days", ("open", "close"), nonews_dip),
     Strategy("activist_13d", "Copies activist investors: buys companies with a fresh 5%+ stake disclosed in an SEC 13D", ("open",), activist_13d),
     Strategy("insider_buys", "Copies $100k+ open-market buys by company officers/directors (SEC Form 4)", ("open",), insider_buys),
     Strategy("options_orb", "Same-day QQQ calls/puts on an opening-range break; $40 bets, -50% stop, winners run; a second opposite trade if the first is stopped", (), options_orb, intraday=True, every_minute=True),

@@ -74,3 +74,13 @@ def headlines(hours=24, symbols=None, max_items=40):
             break
     res.sort(key=lambda x: (not x["macro"], -x["t"].timestamp()))   # macro stories first
     return res[:max_items]
+
+
+def company_headlines(symbol, start, end=None, max_symbols=5):
+    """Headlines about this company between two times. Round-ups tagged with many tickers
+    ("30 stocks moving premarket") are left out: they say nothing about this one."""
+    from alpaca.data.historical.news import NewsClient
+    from alpaca.data.requests import NewsRequest
+    c = NewsClient(os.environ["ALPACA_API_KEY"], os.environ["ALPACA_SECRET_KEY"])
+    r = c.get_news(NewsRequest(symbols=symbol, start=start, end=end, limit=50))
+    return [n.headline for n in r.data["news"] if len(n.symbols) <= max_symbols]
