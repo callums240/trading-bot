@@ -1850,3 +1850,10 @@
 2026-11-16 18:35:46,626 INFO scalp_vwap_large  value $199.74  cash $199.74  holding -
 2026-11-16 18:46:07,662 INFO insider: Traceback (most recent call last):
 2026-11-16 18:46:27,940 INFO activist: Traceback (most recent call last):
+2026-11-16 19:00:47,479 INFO options_late_trend BUY  QQQ261116P00659000 $  35.00 @ 0.35  QQQ -2.3% today, below VWAP 666.11; 1x QQQ261116P00659000 @ 0.35
+2026-11-16 19:00:47,479 INFO options_late_trend value $150.50  cash $116.00  holding ['QQQ261116P00659000']
+2026-11-16 19:01:46,427 WARNING options_late_trend hit the stop and is out of the tournament
+2026-11-16 19:01:46,427 INFO options_late_trend SELL QQQ261116P00659000 $  31.48 @ 0.3148  STOP: fell below $150  P/L $-3.52
+2026-11-16 19:01:46,427 INFO options_late_trend value $147.48  cash $147.48  holding -
+2026-11-16 19:02:24,868 INFO insider: Traceback (most recent call last):
+2026-11-16 19:02:45,127 INFO activist: Traceback (most recent call last):

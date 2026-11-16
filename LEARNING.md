@@ -1,6 +1,6 @@
 # What's working
 
-Updated 2026-11-16 18:46 UTC from **332 completed trades** over 8 trading day(s) (2026-11-05 to 2026-11-16).
+Updated 2026-11-16 19:02 UTC from **333 completed trades** over 8 trading day(s) (2026-11-05 to 2026-11-16).
 
 How to read this: *Avg trade* is the average % made or lost per trade after costs. A row is only called **working** or **losing** once it has 30+ trades and its average is about 2 standard errors from zero (roughly 95% sure it isn't luck). Big samples beat big numbers.
 
@@ -24,14 +24,14 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | overnight_qqq | 7 | 29% | -0.70% | +1.83% | -1.71% | $-9.89 | too early (7 of 30 trades) |
 | weekly_momentum | 1 | 0% | -0.73% | +0.00% | -0.73% | $-0.49 | too early (1 of 30 trades) |
 | gap_fade | 9 | 44% | -0.91% | +0.65% | -2.16% | $-7.47 | too early (9 of 30 trades) |
-| options_late_trend | 3 | 0% | -56.67% | +0.00% | -56.67% | $-49.00 | too early (3 of 30 trades) |
+| options_late_trend | 4 | 0% | -45.02% | +0.00% | -45.02% | $-52.52 | too early (4 of 30 trades) |
 | options_dip_calls | 2 | 0% | -60.22% | +0.00% | -60.22% | $-41.00 | too early (2 of 30 trades) |
 
 ### Big stocks vs small caps
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
-| mixed | 66 | 45% | +3.14% | +27.54% | -17.19% | $+76.50 | no clear edge yet |
+| mixed | 67 | 45% | +2.94% | +27.54% | -17.00% | $+72.98 | no clear edge yet |
 | big stocks | 124 | 46% | -0.03% | +0.52% | -0.50% | $-1.96 | no clear edge yet |
 | small caps | 142 | 44% | -0.05% | +1.51% | -1.26% | $-3.47 | no clear edge yet |
 
@@ -41,7 +41,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 |---|---|---|---|---|---|---|---|
 | 10:30-14:00 (middle) | 156 | 51% | +3.20% | +7.27% | -0.98% | $+177.16 | no clear edge yet |
 | 9:30-10:30 (first hour) | 134 | 39% | -0.98% | +6.73% | -5.87% | $-48.83 | no clear edge yet |
-| 14:00-16:00 (last 2 hours) | 42 | 43% | -4.08% | +1.37% | -8.17% | $-57.26 | no clear edge yet |
+| 14:00-16:00 (last 2 hours) | 43 | 42% | -4.22% | +1.37% | -8.25% | $-60.78 | no clear edge yet |
 
 ### By market mood when the trade was opened
 
@@ -50,7 +50,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | calm | 145 | 49% | +4.44% | +11.00% | -1.84% | $+228.07 | **working** (likely real) |
 | unknown | 13 | 46% | -0.04% | +1.83% | -1.63% | $-6.80 | too early (13 of 30 trades) |
 | strong | 60 | 53% | -1.20% | +3.53% | -6.60% | $-9.44 | no clear edge yet |
-| nervous | 114 | 35% | -3.30% | +1.12% | -5.69% | $-140.76 | **losing** (likely real) |
+| nervous | 115 | 35% | -3.36% | +1.12% | -5.74% | $-144.28 | **losing** (likely real) |
 
 ### By how long the trade was held
 
@@ -59,7 +59,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | 15-60 min | 108 | 48% | +2.53% | +12.90% | -7.09% | $+101.11 | no clear edge yet |
 | 1-6.5 hours | 86 | 51% | +1.37% | +5.03% | -2.48% | $+48.48 | no clear edge yet |
 | overnight or longer | 12 | 42% | -0.08% | +1.87% | -1.48% | $-8.06 | too early (12 of 30 trades) |
-| under 15 min | 126 | 38% | -1.54% | +1.00% | -3.10% | $-70.46 | no clear edge yet |
+| under 15 min | 127 | 38% | -1.61% | +1.00% | -3.19% | $-73.98 | **losing** (likely real) |
 
 ### Scalpers by style (big and small stocks together)
 
@@ -74,7 +74,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
-| options | 17 | 41% | +12.62% | +112.31% | -57.16% | $+87.00 | too early (17 of 30 trades) |
+| options | 18 | 39% | +11.36% | +112.31% | -52.88% | $+83.48 | too early (18 of 30 trades) |
 | NIO | 4 | 100% | +1.83% | +1.83% | +0.00% | $+3.66 | too early (4 of 30 trades) |
 | RIOT | 18 | 61% | +0.68% | +1.79% | -1.07% | $+6.10 | too early (18 of 30 trades) |
 | RKLB | 7 | 57% | +0.67% | +2.21% | -1.37% | $+3.05 | too early (7 of 30 trades) |
@@ -90,5 +90,5 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 
 ### Your 80/20 goal
 
-Of 149 winning trades, 141 were small and 8 were big (5%+). Mix so far: 95 : 5 (target 80 : 20). Overall: 45% of trades won, average +0.59% per trade, $+71.07 in total.
+Of 149 winning trades, 141 were small and 8 were big (5%+). Mix so far: 95 : 5 (target 80 : 20). Overall: 45% of trades won, average +0.56% per trade, $+67.55 in total.
 
