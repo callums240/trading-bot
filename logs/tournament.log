@@ -1721,3 +1721,30 @@
 2026-11-16 15:02:31,523 INFO scalp_reversion_large_fast value $199.65  cash $99.71  holding ['TSLA', 'AMD']
 2026-11-16 15:03:03,243 INFO insider: Traceback (most recent call last):
 2026-11-16 15:03:39,531 INFO activist: Traceback (most recent call last):
+2026-11-16 15:04:45,069 INFO scalp_reversion_large_fast SELL AMD   $  49.82 @ 510.1  reversion exit: stop  P/L $-0.18
+2026-11-16 15:04:45,070 INFO scalp_reversion_large_fast value $199.54  cash $149.53  holding ['TSLA']
+2026-11-16 15:05:44,810 INFO scalp_orb5        SELL HOOD  $  49.39 @ 74.44  orb5 exit: stop  P/L $-0.61
+2026-11-16 15:05:44,811 INFO scalp_orb5        value $199.56  cash $149.55  holding ['RIVN']
+2026-11-16 15:05:45,162 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 508.3  reversion signal
+2026-11-16 15:05:45,163 INFO scalp_reversion_large_fast value $199.41  cash $99.53  holding ['TSLA', 'AMD']
+2026-11-16 15:06:44,778 INFO options_dip_calls BUY  QQQ261116C00676000 $  33.00 @ 0.33  QQQ -1.0% in 30 min, RSI 24; 1x QQQ261116C00676000 @ 0.33
+2026-11-16 15:06:44,778 INFO options_dip_calls value $177.50  cash $145.00  holding ['QQQ261116C00676000']
+2026-11-16 15:10:44,975 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.556  reversion signal
+2026-11-16 15:10:44,976 INFO scalp_reversion   value $201.24  cash $151.29  holding ['MARA']
+2026-11-16 15:12:45,144 INFO scalp_reversion_large_fast SELL AMD   $  50.18 @ 510.2  reversion exit: target  P/L $+0.18
+2026-11-16 15:12:45,145 INFO scalp_reversion_large_fast value $199.60  cash $149.71  holding ['TSLA']
+2026-11-16 15:13:44,973 INFO scalp_orb5        BUY  PLUG  $  50.00 @ 1.105  orb5 signal
+2026-11-16 15:13:44,973 INFO scalp_orb5        value $199.30  cash $99.55  holding ['RIVN', 'PLUG']
+2026-11-16 15:13:45,122 INFO scalp_orb5_large  BUY  NVDA  $  50.00 @ 160.5  orb5 signal
+2026-11-16 15:13:45,123 INFO scalp_orb5_large  value $199.05  cash $149.07  holding ['NVDA']
+2026-11-16 15:15:45,427 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 162.1  reversion signal
+2026-11-16 15:15:45,428 INFO scalp_reversion_large_fast value $199.55  cash $99.71  holding ['TSLA', 'PLTR']
+2026-11-16 15:16:44,948 INFO scalp_orb5_large  SELL NVDA  $  49.76 @ 159.7  orb5 exit: stop  P/L $-0.24
+2026-11-16 15:16:44,949 INFO scalp_orb5_large  value $198.83  cash $198.83  holding -
+2026-11-16 15:16:45,111 INFO scalp_reversion_large_fast SELL TSLA  $  49.81 @ 376.4  reversion exit: stop  P/L $-0.19
+2026-11-16 15:16:45,111 INFO scalp_reversion_large_fast SELL PLTR  $  49.71 @ 161.2  reversion exit: stop  P/L $-0.29
+2026-11-16 15:16:45,112 INFO scalp_reversion_large_fast value $199.23  cash $199.23  holding -
+2026-11-16 15:18:45,401 INFO scalp_orb5_large  BUY  NVDA  $  50.00 @ 159.7  orb5 signal
+2026-11-16 15:18:45,402 INFO scalp_orb5_large  value $198.80  cash $148.83  holding ['NVDA']
+2026-11-16 15:19:05,808 INFO insider: Traceback (most recent call last):
+2026-11-16 15:19:34,825 INFO activist: Traceback (most recent call last):
