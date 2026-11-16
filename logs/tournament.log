@@ -1832,3 +1832,11 @@
 2026-11-16 17:39:45,362 INFO scalp_vwap        value $201.55  cash $201.55  holding -
 2026-11-16 17:42:06,059 INFO insider: Traceback (most recent call last):
 2026-11-16 17:42:26,320 INFO activist: Traceback (most recent call last):
+2026-11-16 17:49:45,446 INFO scalp_burst       SELL MARA  $  49.68 @ 6.524  burst exit: time limit  P/L $-0.32
+2026-11-16 17:49:45,447 INFO scalp_burst       value $196.75  cash $146.92  holding ['AMC']
+2026-11-16 17:51:45,650 INFO scalp_burst_large SELL AVGO  $  49.78 @ 333.6  burst exit: time limit  P/L $-0.22
+2026-11-16 17:51:45,650 INFO scalp_burst_large value $200.69  cash $200.69  holding -
+2026-11-16 17:52:45,395 INFO scalp_burst       SELL AMC   $  49.75 @ 3.189  burst exit: time limit  P/L $-0.25
+2026-11-16 17:52:45,396 INFO scalp_burst       value $196.66  cash $196.66  holding -
+2026-11-16 17:58:24,431 INFO insider: Traceback (most recent call last):
+2026-11-16 17:58:44,692 INFO activist: Traceback (most recent call last):
