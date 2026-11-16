@@ -1859,3 +1859,7 @@
 2026-11-16 19:02:45,127 INFO activist: Traceback (most recent call last):
 2026-11-16 19:18:37,142 INFO insider: checked 114 new Form 4 filings, found 4 insider purchases
 2026-11-16 19:19:09,737 INFO activist: Traceback (most recent call last):
+2026-11-16 19:34:12,136 INFO scalp_reversion   BUY  HOOD  $  50.00 @ 71.54  reversion signal
+2026-11-16 19:34:12,136 INFO scalp_reversion   value $200.67  cash $150.70  holding ['HOOD']
+2026-11-16 19:34:32,636 INFO insider: Traceback (most recent call last):
+2026-11-16 19:34:52,906 INFO activist: Traceback (most recent call last):
