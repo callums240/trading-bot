@@ -1815,3 +1815,6 @@
 2026-11-16 16:35:52,096 INFO scalp_vwap        value $202.02  cash $152.26  holding ['SOUN']
 2026-11-16 16:39:12,737 INFO insider: Traceback (most recent call last):
 2026-11-16 16:40:04,726 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
+2026-11-16 16:53:39,466 INFO ==== session start ====
+2026-11-16 16:54:00,381 INFO insider: Traceback (most recent call last):
+2026-11-16 16:54:31,321 INFO activist: Traceback (most recent call last):
