@@ -1787,3 +1787,9 @@
 2026-11-16 15:43:50,862 INFO scalp_orb5        value $198.30  cash $98.09  holding ['RIVN', 'AMC']
 2026-11-16 15:51:11,476 INFO insider: Traceback (most recent call last):
 2026-11-16 15:51:31,773 INFO activist: Traceback (most recent call last):
+2026-11-16 15:51:51,033 INFO scalp_vwap_large  BUY  SPY   $  50.00 @ 746.9  vwap signal
+2026-11-16 15:51:51,034 INFO scalp_vwap_large  value $200.01  cash $150.04  holding ['SPY']
+2026-11-16 16:00:51,011 INFO scalp_orb5        SELL AMC   $  49.35 @ 3.149  orb5 exit: stop  P/L $-0.65
+2026-11-16 16:00:51,012 INFO scalp_orb5        value $197.74  cash $147.44  holding ['RIVN']
+2026-11-16 16:07:11,487 INFO insider: Traceback (most recent call last):
+2026-11-16 16:07:41,445 INFO activist: Traceback (most recent call last):
