@@ -1777,3 +1777,13 @@
 2026-11-16 15:31:43,724 INFO real: options_orb_spy SELL SPY261116P00735000 -> filled @ 0.16
 2026-11-16 15:35:27,455 INFO insider: Traceback (most recent call last):
 2026-11-16 15:35:47,774 INFO activist: Traceback (most recent call last):
+2026-11-16 15:35:50,828 INFO scalp_orb5        BUY  RIVN  $  50.00 @ 12.2  orb5 signal
+2026-11-16 15:35:50,829 INFO scalp_orb5        value $198.06  cash $148.09  holding ['RIVN']
+2026-11-16 15:35:50,995 INFO scalp_orb5_large  SELL NVDA  $  49.77 @ 159  orb5 exit: stop  P/L $-0.23
+2026-11-16 15:35:50,995 INFO scalp_orb5_large  value $198.60  cash $198.60  holding -
+2026-11-16 15:38:51,187 INFO scalp_reversion_large_fast SELL COIN  $  50.27 @ 118.5  reversion exit: target  P/L $+0.27
+2026-11-16 15:38:51,188 INFO scalp_reversion_large_fast value $199.01  cash $199.01  holding -
+2026-11-16 15:43:50,861 INFO scalp_orb5        BUY  AMC   $  50.00 @ 3.191  orb5 signal
+2026-11-16 15:43:50,862 INFO scalp_orb5        value $198.30  cash $98.09  holding ['RIVN', 'AMC']
+2026-11-16 15:51:11,476 INFO insider: Traceback (most recent call last):
+2026-11-16 15:51:31,773 INFO activist: Traceback (most recent call last):
