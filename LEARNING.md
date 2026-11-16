@@ -1,6 +1,6 @@
 # What's working
 
-Updated 2026-11-16 16:54 UTC from **325 completed trades** over 8 trading day(s) (2026-11-05 to 2026-11-16).
+Updated 2026-11-16 17:10 UTC from **327 completed trades** over 8 trading day(s) (2026-11-05 to 2026-11-16).
 
 How to read this: *Avg trade* is the average % made or lost per trade after costs. A row is only called **working** or **losing** once it has 30+ trades and its average is about 2 standard errors from zero (roughly 95% sure it isn't luck). Big samples beat big numbers.
 
@@ -12,7 +12,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | options_orb_spy | 6 | 50% | +36.85% | +129.91% | -56.22% | $+76.00 | too early (6 of 30 trades) |
 | wsb_crowd | 18 | 56% | +0.43% | +2.30% | -1.90% | $+5.14 | too early (18 of 30 trades) |
 | scalp_vwap | 33 | 48% | +0.14% | +1.50% | -1.15% | $+2.23 | no clear edge yet |
-| scalp_burst_large | 20 | 50% | +0.07% | +0.96% | -0.82% | $+0.67 | too early (20 of 30 trades) |
+| scalp_burst_large | 21 | 52% | +0.09% | +0.91% | -0.82% | $+0.91 | too early (21 of 30 trades) |
 | scalp_reversion | 23 | 48% | +0.06% | +1.69% | -1.43% | $+0.69 | too early (23 of 30 trades) |
 | scalp_vwap_large | 11 | 55% | -0.00% | +0.29% | -0.36% | $-0.02 | too early (11 of 30 trades) |
 | orb_tqqq | 4 | 50% | -0.01% | +1.83% | -1.85% | $-0.24 | too early (4 of 30 trades) |
@@ -20,7 +20,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | scalp_orb5_large | 50 | 42% | -0.06% | +0.48% | -0.44% | $-1.41 | no clear edge yet |
 | scalp_burst | 50 | 40% | -0.11% | +1.63% | -1.27% | $-2.76 | no clear edge yet |
 | midday_momentum | 10 | 50% | -0.13% | +1.41% | -1.67% | $+2.45 | too early (10 of 30 trades) |
-| scalp_orb5 | 32 | 44% | -0.16% | +1.29% | -1.29% | $-2.54 | no clear edge yet |
+| scalp_orb5 | 33 | 45% | -0.14% | +1.23% | -1.29% | $-2.36 | no clear edge yet |
 | overnight_qqq | 7 | 29% | -0.70% | +1.83% | -1.71% | $-9.89 | too early (7 of 30 trades) |
 | weekly_momentum | 1 | 0% | -0.73% | +0.00% | -0.73% | $-0.49 | too early (1 of 30 trades) |
 | gap_fade | 9 | 44% | -0.91% | +0.65% | -2.16% | $-7.47 | too early (9 of 30 trades) |
@@ -32,15 +32,15 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
 | mixed | 66 | 45% | +3.14% | +27.54% | -17.19% | $+76.50 | no clear edge yet |
-| big stocks | 121 | 46% | -0.03% | +0.52% | -0.50% | $-1.75 | no clear edge yet |
-| small caps | 138 | 44% | -0.03% | +1.53% | -1.27% | $-2.38 | no clear edge yet |
+| big stocks | 122 | 47% | -0.02% | +0.52% | -0.50% | $-1.51 | no clear edge yet |
+| small caps | 139 | 45% | -0.03% | +1.51% | -1.27% | $-2.20 | no clear edge yet |
 
 ### By time of day (when the trade was opened, ET)
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
-| 10:30-14:00 (middle) | 150 | 52% | +3.35% | +7.36% | -1.00% | $+178.70 | no clear edge yet |
-| 9:30-10:30 (first hour) | 133 | 38% | -0.99% | +6.86% | -5.87% | $-49.07 | no clear edge yet |
+| 10:30-14:00 (middle) | 151 | 52% | +3.33% | +7.27% | -1.00% | $+178.88 | no clear edge yet |
+| 9:30-10:30 (first hour) | 134 | 39% | -0.98% | +6.73% | -5.87% | $-48.83 | no clear edge yet |
 | 14:00-16:00 (last 2 hours) | 42 | 43% | -4.08% | +1.37% | -8.17% | $-57.26 | no clear edge yet |
 
 ### By market mood when the trade was opened
@@ -50,14 +50,14 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | calm | 145 | 49% | +4.44% | +11.00% | -1.84% | $+228.07 | **working** (likely real) |
 | unknown | 13 | 46% | -0.04% | +1.83% | -1.63% | $-6.80 | too early (13 of 30 trades) |
 | strong | 60 | 53% | -1.20% | +3.53% | -6.60% | $-9.44 | no clear edge yet |
-| nervous | 107 | 36% | -3.49% | +1.16% | -6.05% | $-139.46 | **losing** (likely real) |
+| nervous | 109 | 37% | -3.42% | +1.12% | -6.05% | $-139.04 | **losing** (likely real) |
 
 ### By how long the trade was held
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
 | 15-60 min | 107 | 49% | +2.56% | +12.90% | -7.21% | $+101.34 | no clear edge yet |
-| 1-6.5 hours | 80 | 52% | +1.49% | +5.25% | -2.66% | $+49.55 | no clear edge yet |
+| 1-6.5 hours | 82 | 54% | +1.47% | +5.03% | -2.66% | $+49.97 | no clear edge yet |
 | overnight or longer | 12 | 42% | -0.08% | +1.87% | -1.48% | $-8.06 | too early (12 of 30 trades) |
 | under 15 min | 126 | 38% | -1.54% | +1.00% | -3.10% | $-70.46 | no clear edge yet |
 
@@ -67,8 +67,8 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 |---|---|---|---|---|---|---|---|
 | vwap | 44 | 50% | +0.10% | +1.17% | -0.97% | $+2.21 | no clear edge yet |
 | reversion | 63 | 48% | -0.01% | +0.88% | -0.82% | $-0.30 | no clear edge yet |
-| burst | 70 | 43% | -0.06% | +1.40% | -1.16% | $-2.09 | no clear edge yet |
-| orb5 | 82 | 43% | -0.10% | +0.80% | -0.77% | $-3.95 | no clear edge yet |
+| burst | 71 | 44% | -0.05% | +1.37% | -1.16% | $-1.85 | no clear edge yet |
+| orb5 | 83 | 43% | -0.09% | +0.79% | -0.77% | $-3.77 | no clear edge yet |
 
 ### Best and worst tickers (3+ trades)
 
@@ -90,5 +90,5 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 
 ### Your 80/20 goal
 
-Of 147 winning trades, 139 were small and 8 were big (5%+). Mix so far: 95 : 5 (target 80 : 20). Overall: 45% of trades won, average +0.61% per trade, $+72.37 in total.
+Of 149 winning trades, 141 were small and 8 were big (5%+). Mix so far: 95 : 5 (target 80 : 20). Overall: 46% of trades won, average +0.61% per trade, $+72.79 in total.
 

@@ -1818,3 +1818,9 @@
 2026-11-16 16:53:39,466 INFO ==== session start ====
 2026-11-16 16:54:00,381 INFO insider: Traceback (most recent call last):
 2026-11-16 16:54:31,321 INFO activist: Traceback (most recent call last):
+2026-11-16 16:59:45,598 INFO scalp_burst_large SELL MSTR  $  50.24 @ 104  burst exit: time limit  P/L $+0.24
+2026-11-16 16:59:45,599 INFO scalp_burst_large value $201.10  cash $150.91  holding ['AVGO']
+2026-11-16 17:06:45,406 INFO scalp_orb5        SELL RIVN  $  50.18 @ 12.25  orb5 exit: time limit  P/L $+0.18
+2026-11-16 17:06:45,407 INFO scalp_orb5        value $197.63  cash $197.63  holding -
+2026-11-16 17:10:05,973 INFO insider: Traceback (most recent call last):
+2026-11-16 17:10:26,250 INFO activist: Traceback (most recent call last):
