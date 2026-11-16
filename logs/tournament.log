@@ -1905,3 +1905,5 @@
 2026-11-16 20:55:12,060 INFO scalp_burst_large SELL MSTR  $  49.63 @ 103.3  burst exit: end of day  P/L $-0.37
 2026-11-16 20:55:12,061 INFO scalp_burst_large value $200.33  cash $200.33  holding -
 2026-11-16 21:55:13,081 INFO market closed (opens in 995 min); hourly snapshots
+2026-11-16 22:39:32,373 INFO ==== session start ====
+2026-11-16 22:39:32,489 INFO market closed (opens in 950 min); hourly snapshots
