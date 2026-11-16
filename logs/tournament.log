@@ -1844,3 +1844,5 @@
 2026-11-16 18:08:46,577 INFO scalp_vwap_large  value $199.95  cash $149.97  holding ['COIN']
 2026-11-16 18:14:06,965 INFO insider: Traceback (most recent call last):
 2026-11-16 18:14:27,242 INFO activist: Traceback (most recent call last):
+2026-11-16 18:30:07,062 INFO insider: Traceback (most recent call last):
+2026-11-16 18:30:27,327 INFO activist: Traceback (most recent call last):
