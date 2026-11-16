@@ -1,18 +1,18 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-16 19:01 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-16 19:17 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **options_orb** | $301.00 | +50.5% | +54.0 pts | 16 | 80% | 0 / 8 | cash | 2026-11-04 |
 | 2 | **options_orb_spy** | $276.00 | +38.0% | +41.5 pts | 15 | 67% | 0 / 6 | cash | 2026-11-09 |
-| 3 | **wsb_crowd** | $203.50 | +1.8% | +5.2 pts | 39 | 56% | 9 / 1 | NVDA, NBIS, MU | 2026-11-04 |
-| 4 | **insider_buys** | $203.09 | +1.5% | +5.0 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 3 | **wsb_crowd** | $203.64 | +1.8% | +5.3 pts | 39 | 56% | 9 / 1 | NVDA, NBIS, MU | 2026-11-04 |
+| 4 | **insider_buys** | $203.41 | +1.7% | +5.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
 | 5 | **scalp_vwap** | $201.55 | +0.8% | +4.3 pts | 68 | 47% | 16 / 0 | cash | 2026-11-05 |
-| 6 | **midday_momentum** | $201.43 | +0.7% | +4.2 pts | 21 | 50% | 5 / 0 | SHOP | 2026-11-04 |
-| 7 | **scalp_reversion** | $200.70 | +0.3% | +3.8 pts | 46 | 48% | 11 / 0 | cash | 2026-11-05 |
-| 8 | **scalp_burst_large** | $200.69 | +0.3% | +3.8 pts | 44 | 50% | 11 / 0 | cash | 2026-11-09 |
-| 9 | **nonews_dip** | $200.62 | +0.3% | +3.8 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
+| 6 | **midday_momentum** | $200.90 | +0.4% | +4.0 pts | 21 | 50% | 5 / 0 | SHOP | 2026-11-04 |
+| 7 | **scalp_reversion** | $200.70 | +0.3% | +3.9 pts | 46 | 48% | 11 / 0 | cash | 2026-11-05 |
+| 8 | **scalp_burst_large** | $200.69 | +0.3% | +3.9 pts | 44 | 50% | 11 / 0 | cash | 2026-11-09 |
+| 9 | **nonews_dip** | $200.64 | +0.3% | +3.8 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
 | 10 | **gold_fear** | $200.00 | +0.0% | +3.5 pts | 0 | - | 0 / 0 | cash | 2026-11-16 |
 | 11 | **orb_tqqq** | $199.75 | -0.1% | +3.4 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
 | 12 | **scalp_vwap_large** | $199.74 | -0.1% | +3.4 pts | 24 | 50% | 6 / 0 | cash | 2026-11-09 |
@@ -20,13 +20,13 @@ Updated 2026-11-16 19:01 UTC. Each strategy trades its own virtual $200 at live 
 | 14 | **scalp_orb5_large** | $198.60 | -0.7% | +2.8 pts | 100 | 42% | 21 / 0 | cash | 2026-11-09 |
 | 15 | **activist_13d** | $197.94 | -1.0% | +2.5 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
 | 16 | **scalp_orb5** | $197.63 | -1.2% | +2.3 pts | 66 | 45% | 15 / 0 | cash | 2026-11-05 |
-| 17 | **scalp_burst** | $196.66 | -1.7% | +1.8 pts | 104 | 38% | 20 / 0 | cash | 2026-11-05 |
-| 18 | **spy_hold** | $193.03 | -3.5% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 19 | **overnight_qqq** | $190.12 | -4.9% | -1.5 pts | 14 | 29% | 2 / 0 | cash | 2026-11-04 |
-| 20 | **gap_fade** | $189.81 | -5.1% | -1.6 pts | 20 | 44% | 4 / 0 | MSTR, MARA | 2026-11-04 |
-| 21 | **weekly_momentum** | $176.79 | -11.6% | -8.1 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
+| 17 | **scalp_burst** | $196.66 | -1.7% | +1.9 pts | 104 | 38% | 20 / 0 | cash | 2026-11-05 |
+| 18 | **spy_hold** | $192.94 | -3.5% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 19 | **gap_fade** | $190.23 | -4.9% | -1.4 pts | 20 | 44% | 4 / 0 | MSTR, MARA | 2026-11-04 |
+| 20 | **overnight_qqq** | $190.12 | -4.9% | -1.4 pts | 14 | 29% | 2 / 0 | cash | 2026-11-04 |
+| 21 | **weekly_momentum** | $177.07 | -11.5% | -7.9 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
 | 22 | **options_dip_calls** | $159.00 | -20.5% | -17.0 pts | 4 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 23 | **options_late_trend** | $147.48 | -26.3% | -22.8 pts | 8 | 0% | 0 / 0 | STOPPED 2026-11-16 | 2026-11-09 |
+| 23 | **options_late_trend** | $147.48 | -26.3% | -22.7 pts | 8 | 0% | 0 / 0 | STOPPED 2026-11-16 | 2026-11-09 |
 
 ## What each strategy does
 
