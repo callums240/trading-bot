@@ -1900,3 +1900,8 @@
 2026-11-16 20:38:58,222 INFO activist: Traceback (most recent call last):
 2026-11-16 20:54:32,333 INFO insider: Traceback (most recent call last):
 2026-11-16 20:54:52,606 INFO activist: Traceback (most recent call last):
+2026-11-16 20:55:12,053 INFO scalp_reversion   SELL HOOD  $  50.33 @ 72.01  reversion exit: end of day  P/L $+0.33
+2026-11-16 20:55:12,054 INFO scalp_reversion   value $201.02  cash $201.02  holding -
+2026-11-16 20:55:12,060 INFO scalp_burst_large SELL MSTR  $  49.63 @ 103.3  burst exit: end of day  P/L $-0.37
+2026-11-16 20:55:12,061 INFO scalp_burst_large value $200.33  cash $200.33  holding -
+2026-11-16 21:55:13,081 INFO market closed (opens in 995 min); hourly snapshots
