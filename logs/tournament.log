@@ -1863,3 +1863,5 @@
 2026-11-16 19:34:12,136 INFO scalp_reversion   value $200.67  cash $150.70  holding ['HOOD']
 2026-11-16 19:34:32,636 INFO insider: Traceback (most recent call last):
 2026-11-16 19:34:52,906 INFO activist: Traceback (most recent call last):
+2026-11-16 19:50:32,764 INFO insider: Traceback (most recent call last):
+2026-11-16 19:50:53,012 INFO activist: Traceback (most recent call last):
