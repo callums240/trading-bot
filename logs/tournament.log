@@ -1824,3 +1824,5 @@
 2026-11-16 17:06:45,407 INFO scalp_orb5        value $197.63  cash $197.63  holding -
 2026-11-16 17:10:05,973 INFO insider: Traceback (most recent call last):
 2026-11-16 17:10:26,250 INFO activist: Traceback (most recent call last):
+2026-11-16 17:26:05,889 INFO insider: Traceback (most recent call last):
+2026-11-16 17:26:26,156 INFO activist: Traceback (most recent call last):
