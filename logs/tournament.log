@@ -1873,3 +1873,9 @@
 2026-11-16 19:55:12,669 INFO scalp_burst_large value $200.67  cash $150.69  holding ['MSTR']
 2026-11-16 20:06:33,476 INFO insider: Traceback (most recent call last):
 2026-11-16 20:06:53,733 INFO activist: Traceback (most recent call last):
+2026-11-16 20:16:12,099 INFO scalp_burst       SELL LCID  $  49.34 @ 2.715  burst exit: stop  P/L $-0.66
+2026-11-16 20:16:12,100 INFO scalp_burst       value $196.01  cash $196.01  holding -
+2026-11-16 20:20:12,147 INFO scalp_vwap        SELL AMC   $  50.69 @ 3.234  vwap exit: target  P/L $+0.69
+2026-11-16 20:20:12,147 INFO scalp_vwap        value $202.24  cash $202.24  holding -
+2026-11-16 20:22:32,327 INFO insider: Traceback (most recent call last):
+2026-11-16 20:22:52,602 INFO activist: Traceback (most recent call last):
