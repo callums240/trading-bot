@@ -1,32 +1,32 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-16 16:22 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-16 16:38 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **options_orb** | $301.00 | +50.5% | +53.3 pts | 16 | 80% | 0 / 8 | cash | 2026-11-04 |
-| 2 | **options_orb_spy** | $276.00 | +38.0% | +40.8 pts | 15 | 67% | 0 / 6 | cash | 2026-11-09 |
-| 3 | **wsb_crowd** | $207.43 | +3.7% | +6.5 pts | 39 | 56% | 9 / 1 | NVDA, NBIS, MU | 2026-11-04 |
-| 4 | **insider_buys** | $206.21 | +3.1% | +5.9 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
-| 5 | **midday_momentum** | $202.47 | +1.2% | +4.0 pts | 20 | 50% | 5 / 0 | cash | 2026-11-04 |
-| 6 | **scalp_vwap** | $201.55 | +0.8% | +3.6 pts | 64 | 47% | 15 / 0 | cash | 2026-11-05 |
-| 7 | **nonews_dip** | $201.38 | +0.7% | +3.5 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
-| 8 | **scalp_burst_large** | $200.97 | +0.5% | +3.3 pts | 42 | 50% | 10 / 0 | MSTR, AVGO | 2026-11-09 |
+| 1 | **options_orb** | $301.00 | +50.5% | +53.4 pts | 16 | 80% | 0 / 8 | cash | 2026-11-04 |
+| 2 | **options_orb_spy** | $276.00 | +38.0% | +40.9 pts | 15 | 67% | 0 / 6 | cash | 2026-11-09 |
+| 3 | **wsb_crowd** | $206.88 | +3.4% | +6.3 pts | 39 | 56% | 9 / 1 | NVDA, NBIS, MU | 2026-11-04 |
+| 4 | **insider_buys** | $205.89 | +2.9% | +5.8 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 5 | **midday_momentum** | $202.47 | +1.2% | +4.1 pts | 20 | 50% | 5 / 0 | cash | 2026-11-04 |
+| 6 | **scalp_vwap** | $202.17 | +1.1% | +4.0 pts | 67 | 48% | 16 / 0 | SOUN | 2026-11-05 |
+| 7 | **nonews_dip** | $201.00 | +0.5% | +3.4 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
+| 8 | **scalp_burst_large** | $200.90 | +0.4% | +3.3 pts | 42 | 50% | 10 / 0 | MSTR, AVGO | 2026-11-09 |
 | 9 | **scalp_reversion** | $200.70 | +0.3% | +3.2 pts | 46 | 48% | 11 / 0 | cash | 2026-11-05 |
-| 10 | **gold_fear** | $200.00 | +0.0% | +2.8 pts | 0 | - | 0 / 0 | cash | 2026-11-16 |
-| 11 | **scalp_vwap_large** | $199.97 | -0.0% | +2.8 pts | 22 | 55% | 6 / 0 | cash | 2026-11-09 |
-| 12 | **activist_13d** | $199.78 | -0.1% | +2.7 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
-| 13 | **orb_tqqq** | $199.75 | -0.1% | +2.7 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
-| 14 | **scalp_reversion_large_fast** | $199.01 | -0.5% | +2.3 pts | 80 | 48% | 19 / 0 | cash | 2026-11-09 |
-| 15 | **scalp_orb5_large** | $198.60 | -0.7% | +2.1 pts | 100 | 42% | 21 / 0 | cash | 2026-11-09 |
-| 16 | **scalp_orb5** | $197.58 | -1.2% | +1.6 pts | 65 | 44% | 14 / 0 | RIVN | 2026-11-05 |
-| 17 | **scalp_burst** | $197.29 | -1.4% | +1.5 pts | 102 | 40% | 20 / 0 | MARA, AMC | 2026-11-05 |
-| 18 | **spy_hold** | $194.38 | -2.8% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 19 | **gap_fade** | $190.54 | -4.7% | -1.9 pts | 20 | 44% | 4 / 0 | MSTR, MARA | 2026-11-04 |
-| 20 | **overnight_qqq** | $190.12 | -4.9% | -2.1 pts | 14 | 29% | 2 / 0 | cash | 2026-11-04 |
-| 21 | **weekly_momentum** | $179.48 | -10.3% | -7.5 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
-| 22 | **options_dip_calls** | $159.00 | -20.5% | -17.7 pts | 4 | 0% | 0 / 0 | cash | 2026-11-09 |
-| 23 | **options_late_trend** | $151.00 | -24.5% | -21.7 pts | 6 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 10 | **gold_fear** | $200.00 | +0.0% | +2.9 pts | 0 | - | 0 / 0 | cash | 2026-11-16 |
+| 11 | **scalp_vwap_large** | $199.97 | -0.0% | +2.9 pts | 22 | 55% | 6 / 0 | cash | 2026-11-09 |
+| 12 | **orb_tqqq** | $199.75 | -0.1% | +2.8 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
+| 13 | **activist_13d** | $199.34 | -0.3% | +2.6 pts | 1 | - | 0 / 0 | ASPE | 2026-11-10 |
+| 14 | **scalp_reversion_large_fast** | $199.01 | -0.5% | +2.4 pts | 80 | 48% | 19 / 0 | cash | 2026-11-09 |
+| 15 | **scalp_orb5_large** | $198.60 | -0.7% | +2.2 pts | 100 | 42% | 21 / 0 | cash | 2026-11-09 |
+| 16 | **scalp_orb5** | $197.66 | -1.2% | +1.7 pts | 65 | 44% | 14 / 0 | RIVN | 2026-11-05 |
+| 17 | **scalp_burst** | $196.87 | -1.6% | +1.3 pts | 102 | 40% | 20 / 0 | MARA, AMC | 2026-11-05 |
+| 18 | **spy_hold** | $194.23 | -2.9% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 19 | **overnight_qqq** | $190.12 | -4.9% | -2.1 pts | 14 | 29% | 2 / 0 | cash | 2026-11-04 |
+| 20 | **gap_fade** | $189.88 | -5.1% | -2.2 pts | 20 | 44% | 4 / 0 | MSTR, MARA | 2026-11-04 |
+| 21 | **weekly_momentum** | $179.41 | -10.3% | -7.4 pts | 5 | 0% | 0 / 0 | SOFI, AMZN, RIVN | 2026-11-04 |
+| 22 | **options_dip_calls** | $159.00 | -20.5% | -17.6 pts | 4 | 0% | 0 / 0 | cash | 2026-11-09 |
+| 23 | **options_late_trend** | $151.00 | -24.5% | -21.6 pts | 6 | 0% | 0 / 0 | cash | 2026-11-09 |
 
 ## What each strategy does
 
