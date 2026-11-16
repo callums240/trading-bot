@@ -1,7 +1,13 @@
 {
  "start_cash": 200.0,
- "cash": 199.2287829006931,
- "positions": {},
+ "cash": 148.7441242270291,
+ "positions": {
+  "COIN": {
+   "qty": 0.424128087021583,
+   "entry": 117.888915,
+   "since": "2026-11-16"
+  }
+ },
  "trades": [
   {
    "t": "2026-11-09T11:05-05:00",
@@ -779,6 +785,58 @@
    "pnl": -0.29,
    "reason": "reversion exit: stop",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:21-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.422158,
+   "price": 118.4392,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:24-05:00",
+   "side": "sell",
+   "sym": "COIN",
+   "qty": 0.422158,
+   "price": 117.896,
+   "usd": 49.77,
+   "pnl": -0.23,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:24-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.423679,
+   "price": 118.014,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:26-05:00",
+   "side": "sell",
+   "sym": "COIN",
+   "qty": 0.423679,
+   "price": 117.4113,
+   "usd": 49.74,
+   "pnl": -0.26,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:28-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.424128,
+   "price": 117.8889,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -787,21 +845,29 @@
   "2026-11-11": 199.22,
   "2026-11-12": 199.69,
   "2026-11-13": 199.71,
-  "2026-11-16": 199.23
+  "2026-11-16": 198.83
  },
  "done": [],
  "memo": {
   "day": "2026-11-16",
-  "open": {},
+  "open": {
+   "COIN": {
+    "tp": 118.36047066,
+    "sl": 117.535248255,
+    "until": "2026-11-16T10:48:43.309669-05:00"
+   }
+  },
   "count": {
    "TSLA": 1,
    "AMD": 2,
-   "PLTR": 1
+   "PLTR": 1,
+   "COIN": 3
   },
   "last_bar": {
    "TSLA": "2026-11-16T10:00:00-05:00",
    "AMD": "2026-11-16T10:04:00-05:00",
-   "PLTR": "2026-11-16T10:14:00-05:00"
+   "PLTR": "2026-11-16T10:14:00-05:00",
+   "COIN": "2026-11-16T10:27:00-05:00"
   }
  },
  "stopped": null

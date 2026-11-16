@@ -1748,3 +1748,32 @@
 2026-11-16 15:18:45,402 INFO scalp_orb5_large  value $198.80  cash $148.83  holding ['NVDA']
 2026-11-16 15:19:05,808 INFO insider: Traceback (most recent call last):
 2026-11-16 15:19:34,825 INFO activist: Traceback (most recent call last):
+2026-11-16 15:20:45,008 INFO scalp_orb5        SELL PLUG  $  49.08 @ 1.085  orb5 exit: stop  P/L $-0.92
+2026-11-16 15:20:45,009 INFO scalp_orb5        value $198.51  cash $148.62  holding ['RIVN']
+2026-11-16 15:21:45,158 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 118.4  reversion signal
+2026-11-16 15:21:45,159 INFO scalp_reversion_large_fast value $199.20  cash $149.23  holding ['COIN']
+2026-11-16 15:22:44,815 INFO real: options_orb SELL 1x QQQ261116P00652000 sent (market)
+2026-11-16 15:22:44,816 INFO options_orb       SELL QQQ261116P00652000 $  18.00 @ 0.18  stop: down 54%  P/L $-22.00
+2026-11-16 15:22:44,816 INFO options_orb       value $301.00  cash $301.00  holding -
+2026-11-16 15:23:43,843 INFO real: options_orb SELL QQQ261116P00652000 -> filled @ 0.20
+2026-11-16 15:23:45,170 INFO scalp_orb5        SELL RIVN  $  49.47 @ 12.08  orb5 exit: stop  P/L $-0.53
+2026-11-16 15:23:45,171 INFO scalp_orb5        value $198.09  cash $198.09  holding -
+2026-11-16 15:24:44,892 INFO scalp_reversion_large_fast SELL COIN  $  49.77 @ 117.9  reversion exit: stop  P/L $-0.23
+2026-11-16 15:24:44,892 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 118  reversion signal
+2026-11-16 15:24:44,893 INFO scalp_reversion_large_fast value $198.97  cash $149.00  holding ['COIN']
+2026-11-16 15:25:44,698 INFO scalp_reversion   SELL MARA  $  49.41 @ 6.479  reversion exit: stop  P/L $-0.59
+2026-11-16 15:25:44,699 INFO scalp_reversion   value $200.70  cash $200.70  holding -
+2026-11-16 15:26:44,905 INFO scalp_reversion_large_fast SELL COIN  $  49.74 @ 117.4  reversion exit: stop  P/L $-0.26
+2026-11-16 15:26:44,905 INFO scalp_reversion_large_fast value $198.74  cash $198.74  holding -
+2026-11-16 15:27:44,427 INFO options_dip_calls SELL QQQ261116C00676000 $  14.00 @ 0.14  stop: down 50%  P/L $-19.00
+2026-11-16 15:27:44,427 INFO options_dip_calls value $159.00  cash $159.00  holding -
+2026-11-16 15:28:44,960 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 117.9  reversion signal
+2026-11-16 15:28:44,961 INFO scalp_reversion_large_fast value $198.72  cash $148.74  holding ['COIN']
+2026-11-16 15:29:44,865 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 103.5  burst signal
+2026-11-16 15:29:44,865 INFO scalp_burst_large value $200.65  cash $150.67  holding ['MSTR']
+2026-11-16 15:30:44,610 INFO real: options_orb_spy SELL 1x SPY261116P00735000 sent (market)
+2026-11-16 15:30:44,610 INFO options_orb_spy   SELL SPY261116P00735000 $  14.00 @ 0.14  stop: down 53%  P/L $-21.00
+2026-11-16 15:30:44,610 INFO options_orb_spy   value $276.00  cash $276.00  holding -
+2026-11-16 15:31:43,724 INFO real: options_orb_spy SELL SPY261116P00735000 -> filled @ 0.16
+2026-11-16 15:35:27,455 INFO insider: Traceback (most recent call last):
+2026-11-16 15:35:47,774 INFO activist: Traceback (most recent call last):

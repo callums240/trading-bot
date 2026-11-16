@@ -2,18 +2,8 @@
  "day": "2026-11-16",
  "buys_today": 2,
  "pos": {
-  "options_orb": {
-   "QQQ261116P00652000": {
-    "qty": 1,
-    "entry": 0.38
-   }
-  },
-  "options_orb_spy": {
-   "SPY261116P00735000": {
-    "qty": 1,
-    "entry": 0.33
-   }
-  }
+  "options_orb": {},
+  "options_orb_spy": {}
  },
  "orders": [
   {
@@ -45,6 +35,38 @@
    "booked": 1,
    "id": "c9132028-74b0-4284-acf8-b40dad197654",
    "status": "filled"
+  },
+  {
+   "t": "2026-11-16T10:22:43-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261116P00652000",
+   "side": "sell",
+   "qty": 1,
+   "limit": null,
+   "virtual": 0.18,
+   "why": "stop: down 54%",
+   "filled_qty": 1,
+   "filled_avg": 0.2,
+   "booked": 1,
+   "id": "865f7ccf-fb9e-4139-b93f-50a51326901a",
+   "status": "filled",
+   "pnl": -18.0
+  },
+  {
+   "t": "2026-11-16T10:30:43-05:00",
+   "strategy": "options_orb_spy",
+   "sym": "SPY261116P00735000",
+   "side": "sell",
+   "qty": 1,
+   "limit": null,
+   "virtual": 0.14,
+   "why": "stop: down 53%",
+   "filled_qty": 1,
+   "filled_avg": 0.16,
+   "booked": 1,
+   "id": "61daee32-ba48-4867-9411-34f6d533de50",
+   "status": "filled",
+   "pnl": -17.0
   }
  ]
 }
