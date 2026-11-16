@@ -1826,3 +1826,9 @@
 2026-11-16 17:10:26,250 INFO activist: Traceback (most recent call last):
 2026-11-16 17:26:05,889 INFO insider: Traceback (most recent call last):
 2026-11-16 17:26:26,156 INFO activist: Traceback (most recent call last):
+2026-11-16 17:30:45,632 INFO midday_momentum   BUY  SHOP  $ 202.47 @ 150  top gainer at midday
+2026-11-16 17:30:45,632 INFO midday_momentum   value $202.37  cash $0.00  holding ['SHOP']
+2026-11-16 17:39:45,362 INFO scalp_vwap        SELL SOUN  $  49.30 @ 3.244  vwap exit: stop  P/L $-0.70
+2026-11-16 17:39:45,362 INFO scalp_vwap        value $201.55  cash $201.55  holding -
+2026-11-16 17:42:06,059 INFO insider: Traceback (most recent call last):
+2026-11-16 17:42:26,320 INFO activist: Traceback (most recent call last):
