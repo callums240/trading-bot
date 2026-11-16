@@ -1793,3 +1793,17 @@
 2026-11-16 16:00:51,012 INFO scalp_orb5        value $197.74  cash $147.44  holding ['RIVN']
 2026-11-16 16:07:11,487 INFO insider: Traceback (most recent call last):
 2026-11-16 16:07:41,445 INFO activist: Traceback (most recent call last):
+2026-11-16 16:07:51,010 INFO scalp_vwap        BUY  LCID  $  50.00 @ 2.74  vwap signal
+2026-11-16 16:07:51,011 INFO scalp_vwap        value $202.10  cash $152.21  holding ['LCID']
+2026-11-16 16:12:50,883 INFO scalp_vwap        SELL LCID  $  49.34 @ 2.704  vwap exit: stop  P/L $-0.66
+2026-11-16 16:12:50,884 INFO scalp_vwap        value $201.55  cash $201.55  holding -
+2026-11-16 16:18:50,838 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.566  burst signal
+2026-11-16 16:18:50,838 INFO scalp_burst       value $197.19  cash $147.24  holding ['MARA']
+2026-11-16 16:20:51,235 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 335.1  burst signal
+2026-11-16 16:20:51,236 INFO scalp_burst_large value $200.55  cash $100.67  holding ['MSTR', 'AVGO']
+2026-11-16 16:21:50,859 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.206  burst signal
+2026-11-16 16:21:50,860 INFO scalp_burst       value $197.30  cash $97.24  holding ['MARA', 'AMC']
+2026-11-16 16:21:51,049 INFO scalp_vwap_large  SELL SPY   $  49.94 @ 746  vwap exit: time limit  P/L $-0.06
+2026-11-16 16:21:51,050 INFO scalp_vwap_large  value $199.97  cash $199.97  holding -
+2026-11-16 16:23:12,495 INFO insider: Traceback (most recent call last):
+2026-11-16 16:23:48,960 INFO activist: Traceback (most recent call last):
