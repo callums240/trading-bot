@@ -1670,3 +1670,54 @@
 2026-11-14 18:46:54,552 INFO ==== session start ====
 2026-11-14 18:46:54,590 INFO market closed (opens in 2623 min); hourly snapshots
 2026-11-14 19:47:15,255 INFO market closed (opens in 2563 min); hourly snapshots
+2026-11-16 11:07:26,142 INFO ==== session start ====
+2026-11-16 11:07:26,357 INFO market closed (opens in 203 min); hourly snapshots
+2026-11-16 12:08:24,961 INFO market closed (opens in 142 min); hourly snapshots
+2026-11-16 13:09:33,542 INFO market closed (opens in 80 min); hourly snapshots
+2026-11-16 14:10:34,747 INFO market closed (opens in 19 min); hourly snapshots
+2026-11-16 14:30:51,137 INFO insider: Traceback (most recent call last):
+2026-11-16 14:31:11,440 INFO activist: Traceback (most recent call last):
+2026-11-16 14:47:07,693 INFO insider: Traceback (most recent call last):
+2026-11-16 14:47:27,979 INFO activist: Traceback (most recent call last):
+2026-11-16 14:56:30,520 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.02  orb5 signal
+2026-11-16 14:56:30,521 INFO scalp_orb5        value $200.83  cash $150.85  holding ['RIOT']
+2026-11-16 14:57:30,481 INFO scalp_orb5        BUY  RIVN  $  50.00 @ 12.21  orb5 signal
+2026-11-16 14:57:30,482 INFO scalp_orb5        value $200.95  cash $100.85  holding ['RIOT', 'RIVN']
+2026-11-16 14:58:30,523 INFO scalp_orb5        BUY  HOOD  $  50.00 @ 75.36  orb5 signal
+2026-11-16 14:58:30,524 INFO scalp_orb5        value $201.24  cash $50.85  holding ['RIOT', 'RIVN', 'HOOD']
+2026-11-16 14:58:30,732 INFO scalp_orb5_large  BUY  MSTR  $  50.00 @ 105.4  orb5 signal
+2026-11-16 14:58:30,733 INFO scalp_orb5_large  value $199.33  cash $149.35  holding ['MSTR']
+2026-11-16 14:59:30,509 INFO scalp_burst       BUY  RKLB  $  50.00 @ 61.47  burst signal
+2026-11-16 14:59:30,510 INFO scalp_burst       value $197.85  cash $147.88  holding ['RKLB']
+2026-11-16 14:59:30,724 INFO scalp_orb5_large  SELL MSTR  $  49.72 @ 104.8  orb5 exit: stop  P/L $-0.28
+2026-11-16 14:59:30,725 INFO scalp_orb5_large  value $199.07  cash $199.07  holding -
+2026-11-16 15:00:30,591 INFO gap_fade          BUY  MSTR  $  96.27 @ 104.3  gap down, bouncing
+2026-11-16 15:00:30,591 INFO gap_fade          BUY  MARA  $  96.27 @ 6.728  gap down, bouncing
+2026-11-16 15:00:30,592 INFO gap_fade          value $192.45  cash $0.00  holding ['MSTR', 'MARA']
+2026-11-16 15:00:30,736 INFO wsb_crowd         BUY  NVDA  $  68.38 @ 159.7  WSB mentions spiking
+2026-11-16 15:00:30,736 INFO wsb_crowd         BUY  NBIS  $  68.38 @ 107.3  WSB mentions spiking
+2026-11-16 15:00:30,736 INFO wsb_crowd         BUY  MU    $  68.38 @ 728.1  WSB mentions spiking
+2026-11-16 15:00:30,737 INFO wsb_crowd         value $205.05  cash $0.00  holding ['NVDA', 'NBIS', 'MU']
+2026-11-16 15:00:30,737 INFO overnight_qqq     SELL QQQ   $ 190.12 @ 665.9  morning exit  P/L $-3.83
+2026-11-16 15:00:30,737 INFO overnight_qqq     value $190.12  cash $190.12  holding -
+2026-11-16 15:00:37,215 INFO nonews_dip        BUY  KLAC  $  50.00 @ 144  opened -5.0% with no company news
+2026-11-16 15:00:37,215 INFO nonews_dip        BUY  ANET  $  49.99 @ 186.1  opened -4.3% with no company news
+2026-11-16 15:00:37,215 INFO nonews_dip        value $199.95  cash $100.01  holding ['KLAC', 'ANET']
+2026-11-16 15:00:38,065 INFO real: options_orb BUY 1x QQQ261116P00652000 sent (limit 0.40)
+2026-11-16 15:00:38,066 INFO options_orb       BUY  QQQ261116P00652000 $  40.00 @ 0.4  QQQ 666.25 broke below 666.64; 1x QQQ261116P00652000 @ 0.40
+2026-11-16 15:00:38,066 INFO options_orb       value $322.50  cash $283.00  holding ['QQQ261116P00652000']
+2026-11-16 15:00:38,540 INFO real: options_orb_spy BUY 1x SPY261116P00735000 sent (limit 0.35)
+2026-11-16 15:00:38,541 INFO options_orb_spy   BUY  SPY261116P00735000 $  35.00 @ 0.35  SPY 745.50 broke below 746.45; 1x SPY261116P00735000 @ 0.35
+2026-11-16 15:00:38,541 INFO options_orb_spy   value $296.50  cash $262.00  holding ['SPY261116P00735000']
+2026-11-16 15:00:38,764 INFO scalp_orb5        SELL RIOT  $  49.30 @ 16.78  orb5 exit: stop  P/L $-0.70
+2026-11-16 15:00:38,765 INFO scalp_orb5        value $199.59  cash $100.16  holding ['RIVN', 'HOOD']
+2026-11-16 15:00:38,884 INFO scalp_burst       SELL RKLB  $  49.36 @ 60.69  burst exit: stop  P/L $-0.64
+2026-11-16 15:00:38,885 INFO scalp_burst       value $197.24  cash $197.24  holding -
+2026-11-16 15:01:30,166 INFO real: options_orb BUY QQQ261116P00652000 -> filled @ 0.38
+2026-11-16 15:01:30,239 INFO real: options_orb_spy BUY SPY261116P00735000 -> filled @ 0.33
+2026-11-16 15:01:31,637 INFO scalp_reversion_large_fast BUY  TSLA  $  50.00 @ 377.8  reversion signal
+2026-11-16 15:01:31,638 INFO scalp_reversion_large_fast value $199.68  cash $149.71  holding ['TSLA']
+2026-11-16 15:02:31,522 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 512  reversion signal
+2026-11-16 15:02:31,523 INFO scalp_reversion_large_fast value $199.65  cash $99.71  holding ['TSLA', 'AMD']
+2026-11-16 15:03:03,243 INFO insider: Traceback (most recent call last):
+2026-11-16 15:03:39,531 INFO activist: Traceback (most recent call last):

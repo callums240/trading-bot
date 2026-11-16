@@ -1,0 +1,69 @@
+{
+ "start_cash": 200.0,
+ "cash": 100.00624687656172,
+ "positions": {
+  "KLAC": {
+   "qty": 0.3473381463285594,
+   "entry": 143.95193999999998,
+   "since": "2026-11-16"
+  },
+  "ANET": {
+   "qty": 0.2686637385830891,
+   "entry": 186.082995,
+   "since": "2026-11-16"
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-11-16T10:00-05:00",
+   "side": "buy",
+   "sym": "KLAC",
+   "qty": 0.347338,
+   "price": 143.9519,
+   "usd": 50.0,
+   "reason": "opened -5.0% with no company news",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-16T10:00-05:00",
+   "side": "buy",
+   "sym": "ANET",
+   "qty": 0.268664,
+   "price": 186.083,
+   "usd": 49.99,
+   "reason": "opened -4.3% with no company news",
+   "mood": "nervous"
+  }
+ ],
+ "equity": {
+  "2026-11-16": 200.33
+ },
+ "done": [
+  "2026-11-16:open"
+ ],
+ "memo": {
+  "day": "2026-11-16",
+  "checked": [
+   "MSTR",
+   "MARA",
+   "COIN",
+   "AMAT",
+   "AMD",
+   "MRVL",
+   "MU",
+   "ARM",
+   "LRCX",
+   "SMCI",
+   "HOOD",
+   "INTC",
+   "KLAC",
+   "RIOT",
+   "TSM",
+   "IONQ",
+   "DELL",
+   "ANET",
+   "AVGO"
+  ]
+ },
+ "stopped": null
+}
