@@ -64,3 +64,10 @@
 2026-11-13 20:32:28,532 INFO ignoring your manual positions: ['NVDA']
 2026-11-13 20:32:29,223 INFO entry candidates: none
 2026-11-13 20:32:29,223 INFO ==== run end ====
+2026-11-16 20:32:12,508 INFO ==== run start (PAPER) ====
+2026-11-16 20:32:12,539 INFO equity $159.50 | cash $64.79 | unsettled $0.00 | settled $64.79
+2026-11-16 20:32:12,555 INFO ignoring your manual positions: ['NVDA']
+2026-11-16 20:32:12,731 INFO entry candidates: [('XLY', 5.4), ('SPY', 9.6)]
+2026-11-16 20:32:12,742 INFO BUY XLY $32.39 (price ~118.04, rsi 5.4)
+2026-11-16 20:32:12,753 INFO BUY SPY $32.39 (price ~739.23, rsi 9.6)
+2026-11-16 20:32:12,753 INFO ==== run end ====
