@@ -1865,3 +1865,11 @@
 2026-11-16 19:34:52,906 INFO activist: Traceback (most recent call last):
 2026-11-16 19:50:32,764 INFO insider: Traceback (most recent call last):
 2026-11-16 19:50:53,012 INFO activist: Traceback (most recent call last):
+2026-11-16 19:52:12,236 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.191  vwap signal
+2026-11-16 19:52:12,237 INFO scalp_vwap        value $201.46  cash $151.55  holding ['AMC']
+2026-11-16 19:52:12,244 INFO scalp_burst       BUY  LCID  $  50.00 @ 2.751  burst signal
+2026-11-16 19:52:12,244 INFO scalp_burst       value $196.56  cash $146.66  holding ['LCID']
+2026-11-16 19:55:12,669 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 104  burst signal
+2026-11-16 19:55:12,669 INFO scalp_burst_large value $200.67  cash $150.69  holding ['MSTR']
+2026-11-16 20:06:33,476 INFO insider: Traceback (most recent call last):
+2026-11-16 20:06:53,733 INFO activist: Traceback (most recent call last):
