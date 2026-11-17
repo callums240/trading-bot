@@ -2091,3 +2091,28 @@
 2026-11-17 16:51:30,388 INFO scalp_burst       value $193.07  cash $143.17  holding ['LCID']
 2026-11-17 17:02:57,533 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
 2026-11-17 17:03:19,650 INFO activist: checked 13D feed: nothing new
+2026-11-17 17:06:30,458 INFO scalp_vwap        BUY  SOFI  $  50.00 @ 14.38  vwap signal
+2026-11-17 17:06:30,458 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 12.05  vwap signal
+2026-11-17 17:06:30,458 INFO scalp_vwap        BUY  AMC   $  50.00 @ 3.196  vwap signal
+2026-11-17 17:06:30,459 INFO scalp_vwap        value $201.97  cash $1.44  holding ['RIOT', 'SOFI', 'RIVN', 'AMC']
+2026-11-17 17:06:30,775 INFO scalp_vwap_large  BUY  AVGO  $  50.00 @ 336.8  vwap signal
+2026-11-17 17:06:30,776 INFO scalp_vwap_large  value $199.72  cash $149.74  holding ['AVGO']
+2026-11-17 17:06:31,025 INFO scalp_burst_large BUY  TSLA  $  50.00 @ 380.8  burst signal
+2026-11-17 17:06:31,025 INFO scalp_burst_large BUY  AMD   $  50.00 @ 489.2  burst signal
+2026-11-17 17:06:31,025 INFO scalp_burst_large BUY  PLTR  $  50.00 @ 155.3  burst signal
+2026-11-17 17:06:31,025 INFO scalp_burst_large BUY  COIN  $  50.00 @ 116.2  burst signal
+2026-11-17 17:06:31,026 INFO scalp_burst_large value $200.23  cash $0.33  holding ['TSLA', 'AMD', 'PLTR', 'COIN']
+2026-11-17 17:07:30,255 INFO scalp_vwap        SELL RIOT  $  50.87 @ 17.21  vwap exit: target  P/L $+0.87
+2026-11-17 17:07:30,256 INFO scalp_vwap        value $202.55  cash $52.30  holding ['SOFI', 'RIVN', 'AMC']
+2026-11-17 17:08:30,694 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.531  burst signal
+2026-11-17 17:08:30,694 INFO scalp_burst       BUY  RIOT  $  50.00 @ 17.17  burst signal
+2026-11-17 17:08:30,695 INFO scalp_burst       BUY  SOUN  $  43.17 @ 3.106  burst signal
+2026-11-17 17:08:30,696 INFO scalp_burst       value $193.18  cash $0.00  holding ['LCID', 'MARA', 'RIOT', 'SOUN']
+2026-11-17 17:11:30,505 INFO scalp_burst       SELL RIOT  $  50.78 @ 17.44  burst exit: target  P/L $+0.78
+2026-11-17 17:11:30,506 INFO scalp_burst       value $194.32  cash $50.78  holding ['LCID', 'MARA', 'SOUN']
+2026-11-17 17:14:30,546 INFO scalp_burst       BUY  RIOT  $  50.00 @ 17.42  burst signal
+2026-11-17 17:14:30,548 INFO scalp_burst       value $194.11  cash $0.78  holding ['LCID', 'MARA', 'SOUN', 'RIOT']
+2026-11-17 17:18:30,780 INFO scalp_vwap_large  SELL AVGO  $  50.30 @ 338.8  vwap exit: target  P/L $+0.30
+2026-11-17 17:18:30,782 INFO scalp_vwap_large  value $200.04  cash $200.04  holding -
+2026-11-17 17:18:46,926 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-17 17:19:00,032 INFO activist: checked 13D feed: nothing new

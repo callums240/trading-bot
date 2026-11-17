@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 199.74387624948642,
+ "cash": 200.0403642489515,
  "positions": {},
  "trades": [
   {
@@ -254,6 +254,27 @@
    "pnl": -0.23,
    "reason": "vwap exit: stop",
    "mood": "panic"
+  },
+  {
+   "t": "2026-11-17T12:06-05:00",
+   "side": "buy",
+   "sym": "AVGO",
+   "qty": 0.148452,
+   "price": 336.8083,
+   "usd": 50.0,
+   "reason": "vwap signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T12:18-05:00",
+   "side": "sell",
+   "sym": "AVGO",
+   "qty": 0.148452,
+   "price": 338.8055,
+   "usd": 50.3,
+   "pnl": 0.3,
+   "reason": "vwap exit: target",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -263,14 +284,18 @@
   "2026-11-12": 199.97,
   "2026-11-13": 200.04,
   "2026-11-16": 199.74,
-  "2026-11-17": 199.74
+  "2026-11-17": 200.04
  },
  "done": [],
  "memo": {
   "day": "2026-11-17",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "AVGO": 1
+  },
+  "last_bar": {
+   "AVGO": "2026-11-17T12:05:00-05:00"
+  }
  },
  "stopped": null
 }
