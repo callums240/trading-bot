@@ -1,6 +1,6 @@
 # What's working
 
-Updated 2026-11-17 19:10 UTC from **396 completed trades** over 9 trading day(s) (2026-11-05 to 2026-11-17).
+Updated 2026-11-17 19:27 UTC from **397 completed trades** over 9 trading day(s) (2026-11-05 to 2026-11-17).
 
 How to read this: *Avg trade* is the average % made or lost per trade after costs. A row is only called **working** or **losing** once it has 30+ trades and its average is about 2 standard errors from zero (roughly 95% sure it isn't luck). Big samples beat big numbers.
 
@@ -13,7 +13,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | scalp_vwap | 40 | 52% | +0.16% | +1.38% | -1.19% | $+3.14 | no clear edge yet |
 | wsb_crowd | 21 | 48% | +0.15% | +2.30% | -1.80% | $+2.00 | too early (21 of 30 trades) |
 | scalp_burst_large | 27 | 52% | +0.06% | +0.82% | -0.76% | $+0.79 | too early (27 of 30 trades) |
-| scalp_vwap_large | 13 | 54% | +0.01% | +0.33% | -0.37% | $+0.05 | too early (13 of 30 trades) |
+| scalp_vwap_large | 14 | 50% | +0.01% | +0.33% | -0.32% | $+0.05 | too early (14 of 30 trades) |
 | orb_tqqq | 4 | 50% | -0.01% | +1.83% | -1.85% | $-0.24 | too early (4 of 30 trades) |
 | scalp_reversion | 30 | 47% | -0.02% | +1.62% | -1.46% | $-0.35 | no clear edge yet |
 | scalp_orb5_large | 56 | 38% | -0.10% | +0.48% | -0.45% | $-2.79 | no clear edge yet |
@@ -32,7 +32,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
 | mixed | 78 | 41% | +10.58% | +47.14% | -14.86% | $+277.01 | no clear edge yet |
-| big stocks | 148 | 42% | -0.07% | +0.52% | -0.50% | $-5.38 | no clear edge yet |
+| big stocks | 149 | 42% | -0.07% | +0.52% | -0.49% | $-5.38 | no clear edge yet |
 | small caps | 170 | 43% | -0.10% | +1.47% | -1.27% | $-8.13 | no clear edge yet |
 
 ### By time of day (when the trade was opened, ET)
@@ -40,7 +40,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
 | 9:30-10:30 (first hour) | 156 | 35% | +3.41% | +18.78% | -4.96% | $+172.10 | no clear edge yet |
-| 10:30-14:00 (middle) | 191 | 48% | +2.42% | +6.39% | -1.27% | $+161.99 | no clear edge yet |
+| 10:30-14:00 (middle) | 192 | 48% | +2.41% | +6.39% | -1.26% | $+161.99 | no clear edge yet |
 | 14:00-16:00 (last 2 hours) | 49 | 41% | -4.01% | +1.34% | -7.69% | $-70.59 | **losing** (likely real) |
 
 ### By market mood when the trade was opened
@@ -51,13 +51,13 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 | panic | 3 | 33% | +0.00% | +1.38% | -0.68% | $-0.06 | too early (3 of 30 trades) |
 | unknown | 13 | 46% | -0.04% | +1.83% | -1.63% | $-6.80 | too early (13 of 30 trades) |
 | strong | 61 | 52% | -1.42% | +3.53% | -6.88% | $-19.15 | no clear edge yet |
-| nervous | 159 | 35% | -2.70% | +1.08% | -4.69% | $-163.89 | **losing** (likely real) |
+| nervous | 160 | 34% | -2.68% | +1.08% | -4.65% | $-163.89 | **losing** (likely real) |
 
 ### By how long the trade was held
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
-| 15-60 min | 120 | 48% | +7.94% | +23.82% | -6.43% | $+331.32 | no clear edge yet |
+| 15-60 min | 121 | 47% | +7.87% | +23.82% | -6.33% | $+331.32 | no clear edge yet |
 | 1-6.5 hours | 103 | 50% | +1.11% | +4.36% | -2.22% | $+43.60 | no clear edge yet |
 | overnight or longer | 14 | 36% | -1.12% | +1.87% | -2.78% | $-17.86 | too early (14 of 30 trades) |
 | under 15 min | 159 | 33% | -1.59% | +1.01% | -2.89% | $-93.56 | **losing** (likely real) |
@@ -66,7 +66,7 @@ How to read this: *Avg trade* is the average % made or lost per trade after cost
 
 | | Trades | Win rate | Avg trade | Avg win | Avg loss | Total $ | Verdict |
 |---|---|---|---|---|---|---|---|
-| vwap | 53 | 53% | +0.12% | +1.12% | -0.99% | $+3.19 | no clear edge yet |
+| vwap | 54 | 52% | +0.12% | +1.12% | -0.96% | $+3.19 | no clear edge yet |
 | reversion | 82 | 41% | -0.09% | +0.91% | -0.80% | $-3.78 | no clear edge yet |
 | burst | 90 | 41% | -0.12% | +1.31% | -1.12% | $-5.34 | no clear edge yet |
 | orb5 | 93 | 39% | -0.16% | +0.79% | -0.77% | $-7.58 | no clear edge yet |
