@@ -2083,3 +2083,11 @@
 2026-11-17 16:30:49,999 INFO activist: checked 13D feed: nothing new
 2026-11-17 16:46:43,690 INFO insider: checked 27 new Form 4 filings, found 0 insider purchases
 2026-11-17 16:46:49,442 INFO activist: checked 13D feed: nothing new
+2026-11-17 16:47:31,212 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.506  burst signal
+2026-11-17 16:47:31,213 INFO scalp_burst       value $193.68  cash $143.73  holding ['MARA']
+2026-11-17 16:49:30,615 INFO scalp_burst       BUY  LCID  $  50.00 @ 2.806  burst signal
+2026-11-17 16:49:30,616 INFO scalp_burst       value $193.27  cash $93.73  holding ['MARA', 'LCID']
+2026-11-17 16:51:30,387 INFO scalp_burst       SELL MARA  $  49.44 @ 6.434  burst exit: stop  P/L $-0.56
+2026-11-17 16:51:30,388 INFO scalp_burst       value $193.07  cash $143.17  holding ['LCID']
+2026-11-17 17:02:57,533 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
+2026-11-17 17:03:19,650 INFO activist: checked 13D feed: nothing new
