@@ -2166,3 +2166,7 @@
 2026-11-17 19:52:30,645 INFO scalp_burst       value $193.79  cash $143.88  holding ['LCID']
 2026-11-17 19:58:41,907 INFO insider: checked 38 new Form 4 filings, found 2 insider purchases
 2026-11-17 19:58:46,696 INFO activist: checked 13D feed: nothing new
+2026-11-17 20:01:30,657 INFO scalp_burst       SELL LCID  $  49.39 @ 2.919  burst exit: stop  P/L $-0.61
+2026-11-17 20:01:30,658 INFO scalp_burst       value $193.27  cash $193.27  holding -
+2026-11-17 20:14:50,203 INFO insider: checked 48 new Form 4 filings, found 1 insider purchases
+2026-11-17 20:14:59,742 INFO activist: checked 13D feed: nothing new
