@@ -2148,3 +2148,7 @@
 2026-11-17 18:38:30,451 INFO scalp_burst       value $193.88  cash $193.88  holding -
 2026-11-17 18:38:37,341 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
 2026-11-17 18:38:46,210 INFO activist: checked 13D feed: nothing new
+2026-11-17 18:53:30,690 INFO scalp_vwap_large  BUY  AMZN  $  50.00 @ 256.9  vwap signal
+2026-11-17 18:53:30,691 INFO scalp_vwap_large  value $200.02  cash $150.04  holding ['AMZN']
+2026-11-17 18:54:41,124 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
+2026-11-17 18:54:48,930 INFO activist: checked 13D feed: nothing new
