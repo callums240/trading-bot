@@ -2132,3 +2132,5 @@
 2026-11-17 17:55:30,447 INFO scalp_burst       value $193.20  cash $100.26  holding ['SOUN', 'AMC']
 2026-11-17 18:06:52,376 INFO insider: checked 39 new Form 4 filings, found 0 insider purchases
 2026-11-17 18:07:14,951 INFO activist: checked 13D feed: nothing new
+2026-11-17 18:22:40,516 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
+2026-11-17 18:22:50,202 INFO activist: checked 13D feed: nothing new
