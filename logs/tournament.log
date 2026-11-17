@@ -2160,3 +2160,9 @@
 2026-11-17 19:27:03,221 INFO activist: checked 13D feed: nothing new
 2026-11-17 19:42:38,164 INFO insider: checked 22 new Form 4 filings, found 0 insider purchases
 2026-11-17 19:42:49,275 INFO activist: checked 13D feed: nothing new
+2026-11-17 19:46:30,504 INFO scalp_vwap        BUY  RIOT  $  50.00 @ 17.07  vwap signal
+2026-11-17 19:46:30,505 INFO scalp_vwap        value $203.13  cash $153.16  holding ['RIOT']
+2026-11-17 19:52:30,644 INFO scalp_burst       BUY  LCID  $  50.00 @ 2.956  burst signal
+2026-11-17 19:52:30,645 INFO scalp_burst       value $193.79  cash $143.88  holding ['LCID']
+2026-11-17 19:58:41,907 INFO insider: checked 38 new Form 4 filings, found 2 insider purchases
+2026-11-17 19:58:46,696 INFO activist: checked 13D feed: nothing new
