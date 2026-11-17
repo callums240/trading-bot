@@ -37,33 +37,15 @@
  ],
  "equity": {
   "2026-11-16": 200.02,
-  "2026-11-17": 201.09
+  "2026-11-17": 200.74
  },
  "done": [
   "2026-11-16:open"
  ],
  "memo": {
-  "day": "2026-11-16",
+  "day": "2026-11-17",
   "checked": [
-   "MSTR",
-   "MARA",
-   "COIN",
-   "AMAT",
-   "AMD",
-   "MRVL",
-   "MU",
-   "ARM",
-   "LRCX",
-   "SMCI",
-   "HOOD",
-   "INTC",
-   "KLAC",
-   "RIOT",
-   "TSM",
-   "IONQ",
-   "DELL",
-   "ANET",
-   "AVGO"
+   "JD"
   ]
  },
  "stopped": null

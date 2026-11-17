@@ -1,11 +1,16 @@
 {
  "start_cash": 200.0,
- "cash": 150.0,
+ "cash": 100.0,
  "positions": {
   "ASPE": {
    "qty": 3.98365982413337,
    "entry": 12.5512725,
    "since": "2026-11-10"
+  },
+  "FUN": {
+   "qty": 4.452116925946826,
+   "entry": 11.2306125,
+   "since": "2026-11-17"
   }
  },
  "trades": [
@@ -18,6 +23,16 @@
    "usd": 50.0,
    "reason": "ORBIMED ADVISORS LLC disclosed 12.3% (13D)",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:00-05:00",
+   "side": "buy",
+   "sym": "FUN",
+   "qty": 4.452117,
+   "price": 11.2306,
+   "usd": 50.0,
+   "reason": "H Partners Management, LLC disclosed 7.2% (13D)",
+   "mood": "calm"
   }
  ],
  "equity": {
@@ -26,10 +41,11 @@
   "2026-11-12": 204.42,
   "2026-11-13": 201.91,
   "2026-11-16": 197.98,
-  "2026-11-17": 198.8
+  "2026-11-17": 198.82
  },
  "done": [
-  "2026-11-10:open"
+  "2026-11-10:open",
+  "2026-11-17:open"
  ],
  "memo": {},
  "stopped": null
