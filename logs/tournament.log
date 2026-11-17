@@ -2181,3 +2181,5 @@
 2026-11-17 20:32:32,181 INFO live bot ran (exit 0): 2026-11-17 20:32:32,108 INFO ==== run end ====
 2026-11-17 20:46:45,920 INFO insider: checked 44 new Form 4 filings, found 3 insider purchases
 2026-11-17 20:47:01,069 INFO activist: checked 13D feed: nothing new
+2026-11-17 20:55:30,254 INFO scalp_vwap        SELL RIOT  $  49.96 @ 17.06  vwap exit: end of day  P/L $-0.04
+2026-11-17 20:55:30,256 INFO scalp_vwap        value $203.12  cash $203.12  holding -
