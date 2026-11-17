@@ -1,5 +1,5 @@
 {
- "day": "2026-11-16",
+ "day": "2026-11-17",
  "buys_today": 2,
  "pos": {
   "options_orb": {},
@@ -67,6 +67,38 @@
    "id": "61daee32-ba48-4867-9411-34f6d533de50",
    "status": "filled",
    "pnl": -17.0
+  },
+  {
+   "t": "2026-11-17T10:06:42-05:00",
+   "strategy": "options_orb_spy",
+   "sym": "SPY261117P00728000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.34,
+   "virtual": 0.34,
+   "why": "SPY 737.29 broke below 737.49; 1x SPY261117P00728000 @ 0.34",
+   "filled_qty": 0,
+   "filled_avg": null,
+   "booked": 0,
+   "id": null,
+   "status": "rejected",
+   "error": "{\"code\":40310000,\"cost_basis\":\"34.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"0\"}"
+  },
+  {
+   "t": "2026-11-17T10:09:42-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261117P00646000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.34,
+   "virtual": 0.34,
+   "why": "QQQ 659.17 broke below 659.70; 1x QQQ261117P00646000 @ 0.34",
+   "filled_qty": 0,
+   "filled_avg": null,
+   "booked": 0,
+   "id": null,
+   "status": "rejected",
+   "error": "{\"code\":40310000,\"cost_basis\":\"34.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"0\"}"
   }
  ]
 }

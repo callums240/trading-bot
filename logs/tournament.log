@@ -1945,3 +1945,31 @@
 2026-11-17 15:02:44,691 INFO scalp_orb5        value $197.53  cash $147.63  holding ['NIO']
 2026-11-17 15:02:44,783 INFO scalp_burst       BUY  SOUN  $  50.00 @ 3.186  burst signal
 2026-11-17 15:02:44,784 INFO scalp_burst       value $195.92  cash $146.01  holding ['SOUN']
+2026-11-17 15:03:53,520 INFO insider: checked 22 new Form 4 filings, found 2 insider purchases
+2026-11-17 15:04:33,851 INFO activist: checked 13D feed: nothing new
+2026-11-17 15:04:44,511 INFO scalp_vwap        BUY  SOUN  $  50.00 @ 3.196  vwap signal
+2026-11-17 15:04:44,512 INFO scalp_vwap        value $202.15  cash $152.24  holding ['SOUN']
+2026-11-17 15:06:44,544 WARNING real: options_orb_spy BUY 1x SPY261117P00728000 REJECTED: {"code":40310000,"cost_basis":"34.01","message":"insufficient options buying power","options_buying_power":"0"}
+2026-11-17 15:06:44,545 INFO options_orb_spy   BUY  SPY261117P00728000 $  34.00 @ 0.34  SPY 737.29 broke below 737.49; 1x SPY261117P00728000 @ 0.34
+2026-11-17 15:06:44,545 INFO options_orb_spy   value $275.50  cash $242.00  holding ['SPY261117P00728000']
+2026-11-17 15:07:44,876 INFO scalp_vwap        SELL SOUN  $  49.20 @ 3.144  vwap exit: stop  P/L $-0.80
+2026-11-17 15:07:44,877 INFO scalp_vwap        value $201.44  cash $201.44  holding -
+2026-11-17 15:07:44,879 INFO scalp_burst       SELL SOUN  $  49.35 @ 3.144  burst exit: stop  P/L $-0.65
+2026-11-17 15:07:44,880 INFO scalp_burst       value $195.36  cash $195.36  holding -
+2026-11-17 15:08:44,596 INFO scalp_orb5        BUY  RIVN  $  50.00 @ 12.21  orb5 signal
+2026-11-17 15:08:44,597 INFO scalp_orb5        value $197.24  cash $97.63  holding ['NIO', 'RIVN']
+2026-11-17 15:08:44,675 INFO scalp_reversion   SELL PLUG  $  49.01 @ 1.01  reversion exit: stop  P/L $-0.99
+2026-11-17 15:08:44,676 INFO scalp_reversion   value $200.03  cash $200.03  holding -
+2026-11-17 15:09:44,516 WARNING real: options_orb BUY 1x QQQ261117P00646000 REJECTED: {"code":40310000,"cost_basis":"34.01","message":"insufficient options buying power","options_buying_power":"0"}
+2026-11-17 15:09:44,517 INFO options_orb       BUY  QQQ261117P00646000 $  34.00 @ 0.34  QQQ 659.17 broke below 659.70; 1x QQQ261117P00646000 @ 0.34
+2026-11-17 15:09:44,518 INFO options_orb       value $300.50  cash $267.00  holding ['QQQ261117P00646000']
+2026-11-17 15:09:45,081 INFO scalp_orb5_large  BUY  TSLA  $  50.00 @ 381.3  orb5 signal
+2026-11-17 15:09:45,082 INFO scalp_orb5_large  value $198.53  cash $98.60  holding ['AMZN', 'TSLA']
+2026-11-17 15:12:45,354 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 338.8  orb5 signal
+2026-11-17 15:12:45,356 INFO scalp_orb5_large  value $198.79  cash $48.60  holding ['AMZN', 'TSLA', 'AVGO']
+2026-11-17 15:18:45,136 INFO scalp_orb5        SELL NIO   $  49.29 @ 2.839  orb5 exit: stop  P/L $-0.71
+2026-11-17 15:18:45,136 INFO scalp_orb5        SELL RIVN  $  49.47 @ 12.08  orb5 exit: stop  P/L $-0.53
+2026-11-17 15:18:45,137 INFO scalp_orb5        value $196.38  cash $196.38  holding -
+2026-11-17 15:18:45,356 INFO scalp_orb5_large  SELL AVGO  $  49.72 @ 337  orb5 exit: stop  P/L $-0.28
+2026-11-17 15:18:45,356 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 60.93  orb5 signal
+2026-11-17 15:18:45,357 INFO scalp_orb5_large  value $198.25  cash $48.33  holding ['AMZN', 'TSLA', 'NFLX']
