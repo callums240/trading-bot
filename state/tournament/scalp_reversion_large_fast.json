@@ -1,18 +1,7 @@
 {
  "start_cash": 200.0,
- "cash": 99.19981234538398,
- "positions": {
-  "NVDA": {
-   "qty": 0.32768351251559324,
-   "entry": 152.586255,
-   "since": "2026-11-17"
-  },
-  "AMD": {
-   "qty": 0.10048258267568738,
-   "entry": 497.598675,
-   "since": "2026-11-17"
-  }
- },
+ "cash": 196.5888122682848,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-09T11:05-05:00",
@@ -894,6 +883,217 @@
    "usd": 50.0,
    "reason": "reversion signal",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:36-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.100483,
+   "price": 494.0628,
+   "usd": 49.64,
+   "pnl": -0.36,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:37-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.100827,
+   "price": 495.8978,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:38-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.100827,
+   "price": 493.9329,
+   "usd": 49.8,
+   "pnl": -0.2,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:39-05:00",
+   "side": "sell",
+   "sym": "NVDA",
+   "qty": 0.327684,
+   "price": 151.984,
+   "usd": 49.8,
+   "pnl": -0.2,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:41-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.101723,
+   "price": 491.5306,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:41-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.429394,
+   "price": 116.4432,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:41-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.499301,
+   "price": 100.14,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:42-05:00",
+   "side": "sell",
+   "sym": "COIN",
+   "qty": 0.429394,
+   "price": 116.032,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:42-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.499301,
+   "price": 99.7001,
+   "usd": 49.78,
+   "pnl": -0.22,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:42-05:00",
+   "side": "buy",
+   "sym": "PLTR",
+   "qty": 0.319288,
+   "price": 156.5983,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:42-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.430485,
+   "price": 116.148,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:42-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.481492,
+   "price": 99.7999,
+   "usd": 48.05,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:43-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.101723,
+   "price": 489.5251,
+   "usd": 49.8,
+   "pnl": -0.2,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:43-05:00",
+   "side": "sell",
+   "sym": "PLTR",
+   "qty": 0.319288,
+   "price": 156.0419,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:44-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.481492,
+   "price": 99.2903,
+   "usd": 47.81,
+   "pnl": -0.25,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:44-05:00",
+   "side": "buy",
+   "sym": "PLTR",
+   "qty": 0.319799,
+   "price": 156.3481,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:44-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.50307,
+   "price": 99.3897,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:45-05:00",
+   "side": "sell",
+   "sym": "COIN",
+   "qty": 0.430485,
+   "price": 115.7121,
+   "usd": 49.81,
+   "pnl": -0.19,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:46-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.50307,
+   "price": 98.6906,
+   "usd": 49.65,
+   "pnl": -0.35,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-17T10:47-05:00",
+   "side": "sell",
+   "sym": "PLTR",
+   "qty": 0.319799,
+   "price": 155.4173,
+   "usd": 49.7,
+   "pnl": -0.3,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -903,32 +1103,25 @@
   "2026-11-12": 199.69,
   "2026-11-13": 199.71,
   "2026-11-16": 199.01,
-  "2026-11-17": 199.13
+  "2026-11-17": 196.59
  },
  "done": [],
  "memo": {
   "day": "2026-11-17",
-  "open": {
-   "NVDA": {
-    "tp": 153.19660002,
-    "sl": 152.128496235,
-    "until": "2026-11-17T10:53:42.921341-05:00"
-   },
-   "AMD": {
-    "tp": 499.58906970000004,
-    "sl": 496.105878975,
-    "until": "2026-11-17T10:54:43.239209-05:00"
-   }
-  },
+  "open": {},
   "count": {
-   "COIN": 1,
+   "COIN": 3,
    "NVDA": 1,
-   "AMD": 1
+   "AMD": 3,
+   "MSTR": 3,
+   "PLTR": 2
   },
   "last_bar": {
-   "COIN": "2026-11-17T10:18:00-05:00",
+   "COIN": "2026-11-17T10:41:00-05:00",
    "NVDA": "2026-11-17T10:32:00-05:00",
-   "AMD": "2026-11-17T10:33:00-05:00"
+   "AMD": "2026-11-17T10:40:00-05:00",
+   "MSTR": "2026-11-17T10:43:00-05:00",
+   "PLTR": "2026-11-17T10:43:00-05:00"
   }
  },
  "stopped": null

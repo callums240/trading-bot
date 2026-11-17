@@ -2005,3 +2005,48 @@
 2026-11-17 15:33:45,269 INFO scalp_reversion_large_fast value $199.17  cash $149.20  holding ['NVDA']
 2026-11-17 15:34:45,717 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 497.6  reversion signal
 2026-11-17 15:34:45,767 INFO scalp_reversion_large_fast value $199.13  cash $99.20  holding ['NVDA', 'AMD']
+2026-11-17 15:35:56,095 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
+2026-11-17 15:36:08,411 INFO activist: checked 13D feed: nothing new
+2026-11-17 15:36:45,520 INFO scalp_reversion_large_fast SELL AMD   $  49.64 @ 494.1  reversion exit: stop  P/L $-0.36
+2026-11-17 15:36:45,521 INFO scalp_reversion_large_fast value $198.73  cash $148.84  holding ['NVDA']
+2026-11-17 15:37:45,051 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 495.9  reversion signal
+2026-11-17 15:37:45,052 INFO scalp_reversion_large_fast value $198.77  cash $98.84  holding ['NVDA', 'AMD']
+2026-11-17 15:38:45,120 INFO scalp_reversion_large_fast SELL AMD   $  49.80 @ 493.9  reversion exit: stop  P/L $-0.20
+2026-11-17 15:38:45,121 INFO scalp_reversion_large_fast value $198.50  cash $148.65  holding ['NVDA']
+2026-11-17 15:39:45,161 INFO scalp_reversion_large_fast SELL NVDA  $  49.80 @ 152  reversion exit: stop  P/L $-0.20
+2026-11-17 15:39:45,162 INFO scalp_reversion_large_fast value $198.45  cash $198.45  holding -
+2026-11-17 15:40:45,027 INFO scalp_reversion   SELL RKLB  $  49.22 @ 54.55  reversion exit: stop  P/L $-0.78
+2026-11-17 15:40:45,028 INFO scalp_reversion   value $199.25  cash $199.25  holding -
+2026-11-17 15:41:44,971 INFO options_dip_calls BUY  QQQ261117C00664000 $  35.00 @ 0.35  QQQ -1.0% in 30 min, RSI 14; 1x QQQ261117C00664000 @ 0.35
+2026-11-17 15:41:44,971 INFO options_dip_calls value $158.50  cash $124.00  holding ['QQQ261117C00664000']
+2026-11-17 15:41:45,340 INFO scalp_reversion   BUY  RKLB  $  50.00 @ 54.34  reversion signal
+2026-11-17 15:41:45,341 INFO scalp_reversion   value $199.22  cash $149.25  holding ['RKLB']
+2026-11-17 15:41:45,686 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 491.5  reversion signal
+2026-11-17 15:41:45,686 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 116.4  reversion signal
+2026-11-17 15:41:45,686 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 100.1  reversion signal
+2026-11-17 15:41:45,687 INFO scalp_reversion_large_fast value $198.37  cash $48.45  holding ['AMD', 'COIN', 'MSTR']
+2026-11-17 15:42:45,794 INFO scalp_reversion_large_fast SELL COIN  $  49.82 @ 116  reversion exit: stop  P/L $-0.18
+2026-11-17 15:42:45,794 INFO scalp_reversion_large_fast SELL MSTR  $  49.78 @ 99.7  reversion exit: stop  P/L $-0.22
+2026-11-17 15:42:45,794 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 156.6  reversion signal
+2026-11-17 15:42:45,794 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 116.1  reversion signal
+2026-11-17 15:42:45,794 INFO scalp_reversion_large_fast BUY  MSTR  $  48.05 @ 99.8  reversion signal
+2026-11-17 15:42:45,795 INFO scalp_reversion_large_fast value $197.88  cash $0.00  holding ['AMD', 'PLTR', 'COIN', 'MSTR']
+2026-11-17 15:43:45,486 INFO scalp_reversion_large_fast SELL AMD   $  49.80 @ 489.5  reversion exit: stop  P/L $-0.20
+2026-11-17 15:43:45,486 INFO scalp_reversion_large_fast SELL PLTR  $  49.82 @ 156  reversion exit: stop  P/L $-0.18
+2026-11-17 15:43:45,487 INFO scalp_reversion_large_fast value $197.54  cash $99.62  holding ['COIN', 'MSTR']
+2026-11-17 15:44:45,207 INFO scalp_reversion_large_fast SELL MSTR  $  47.81 @ 99.29  reversion exit: stop  P/L $-0.25
+2026-11-17 15:44:45,207 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 156.3  reversion signal
+2026-11-17 15:44:45,207 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 99.39  reversion signal
+2026-11-17 15:44:45,208 INFO scalp_reversion_large_fast value $197.31  cash $47.43  holding ['COIN', 'PLTR', 'MSTR']
+2026-11-17 15:45:45,462 INFO scalp_reversion_large_fast SELL COIN  $  49.81 @ 115.7  reversion exit: stop  P/L $-0.19
+2026-11-17 15:45:45,464 INFO scalp_reversion_large_fast value $197.06  cash $97.24  holding ['PLTR', 'MSTR']
+2026-11-17 15:46:44,778 INFO scalp_orb5        SELL NIO   $  49.37 @ 2.834  orb5 exit: stop  P/L $-0.63
+2026-11-17 15:46:44,779 INFO scalp_orb5        value $195.20  cash $195.20  holding -
+2026-11-17 15:46:45,157 INFO scalp_reversion_large_fast SELL MSTR  $  49.65 @ 98.69  reversion exit: stop  P/L $-0.35
+2026-11-17 15:46:45,159 INFO scalp_reversion_large_fast value $196.75  cash $146.89  holding ['PLTR']
+2026-11-17 15:47:45,250 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.376  reversion signal
+2026-11-17 15:47:45,251 INFO scalp_reversion   value $198.87  cash $99.25  holding ['RKLB', 'MARA']
+2026-11-17 15:47:45,569 INFO scalp_reversion_large_fast SELL PLTR  $  49.70 @ 155.4  reversion exit: stop  P/L $-0.30
+2026-11-17 15:47:45,570 INFO scalp_reversion_large_fast value $196.59  cash $196.59  holding -
+2026-11-17 15:48:44,932 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 16.67  reversion signal
+2026-11-17 15:48:44,933 INFO scalp_reversion   value $198.73  cash $49.25  holding ['RKLB', 'MARA', 'RIOT']
