@@ -1973,3 +1973,35 @@
 2026-11-17 15:18:45,356 INFO scalp_orb5_large  SELL AVGO  $  49.72 @ 337  orb5 exit: stop  P/L $-0.28
 2026-11-17 15:18:45,356 INFO scalp_orb5_large  BUY  NFLX  $  50.00 @ 60.93  orb5 signal
 2026-11-17 15:18:45,357 INFO scalp_orb5_large  value $198.25  cash $48.33  holding ['AMZN', 'TSLA', 'NFLX']
+2026-11-17 15:19:45,735 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 118.8  reversion signal
+2026-11-17 15:19:45,736 INFO scalp_reversion_large_fast value $198.98  cash $149.01  holding ['COIN']
+2026-11-17 15:19:51,292 INFO insider: checked 15 new Form 4 filings, found 0 insider purchases
+2026-11-17 15:20:24,299 INFO activist: checked 13D feed: nothing new
+2026-11-17 15:23:44,693 INFO scalp_orb5_large  BUY  AVGO  $  48.33 @ 339.8  orb5 signal
+2026-11-17 15:23:44,694 INFO scalp_orb5_large  value $198.13  cash $0.00  holding ['AMZN', 'TSLA', 'NFLX', 'AVGO']
+2026-11-17 15:23:44,816 INFO scalp_reversion_large_fast SELL COIN  $  50.19 @ 119.2  reversion exit: target  P/L $+0.19
+2026-11-17 15:23:44,817 INFO scalp_reversion_large_fast value $199.20  cash $199.20  holding -
+2026-11-17 15:24:45,152 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.22  orb5 signal
+2026-11-17 15:24:45,152 INFO scalp_orb5        BUY  NIO   $  50.00 @ 2.871  orb5 signal
+2026-11-17 15:24:45,153 INFO scalp_orb5        value $196.26  cash $96.38  holding ['RIOT', 'NIO']
+2026-11-17 15:24:45,156 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.651  burst signal
+2026-11-17 15:24:45,157 INFO scalp_burst       value $195.31  cash $145.36  holding ['MARA']
+2026-11-17 15:25:45,233 INFO scalp_orb5_large  SELL NFLX  $  49.76 @ 60.63  orb5 exit: stop  P/L $-0.24
+2026-11-17 15:25:45,233 INFO scalp_orb5_large  BUY  COIN  $  49.76 @ 119.4  orb5 signal
+2026-11-17 15:25:45,235 INFO scalp_orb5_large  value $197.84  cash $0.00  holding ['AMZN', 'TSLA', 'AVGO', 'COIN']
+2026-11-17 15:29:44,910 INFO scalp_orb5_large  SELL AMZN  $  49.90 @ 258.6  orb5 exit: time limit  P/L $-0.10
+2026-11-17 15:29:44,910 INFO scalp_orb5_large  SELL AVGO  $  48.10 @ 338.3  orb5 exit: stop  P/L $-0.22
+2026-11-17 15:29:44,910 INFO scalp_orb5_large  SELL COIN  $  49.46 @ 118.7  orb5 exit: stop  P/L $-0.30
+2026-11-17 15:29:44,911 INFO scalp_orb5_large  value $197.45  cash $147.46  holding ['TSLA']
+2026-11-17 15:32:45,133 INFO scalp_reversion   BUY  RKLB  $  50.00 @ 55.42  reversion signal
+2026-11-17 15:32:45,134 INFO scalp_reversion   value $200.01  cash $150.03  holding ['RKLB']
+2026-11-17 15:32:45,275 INFO scalp_orb5_large  SELL TSLA  $  49.76 @ 379.5  orb5 exit: stop  P/L $-0.24
+2026-11-17 15:32:45,277 INFO scalp_orb5_large  value $197.22  cash $197.22  holding -
+2026-11-17 15:33:44,713 INFO scalp_orb5        SELL RIOT  $  49.44 @ 17.03  orb5 exit: stop  P/L $-0.56
+2026-11-17 15:33:44,751 INFO scalp_orb5        value $195.47  cash $145.83  holding ['NIO']
+2026-11-17 15:33:44,813 INFO scalp_burst       SELL MARA  $  49.34 @ 6.564  burst exit: stop  P/L $-0.66
+2026-11-17 15:33:44,873 INFO scalp_burst       value $194.70  cash $194.70  holding -
+2026-11-17 15:33:45,268 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 152.6  reversion signal
+2026-11-17 15:33:45,269 INFO scalp_reversion_large_fast value $199.17  cash $149.20  holding ['NVDA']
+2026-11-17 15:34:45,717 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 497.6  reversion signal
+2026-11-17 15:34:45,767 INFO scalp_reversion_large_fast value $199.13  cash $99.20  holding ['NVDA', 'AMD']
