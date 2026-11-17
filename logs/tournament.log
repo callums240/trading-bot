@@ -2128,3 +2128,7 @@
 2026-11-17 17:49:30,950 INFO scalp_burst       value $193.73  cash $50.93  holding ['MARA', 'SOUN', 'AMC']
 2026-11-17 17:50:47,622 INFO insider: checked 31 new Form 4 filings, found 3 insider purchases
 2026-11-17 17:51:06,503 INFO activist: checked 13D feed: nothing new
+2026-11-17 17:55:30,446 INFO scalp_burst       SELL MARA  $  49.33 @ 6.444  burst exit: stop  P/L $-0.67
+2026-11-17 17:55:30,447 INFO scalp_burst       value $193.20  cash $100.26  holding ['SOUN', 'AMC']
+2026-11-17 18:06:52,376 INFO insider: checked 39 new Form 4 filings, found 0 insider purchases
+2026-11-17 18:07:14,951 INFO activist: checked 13D feed: nothing new
