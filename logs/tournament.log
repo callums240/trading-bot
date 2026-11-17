@@ -2077,3 +2077,7 @@
 2026-11-17 16:05:30,536 INFO scalp_vwap        value $201.41  cash $151.44  holding ['RIOT']
 2026-11-17 16:14:43,863 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
 2026-11-17 16:14:48,080 INFO activist: checked 13D feed: nothing new
+2026-11-17 16:18:30,540 INFO scalp_burst       SELL PLUG  $  49.02 @ 1.025  burst exit: stop  P/L $-0.98
+2026-11-17 16:18:30,541 INFO scalp_burst       value $193.73  cash $193.73  holding -
+2026-11-17 16:30:40,495 INFO insider: checked 21 new Form 4 filings, found 0 insider purchases
+2026-11-17 16:30:49,999 INFO activist: checked 13D feed: nothing new
