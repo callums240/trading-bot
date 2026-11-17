@@ -2062,3 +2062,8 @@
 2026-11-17 15:53:44,653 INFO options_dip_calls value $147.49  cash $147.49  holding -
 2026-11-17 15:56:45,195 INFO scalp_reversion   SELL MARA  $  50.77 @ 6.399  reversion exit: target  P/L $+0.77
 2026-11-17 15:56:45,196 INFO scalp_reversion   value $199.01  cash $148.71  holding ['RIOT']
+2026-11-17 15:58:29,209 INFO ==== session start ====
+2026-11-17 15:58:30,634 INFO options_orb       SELL QQQ261117P00646000 $ 154.00 @ 1.54  trailing exit: peaked +931%, now +356%  P/L $+120.00
+2026-11-17 15:58:30,634 INFO options_orb       value $421.00  cash $421.00  holding -
+2026-11-17 15:58:35,905 INFO insider: checked 7 new Form 4 filings, found 0 insider purchases
+2026-11-17 15:58:39,424 INFO activist: checked 13D feed: nothing new
