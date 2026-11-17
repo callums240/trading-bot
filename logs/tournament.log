@@ -2067,3 +2067,13 @@
 2026-11-17 15:58:30,634 INFO options_orb       value $421.00  cash $421.00  holding -
 2026-11-17 15:58:35,905 INFO insider: checked 7 new Form 4 filings, found 0 insider purchases
 2026-11-17 15:58:39,424 INFO activist: checked 13D feed: nothing new
+2026-11-17 16:00:31,880 INFO options_orb_spy   SELL SPY261117P00728000 $ 146.00 @ 1.46  trailing exit: peaked +874%, now +331%  P/L $+112.00
+2026-11-17 16:00:31,880 INFO options_orb_spy   value $388.00  cash $388.00  holding -
+2026-11-17 16:02:30,620 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.045  burst signal
+2026-11-17 16:02:30,621 INFO scalp_burst       value $194.45  cash $144.70  holding ['PLUG']
+2026-11-17 16:02:30,705 INFO scalp_reversion   SELL RIOT  $  50.94 @ 16.98  reversion exit: target  P/L $+0.94
+2026-11-17 16:02:30,705 INFO scalp_reversion   value $199.65  cash $199.65  holding -
+2026-11-17 16:05:30,535 INFO scalp_vwap        BUY  RIOT  $  50.00 @ 16.92  vwap signal
+2026-11-17 16:05:30,536 INFO scalp_vwap        value $201.41  cash $151.44  holding ['RIOT']
+2026-11-17 16:14:43,863 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
+2026-11-17 16:14:48,080 INFO activist: checked 13D feed: nothing new
