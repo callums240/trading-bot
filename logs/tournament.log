@@ -2120,3 +2120,11 @@
 2026-11-17 17:26:30,469 INFO scalp_burst       value $194.18  cash $50.24  holding ['LCID', 'MARA', 'SOUN']
 2026-11-17 17:34:37,969 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
 2026-11-17 17:34:51,735 INFO activist: checked 13D feed: nothing new
+2026-11-17 17:48:30,514 INFO scalp_vwap        SELL AMC   $  50.76 @ 3.244  vwap exit: target  P/L $+0.76
+2026-11-17 17:48:30,515 INFO scalp_vwap        value $203.16  cash $103.06  holding ['SOFI', 'RIVN']
+2026-11-17 17:48:30,577 INFO scalp_burst       BUY  AMC   $  50.00 @ 3.256  burst signal
+2026-11-17 17:48:30,578 INFO scalp_burst       value $193.00  cash $0.24  holding ['LCID', 'MARA', 'SOUN', 'AMC']
+2026-11-17 17:49:30,948 INFO scalp_burst       SELL LCID  $  50.69 @ 2.844  burst exit: target  P/L $+0.69
+2026-11-17 17:49:30,950 INFO scalp_burst       value $193.73  cash $50.93  holding ['MARA', 'SOUN', 'AMC']
+2026-11-17 17:50:47,622 INFO insider: checked 31 new Form 4 filings, found 3 insider purchases
+2026-11-17 17:51:06,503 INFO activist: checked 13D feed: nothing new
