@@ -2116,3 +2116,7 @@
 2026-11-17 17:18:30,782 INFO scalp_vwap_large  value $200.04  cash $200.04  holding -
 2026-11-17 17:18:46,926 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-17 17:19:00,032 INFO activist: checked 13D feed: nothing new
+2026-11-17 17:26:30,467 INFO scalp_burst       SELL RIOT  $  49.46 @ 17.24  burst exit: stop  P/L $-0.54
+2026-11-17 17:26:30,469 INFO scalp_burst       value $194.18  cash $50.24  holding ['LCID', 'MARA', 'SOUN']
+2026-11-17 17:34:37,969 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-17 17:34:51,735 INFO activist: checked 13D feed: nothing new
