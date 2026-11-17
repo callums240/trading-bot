@@ -2170,3 +2170,11 @@
 2026-11-17 20:01:30,658 INFO scalp_burst       value $193.27  cash $193.27  holding -
 2026-11-17 20:14:50,203 INFO insider: checked 48 new Form 4 filings, found 1 insider purchases
 2026-11-17 20:14:59,742 INFO activist: checked 13D feed: nothing new
+2026-11-17 20:30:29,808 INFO wsb_crowd         SELL SLS   $  69.74 @ 18.91  close  P/L $+2.40
+2026-11-17 20:30:29,808 INFO wsb_crowd         SELL GOOGL $  66.54 @ 279.8  close  P/L $-0.79
+2026-11-17 20:30:29,808 INFO wsb_crowd         SELL MU    $  65.97 @ 699.6  close  P/L $-1.37
+2026-11-17 20:30:29,809 INFO wsb_crowd         value $202.24  cash $202.24  holding -
+2026-11-17 20:30:29,809 INFO overnight_qqq     BUY  QQQ   $ 190.03 @ 654  overnight hold
+2026-11-17 20:30:29,810 INFO overnight_qqq     value $189.94  cash $0.00  holding ['QQQ']
+2026-11-17 20:30:56,430 INFO insider: checked 40 new Form 4 filings, found 2 insider purchases
+2026-11-17 20:31:10,228 INFO activist: checked 13D feed: nothing new
