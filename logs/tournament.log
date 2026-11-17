@@ -2134,3 +2134,17 @@
 2026-11-17 18:07:14,951 INFO activist: checked 13D feed: nothing new
 2026-11-17 18:22:40,516 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
 2026-11-17 18:22:50,202 INFO activist: checked 13D feed: nothing new
+2026-11-17 18:33:30,765 INFO scalp_burst       SELL AMC   $  50.75 @ 3.304  burst exit: target  P/L $+0.75
+2026-11-17 18:33:30,766 INFO scalp_burst       value $194.10  cash $151.01  holding ['SOUN']
+2026-11-17 18:36:30,674 INFO scalp_vwap        SELL SOFI  $  50.05 @ 14.39  vwap exit: time limit  P/L $+0.05
+2026-11-17 18:36:30,674 INFO scalp_vwap        SELL RIVN  $  50.04 @ 12.06  vwap exit: time limit  P/L $+0.04
+2026-11-17 18:36:30,675 INFO scalp_vwap        value $203.16  cash $203.16  holding -
+2026-11-17 18:36:31,067 INFO scalp_burst_large SELL TSLA  $  49.76 @ 379  burst exit: time limit  P/L $-0.24
+2026-11-17 18:36:31,067 INFO scalp_burst_large SELL AMD   $  50.15 @ 490.6  burst exit: time limit  P/L $+0.15
+2026-11-17 18:36:31,067 INFO scalp_burst_large SELL PLTR  $  50.35 @ 156.4  burst exit: time limit  P/L $+0.35
+2026-11-17 18:36:31,067 INFO scalp_burst_large SELL COIN  $  50.21 @ 116.7  burst exit: time limit  P/L $+0.21
+2026-11-17 18:36:31,068 INFO scalp_burst_large value $200.79  cash $200.79  holding -
+2026-11-17 18:38:30,449 INFO scalp_burst       SELL SOUN  $  42.87 @ 3.084  burst exit: time limit  P/L $-0.30
+2026-11-17 18:38:30,451 INFO scalp_burst       value $193.88  cash $193.88  holding -
+2026-11-17 18:38:37,341 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
+2026-11-17 18:38:46,210 INFO activist: checked 13D feed: nothing new
