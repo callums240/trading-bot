@@ -71,3 +71,10 @@
 2026-11-16 20:32:12,742 INFO BUY XLY $32.39 (price ~118.04, rsi 5.4)
 2026-11-16 20:32:12,753 INFO BUY SPY $32.39 (price ~739.23, rsi 9.6)
 2026-11-16 20:32:12,753 INFO ==== run end ====
+2026-11-17 20:32:31,066 INFO ==== run start (PAPER) ====
+2026-11-17 20:32:31,304 INFO equity $157.67 | cash $-0.08 | unsettled $0.00 | settled $0.00
+2026-11-17 20:32:31,417 INFO ignoring your manual positions: ['NVDA']
+2026-11-17 20:32:32,050 INFO HOLD SPY qty=0.043801268 entry=739.25 now=731.26 rsi=5.1 held=1d -> keep
+2026-11-17 20:32:32,107 INFO HOLD XLY qty=0.274341681 entry=118.03 now=117.17 rsi=3.1 held=1d -> keep
+2026-11-17 20:32:32,107 INFO entry candidates: [('DIA', 3.9), ('XLV', 9.6)]
+2026-11-17 20:32:32,108 INFO ==== run end ====

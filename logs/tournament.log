@@ -2178,3 +2178,6 @@
 2026-11-17 20:30:29,810 INFO overnight_qqq     value $189.94  cash $0.00  holding ['QQQ']
 2026-11-17 20:30:56,430 INFO insider: checked 40 new Form 4 filings, found 2 insider purchases
 2026-11-17 20:31:10,228 INFO activist: checked 13D feed: nothing new
+2026-11-17 20:32:32,181 INFO live bot ran (exit 0): 2026-11-17 20:32:32,108 INFO ==== run end ====
+2026-11-17 20:46:45,920 INFO insider: checked 44 new Form 4 filings, found 3 insider purchases
+2026-11-17 20:47:01,069 INFO activist: checked 13D feed: nothing new
