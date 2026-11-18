@@ -2223,3 +2223,8 @@
 2026-11-18 15:00:56,049 INFO overnight_qqq     value $192.16  cash $192.16  holding -
 2026-11-18 15:00:56,791 INFO scalp_orb5_large  BUY  AMZN  $  50.00 @ 264.3  orb5 signal
 2026-11-18 15:00:56,793 INFO scalp_orb5_large  value $197.23  cash $97.22  holding ['AAPL', 'AMZN']
+2026-11-18 15:02:26,394 INFO ==== session start ====
+2026-11-18 15:02:27,023 INFO scalp_orb5        BUY  RKLB  $  50.00 @ 56.16  orb5 signal
+2026-11-18 15:02:27,024 INFO scalp_orb5        value $195.60  cash $45.20  holding ['MARA', 'RIOT', 'RKLB']
+2026-11-18 15:02:36,173 INFO insider: checked 17 new Form 4 filings, found 0 insider purchases
+2026-11-18 15:02:54,371 INFO activist: checked 13D feed: nothing new
