@@ -1,16 +1,17 @@
 # Dress rehearsal: real orders on the paper account
 
-Updated 2026-11-18 15:58 UTC. Strategies mirrored: options_orb, options_orb_spy. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
+Updated 2026-11-18 16:21 UTC. Strategies mirrored: options_orb, options_orb_spy. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
 
 ## options_orb
 
-Real-order profit so far: **$-18.00**. Orders: 3 sent, 2 filled, 1 rejected or never filled. Cost of worse-than-assumed prices: $-4.00.
+Real-order profit so far: **$-18.00**. Orders: 4 sent, 2 filled, 2 rejected or never filled. Cost of worse-than-assumed prices: $-4.00.
 
 | When (ET) | Side | Contract | Qty | Assumed | Got | Status | Profit | Why |
 |---|---|---|---|---|---|---|---|---|
 | 11-16 10:00 | buy | QQQ261116P00652000 | 1 | 0.4 | 0.38 | filled |  | QQQ 666.25 broke below 666.64; 1x QQQ261116P00652000 @ 0.40 |
 | 11-16 10:22 | sell | QQQ261116P00652000 | 1 | 0.18 | 0.20 | filled | $-18.00 | stop: down 54% |
 | 11-17 10:09 | buy | QQQ261117P00646000 | 1 | 0.34 | - | rejected |  | {"code":40310000,"cost_basis":"34.01","message":"insufficient options buying power","optio |
+| 11-18 11:21 | buy | QQQ261118P00642000 | 1 | 0.4 | - | rejected |  | {"code":40310000,"cost_basis":"40.01","message":"insufficient options buying power","optio |
 
 ## options_orb_spy
 

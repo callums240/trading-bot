@@ -1,6 +1,6 @@
 {
  "day": "2026-11-18",
- "buys_today": 1,
+ "buys_today": 2,
  "pos": {
   "options_orb": {},
   "options_orb_spy": {}
@@ -115,6 +115,22 @@
    "id": null,
    "status": "rejected",
    "error": "{\"code\":40310000,\"cost_basis\":\"34.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"0\"}"
+  },
+  {
+   "t": "2026-11-18T11:21:26-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261118P00642000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.4,
+   "virtual": 0.4,
+   "why": "QQQ 653.07 broke below 654.00; 1x QQQ261118P00642000 @ 0.40",
+   "filled_qty": 0,
+   "filled_avg": null,
+   "booked": 0,
+   "id": null,
+   "status": "rejected",
+   "error": "{\"code\":40310000,\"cost_basis\":\"40.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"0\"}"
   }
  ]
 }

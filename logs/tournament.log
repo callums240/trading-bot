@@ -2298,3 +2298,25 @@
 2026-11-18 16:03:26,792 INFO scalp_orb5        value $191.14  cash $41.57  holding ['RIOT', 'PLUG', 'AMC']
 2026-11-18 16:06:35,236 INFO insider: checked 10 new Form 4 filings, found 1 insider purchases
 2026-11-18 16:06:56,651 INFO activist: checked 13D feed: nothing new
+2026-11-18 16:14:26,966 INFO scalp_vwap_large  BUY  NFLX  $  50.00 @ 59.83  vwap signal
+2026-11-18 16:14:26,967 INFO scalp_vwap_large  value $200.02  cash $150.04  holding ['NFLX']
+2026-11-18 16:15:26,908 INFO scalp_orb5        SELL AMC   $  49.28 @ 3.184  orb5 exit: stop  P/L $-0.72
+2026-11-18 16:15:26,909 INFO scalp_orb5        value $190.57  cash $90.86  holding ['RIOT', 'PLUG']
+2026-11-18 16:15:27,061 INFO scalp_orb5_large  SELL AMZN  $  50.00 @ 263.4  orb5 exit: time limit  P/L $+0.00
+2026-11-18 16:15:27,062 INFO scalp_orb5_large  value $197.38  cash $197.38  holding -
+2026-11-18 16:18:26,850 INFO scalp_reversion   BUY  AMC   $  50.00 @ 3.166  reversion signal
+2026-11-18 16:18:26,851 INFO scalp_reversion   value $198.96  cash $149.05  holding ['AMC']
+2026-11-18 16:18:27,059 INFO scalp_burst_large SELL MSTR  $  49.21 @ 91.61  burst exit: stop  P/L $-0.79
+2026-11-18 16:18:27,060 INFO scalp_burst_large value $199.41  cash $199.41  holding -
+2026-11-18 16:20:26,965 INFO scalp_vwap_large  SELL NFLX  $  49.75 @ 59.54  vwap exit: stop  P/L $-0.25
+2026-11-18 16:20:26,966 INFO scalp_vwap_large  value $199.79  cash $199.79  holding -
+2026-11-18 16:21:26,685 WARNING real: options_orb BUY 1x QQQ261118P00642000 REJECTED: {"code":40310000,"cost_basis":"40.01","message":"insufficient options buying power","options_buying_power":"0"}
+2026-11-18 16:21:26,685 INFO options_orb       BUY  QQQ261118P00642000 $  40.00 @ 0.4  QQQ 653.07 broke below 654.00; 1x QQQ261118P00642000 @ 0.40
+2026-11-18 16:21:26,686 INFO options_orb       value $420.50  cash $381.00  holding ['QQQ261118P00642000']
+2026-11-18 16:21:27,112 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 111  reversion signal
+2026-11-18 16:21:27,112 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 91.29  reversion signal
+2026-11-18 16:21:27,114 INFO scalp_reversion_large_fast value $196.75  cash $96.80  holding ['COIN', 'MSTR']
+2026-11-18 16:22:27,130 INFO scalp_reversion_large_fast SELL MSTR  $  50.29 @ 91.83  reversion exit: target  P/L $+0.29
+2026-11-18 16:22:27,132 INFO scalp_reversion_large_fast value $197.29  cash $147.10  holding ['COIN']
+2026-11-18 16:22:34,328 INFO insider: checked 13 new Form 4 filings, found 2 insider purchases
+2026-11-18 16:22:45,884 INFO activist: checked 13D feed: nothing new
