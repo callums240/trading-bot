@@ -2240,3 +2240,24 @@
 2026-11-18 15:16:26,826 INFO scalp_burst       value $193.04  cash $143.27  holding ['PLUG']
 2026-11-18 15:18:33,121 INFO insider: checked 28 new Form 4 filings, found 2 insider purchases
 2026-11-18 15:18:35,877 INFO activist: checked 13D feed: nothing new
+2026-11-18 15:19:26,737 INFO scalp_orb5        SELL LCID  $  43.92 @ 2.849  orb5 exit: stop  P/L $-0.63
+2026-11-18 15:19:26,739 INFO scalp_orb5        value $193.92  cash $43.92  holding ['MARA', 'RIOT', 'SOUN']
+2026-11-18 15:19:26,926 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 352  orb5 signal
+2026-11-18 15:19:26,927 INFO scalp_orb5_large  value $196.91  cash $96.99  holding ['AMZN', 'AVGO']
+2026-11-18 15:21:26,873 INFO scalp_orb5_large  SELL AVGO  $  50.33 @ 354.3  orb5 exit: target  P/L $+0.33
+2026-11-18 15:21:26,875 INFO scalp_orb5_large  value $197.37  cash $147.32  holding ['AMZN']
+2026-11-18 15:24:26,865 INFO scalp_orb5        SELL MARA  $  49.45 @ 6.514  orb5 exit: stop  P/L $-0.55
+2026-11-18 15:24:26,865 INFO scalp_orb5        SELL SOUN  $  49.25 @ 3.024  orb5 exit: stop  P/L $-0.75
+2026-11-18 15:24:26,866 INFO scalp_orb5        value $192.62  cash $142.62  holding ['RIOT']
+2026-11-18 15:25:26,985 INFO scalp_burst_large SELL COIN  $  49.41 @ 112  burst exit: stop  P/L $-0.59
+2026-11-18 15:25:26,986 INFO scalp_burst_large value $200.20  cash $200.20  holding -
+2026-11-18 15:26:27,040 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 92.49  reversion signal
+2026-11-18 15:26:27,042 INFO scalp_reversion_large_fast value $196.56  cash $146.59  holding ['MSTR']
+2026-11-18 15:27:26,727 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.506  reversion signal
+2026-11-18 15:27:26,728 INFO scalp_reversion   value $199.60  cash $149.65  holding ['MARA']
+2026-11-18 15:29:27,034 INFO scalp_reversion_large_fast SELL MSTR  $  50.21 @ 92.88  reversion exit: target  P/L $+0.21
+2026-11-18 15:29:27,035 INFO scalp_reversion_large_fast value $196.80  cash $196.80  holding -
+2026-11-18 15:31:27,202 INFO scalp_orb5_large  SELL AMZN  $  50.00 @ 264.3  orb5 exit: time limit  P/L $-0.00
+2026-11-18 15:31:27,203 INFO scalp_orb5_large  value $197.32  cash $197.32  holding -
+2026-11-18 15:34:34,107 INFO insider: checked 23 new Form 4 filings, found 1 insider purchases
+2026-11-18 15:35:00,558 INFO activist: checked 13D feed: nothing new

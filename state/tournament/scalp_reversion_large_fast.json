@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 196.5888122682848,
+ "cash": 196.80360913207707,
  "positions": {},
  "trades": [
   {
@@ -1094,6 +1094,27 @@
    "pnl": -0.3,
    "reason": "reversion exit: stop",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-18T10:26-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.540621,
+   "price": 92.4862,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "calm"
+  },
+  {
+   "t": "2026-11-18T10:29-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.540621,
+   "price": 92.8835,
+   "usd": 50.21,
+   "pnl": 0.21,
+   "reason": "reversion exit: target",
+   "mood": "calm"
   }
  ],
  "equity": {
@@ -1104,14 +1125,18 @@
   "2026-11-13": 199.71,
   "2026-11-16": 199.01,
   "2026-11-17": 196.59,
-  "2026-11-18": 196.59
+  "2026-11-18": 196.8
  },
  "done": [],
  "memo": {
   "day": "2026-11-18",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "MSTR": 1
+  },
+  "last_bar": {
+   "MSTR": "2026-11-18T10:25:00-05:00"
+  }
  },
  "stopped": null
 }
