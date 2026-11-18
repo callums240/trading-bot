@@ -2228,3 +2228,15 @@
 2026-11-18 15:02:27,024 INFO scalp_orb5        value $195.60  cash $45.20  holding ['MARA', 'RIOT', 'RKLB']
 2026-11-18 15:02:36,173 INFO insider: checked 17 new Form 4 filings, found 0 insider purchases
 2026-11-18 15:02:54,371 INFO activist: checked 13D feed: nothing new
+2026-11-18 15:08:26,845 INFO scalp_orb5        SELL RKLB  $  49.36 @ 55.44  orb5 exit: stop  P/L $-0.64
+2026-11-18 15:08:26,847 INFO scalp_orb5        value $194.29  cash $94.56  holding ['MARA', 'RIOT']
+2026-11-18 15:12:26,687 INFO scalp_orb5        BUY  SOUN  $  50.00 @ 3.071  orb5 signal
+2026-11-18 15:12:26,688 INFO scalp_orb5        value $194.94  cash $44.56  holding ['MARA', 'RIOT', 'SOUN']
+2026-11-18 15:15:26,892 INFO scalp_orb5        BUY  LCID  $  44.56 @ 2.891  orb5 signal
+2026-11-18 15:15:26,893 INFO scalp_orb5        value $194.44  cash $0.00  holding ['MARA', 'RIOT', 'SOUN', 'LCID']
+2026-11-18 15:15:27,051 INFO scalp_orb5_large  SELL AAPL  $  49.77 @ 354  orb5 exit: stop  P/L $-0.23
+2026-11-18 15:15:27,052 INFO scalp_orb5_large  value $196.96  cash $146.99  holding ['AMZN']
+2026-11-18 15:16:26,825 INFO scalp_burst       BUY  PLUG  $  50.00 @ 1.12  burst signal
+2026-11-18 15:16:26,826 INFO scalp_burst       value $193.04  cash $143.27  holding ['PLUG']
+2026-11-18 15:18:33,121 INFO insider: checked 28 new Form 4 filings, found 2 insider purchases
+2026-11-18 15:18:35,877 INFO activist: checked 13D feed: nothing new
