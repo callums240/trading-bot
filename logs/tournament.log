@@ -2353,3 +2353,17 @@
 2026-11-18 17:05:26,931 INFO scalp_vwap_large  value $199.80  cash $149.82  holding ['META']
 2026-11-18 17:10:30,575 INFO insider: checked 12 new Form 4 filings, found 1 insider purchases
 2026-11-18 17:10:33,223 INFO activist: checked 13D feed: nothing new
+2026-11-18 17:19:26,864 INFO scalp_burst       SELL LCID  $  50.76 @ 2.929  burst exit: target  P/L $+0.76
+2026-11-18 17:19:26,865 INFO scalp_burst       value $193.12  cash $193.12  holding -
+2026-11-18 17:20:26,846 INFO scalp_reversion   SELL PLUG  $  48.83 @ 1.065  reversion exit: stop  P/L $-1.17
+2026-11-18 17:20:26,847 INFO scalp_reversion   value $198.58  cash $198.58  holding -
+2026-11-18 17:22:26,989 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 92.19  burst signal
+2026-11-18 17:22:26,991 INFO scalp_burst_large value $199.84  cash $99.41  holding ['AMD', 'MSTR']
+2026-11-18 17:25:27,212 INFO scalp_burst_large SELL AMD   $  50.86 @ 517.7  burst exit: target  P/L $+0.86
+2026-11-18 17:25:27,213 INFO scalp_burst_large value $200.70  cash $150.27  holding ['MSTR']
+2026-11-18 17:26:26,970 INFO scalp_burst       BUY  SOUN  $  50.00 @ 3.021  burst signal
+2026-11-18 17:26:26,971 INFO scalp_burst       value $193.03  cash $143.12  holding ['SOUN']
+2026-11-18 17:26:27,225 INFO scalp_burst_large BUY  AMD   $  50.00 @ 521.2  burst signal
+2026-11-18 17:26:27,226 INFO scalp_burst_large value $200.67  cash $100.27  holding ['MSTR', 'AMD']
+2026-11-18 17:26:40,393 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
+2026-11-18 17:26:47,766 INFO activist: checked 13D feed: nothing new
