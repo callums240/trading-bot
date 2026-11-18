@@ -2394,3 +2394,7 @@
 2026-11-18 18:14:40,711 INFO activist: checked 13D feed: nothing new
 2026-11-18 18:30:36,604 INFO insider: checked 15 new Form 4 filings, found 3 insider purchases
 2026-11-18 18:30:42,948 INFO activist: checked 13D feed: nothing new
+2026-11-18 18:32:26,967 INFO scalp_burst_large BUY  AMD   $  50.00 @ 520.3  burst signal
+2026-11-18 18:32:26,968 INFO scalp_burst_large value $199.77  cash $149.79  holding ['AMD']
+2026-11-18 18:46:32,339 INFO insider: checked 13 new Form 4 filings, found 2 insider purchases
+2026-11-18 18:46:45,840 INFO activist: checked 13D feed: nothing new
