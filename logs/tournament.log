@@ -2332,3 +2332,13 @@
 2026-11-18 16:34:27,062 INFO scalp_vwap_large  value $199.77  cash $149.79  holding ['NFLX']
 2026-11-18 16:38:35,941 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
 2026-11-18 16:38:43,123 INFO activist: checked 13D feed: nothing new
+2026-11-18 16:42:27,206 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 90.61  reversion signal
+2026-11-18 16:42:27,208 INFO scalp_reversion_large_fast value $197.26  cash $147.28  holding ['MSTR']
+2026-11-18 16:46:27,121 INFO scalp_reversion_large_fast SELL MSTR  $  50.21 @ 90.99  reversion exit: target  P/L $+0.21
+2026-11-18 16:46:27,122 INFO scalp_reversion_large_fast value $197.50  cash $197.50  holding -
+2026-11-18 16:49:26,671 INFO scalp_orb5        SELL PLUG  $  49.07 @ 1.08  orb5 exit: stop  P/L $-0.93
+2026-11-18 16:49:26,673 INFO scalp_orb5        value $189.37  cash $189.37  holding -
+2026-11-18 16:49:26,696 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.09  reversion signal
+2026-11-18 16:49:26,697 INFO scalp_reversion   value $199.20  cash $99.05  holding ['AMC', 'PLUG']
+2026-11-18 16:54:34,303 INFO insider: checked 26 new Form 4 filings, found 1 insider purchases
+2026-11-18 16:54:44,168 INFO activist: checked 13D feed: nothing new
