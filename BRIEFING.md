@@ -1,4 +1,4 @@
-# Daily briefing: Wednesday 18 November 2026, 09:30 ET
+# Daily briefing: Wednesday 18 November 2026, 09:46 ET
 
 ## Market
 
@@ -6,23 +6,21 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +0.24% | +0.71% | -0.18% | -0.34% | -3.27% | 3 of 11 |
+| -0.26% | -0.16% | +0.29% | -0.79% | -0.47% | 3 of 11 |
 
-Sectors today: XLK +1.0%, XLY +0.5%, XLC +0.3%, XLI -0.1%, XLU -0.4%, XLE -0.4%, XLF -0.5%, XLRE -0.6%, XLV -0.7%, XLP -0.8%, XLB -1.3%
+Sectors today: XLY +1.1%, XLC +0.5%, XLU +0.2%, XLRE -0.1%, XLP -0.3%, XLK -0.4%, XLF -0.5%, XLI -0.5%, XLV -0.6%, XLB -0.9%, XLE -2.5%
 
 ## Real paper account (live bot)
 
-Equity $160.76 (started $200.00), cash $-0.08. Holding: NVDA (-3.6%), SPY (-0.7%), XLY (-0.3%).
+Equity $158.70 (started $200.00), cash $-0.08. Holding: NVDA (-5.7%), SPY (-1.2%), XLY (+0.3%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| weekly_momentum | $+2.53 | -11.1% | $177.88 | 0 | - | SOFI, AMZN, TSLA |
-| overnight_qqq | $+1.55 | -3.9% | $192.29 | 0 | - | QQQ |
-| insider_buys | $+1.24 | +0.9% | $201.85 | 0 | - | KNOP, LRN, ASPE, GLXY |
-| nonews_dip | $+1.13 | +0.6% | $201.28 | 0 | - | KLAC, ANET |
-| spy_hold | $+0.67 | -4.4% | $191.20 | 0 | - | SPY |
+| activist_13d | $+2.48 | -0.7% | $198.69 | 0 | - | ASPE, FUN |
+| weekly_momentum | $+1.35 | -11.7% | $176.70 | 0 | - | SOFI, AMZN, TSLA |
+| insider_buys | $+0.43 | +0.5% | $201.04 | 0 | - | KNOP, LRN, ASPE, GLXY |
 | gap_fade | $+0.00 | -4.3% | $191.33 | 0 | - | cash |
 | midday_momentum | $+0.00 | +0.1% | $200.15 | 0 | - | cash |
 | options_dip_calls | $+0.00 | -26.3% | $147.49 | 0 | - | STOPPED 2026-11-17 |
@@ -39,7 +37,9 @@ Equity $160.76 (started $200.00), cash $-0.08. Holding: NVDA (-3.6%), SPY (-0.7%
 | scalp_vwap | $+0.00 | +1.6% | $203.12 | 0 | - | cash |
 | scalp_vwap_large | $+0.00 | +0.0% | $200.04 | 0 | - | cash |
 | wsb_crowd | $+0.00 | +1.1% | $202.24 | 0 | - | cash |
-| activist_13d | $-0.50 | -2.1% | $195.71 | 0 | - | ASPE, FUN |
-| gold_fear | $-9.09 | -4.1% | $191.79 | 0 | - | GDX |
+| overnight_qqq | $-0.11 | -4.7% | $190.63 | 0 | - | QQQ |
+| spy_hold | $-0.28 | -4.9% | $190.25 | 0 | - | SPY |
+| nonews_dip | $-0.90 | -0.4% | $199.25 | 0 | - | KLAC, ANET |
+| gold_fear | $-11.79 | -5.5% | $189.09 | 0 | - | GDX |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.
