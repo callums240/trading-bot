@@ -87,3 +87,5 @@
 2026-11-18 20:32:27,861 INFO entry candidates: [('XLV', 3.2), ('XLF', 6.2), ('XLE', 6.8)]
 2026-11-18 20:32:27,861 INFO not enough settled cash for XLV ($0.00)
 2026-11-18 20:32:27,862 INFO ==== run end ====
+2026-11-18 20:47:59,207 INFO ==== run start (PAPER) ====
+2026-11-18 20:47:59,307 INFO already ran today, exiting
