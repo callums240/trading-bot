@@ -2279,3 +2279,22 @@
 2026-11-18 15:44:27,070 INFO scalp_orb5_large  value $197.04  cash $97.09  holding ['AMZN', 'AVGO']
 2026-11-18 15:50:37,297 INFO insider: checked 18 new Form 4 filings, found 2 insider purchases
 2026-11-18 15:51:19,877 INFO activist: checked 13D feed: nothing new
+2026-11-18 15:51:27,145 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 18.04  orb5 signal
+2026-11-18 15:51:27,146 INFO scalp_orb5        BUY  PLUG  $  50.00 @ 1.1  orb5 signal
+2026-11-18 15:51:27,147 INFO scalp_orb5        value $191.78  cash $92.04  holding ['RIOT', 'PLUG']
+2026-11-18 15:56:26,844 INFO scalp_orb5        BUY  AMC   $  50.00 @ 3.231  orb5 signal
+2026-11-18 15:56:26,846 INFO scalp_orb5        value $192.11  cash $42.04  holding ['RIOT', 'PLUG', 'AMC']
+2026-11-18 15:57:27,038 INFO scalp_orb5_large  SELL AVGO  $  50.28 @ 353.6  orb5 exit: target  P/L $+0.28
+2026-11-18 15:57:27,040 INFO scalp_orb5_large  value $197.39  cash $147.38  holding ['AMZN']
+2026-11-18 15:58:26,662 INFO options_orb_spy   SELL SPY261118P00718000 $  13.00 @ 0.13  stop: down 60%  P/L $-21.00
+2026-11-18 15:58:26,662 INFO options_orb_spy   value $367.00  cash $367.00  holding -
+2026-11-18 15:58:26,726 INFO scalp_orb5        BUY  MARA  $  42.04 @ 6.586  orb5 signal
+2026-11-18 15:58:26,728 INFO scalp_orb5        value $192.53  cash $0.00  holding ['RIOT', 'PLUG', 'AMC', 'MARA']
+2026-11-18 15:58:26,793 INFO scalp_vwap        BUY  NIO   $  50.00 @ 2.871  vwap signal
+2026-11-18 15:58:26,794 INFO scalp_vwap        value $203.02  cash $153.12  holding ['NIO']
+2026-11-18 15:59:27,304 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 93.09  burst signal
+2026-11-18 15:59:27,305 INFO scalp_burst_large value $200.17  cash $150.20  holding ['MSTR']
+2026-11-18 16:03:26,791 INFO scalp_orb5        SELL MARA  $  41.57 @ 6.514  orb5 exit: stop  P/L $-0.46
+2026-11-18 16:03:26,792 INFO scalp_orb5        value $191.14  cash $41.57  holding ['RIOT', 'PLUG', 'AMC']
+2026-11-18 16:06:35,236 INFO insider: checked 10 new Form 4 filings, found 1 insider purchases
+2026-11-18 16:06:56,651 INFO activist: checked 13D feed: nothing new
