@@ -2388,3 +2388,7 @@
 2026-11-18 17:54:26,953 INFO scalp_burst_large value $199.79  cash $199.79  holding -
 2026-11-18 17:58:38,145 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
 2026-11-18 17:59:11,583 INFO activist: checked 13D feed: nothing new
+2026-11-18 18:08:26,696 INFO scalp_burst       SELL SOUN  $  49.40 @ 2.984  burst exit: stop  P/L $-0.60
+2026-11-18 18:08:26,697 INFO scalp_burst       value $191.83  cash $191.83  holding -
+2026-11-18 18:14:35,411 INFO insider: checked 24 new Form 4 filings, found 3 insider purchases
+2026-11-18 18:14:40,711 INFO activist: checked 13D feed: nothing new
