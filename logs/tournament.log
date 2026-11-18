@@ -2261,3 +2261,21 @@
 2026-11-18 15:31:27,203 INFO scalp_orb5_large  value $197.32  cash $197.32  holding -
 2026-11-18 15:34:34,107 INFO insider: checked 23 new Form 4 filings, found 1 insider purchases
 2026-11-18 15:35:00,558 INFO activist: checked 13D feed: nothing new
+2026-11-18 15:36:26,805 INFO scalp_burst       SELL PLUG  $  49.09 @ 1.1  burst exit: stop  P/L $-0.91
+2026-11-18 15:36:26,806 INFO scalp_burst       value $192.36  cash $192.36  holding -
+2026-11-18 15:37:26,758 INFO scalp_orb5        SELL RIOT  $  49.42 @ 17.75  orb5 exit: stop  P/L $-0.58
+2026-11-18 15:37:26,760 INFO scalp_orb5        value $192.04  cash $192.04  holding -
+2026-11-18 15:37:26,890 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 353.1  orb5 signal
+2026-11-18 15:37:26,891 INFO scalp_orb5_large  value $197.30  cash $147.32  holding ['AVGO']
+2026-11-18 15:39:26,948 INFO scalp_reversion   SELL MARA  $  49.40 @ 6.429  reversion exit: stop  P/L $-0.60
+2026-11-18 15:39:26,949 INFO scalp_reversion   value $199.05  cash $199.05  holding -
+2026-11-18 15:41:26,836 INFO scalp_orb5_large  SELL AVGO  $  49.77 @ 351.5  orb5 exit: stop  P/L $-0.23
+2026-11-18 15:41:26,837 INFO scalp_orb5_large  value $197.09  cash $197.09  holding -
+2026-11-18 15:42:26,675 WARNING real: options_orb_spy BUY 1x SPY261118P00718000 REJECTED: {"code":40310000,"cost_basis":"34.01","message":"insufficient options buying power","options_buying_power":"0"}
+2026-11-18 15:42:26,676 INFO options_orb_spy   BUY  SPY261118P00718000 $  34.00 @ 0.34  SPY 728.62 broke below 728.72; 1x SPY261118P00718000 @ 0.34
+2026-11-18 15:42:26,676 INFO options_orb_spy   value $387.50  cash $354.00  holding ['SPY261118P00718000']
+2026-11-18 15:44:27,069 INFO scalp_orb5_large  BUY  AMZN  $  50.00 @ 263.4  orb5 signal
+2026-11-18 15:44:27,069 INFO scalp_orb5_large  BUY  AVGO  $  50.00 @ 351.6  orb5 signal
+2026-11-18 15:44:27,070 INFO scalp_orb5_large  value $197.04  cash $97.09  holding ['AMZN', 'AVGO']
+2026-11-18 15:50:37,297 INFO insider: checked 18 new Form 4 filings, found 2 insider purchases
+2026-11-18 15:51:19,877 INFO activist: checked 13D feed: nothing new
