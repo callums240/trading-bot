@@ -2382,3 +2382,9 @@
 2026-11-18 17:41:26,991 INFO scalp_burst_large value $200.09  cash $150.50  holding ['COIN']
 2026-11-18 17:42:32,639 INFO insider: checked 13 new Form 4 filings, found 2 insider purchases
 2026-11-18 17:42:47,247 INFO activist: checked 13D feed: nothing new
+2026-11-18 17:50:26,761 INFO scalp_burst       SELL RIOT  $  49.31 @ 18.07  burst exit: stop  P/L $-0.69
+2026-11-18 17:50:26,762 INFO scalp_burst       value $192.34  cash $142.43  holding ['SOUN']
+2026-11-18 17:54:26,952 INFO scalp_burst_large SELL COIN  $  49.30 @ 112.7  burst exit: stop  P/L $-0.70
+2026-11-18 17:54:26,953 INFO scalp_burst_large value $199.79  cash $199.79  holding -
+2026-11-18 17:58:38,145 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
+2026-11-18 17:59:11,583 INFO activist: checked 13D feed: nothing new
