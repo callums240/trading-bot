@@ -2206,3 +2206,20 @@
 2026-11-18 14:19:39,916 INFO market closed (opens in 10 min); hourly snapshots
 2026-11-18 14:35:59,574 INFO insider: checked 8 new Form 4 filings, found 0 insider purchases
 2026-11-18 14:36:36,040 INFO activist: checked 13D feed: nothing new
+2026-11-18 14:52:00,294 INFO insider: checked 15 new Form 4 filings, found 2 insider purchases
+2026-11-18 14:52:30,359 INFO activist: checked 13D feed: nothing new
+2026-11-18 14:56:56,285 INFO scalp_burst_large BUY  COIN  $  50.00 @ 113.3  burst signal
+2026-11-18 14:56:56,286 INFO scalp_burst_large value $200.76  cash $150.79  holding ['COIN']
+2026-11-18 14:57:56,246 INFO scalp_orb5_large  BUY  AAPL  $  50.00 @ 355.6  orb5 signal
+2026-11-18 14:57:56,247 INFO scalp_orb5_large  value $197.20  cash $147.22  holding ['AAPL']
+2026-11-18 14:59:56,065 INFO scalp_orb5        BUY  MARA  $  50.00 @ 6.586  orb5 signal
+2026-11-18 14:59:56,065 INFO scalp_orb5        BUY  RIOT  $  50.00 @ 17.96  orb5 signal
+2026-11-18 14:59:56,066 INFO scalp_orb5        value $195.12  cash $95.20  holding ['MARA', 'RIOT']
+2026-11-18 15:00:56,047 INFO wsb_crowd         BUY  GP    $  67.41 @ 2.531  WSB mentions spiking
+2026-11-18 15:00:56,047 INFO wsb_crowd         BUY  TTWO  $  67.41 @ 218.9  WSB mentions spiking
+2026-11-18 15:00:56,047 INFO wsb_crowd         BUY  AAOI  $  67.41 @ 40.04  WSB mentions spiking
+2026-11-18 15:00:56,048 INFO wsb_crowd         value $202.14  cash $0.00  holding ['GP', 'TTWO', 'AAOI']
+2026-11-18 15:00:56,049 INFO overnight_qqq     SELL QQQ   $ 192.16 @ 661.3  morning exit  P/L $+2.13
+2026-11-18 15:00:56,049 INFO overnight_qqq     value $192.16  cash $192.16  holding -
+2026-11-18 15:00:56,791 INFO scalp_orb5_large  BUY  AMZN  $  50.00 @ 264.3  orb5 signal
+2026-11-18 15:00:56,793 INFO scalp_orb5_large  value $197.23  cash $97.22  holding ['AAPL', 'AMZN']
