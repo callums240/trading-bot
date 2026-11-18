@@ -2320,3 +2320,15 @@
 2026-11-18 16:22:27,132 INFO scalp_reversion_large_fast value $197.29  cash $147.10  holding ['COIN']
 2026-11-18 16:22:34,328 INFO insider: checked 13 new Form 4 filings, found 2 insider purchases
 2026-11-18 16:22:45,884 INFO activist: checked 13D feed: nothing new
+2026-11-18 16:24:27,602 INFO options_orb       SELL QQQ261118P00642000 $  16.00 @ 0.16  stop: down 54%  P/L $-24.00
+2026-11-18 16:24:27,603 INFO options_orb       value $397.00  cash $397.00  holding -
+2026-11-18 16:25:27,103 INFO scalp_reversion_large_fast SELL COIN  $  50.18 @ 111.4  reversion exit: target  P/L $+0.18
+2026-11-18 16:25:27,104 INFO scalp_reversion_large_fast value $197.28  cash $197.28  holding -
+2026-11-18 16:27:26,689 INFO scalp_orb5        SELL RIOT  $  49.44 @ 17.84  orb5 exit: stop  P/L $-0.56
+2026-11-18 16:27:26,690 INFO scalp_orb5        value $190.74  cash $140.30  holding ['PLUG']
+2026-11-18 16:33:27,083 INFO scalp_burst       BUY  LCID  $  50.00 @ 2.886  burst signal
+2026-11-18 16:33:27,085 INFO scalp_burst       value $192.26  cash $142.36  holding ['LCID']
+2026-11-18 16:34:27,061 INFO scalp_vwap_large  BUY  NFLX  $  50.00 @ 59.84  vwap signal
+2026-11-18 16:34:27,062 INFO scalp_vwap_large  value $199.77  cash $149.79  holding ['NFLX']
+2026-11-18 16:38:35,941 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
+2026-11-18 16:38:43,123 INFO activist: checked 13D feed: nothing new
