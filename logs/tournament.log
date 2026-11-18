@@ -2392,3 +2392,5 @@
 2026-11-18 18:08:26,697 INFO scalp_burst       value $191.83  cash $191.83  holding -
 2026-11-18 18:14:35,411 INFO insider: checked 24 new Form 4 filings, found 3 insider purchases
 2026-11-18 18:14:40,711 INFO activist: checked 13D feed: nothing new
+2026-11-18 18:30:36,604 INFO insider: checked 15 new Form 4 filings, found 3 insider purchases
+2026-11-18 18:30:42,948 INFO activist: checked 13D feed: nothing new
