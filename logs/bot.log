@@ -78,3 +78,12 @@
 2026-11-17 20:32:32,107 INFO HOLD XLY qty=0.274341681 entry=118.03 now=117.17 rsi=3.1 held=1d -> keep
 2026-11-17 20:32:32,107 INFO entry candidates: [('DIA', 3.9), ('XLV', 9.6)]
 2026-11-17 20:32:32,108 INFO ==== run end ====
+2026-11-18 20:32:27,604 INFO ==== run start (PAPER) ====
+2026-11-18 20:32:27,638 INFO equity $156.26 | cash $-0.08 | unsettled $0.00 | settled $0.00
+2026-11-18 20:32:27,651 INFO ignoring your manual positions: ['NVDA']
+2026-11-18 20:32:27,843 INFO HOLD SPY qty=0.043801268 entry=739.25 now=729.99 rsi=4.3 held=2d -> keep
+2026-11-18 20:32:27,849 INFO HOLD XLY qty=0.274341681 entry=118.03 now=119.12 rsi=65.5 held=2d -> target
+2026-11-18 20:32:27,860 INFO SELL XLY (~$32.68, target), settles 2026-11-19
+2026-11-18 20:32:27,861 INFO entry candidates: [('XLV', 3.2), ('XLF', 6.2), ('XLE', 6.8)]
+2026-11-18 20:32:27,861 INFO not enough settled cash for XLV ($0.00)
+2026-11-18 20:32:27,862 INFO ==== run end ====

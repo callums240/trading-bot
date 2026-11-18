@@ -2412,3 +2412,15 @@
 2026-11-18 20:06:51,961 INFO activist: checked 13D feed: nothing new
 2026-11-18 20:22:33,586 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
 2026-11-18 20:22:41,609 INFO activist: checked 13D feed: nothing new
+2026-11-18 20:30:26,580 INFO midday_momentum   SELL AMZN  $  99.89 @ 266  close  P/L $-0.18
+2026-11-18 20:30:26,581 INFO midday_momentum   SELL AMD   $ 100.20 @ 521.9  close  P/L $+0.13
+2026-11-18 20:30:26,581 INFO midday_momentum   value $200.10  cash $200.10  holding -
+2026-11-18 20:30:26,607 INFO wsb_crowd         SELL GP    $  68.94 @ 2.589  close  P/L $+1.53
+2026-11-18 20:30:26,607 INFO wsb_crowd         SELL TTWO  $  66.85 @ 217  close  P/L $-0.57
+2026-11-18 20:30:26,607 INFO wsb_crowd         SELL AAOI  $  67.70 @ 40.21  close  P/L $+0.29
+2026-11-18 20:30:26,608 INFO wsb_crowd         value $203.49  cash $203.49  holding -
+2026-11-18 20:30:26,609 INFO overnight_qqq     BUY  QQQ   $ 192.16 @ 657.7  overnight hold
+2026-11-18 20:30:26,609 INFO overnight_qqq     value $192.07  cash $0.00  holding ['QQQ']
+2026-11-18 20:32:27,943 INFO live bot ran (exit 0): 2026-11-18 20:32:27,862 INFO ==== run end ====
+2026-11-18 20:38:31,500 INFO insider: 0001918704-26-036081: skipped (504 Server Error: Gateway Time-out for url: https://www.sec.gov/Archives/edgar/data/312070/000191870426036081/index.json)
+2026-11-18 20:38:40,832 INFO activist: checked 13D feed: nothing new
