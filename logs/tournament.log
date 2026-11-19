@@ -2553,3 +2553,9 @@
 2026-11-19 16:02:34,564 INFO options_orb_spy   value $348.00  cash $348.00  holding -
 2026-11-19 16:06:35,514 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-19 16:06:38,793 INFO activist: checked 13D feed: nothing new
+2026-11-19 16:11:34,568 INFO scalp_burst       SELL MARA  $  50.76 @ 6.494  burst exit: target  P/L $+0.76
+2026-11-19 16:11:34,569 INFO scalp_burst       value $192.59  cash $192.59  holding -
+2026-11-19 16:14:35,017 INFO scalp_burst_large BUY  COIN  $  50.00 @ 112.3  burst signal
+2026-11-19 16:14:35,018 INFO scalp_burst_large value $200.30  cash $50.01  holding ['META', 'AVGO', 'COIN']
+2026-11-19 16:22:55,286 INFO insider: Traceback (most recent call last):
+2026-11-19 16:23:15,576 INFO activist: Traceback (most recent call last):
