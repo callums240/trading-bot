@@ -28,7 +28,7 @@ FILE = STATE / "mirror.json"
 OFF = STATE / "OFF"
 REPORT = ROOT / "REAL.md"
 
-MIRROR = {"options_orb", "options_orb_spy"}
+MIRROR = {"options_orb"}   # one at a time: the paper account has ~$65 free, one contract's worth
 MAX_ORDER_USD = 45.0
 MAX_BUYS_PER_DAY = 4
 UNFILLED_CANCEL_SECONDS = 90

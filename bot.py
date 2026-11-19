@@ -98,6 +98,9 @@ def main():
     ap.add_argument("--live", action="store_true", help="trade real money")
     ap.add_argument("--force", action="store_true", help="run even if market is closed (use with --dry-run)")
     ap.add_argument("--anytime", action="store_true", help="skip the last-30-minutes window check")
+    ap.add_argument("--sell-only", action="store_true",
+                    help="retired mode: sell what the bot holds when its exit rules say so, never buy "
+                         "(frees the paper account's cash for the real-order rehearsal)")
     args = ap.parse_args()
 
     load_dotenv(ROOT / ".env")
@@ -144,7 +147,7 @@ def main():
     log.info("equity $%.2f | cash $%.2f | unsettled $%.2f | settled $%.2f",
              equity, cash, unsettled, settled_cash)
 
-    if not args.dry_run:
+    if not args.dry_run and not args.sell_only:   # in sell-only mode, leave other modules' orders alone
         trading.cancel_orders()   # clear any stale orders so cash isn't double-counted
 
     all_positions = trading.get_all_positions()
@@ -181,7 +184,9 @@ def main():
 
     # ---- entries ----
     held_after = len(positions) - len(sold_today)
-    if float(acct.equity) < state["start_equity"] * (1 - C.KILL_SWITCH_DRAWDOWN):
+    if args.sell_only:
+        log.info("sell-only mode: no new buys")
+    elif float(acct.equity) < state["start_equity"] * (1 - C.KILL_SWITCH_DRAWDOWN):
         log.warning("KILL SWITCH: equity $%.2f is %.0f%% below start $%.2f; no new buys",
                     float(acct.equity), C.KILL_SWITCH_DRAWDOWN * 100, state["start_equity"])
     else:

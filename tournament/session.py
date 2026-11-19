@@ -4,7 +4,7 @@ every minute, instead of relying on GitHub's unreliable 15-minute schedule.
 Each minute:   every strategy gets a pass (scalpers act each minute, the rest once per slot)
 Every 15 min:  insider and activist (13D) filings collected, results saved and pushed to GitHub
 Hourly:        forum snapshot
-Last 30 min:   the live bot (bot.py) trades the real paper account, once per day
+Last 30 min:   the old live bot (bot.py) runs once a day in sell-only mode (retired Nov 19)
 
 Outside market hours it keeps going: insider and forum snapshots hourly.
 
@@ -89,7 +89,7 @@ def main():
 
         mins_to_close = (m.clock.next_close - m.clock.timestamp).total_seconds() / 60
         if mins_to_close <= 28 and not bot_done:
-            code, out = sh(f"{PY} bot.py", timeout=300)
+            code, out = sh(f"{PY} bot.py --sell-only", timeout=300)
             log.info("live bot ran (exit %s): %s", code, out.splitlines()[-1] if out else "")
             bot_done = code == 0
 
