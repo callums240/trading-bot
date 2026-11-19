@@ -2549,3 +2549,7 @@
 2026-11-19 15:46:34,748 INFO scalp_burst       value $191.78  cash $141.83  holding ['MARA']
 2026-11-19 15:50:50,433 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
 2026-11-19 15:51:10,702 INFO activist: Traceback (most recent call last):
+2026-11-19 16:02:34,563 INFO options_orb_spy   SELL SPY261119P00713000 $  16.00 @ 0.16  stop: down 53%  P/L $-19.00
+2026-11-19 16:02:34,564 INFO options_orb_spy   value $348.00  cash $348.00  holding -
+2026-11-19 16:06:35,514 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-19 16:06:38,793 INFO activist: checked 13D feed: nothing new
