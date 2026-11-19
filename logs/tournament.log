@@ -2679,3 +2679,9 @@
 2026-11-19 18:30:34,461 INFO scalp_burst       value $191.28  cash $141.33  holding ['MARA']
 2026-11-19 18:30:55,112 INFO insider: Traceback (most recent call last):
 2026-11-19 18:31:05,594 INFO activist: checked 13D feed: nothing new
+2026-11-19 18:43:34,433 INFO scalp_burst       SELL MARA  $  49.36 @ 6.399  burst exit: stop  P/L $-0.64
+2026-11-19 18:43:34,434 INFO scalp_burst       value $190.70  cash $190.70  holding -
+2026-11-19 18:44:34,489 INFO scalp_reversion   BUY  LCID  $  50.00 @ 2.916  reversion signal
+2026-11-19 18:44:34,490 INFO scalp_reversion   value $193.16  cash $143.26  holding ['LCID']
+2026-11-19 18:46:55,161 INFO insider: Traceback (most recent call last):
+2026-11-19 18:47:15,444 INFO activist: Traceback (most recent call last):
