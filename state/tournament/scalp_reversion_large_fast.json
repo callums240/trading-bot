@@ -1,20 +1,10 @@
 {
  "start_cash": 200.0,
- "cash": 46.475127855669456,
+ "cash": 144.76182054068664,
  "positions": {
-  "AMD": {
-   "qty": 0.09393093093330036,
-   "entry": 532.30602,
-   "since": "2026-11-19"
-  },
-  "AVGO": {
-   "qty": 0.1388927836740311,
-   "entry": 359.98990499999996,
-   "since": "2026-11-19"
-  },
-  "PLTR": {
-   "qty": 0.3075006921840581,
-   "entry": 162.60126,
+  "NVDA": {
+   "qty": 0.3277049999590369,
+   "entry": 152.57625,
    "since": "2026-11-19"
   }
  },
@@ -1308,6 +1298,154 @@
    "usd": 50.0,
    "reason": "reversion signal",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:19-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.51246,
+   "price": 90.6903,
+   "usd": 46.48,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.093931,
+   "price": 529.8699,
+   "usd": 49.77,
+   "pnl": -0.23,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "sell",
+   "sym": "AVGO",
+   "qty": 0.138893,
+   "price": 358.1658,
+   "usd": 49.75,
+   "pnl": -0.25,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "sell",
+   "sym": "PLTR",
+   "qty": 0.307501,
+   "price": 161.829,
+   "usd": 49.76,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.51246,
+   "price": 90.2249,
+   "usd": 46.24,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "buy",
+   "sym": "PLTR",
+   "qty": 0.308659,
+   "price": 161.991,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "buy",
+   "sym": "COIN",
+   "qty": 0.447444,
+   "price": 111.7458,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:20-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.553617,
+   "price": 90.3151,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:22-05:00",
+   "side": "sell",
+   "sym": "PLTR",
+   "qty": 0.308659,
+   "price": 161.2793,
+   "usd": 49.78,
+   "pnl": -0.22,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:26-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.553617,
+   "price": 89.995,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:30-05:00",
+   "side": "sell",
+   "sym": "COIN",
+   "qty": 0.447444,
+   "price": 111.3443,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:31-05:00",
+   "side": "buy",
+   "sym": "MSTR",
+   "qty": 0.559443,
+   "price": 89.3747,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:32-05:00",
+   "side": "sell",
+   "sym": "MSTR",
+   "qty": 0.559443,
+   "price": 89.0554,
+   "usd": 49.82,
+   "pnl": -0.18,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:33-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.327705,
+   "price": 152.5762,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -1319,39 +1457,33 @@
   "2026-11-16": 199.01,
   "2026-11-17": 196.59,
   "2026-11-18": 197.5,
-  "2026-11-19": 196.26
+  "2026-11-19": 194.72
  },
  "done": [],
  "memo": {
   "day": "2026-11-19",
   "open": {
-   "AMD": {
-    "tp": 534.43524408,
-    "sl": 530.70910194,
-    "until": "2026-11-19T10:35:33.369745-05:00"
-   },
-   "AVGO": {
-    "tp": 361.42986462,
-    "sl": 358.90993528499996,
-    "until": "2026-11-19T10:35:33.369745-05:00"
-   },
-   "PLTR": {
-    "tp": 163.25166504,
-    "sl": 162.11345622,
-    "until": "2026-11-19T10:38:33.368457-05:00"
+   "NVDA": {
+    "tp": 153.186555,
+    "sl": 152.11852125,
+    "until": "2026-11-19T10:53:33.372445-05:00"
    }
   },
   "count": {
-   "COIN": 1,
+   "COIN": 2,
    "AMD": 3,
    "AVGO": 1,
-   "PLTR": 2
+   "PLTR": 3,
+   "MSTR": 3,
+   "NVDA": 1
   },
   "last_bar": {
-   "COIN": "2026-11-19T09:55:00-05:00",
+   "COIN": "2026-11-19T10:19:00-05:00",
    "AMD": "2026-11-19T10:14:00-05:00",
    "AVGO": "2026-11-19T10:14:00-05:00",
-   "PLTR": "2026-11-19T10:17:00-05:00"
+   "PLTR": "2026-11-19T10:19:00-05:00",
+   "MSTR": "2026-11-19T10:30:00-05:00",
+   "NVDA": "2026-11-19T10:32:00-05:00"
   }
  },
  "stopped": null

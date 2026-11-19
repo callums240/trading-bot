@@ -1,4 +1,4 @@
-# Daily briefing: Thursday 19 November 2026, 10:18 ET
+# Daily briefing: Thursday 19 November 2026, 10:34 ET
 
 ## Market
 
@@ -6,24 +6,21 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +0.42% | +1.15% | -0.29% | -0.24% | -1.96% | 1 of 11 |
+| -0.24% | +0.15% | -0.95% | -0.72% | +1.83% | 1 of 11 |
 
-Sectors today: XLK +1.9%, XLC -0.1%, XLI -0.1%, XLE -0.2%, XLF -0.5%, XLY -0.5%, XLB -0.8%, XLRE -1.0%, XLV -1.0%, XLU -1.2%, XLP -1.7%
+Sectors today: XLK +0.7%, XLE -0.2%, XLC -0.5%, XLF -0.7%, XLI -0.8%, XLB -1.0%, XLY -1.0%, XLRE -1.1%, XLU -1.2%, XLV -1.5%, XLP -1.6%
 
 ## Real paper account (live bot)
 
-Equity $158.95 (started $200.00), cash $32.58. Holding: NVDA (-5.7%), SPY (-0.8%).
+Equity $157.37 (started $200.00), cash $32.58. Holding: NVDA (-7.1%), SPY (-1.4%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
 | overnight_qqq | $+3.43 | -1.9% | $196.13 | 1 | 1/1 | cash |
-| nonews_dip | $+1.66 | +2.1% | $204.13 | 0 | - | KLAC, ANET |
-| spy_hold | $+0.80 | -4.5% | $191.00 | 0 | - | SPY |
-| weekly_momentum | $+0.77 | -10.8% | $178.42 | 0 | - | SOFI, AMZN, TSLA |
-| insider_buys | $+0.61 | +1.1% | $202.16 | 0 | - | KNOP, LRN, ASPE, GLXY |
-| activist_13d | $+0.47 | +0.7% | $201.47 | 2 | - | ASPE, FUN, TRIP, BKD |
+| options_orb_spy | $+0.50 | +83.7% | $367.50 | 1 | - | SPY261119P00713000 |
+| nonews_dip | $+0.09 | +1.3% | $202.56 | 0 | - | KLAC, ANET |
 | gap_fade | $+0.00 | -4.3% | $191.33 | 0 | - | cash |
 | midday_momentum | $+0.00 | +0.0% | $200.10 | 0 | - | cash |
 | options_dip_calls | $+0.00 | -26.3% | $147.49 | 0 | - | STOPPED 2026-11-17 |
@@ -34,12 +31,15 @@ Equity $158.95 (started $200.00), cash $32.58. Holding: NVDA (-5.7%), SPY (-0.8%
 | scalp_orb5 | $+0.00 | -5.3% | $189.37 | 0 | - | cash |
 | scalp_vwap | $+0.00 | +1.2% | $202.49 | 0 | - | cash |
 | scalp_vwap_large | $+0.00 | -0.0% | $199.95 | 0 | - | cash |
-| scalp_orb5_large | $-0.46 | -1.5% | $196.92 | 3 | 0/1 | MSFT |
-| options_orb | $-0.50 | +98.2% | $396.50 | 1 | - | QQQ261119P00632000 |
-| options_orb_spy | $-0.50 | +83.2% | $366.50 | 1 | - | SPY261119P00713000 |
-| scalp_reversion_large_fast | $-1.24 | -1.9% | $196.26 | 11 | 1/4 | AMD, AVGO, PLTR |
-| scalp_reversion | $-2.02 | -1.7% | $196.56 | 5 | 0/2 | RIOT |
-| gold_fear | $-2.04 | -6.6% | $186.72 | 0 | - | GDX |
-| wsb_crowd | $-2.41 | +0.5% | $201.08 | 3 | - | AMZN, PANW, UNH |
+| spy_hold | $-0.45 | -5.1% | $189.75 | 0 | - | SPY |
+| scalp_orb5_large | $-0.52 | -1.6% | $196.86 | 4 | 0/2 | cash |
+| weekly_momentum | $-1.20 | -11.8% | $176.45 | 0 | - | SOFI, AMZN, TSLA |
+| insider_buys | $-1.38 | +0.1% | $200.17 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| activist_13d | $-1.78 | -0.4% | $199.22 | 2 | - | ASPE, FUN, TRIP, BKD |
+| scalp_reversion_large_fast | $-2.78 | -2.6% | $194.72 | 25 | 1/12 | NVDA |
+| scalp_reversion | $-2.84 | -2.1% | $195.74 | 8 | 0/3 | NIO, AMC |
+| gold_fear | $-3.96 | -7.6% | $184.80 | 0 | - | GDX |
+| wsb_crowd | $-4.68 | -0.6% | $198.81 | 3 | - | AMZN, PANW, UNH |
+| options_orb | $-14.50 | +91.3% | $382.50 | 1 | - | QQQ261119P00632000 |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.

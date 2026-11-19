@@ -2505,3 +2505,34 @@
 2026-11-19 15:18:35,299 INFO scalp_reversion_large_fast value $196.26  cash $46.48  holding ['AMD', 'AVGO', 'PLTR']
 2026-11-19 15:18:39,183 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
 2026-11-19 15:19:06,789 INFO activist: checked 13D feed: nothing new
+2026-11-19 15:19:35,165 INFO scalp_orb5_large  SELL MSFT  $  49.75 @ 519.6  orb5 exit: stop  P/L $-0.25
+2026-11-19 15:19:35,166 INFO scalp_orb5_large  value $196.86  cash $196.86  holding -
+2026-11-19 15:19:35,323 INFO scalp_reversion_large_fast BUY  MSTR  $  46.48 @ 90.69  reversion signal
+2026-11-19 15:19:35,324 INFO scalp_reversion_large_fast value $196.13  cash $0.00  holding ['AMD', 'AVGO', 'PLTR', 'MSTR']
+2026-11-19 15:20:34,940 INFO scalp_reversion   SELL RIOT  $  49.36 @ 18.54  reversion exit: stop  P/L $-0.64
+2026-11-19 15:20:34,940 INFO scalp_reversion   value $196.29  cash $196.29  holding -
+2026-11-19 15:20:35,238 INFO scalp_reversion_large_fast SELL AMD   $  49.77 @ 529.9  reversion exit: stop  P/L $-0.23
+2026-11-19 15:20:35,238 INFO scalp_reversion_large_fast SELL AVGO  $  49.75 @ 358.2  reversion exit: stop  P/L $-0.25
+2026-11-19 15:20:35,238 INFO scalp_reversion_large_fast SELL PLTR  $  49.76 @ 161.8  reversion exit: stop  P/L $-0.24
+2026-11-19 15:20:35,238 INFO scalp_reversion_large_fast SELL MSTR  $  46.24 @ 90.22  reversion exit: stop  P/L $-0.24
+2026-11-19 15:20:35,239 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 162  reversion signal
+2026-11-19 15:20:35,239 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 111.7  reversion signal
+2026-11-19 15:20:35,239 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 90.32  reversion signal
+2026-11-19 15:20:35,240 INFO scalp_reversion_large_fast value $195.44  cash $45.52  holding ['PLTR', 'COIN', 'MSTR']
+2026-11-19 15:22:35,124 INFO scalp_reversion_large_fast SELL PLTR  $  49.78 @ 161.3  reversion exit: stop  P/L $-0.22
+2026-11-19 15:22:35,125 INFO scalp_reversion_large_fast value $195.27  cash $95.30  holding ['COIN', 'MSTR']
+2026-11-19 15:23:35,052 INFO scalp_reversion   BUY  NIO   $  50.00 @ 2.725  reversion signal
+2026-11-19 15:23:35,052 INFO scalp_reversion   BUY  AMC   $  50.00 @ 2.966  reversion signal
+2026-11-19 15:23:35,053 INFO scalp_reversion   value $196.10  cash $96.29  holding ['NIO', 'AMC']
+2026-11-19 15:26:35,378 INFO scalp_reversion_large_fast SELL MSTR  $  49.82 @ 90  reversion exit: stop  P/L $-0.18
+2026-11-19 15:26:35,379 INFO scalp_reversion_large_fast value $195.02  cash $145.12  holding ['COIN']
+2026-11-19 15:30:35,448 INFO scalp_reversion_large_fast SELL COIN  $  49.82 @ 111.3  reversion exit: stop  P/L $-0.18
+2026-11-19 15:30:35,449 INFO scalp_reversion_large_fast value $194.94  cash $194.94  holding -
+2026-11-19 15:31:35,310 INFO scalp_reversion_large_fast BUY  MSTR  $  50.00 @ 89.37  reversion signal
+2026-11-19 15:31:35,311 INFO scalp_reversion_large_fast value $194.92  cash $144.94  holding ['MSTR']
+2026-11-19 15:32:35,271 INFO scalp_reversion_large_fast SELL MSTR  $  49.82 @ 89.06  reversion exit: stop  P/L $-0.18
+2026-11-19 15:32:35,272 INFO scalp_reversion_large_fast value $194.76  cash $194.76  holding -
+2026-11-19 15:33:35,240 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 152.6  reversion signal
+2026-11-19 15:33:35,241 INFO scalp_reversion_large_fast value $194.74  cash $144.76  holding ['NVDA']
+2026-11-19 15:34:56,388 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
+2026-11-19 15:35:16,665 INFO activist: Traceback (most recent call last):
