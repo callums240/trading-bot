@@ -2563,3 +2563,37 @@
 2026-11-19 16:37:34,884 INFO scalp_burst_large value $200.52  cash $0.01  holding ['META', 'AVGO', 'COIN', 'TSLA']
 2026-11-19 16:38:39,037 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-19 16:38:59,323 INFO activist: Traceback (most recent call last):
+2026-11-19 16:52:34,678 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 18.16  reversion signal
+2026-11-19 16:52:34,678 INFO scalp_reversion   BUY  PLUG  $  50.00 @ 1.045  reversion signal
+2026-11-19 16:52:34,679 INFO scalp_reversion   value $195.13  cash $45.60  holding ['NIO', 'RIOT', 'PLUG']
+2026-11-19 16:52:35,006 INFO scalp_burst_large SELL TSLA  $  49.28 @ 377.6  burst exit: stop  P/L $-0.72
+2026-11-19 16:52:35,007 INFO scalp_burst_large value $198.30  cash $49.29  holding ['META', 'AVGO', 'COIN']
+2026-11-19 16:52:35,098 INFO scalp_reversion_large_fast BUY  QQQ   $  50.00 @ 657.3  reversion signal
+2026-11-19 16:52:35,099 INFO scalp_reversion_large_fast BUY  TSLA  $  50.00 @ 377.9  reversion signal
+2026-11-19 16:52:35,099 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 151.2  reversion signal
+2026-11-19 16:52:35,099 INFO scalp_reversion_large_fast BUY  META  $  44.55 @ 613.6  reversion signal
+2026-11-19 16:52:35,100 INFO scalp_reversion_large_fast value $194.46  cash $0.00  holding ['QQQ', 'TSLA', 'NVDA', 'META']
+2026-11-19 16:53:34,637 INFO scalp_reversion   SELL NIO   $  49.61 @ 2.704  reversion exit: time limit  P/L $-0.39
+2026-11-19 16:53:34,637 INFO scalp_reversion   SELL RIOT  $  49.37 @ 17.93  reversion exit: stop  P/L $-0.63
+2026-11-19 16:53:34,637 INFO scalp_reversion   BUY  SOFI  $  50.00 @ 13.75  reversion signal
+2026-11-19 16:53:34,637 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.396  reversion signal
+2026-11-19 16:53:34,638 INFO scalp_reversion   value $194.26  cash $44.58  holding ['PLUG', 'SOFI', 'MARA']
+2026-11-19 16:53:34,964 INFO scalp_burst_large SELL META  $  49.30 @ 610.8  burst exit: stop  P/L $-0.70
+2026-11-19 16:53:34,964 INFO scalp_burst_large SELL COIN  $  49.45 @ 111.1  burst exit: stop  P/L $-0.55
+2026-11-19 16:53:34,965 INFO scalp_burst_large value $197.58  cash $148.04  holding ['AVGO']
+2026-11-19 16:53:35,055 INFO scalp_reversion_large_fast SELL QQQ   $  49.76 @ 654.2  reversion exit: stop  P/L $-0.24
+2026-11-19 16:53:35,055 INFO scalp_reversion_large_fast SELL TSLA  $  49.77 @ 376.2  reversion exit: stop  P/L $-0.23
+2026-11-19 16:53:35,055 INFO scalp_reversion_large_fast SELL NVDA  $  49.73 @ 150.3  reversion exit: stop  P/L $-0.27
+2026-11-19 16:53:35,055 INFO scalp_reversion_large_fast SELL META  $  44.35 @ 610.8  reversion exit: stop  P/L $-0.20
+2026-11-19 16:53:35,055 INFO scalp_reversion_large_fast BUY  QQQ   $  50.00 @ 654.8  reversion signal
+2026-11-19 16:53:35,056 INFO scalp_reversion_large_fast BUY  TSLA  $  50.00 @ 376.5  reversion signal
+2026-11-19 16:53:35,056 INFO scalp_reversion_large_fast BUY  NVDA  $  50.00 @ 150.5  reversion signal
+2026-11-19 16:53:35,056 INFO scalp_reversion_large_fast BUY  META  $  43.61 @ 611.4  reversion signal
+2026-11-19 16:53:35,057 INFO scalp_reversion_large_fast value $193.51  cash $0.00  holding ['QQQ', 'TSLA', 'NVDA', 'META']
+2026-11-19 16:54:34,605 INFO scalp_reversion   BUY  SOUN  $  44.58 @ 3.066  reversion signal
+2026-11-19 16:54:34,605 INFO scalp_reversion   value $194.74  cash $0.00  holding ['PLUG', 'SOFI', 'MARA', 'SOUN']
+2026-11-19 16:54:35,017 INFO scalp_reversion_large_fast SELL NVDA  $  50.19 @ 151.1  reversion exit: target  P/L $+0.19
+2026-11-19 16:54:35,017 INFO scalp_reversion_large_fast BUY  SPY   $  50.00 @ 726  reversion signal
+2026-11-19 16:54:35,019 INFO scalp_reversion_large_fast value $194.26  cash $0.19  holding ['QQQ', 'TSLA', 'META', 'SPY']
+2026-11-19 16:54:55,338 INFO insider: Traceback (most recent call last):
+2026-11-19 16:55:15,638 INFO activist: Traceback (most recent call last):

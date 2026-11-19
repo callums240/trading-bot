@@ -1,7 +1,28 @@
 {
  "start_cash": 200.0,
- "cash": 194.55462577741255,
- "positions": {},
+ "cash": 0.18913154951014377,
+ "positions": {
+  "QQQ": {
+   "qty": 0.07635368284201115,
+   "entry": 654.8472599999999,
+   "since": "2026-11-19"
+  },
+  "TSLA": {
+   "qty": 0.1327868966633979,
+   "entry": 376.5431775,
+   "since": "2026-11-19"
+  },
+  "META": {
+   "qty": 0.07131932516105084,
+   "entry": 611.435565,
+   "since": "2026-11-19"
+  },
+  "SPY": {
+   "qty": 0.06887025590341371,
+   "entry": 726.0028199999999,
+   "since": "2026-11-19"
+  }
+ },
  "trades": [
   {
    "t": "2026-11-09T11:05-05:00",
@@ -1451,6 +1472,151 @@
    "pnl": -0.21,
    "reason": "reversion exit: stop",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:52-05:00",
+   "side": "buy",
+   "sym": "QQQ",
+   "qty": 0.07607,
+   "price": 657.2885,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:52-05:00",
+   "side": "buy",
+   "sym": "TSLA",
+   "qty": 0.132297,
+   "price": 377.9389,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:52-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.330763,
+   "price": 151.1655,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:52-05:00",
+   "side": "buy",
+   "sym": "META",
+   "qty": 0.07261,
+   "price": 613.6167,
+   "usd": 44.55,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "sell",
+   "sym": "QQQ",
+   "qty": 0.07607,
+   "price": 654.1927,
+   "usd": 49.76,
+   "pnl": -0.24,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "sell",
+   "sym": "TSLA",
+   "qty": 0.132297,
+   "price": 376.1668,
+   "usd": 49.77,
+   "pnl": -0.23,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "sell",
+   "sym": "NVDA",
+   "qty": 0.330763,
+   "price": 150.3348,
+   "usd": 49.73,
+   "pnl": -0.27,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "sell",
+   "sym": "META",
+   "qty": 0.07261,
+   "price": 610.8244,
+   "usd": 44.35,
+   "pnl": -0.2,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "buy",
+   "sym": "QQQ",
+   "qty": 0.076354,
+   "price": 654.8473,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "buy",
+   "sym": "TSLA",
+   "qty": 0.132787,
+   "price": 376.5432,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "buy",
+   "sym": "NVDA",
+   "qty": 0.332259,
+   "price": 150.4852,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:53-05:00",
+   "side": "buy",
+   "sym": "META",
+   "qty": 0.071319,
+   "price": 611.4356,
+   "usd": 43.61,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:54-05:00",
+   "side": "sell",
+   "sym": "NVDA",
+   "qty": 0.332259,
+   "price": 151.0544,
+   "usd": 50.19,
+   "pnl": 0.19,
+   "reason": "reversion exit: target",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T11:54-05:00",
+   "side": "buy",
+   "sym": "SPY",
+   "qty": 0.06887,
+   "price": 726.0028,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -1462,19 +1628,44 @@
   "2026-11-16": 199.01,
   "2026-11-17": 196.59,
   "2026-11-18": 197.5,
-  "2026-11-19": 194.55
+  "2026-11-19": 194.26
  },
  "done": [],
  "memo": {
   "day": "2026-11-19",
-  "open": {},
+  "open": {
+   "QQQ": {
+    "tp": 657.4666490399999,
+    "sl": 652.8827182199999,
+    "until": "2026-11-19T12:13:33.378411-05:00"
+   },
+   "TSLA": {
+    "tp": 378.04935021,
+    "sl": 375.4135479675,
+    "until": "2026-11-19T12:13:33.378411-05:00"
+   },
+   "META": {
+    "tp": 613.88130726,
+    "sl": 609.601258305,
+    "until": "2026-11-19T12:13:33.378411-05:00"
+   },
+   "SPY": {
+    "tp": 728.9068312799999,
+    "sl": 723.8248115399999,
+    "until": "2026-11-19T12:14:33.383973-05:00"
+   }
+  },
   "count": {
    "COIN": 2,
    "AMD": 3,
    "AVGO": 1,
    "PLTR": 3,
    "MSTR": 3,
-   "NVDA": 1
+   "NVDA": 3,
+   "QQQ": 2,
+   "TSLA": 2,
+   "META": 2,
+   "SPY": 1
   },
   "last_bar": {
    "COIN": "2026-11-19T10:19:00-05:00",
@@ -1482,7 +1673,11 @@
    "AVGO": "2026-11-19T10:14:00-05:00",
    "PLTR": "2026-11-19T10:19:00-05:00",
    "MSTR": "2026-11-19T10:30:00-05:00",
-   "NVDA": "2026-11-19T10:32:00-05:00"
+   "NVDA": "2026-11-19T11:52:00-05:00",
+   "QQQ": "2026-11-19T11:52:00-05:00",
+   "TSLA": "2026-11-19T11:52:00-05:00",
+   "META": "2026-11-19T11:52:00-05:00",
+   "SPY": "2026-11-19T11:53:00-05:00"
   }
  },
  "stopped": null
