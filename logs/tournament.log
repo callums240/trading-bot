@@ -2640,3 +2640,18 @@
 2026-11-19 17:09:34,901 INFO scalp_reversion_large_fast value $193.25  cash $49.95  holding ['QQQ', 'MSFT', 'SPY']
 2026-11-19 17:10:55,229 INFO insider: Traceback (most recent call last):
 2026-11-19 17:10:57,489 INFO activist: checked 13D feed: nothing new
+2026-11-19 17:21:34,531 INFO scalp_reversion   SELL RKLB  $  49.19 @ 51.34  reversion exit: target  P/L $+0.72
+2026-11-19 17:21:34,532 INFO scalp_reversion   value $192.60  cash $91.75  holding ['MARA', 'SOFI']
+2026-11-19 17:22:34,930 INFO scalp_reversion_large_fast SELL QQQ   $  50.20 @ 652.6  reversion exit: target  P/L $+0.20
+2026-11-19 17:22:34,930 INFO scalp_reversion_large_fast SELL MSFT  $  43.37 @ 508  reversion exit: target  P/L $+0.16
+2026-11-19 17:22:34,931 INFO scalp_reversion_large_fast value $193.51  cash $143.51  holding ['SPY']
+2026-11-19 17:23:34,567 INFO scalp_reversion   SELL SOFI  $  50.77 @ 13.82  reversion exit: target  P/L $+0.77
+2026-11-19 17:23:34,568 INFO scalp_reversion   value $192.99  cash $142.52  holding ['MARA']
+2026-11-19 17:23:34,857 INFO scalp_reversion_large_fast SELL SPY   $  50.05 @ 722.9  reversion exit: target  P/L $+0.25
+2026-11-19 17:23:34,858 INFO scalp_reversion_large_fast value $193.56  cash $193.56  holding -
+2026-11-19 17:24:34,478 INFO scalp_burst       BUY  SOFI  $  50.00 @ 13.88  burst signal
+2026-11-19 17:24:34,479 INFO scalp_burst       value $192.56  cash $142.59  holding ['SOFI']
+2026-11-19 17:25:34,603 INFO scalp_reversion   SELL MARA  $  50.73 @ 6.384  reversion exit: target  P/L $+0.73
+2026-11-19 17:25:34,603 INFO scalp_reversion   value $193.26  cash $193.26  holding -
+2026-11-19 17:26:35,272 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-19 17:26:35,655 INFO activist: checked 13D feed: nothing new
