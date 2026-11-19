@@ -2536,3 +2536,16 @@
 2026-11-19 15:33:35,241 INFO scalp_reversion_large_fast value $194.74  cash $144.76  holding ['NVDA']
 2026-11-19 15:34:56,388 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
 2026-11-19 15:35:16,665 INFO activist: Traceback (most recent call last):
+2026-11-19 15:36:34,947 INFO scalp_reversion   SELL AMC   $  49.31 @ 2.924  reversion exit: stop  P/L $-0.69
+2026-11-19 15:36:34,948 INFO scalp_reversion   value $195.31  cash $145.60  holding ['NIO']
+2026-11-19 15:37:35,284 INFO scalp_reversion_large_fast SELL NVDA  $  49.79 @ 151.9  reversion exit: stop  P/L $-0.21
+2026-11-19 15:37:35,285 INFO scalp_reversion_large_fast value $194.55  cash $194.55  holding -
+2026-11-19 15:44:34,472 INFO options_orb       SELL QQQ261119P00632000 $  15.00 @ 0.15  stop: down 50%  P/L $-20.00
+2026-11-19 15:44:34,474 INFO options_orb       value $377.00  cash $377.00  holding -
+2026-11-19 15:44:35,241 INFO scalp_burst_large BUY  META  $  50.00 @ 619.5  burst signal
+2026-11-19 15:44:35,241 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 357  burst signal
+2026-11-19 15:44:35,242 INFO scalp_burst_large value $199.96  cash $100.01  holding ['META', 'AVGO']
+2026-11-19 15:46:34,747 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.396  burst signal
+2026-11-19 15:46:34,748 INFO scalp_burst       value $191.78  cash $141.83  holding ['MARA']
+2026-11-19 15:50:50,433 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
+2026-11-19 15:51:10,702 INFO activist: Traceback (most recent call last):
