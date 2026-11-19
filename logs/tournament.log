@@ -2717,3 +2717,7 @@
 2026-11-19 20:37:14,685 INFO scalp_reversion   value $191.92  cash $191.92  holding -
 2026-11-19 20:40:22,896 INFO insider: checked 21 new Form 4 filings, found 1 insider purchases
 2026-11-19 20:40:28,190 INFO activist: checked 13D feed: nothing new
+2026-11-19 20:53:14,681 INFO scalp_burst_large SELL AMD   $  50.81 @ 491.9  burst exit: target  P/L $+0.81
+2026-11-19 20:53:14,682 INFO scalp_burst_large value $197.62  cash $197.62  holding -
+2026-11-19 20:56:25,148 INFO insider: checked 24 new Form 4 filings, found 2 insider purchases
+2026-11-19 20:56:27,782 INFO activist: checked 13D feed: nothing new
