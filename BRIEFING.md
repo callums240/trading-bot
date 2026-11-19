@@ -1,25 +1,25 @@
-# Daily briefing: Thursday 19 November 2026, 14:52 ET
+# Daily briefing: Thursday 19 November 2026, 15:08 ET
 
 ## Market
 
-**Mood: nervous.** Nervous: the market is down or jittery, and few sectors are rising.
+**Mood: panic.** Panic: a big broad selloff. Buying dips is most dangerous on days like this.
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -1.62% | -1.73% | -1.85% | -1.85% | +8.71% | 0 of 11 |
+| -1.84% | -2.06% | -2.03% | -2.05% | +10.49% | 0 of 11 |
 
-Sectors today: XLE -0.5%, XLU -1.1%, XLF -1.3%, XLK -1.4%, XLP -1.4%, XLRE -1.5%, XLI -1.7%, XLB -1.8%, XLC -2.0%, XLV -2.1%, XLY -2.5%
+Sectors today: XLE -0.6%, XLU -1.1%, XLF -1.4%, XLP -1.5%, XLRE -1.6%, XLK -1.7%, XLI -1.9%, XLB -1.9%, XLV -2.3%, XLC -2.4%, XLY -2.6%
 
 ## Real paper account (live bot)
 
-Equity $153.93 (started $200.00), cash $32.58. Holding: NVDA (-10.1%), SPY (-2.8%).
+Equity $153.57 (started $200.00), cash $32.58. Holding: NVDA (-10.4%), SPY (-3.0%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
 | overnight_qqq | $+3.43 | -1.9% | $196.13 | 1 | 1/1 | cash |
-| activist_13d | $+1.01 | +1.0% | $202.01 | 2 | - | ASPE, FUN, TRIP, BKD |
+| activist_13d | $+0.04 | +0.5% | $201.04 | 2 | - | ASPE, FUN, TRIP, BKD |
 | gap_fade | $+0.00 | -4.3% | $191.33 | 0 | - | cash |
 | midday_momentum | $+0.00 | +0.0% | $200.10 | 0 | - | cash |
 | options_dip_calls | $+0.00 | -26.3% | $147.49 | 0 | - | STOPPED 2026-11-17 |
@@ -30,15 +30,15 @@ Equity $153.93 (started $200.00), cash $32.58. Holding: NVDA (-10.1%), SPY (-2.8
 | scalp_orb5_large | $-0.52 | -1.6% | $196.86 | 4 | 0/2 | cash |
 | scalp_vwap | $-0.55 | +1.0% | $201.94 | 2 | 0/1 | cash |
 | scalp_burst | $-1.13 | -4.7% | $190.70 | 8 | 1/4 | cash |
-| nonews_dip | $-1.43 | +0.5% | $201.04 | 0 | - | KLAC, ANET |
-| scalp_burst_large | $-2.73 | -1.4% | $197.28 | 11 | 0/5 | AMD |
-| spy_hold | $-3.07 | -6.4% | $187.13 | 0 | - | SPY |
+| nonews_dip | $-1.79 | +0.3% | $200.68 | 0 | - | KLAC, ANET |
+| scalp_burst_large | $-3.47 | -1.7% | $196.54 | 11 | 0/5 | AMD |
+| spy_hold | $-3.50 | -6.7% | $186.70 | 0 | - | SPY |
 | scalp_reversion_large_fast | $-3.94 | -3.2% | $193.56 | 60 | 8/30 | cash |
-| insider_buys | $-4.59 | -1.5% | $196.96 | 0 | - | KNOP, LRN, ASPE, GLXY |
-| weekly_momentum | $-4.95 | -13.7% | $172.70 | 0 | - | SOFI, AMZN, TSLA |
-| gold_fear | $-5.50 | -8.4% | $183.26 | 0 | - | GDX |
-| scalp_reversion | $-6.03 | -3.7% | $192.55 | 30 | 3/15 | cash |
-| wsb_crowd | $-6.66 | -1.6% | $196.83 | 3 | - | AMZN, PANW, UNH |
+| insider_buys | $-4.53 | -1.5% | $197.02 | 0 | - | KNOP, LRN, ASPE, GLXY |
+| weekly_momentum | $-5.41 | -13.9% | $172.24 | 0 | - | SOFI, AMZN, TSLA |
+| gold_fear | $-5.95 | -8.6% | $182.81 | 0 | - | GDX |
+| scalp_reversion | $-6.12 | -3.8% | $192.46 | 31 | 3/15 | AMC |
+| wsb_crowd | $-7.55 | -2.0% | $195.94 | 3 | - | AMZN, PANW, UNH |
 | options_orb_spy | $-19.00 | +74.0% | $348.00 | 2 | 0/1 | cash |
 | options_orb | $-20.00 | +88.5% | $377.00 | 2 | 0/1 | cash |
 

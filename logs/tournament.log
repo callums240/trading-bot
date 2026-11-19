@@ -2700,3 +2700,7 @@
 2026-11-19 19:52:14,536 INFO ==== session start ====
 2026-11-19 19:52:16,529 INFO insider: checked 2 new Form 4 filings, found 0 insider purchases
 2026-11-19 19:52:18,655 INFO activist: checked 13D feed: nothing new
+2026-11-19 20:05:14,811 INFO scalp_reversion   BUY  AMC   $  50.00 @ 2.871  reversion signal
+2026-11-19 20:05:14,813 INFO scalp_reversion   value $192.46  cash $142.55  holding ['AMC']
+2026-11-19 20:08:21,630 INFO insider: checked 14 new Form 4 filings, found 1 insider purchases
+2026-11-19 20:08:24,908 INFO activist: checked 13D feed: nothing new
