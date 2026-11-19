@@ -2667,3 +2667,9 @@
 2026-11-19 17:43:15,349 INFO activist: Traceback (most recent call last):
 2026-11-19 17:59:05,479 INFO insider: Traceback (most recent call last):
 2026-11-19 17:59:25,804 INFO activist: Traceback (most recent call last):
+2026-11-19 18:00:34,803 INFO scalp_burst_large SELL COIN  $  49.43 @ 111.6  burst exit: stop  P/L $-0.57
+2026-11-19 18:00:34,804 INFO scalp_burst_large value $196.81  cash $196.81  holding -
+2026-11-19 18:14:34,834 INFO scalp_burst       SELL LCID  $  49.30 @ 2.914  burst exit: stop  P/L $-0.70
+2026-11-19 18:14:34,835 INFO scalp_burst       value $191.43  cash $141.89  holding ['SOFI']
+2026-11-19 18:14:55,436 INFO insider: Traceback (most recent call last):
+2026-11-19 18:15:15,746 INFO activist: Traceback (most recent call last):
