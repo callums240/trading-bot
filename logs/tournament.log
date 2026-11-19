@@ -2697,3 +2697,6 @@
 2026-11-19 19:34:49,167 INFO activist: checked 13D feed: nothing new
 2026-11-19 19:50:43,006 INFO insider: checked 18 new Form 4 filings, found 0 insider purchases
 2026-11-19 19:50:44,442 INFO activist: checked 13D feed: nothing new
+2026-11-19 19:52:14,536 INFO ==== session start ====
+2026-11-19 19:52:16,529 INFO insider: checked 2 new Form 4 filings, found 0 insider purchases
+2026-11-19 19:52:18,655 INFO activist: checked 13D feed: nothing new
