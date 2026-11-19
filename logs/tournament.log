@@ -2655,3 +2655,13 @@
 2026-11-19 17:25:34,603 INFO scalp_reversion   value $193.26  cash $193.26  holding -
 2026-11-19 17:26:35,272 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
 2026-11-19 17:26:35,655 INFO activist: checked 13D feed: nothing new
+2026-11-19 17:29:35,284 INFO scalp_burst_large BUY  COIN  $  50.00 @ 112.9  burst signal
+2026-11-19 17:29:35,285 INFO scalp_burst_large value $197.36  cash $147.38  holding ['COIN']
+2026-11-19 17:32:34,409 INFO scalp_vwap        BUY  HOOD  $  50.00 @ 71.44  vwap signal
+2026-11-19 17:32:34,410 INFO scalp_vwap        value $202.47  cash $152.49  holding ['HOOD']
+2026-11-19 17:34:34,531 INFO scalp_burst       BUY  LCID  $  50.00 @ 2.956  burst signal
+2026-11-19 17:34:34,532 INFO scalp_burst       value $192.97  cash $92.59  holding ['SOFI', 'LCID']
+2026-11-19 17:41:34,393 INFO scalp_vwap        SELL HOOD  $  49.45 @ 70.65  vwap exit: stop  P/L $-0.55
+2026-11-19 17:41:34,393 INFO scalp_vwap        value $201.94  cash $201.94  holding -
+2026-11-19 17:42:55,028 INFO insider: Traceback (most recent call last):
+2026-11-19 17:43:15,349 INFO activist: Traceback (most recent call last):
