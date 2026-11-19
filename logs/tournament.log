@@ -2704,3 +2704,5 @@
 2026-11-19 20:05:14,813 INFO scalp_reversion   value $192.46  cash $142.55  holding ['AMC']
 2026-11-19 20:08:21,630 INFO insider: checked 14 new Form 4 filings, found 1 insider purchases
 2026-11-19 20:08:24,908 INFO activist: checked 13D feed: nothing new
+2026-11-19 20:24:26,632 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
+2026-11-19 20:24:27,731 INFO activist: checked 13D feed: nothing new

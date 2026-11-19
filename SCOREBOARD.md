@@ -1,32 +1,32 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-19 20:08 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-19 20:24 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **options_orb** | $377.00 | +88.5% | +95.2 pts | 22 | 69% | 0 / 9 | cash | 2026-11-04 |
-| 2 | **options_orb_spy** | $348.00 | +74.0% | +80.7 pts | 21 | 58% | 0 / 7 | cash | 2026-11-09 |
+| 1 | **options_orb** | $377.00 | +88.5% | +95.1 pts | 22 | 69% | 0 / 9 | cash | 2026-11-04 |
+| 2 | **options_orb_spy** | $348.00 | +74.0% | +80.6 pts | 21 | 58% | 0 / 7 | cash | 2026-11-09 |
 | 3 | **scalp_vwap** | $201.94 | +1.0% | +7.6 pts | 86 | 49% | 21 / 0 | cash | 2026-11-05 |
-| 4 | **activist_13d** | $201.04 | +0.5% | +7.2 pts | 4 | - | 0 / 0 | ASPE, FUN, TRIP, BKD | 2026-11-10 |
-| 5 | **nonews_dip** | $200.68 | +0.3% | +7.0 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
+| 4 | **activist_13d** | $200.93 | +0.5% | +7.1 pts | 4 | - | 0 / 0 | ASPE, FUN, TRIP, BKD | 2026-11-10 |
+| 5 | **nonews_dip** | $200.50 | +0.2% | +6.9 pts | 2 | - | 0 / 0 | KLAC, ANET | 2026-11-16 |
 | 6 | **midday_momentum** | $200.10 | +0.0% | +6.7 pts | 26 | 46% | 6 / 0 | cash | 2026-11-04 |
 | 7 | **scalp_vwap_large** | $199.95 | -0.0% | +6.6 pts | 34 | 53% | 9 / 0 | cash | 2026-11-09 |
 | 8 | **orb_tqqq** | $199.75 | -0.1% | +6.5 pts | 8 | 50% | 2 / 0 | cash | 2026-11-04 |
-| 9 | **insider_buys** | $197.02 | -1.5% | +5.2 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
-| 10 | **scalp_orb5_large** | $196.86 | -1.6% | +5.1 pts | 128 | 36% | 23 / 0 | cash | 2026-11-09 |
-| 11 | **scalp_burst_large** | $196.54 | -1.7% | +4.9 pts | 79 | 44% | 17 / 0 | AMD | 2026-11-09 |
-| 12 | **overnight_qqq** | $196.13 | -1.9% | +4.7 pts | 20 | 40% | 4 / 0 | cash | 2026-11-04 |
-| 13 | **wsb_crowd** | $195.94 | -2.0% | +4.6 pts | 57 | 48% | 12 / 1 | AMZN, PANW, UNH | 2026-11-04 |
+| 9 | **insider_buys** | $197.33 | -1.3% | +5.3 pts | 4 | - | 0 / 0 | KNOP, LRN, ASPE, GLXY | 2026-11-04 |
+| 10 | **scalp_orb5_large** | $196.86 | -1.6% | +5.0 pts | 128 | 36% | 23 / 0 | cash | 2026-11-09 |
+| 11 | **wsb_crowd** | $196.76 | -1.6% | +5.0 pts | 57 | 48% | 12 / 1 | AMZN, PANW, UNH | 2026-11-04 |
+| 12 | **scalp_burst_large** | $196.72 | -1.6% | +5.0 pts | 79 | 44% | 17 / 0 | AMD | 2026-11-09 |
+| 13 | **overnight_qqq** | $196.13 | -1.9% | +4.7 pts | 20 | 40% | 4 / 0 | cash | 2026-11-04 |
 | 14 | **scalp_reversion_large_fast** | $193.56 | -3.2% | +3.4 pts | 172 | 37% | 32 / 0 | cash | 2026-11-09 |
-| 15 | **scalp_reversion** | $192.46 | -3.8% | +2.9 pts | 97 | 38% | 18 / 0 | AMC | 2026-11-05 |
+| 15 | **scalp_reversion** | $192.63 | -3.7% | +2.9 pts | 97 | 38% | 18 / 0 | AMC | 2026-11-05 |
 | 16 | **gap_fade** | $191.33 | -4.3% | +2.3 pts | 22 | 36% | 4 / 0 | cash | 2026-11-04 |
 | 17 | **scalp_burst** | $190.70 | -4.7% | +2.0 pts | 144 | 35% | 25 / 0 | cash | 2026-11-05 |
 | 18 | **scalp_orb5** | $189.37 | -5.3% | +1.3 pts | 92 | 33% | 15 / 0 | cash | 2026-11-05 |
-| 19 | **spy_hold** | $186.70 | -6.7% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 20 | **gold_fear** | $182.81 | -8.6% | -1.9 pts | 1 | - | 0 / 0 | GDX | 2026-11-16 |
-| 21 | **weekly_momentum** | $172.24 | -13.9% | -7.2 pts | 7 | 0% | 0 / 0 | SOFI, AMZN, TSLA | 2026-11-04 |
+| 19 | **spy_hold** | $186.78 | -6.6% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 20 | **gold_fear** | $182.66 | -8.7% | -2.1 pts | 1 | - | 0 / 0 | GDX | 2026-11-16 |
+| 21 | **weekly_momentum** | $172.30 | -13.8% | -7.2 pts | 7 | 0% | 0 / 0 | SOFI, AMZN, TSLA | 2026-11-04 |
 | 22 | **options_dip_calls** | $147.49 | -26.3% | -19.6 pts | 6 | 0% | 0 / 0 | STOPPED 2026-11-17 | 2026-11-09 |
-| 23 | **options_late_trend** | $147.48 | -26.3% | -19.6 pts | 8 | 0% | 0 / 0 | STOPPED 2026-11-16 | 2026-11-09 |
+| 23 | **options_late_trend** | $147.48 | -26.3% | -19.7 pts | 8 | 0% | 0 / 0 | STOPPED 2026-11-16 | 2026-11-09 |
 
 ## What each strategy does
 
