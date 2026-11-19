@@ -2453,3 +2453,27 @@
 2026-11-19 14:30:45,599 INFO activist: checked 13D feed: nothing new
 2026-11-19 14:46:44,221 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-19 14:46:48,238 INFO activist: checked 13D feed: nothing new
+2026-11-19 14:55:34,260 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 18.96  reversion signal
+2026-11-19 14:55:34,260 INFO scalp_reversion   value $198.55  cash $148.58  holding ['RIOT']
+2026-11-19 14:56:34,233 INFO scalp_reversion   SELL RIOT  $  49.46 @ 18.76  reversion exit: stop  P/L $-0.54
+2026-11-19 14:56:34,233 INFO scalp_reversion   BUY  RIOT  $  50.00 @ 18.78  reversion signal
+2026-11-19 14:56:34,234 INFO scalp_reversion   value $198.01  cash $148.04  holding ['RIOT']
+2026-11-19 14:56:34,537 INFO scalp_reversion_large_fast BUY  COIN  $  50.00 @ 113.4  reversion signal
+2026-11-19 14:56:34,538 INFO scalp_reversion_large_fast value $197.47  cash $147.50  holding ['COIN']
+2026-11-19 14:57:34,288 INFO scalp_reversion   BUY  MARA  $  50.00 @ 6.641  reversion signal
+2026-11-19 14:57:34,289 INFO scalp_reversion   value $197.62  cash $98.04  holding ['RIOT', 'MARA']
+2026-11-19 15:00:34,040 INFO wsb_crowd         BUY  AMZN  $  67.83 @ 272  WSB mentions spiking
+2026-11-19 15:00:34,040 INFO wsb_crowd         BUY  PANW  $  67.83 @ 365.8  WSB mentions spiking
+2026-11-19 15:00:34,040 INFO wsb_crowd         BUY  UNH   $  67.83 @ 342.3  WSB mentions spiking
+2026-11-19 15:00:34,040 INFO wsb_crowd         value $203.39  cash $0.00  holding ['AMZN', 'PANW', 'UNH']
+2026-11-19 15:00:34,041 INFO overnight_qqq     SELL QQQ   $ 196.13 @ 671.3  morning exit  P/L $+3.97
+2026-11-19 15:00:34,041 INFO overnight_qqq     value $196.13  cash $196.13  holding -
+2026-11-19 15:00:34,573 INFO activist_13d      BUY  TRIP  $  50.00 @ 7.194  Pale Fire Capital SICAV a.s. disclosed 7.4% (13D)
+2026-11-19 15:00:34,573 INFO activist_13d      BUY  BKD   $  50.00 @ 8.784  CARRONADE CAPITAL MANAGEMENT, LP disclosed 5.8% (13D)
+2026-11-19 15:00:34,574 INFO activist_13d      value $202.04  cash $0.00  holding ['ASPE', 'FUN', 'TRIP', 'BKD']
+2026-11-19 15:01:34,906 INFO scalp_orb5_large  BUY  PLTR  $  50.00 @ 166.1  orb5 signal
+2026-11-19 15:01:34,907 INFO scalp_orb5_large  value $197.35  cash $147.38  holding ['PLTR']
+2026-11-19 15:02:35,363 INFO scalp_reversion_large_fast SELL COIN  $  50.25 @ 114  reversion exit: target  P/L $+0.25
+2026-11-19 15:02:35,364 INFO scalp_reversion_large_fast value $197.74  cash $197.74  holding -
+2026-11-19 15:02:40,847 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
+2026-11-19 15:02:51,678 INFO activist: checked 13D feed: nothing new

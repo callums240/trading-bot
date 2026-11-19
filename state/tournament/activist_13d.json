@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 100.0,
+ "cash": 0.0,
  "positions": {
   "ASPE": {
    "qty": 3.98365982413337,
@@ -11,6 +11,16 @@
    "qty": 4.452116925946826,
    "entry": 11.2306125,
    "since": "2026-11-17"
+  },
+  "TRIP": {
+   "qty": 6.950627606919767,
+   "entry": 7.193595,
+   "since": "2026-11-19"
+  },
+  "BKD": {
+   "qty": 5.691914862614252,
+   "entry": 8.784389999999998,
+   "since": "2026-11-19"
   }
  },
  "trades": [
@@ -33,6 +43,26 @@
    "usd": 50.0,
    "reason": "H Partners Management, LLC disclosed 7.2% (13D)",
    "mood": "calm"
+  },
+  {
+   "t": "2026-11-19T10:00-05:00",
+   "side": "buy",
+   "sym": "TRIP",
+   "qty": 6.950628,
+   "price": 7.1936,
+   "usd": 50.0,
+   "reason": "Pale Fire Capital SICAV a.s. disclosed 7.4% (13D)",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:00-05:00",
+   "side": "buy",
+   "sym": "BKD",
+   "qty": 5.691915,
+   "price": 8.7844,
+   "usd": 50.0,
+   "reason": "CARRONADE CAPITAL MANAGEMENT, LP disclosed 5.8% (13D)",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -43,11 +73,12 @@
   "2026-11-16": 197.98,
   "2026-11-17": 196.21,
   "2026-11-18": 201.0,
-  "2026-11-19": 201.62
+  "2026-11-19": 202.2
  },
  "done": [
   "2026-11-10:open",
-  "2026-11-17:open"
+  "2026-11-17:open",
+  "2026-11-19:open"
  ],
  "memo": {},
  "stopped": null
