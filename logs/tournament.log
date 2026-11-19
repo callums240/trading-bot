@@ -2673,3 +2673,9 @@
 2026-11-19 18:14:34,835 INFO scalp_burst       value $191.43  cash $141.89  holding ['SOFI']
 2026-11-19 18:14:55,436 INFO insider: Traceback (most recent call last):
 2026-11-19 18:15:15,746 INFO activist: Traceback (most recent call last):
+2026-11-19 18:18:34,444 INFO scalp_burst       SELL SOFI  $  49.44 @ 13.72  burst exit: stop  P/L $-0.56
+2026-11-19 18:18:34,445 INFO scalp_burst       value $191.33  cash $191.33  holding -
+2026-11-19 18:30:34,460 INFO scalp_burst       BUY  MARA  $  50.00 @ 6.481  burst signal
+2026-11-19 18:30:34,461 INFO scalp_burst       value $191.28  cash $141.33  holding ['MARA']
+2026-11-19 18:30:55,112 INFO insider: Traceback (most recent call last):
+2026-11-19 18:31:05,594 INFO activist: checked 13D feed: nothing new
