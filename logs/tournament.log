@@ -2559,3 +2559,7 @@
 2026-11-19 16:14:35,018 INFO scalp_burst_large value $200.30  cash $50.01  holding ['META', 'AVGO', 'COIN']
 2026-11-19 16:22:55,286 INFO insider: Traceback (most recent call last):
 2026-11-19 16:23:15,576 INFO activist: Traceback (most recent call last):
+2026-11-19 16:37:34,883 INFO scalp_burst_large BUY  TSLA  $  50.00 @ 383.1  burst signal
+2026-11-19 16:37:34,884 INFO scalp_burst_large value $200.52  cash $0.01  holding ['META', 'AVGO', 'COIN', 'TSLA']
+2026-11-19 16:38:39,037 INFO insider: checked 0 new Form 4 filings, found 0 insider purchases
+2026-11-19 16:38:59,323 INFO activist: Traceback (most recent call last):
