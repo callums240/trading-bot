@@ -1,7 +1,23 @@
 {
  "start_cash": 200.0,
- "cash": 197.74484631155624,
- "positions": {},
+ "cash": 46.475127855669456,
+ "positions": {
+  "AMD": {
+   "qty": 0.09393093093330036,
+   "entry": 532.30602,
+   "since": "2026-11-19"
+  },
+  "AVGO": {
+   "qty": 0.1388927836740311,
+   "entry": 359.98990499999996,
+   "since": "2026-11-19"
+  },
+  "PLTR": {
+   "qty": 0.3075006921840581,
+   "entry": 162.60126,
+   "since": "2026-11-19"
+  }
+ },
  "trades": [
   {
    "t": "2026-11-09T11:05-05:00",
@@ -1199,6 +1215,99 @@
    "pnl": 0.25,
    "reason": "reversion exit: target",
    "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:11-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.092445,
+   "price": 540.8603,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:12-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.092445,
+   "price": 536.7015,
+   "usd": 49.62,
+   "pnl": -0.38,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:12-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.093069,
+   "price": 537.2385,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:15-05:00",
+   "side": "sell",
+   "sym": "AMD",
+   "qty": 0.093069,
+   "price": 531.774,
+   "usd": 49.49,
+   "pnl": -0.51,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:15-05:00",
+   "side": "buy",
+   "sym": "AMD",
+   "qty": 0.093931,
+   "price": 532.306,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:15-05:00",
+   "side": "buy",
+   "sym": "AVGO",
+   "qty": 0.138893,
+   "price": 359.9899,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:16-05:00",
+   "side": "buy",
+   "sym": "PLTR",
+   "qty": 0.305489,
+   "price": 163.6718,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:18-05:00",
+   "side": "sell",
+   "sym": "PLTR",
+   "qty": 0.305489,
+   "price": 162.4387,
+   "usd": 49.62,
+   "pnl": -0.38,
+   "reason": "reversion exit: stop",
+   "mood": "nervous"
+  },
+  {
+   "t": "2026-11-19T10:18-05:00",
+   "side": "buy",
+   "sym": "PLTR",
+   "qty": 0.307501,
+   "price": 162.6013,
+   "usd": 50.0,
+   "reason": "reversion signal",
+   "mood": "nervous"
   }
  ],
  "equity": {
@@ -1210,17 +1319,39 @@
   "2026-11-16": 199.01,
   "2026-11-17": 196.59,
   "2026-11-18": 197.5,
-  "2026-11-19": 197.74
+  "2026-11-19": 196.26
  },
  "done": [],
  "memo": {
   "day": "2026-11-19",
-  "open": {},
+  "open": {
+   "AMD": {
+    "tp": 534.43524408,
+    "sl": 530.70910194,
+    "until": "2026-11-19T10:35:33.369745-05:00"
+   },
+   "AVGO": {
+    "tp": 361.42986462,
+    "sl": 358.90993528499996,
+    "until": "2026-11-19T10:35:33.369745-05:00"
+   },
+   "PLTR": {
+    "tp": 163.25166504,
+    "sl": 162.11345622,
+    "until": "2026-11-19T10:38:33.368457-05:00"
+   }
+  },
   "count": {
-   "COIN": 1
+   "COIN": 1,
+   "AMD": 3,
+   "AVGO": 1,
+   "PLTR": 2
   },
   "last_bar": {
-   "COIN": "2026-11-19T09:55:00-05:00"
+   "COIN": "2026-11-19T09:55:00-05:00",
+   "AMD": "2026-11-19T10:14:00-05:00",
+   "AVGO": "2026-11-19T10:14:00-05:00",
+   "PLTR": "2026-11-19T10:17:00-05:00"
   }
  },
  "stopped": null

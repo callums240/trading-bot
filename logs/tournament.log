@@ -2477,3 +2477,31 @@
 2026-11-19 15:02:35,364 INFO scalp_reversion_large_fast value $197.74  cash $197.74  holding -
 2026-11-19 15:02:40,847 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
 2026-11-19 15:02:51,678 INFO activist: checked 13D feed: nothing new
+2026-11-19 15:10:34,706 INFO scalp_orb5_large  SELL PLTR  $  49.73 @ 165.2  orb5 exit: stop  P/L $-0.27
+2026-11-19 15:10:34,707 INFO scalp_orb5_large  value $197.11  cash $197.11  holding -
+2026-11-19 15:11:34,800 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 540.9  reversion signal
+2026-11-19 15:11:34,801 INFO scalp_reversion_large_fast value $197.72  cash $147.74  holding ['AMD']
+2026-11-19 15:12:34,819 WARNING real: options_orb_spy BUY 1x SPY261119P00713000 REJECTED: {"code":40310000,"cost_basis":"35.01","message":"insufficient options buying power","options_buying_power":"32.58"}
+2026-11-19 15:12:34,820 INFO options_orb_spy   BUY  SPY261119P00713000 $  35.00 @ 0.35  SPY 735.15 broke below 735.47; 1x SPY261119P00713000 @ 0.35
+2026-11-19 15:12:34,820 INFO options_orb_spy   value $366.50  cash $332.00  holding ['SPY261119P00713000']
+2026-11-19 15:12:35,316 INFO scalp_reversion_large_fast SELL AMD   $  49.62 @ 536.7  reversion exit: stop  P/L $-0.38
+2026-11-19 15:12:35,316 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 537.2  reversion signal
+2026-11-19 15:12:35,317 INFO scalp_reversion_large_fast value $197.34  cash $147.36  holding ['AMD']
+2026-11-19 15:14:34,991 INFO scalp_orb5_large  BUY  MSFT  $  50.00 @ 522.2  orb5 signal
+2026-11-19 15:14:34,993 INFO scalp_orb5_large  value $197.09  cash $147.11  holding ['MSFT']
+2026-11-19 15:15:34,944 WARNING real: options_orb BUY 1x QQQ261119P00632000 REJECTED: {"code":40310000,"cost_basis":"35.01","message":"insufficient options buying power","options_buying_power":"32.58"}
+2026-11-19 15:15:34,944 INFO options_orb       BUY  QQQ261119P00632000 $  35.00 @ 0.35  QQQ 667.50 broke below 670.13; 1x QQQ261119P00632000 @ 0.35
+2026-11-19 15:15:34,945 INFO options_orb       value $396.50  cash $362.00  holding ['QQQ261119P00632000']
+2026-11-19 15:15:35,367 INFO scalp_reversion   SELL MARA  $  48.89 @ 6.494  reversion exit: stop  P/L $-1.11
+2026-11-19 15:15:35,368 INFO scalp_reversion   value $196.50  cash $146.93  holding ['RIOT']
+2026-11-19 15:15:35,748 INFO scalp_reversion_large_fast SELL AMD   $  49.49 @ 531.8  reversion exit: stop  P/L $-0.51
+2026-11-19 15:15:35,749 INFO scalp_reversion_large_fast BUY  AMD   $  50.00 @ 532.3  reversion signal
+2026-11-19 15:15:35,749 INFO scalp_reversion_large_fast BUY  AVGO  $  50.00 @ 360  reversion signal
+2026-11-19 15:15:35,750 INFO scalp_reversion_large_fast value $196.80  cash $96.85  holding ['AMD', 'AVGO']
+2026-11-19 15:16:35,356 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 163.7  reversion signal
+2026-11-19 15:16:35,357 INFO scalp_reversion_large_fast value $196.88  cash $46.85  holding ['AMD', 'AVGO', 'PLTR']
+2026-11-19 15:18:35,297 INFO scalp_reversion_large_fast SELL PLTR  $  49.62 @ 162.4  reversion exit: stop  P/L $-0.38
+2026-11-19 15:18:35,298 INFO scalp_reversion_large_fast BUY  PLTR  $  50.00 @ 162.6  reversion signal
+2026-11-19 15:18:35,299 INFO scalp_reversion_large_fast value $196.26  cash $46.48  holding ['AMD', 'AVGO', 'PLTR']
+2026-11-19 15:18:39,183 INFO insider: checked 14 new Form 4 filings, found 0 insider purchases
+2026-11-19 15:19:06,789 INFO activist: checked 13D feed: nothing new
