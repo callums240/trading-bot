@@ -1,14 +1,9 @@
 {
   "start_equity": 200.0,
-  "unsettled": [
-    {
-      "symbol": "XLY",
-      "amount": 32.68,
-      "settles": "2026-11-19"
-    }
-  ],
+  "unsettled": [],
   "entries": {
-    "SPY": "2026-11-16"
+    "SPY": "2026-11-16",
+    "XLV": "2026-11-19"
   },
-  "last_run": "2026-11-18"
+  "last_run": "2026-11-19"
 }
