@@ -2845,3 +2845,15 @@
 2026-11-20 18:56:19,229 INFO scalp_burst_large value $195.43  cash $0.00  holding ['AMD', 'NVDA', 'QQQ', 'TSLA']
 2026-11-20 18:56:29,608 INFO insider: checked 9 new Form 4 filings, found 1 insider purchases
 2026-11-20 18:56:42,587 INFO activist: checked 13D feed: nothing new
+2026-11-20 18:57:19,224 INFO scalp_vwap_large  BUY  PLTR  $  50.00 @ 148  vwap signal
+2026-11-20 18:57:19,225 INFO scalp_vwap_large  value $199.64  cash $149.67  holding ['PLTR']
+2026-11-20 18:59:19,265 INFO scalp_vwap_large  SELL PLTR  $  49.76 @ 147.3  vwap exit: stop  P/L $-0.24
+2026-11-20 18:59:19,266 INFO scalp_vwap_large  value $199.43  cash $199.43  holding -
+2026-11-20 19:00:19,065 INFO scalp_vwap        SELL RIOT  $  49.46 @ 16.28  vwap exit: stop  P/L $-0.54
+2026-11-20 19:00:19,066 INFO scalp_vwap        value $201.41  cash $201.41  holding -
+2026-11-20 19:04:19,184 INFO scalp_burst_large SELL AMD   $  49.88 @ 434  burst exit: time limit  P/L $-0.12
+2026-11-20 19:04:19,185 INFO scalp_burst_large value $193.84  cash $49.88  holding ['NVDA', 'QQQ', 'TSLA']
+2026-11-20 19:10:19,274 INFO scalp_burst_large SELL NVDA  $  49.05 @ 133.9  burst exit: stop  P/L $-0.95
+2026-11-20 19:10:19,275 INFO scalp_burst_large value $192.95  cash $98.93  holding ['QQQ', 'TSLA']
+2026-11-20 19:12:26,791 INFO insider: checked 14 new Form 4 filings, found 2 insider purchases
+2026-11-20 19:12:40,196 INFO activist: checked 13D feed: nothing new
