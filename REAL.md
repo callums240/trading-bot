@@ -1,6 +1,6 @@
 # Dress rehearsal: real orders on the paper account
 
-Updated 2026-11-20 15:19 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
+Updated 2026-11-20 16:11 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
 
 ## options_orb
 

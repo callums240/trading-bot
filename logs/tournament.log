@@ -2789,3 +2789,9 @@
 2026-11-20 16:02:46,172 INFO scalp_burst_large value $196.42  cash $196.42  holding -
 2026-11-20 16:06:50,605 INFO insider: checked 11 new Form 4 filings, found 2 insider purchases
 2026-11-20 16:06:51,624 INFO activist: checked 13D feed: nothing new
+2026-11-20 16:11:45,401 INFO options_orb       SELL QQQ261120P00615000 $  62.00 @ 0.62  trailing exit: peaked +245%, now +69%  P/L $+25.00
+2026-11-20 16:11:45,402 INFO options_orb       value $383.00  cash $383.00  holding -
+2026-11-20 16:15:46,017 INFO scalp_burst_large BUY  PLTR  $  50.00 @ 147.9  burst signal
+2026-11-20 16:15:46,018 INFO scalp_burst_large value $196.40  cash $146.42  holding ['PLTR']
+2026-11-20 16:22:56,413 INFO insider: checked 13 new Form 4 filings, found 1 insider purchases
+2026-11-20 16:22:57,318 INFO activist: checked 13D feed: nothing new
