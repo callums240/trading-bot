@@ -2823,3 +2823,7 @@
 2026-11-20 17:46:46,130 INFO scalp_burst_large value $193.88  cash $144.16  holding ['AMD']
 2026-11-20 17:58:49,117 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
 2026-11-20 17:58:51,108 INFO activist: checked 13D feed: nothing new
+2026-11-20 18:00:46,217 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 80.94  burst signal
+2026-11-20 18:00:46,218 INFO scalp_burst_large value $194.06  cash $94.16  holding ['AMD', 'MSTR']
+2026-11-20 18:14:52,453 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
+2026-11-20 18:14:53,330 INFO activist: checked 13D feed: nothing new
