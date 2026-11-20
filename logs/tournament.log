@@ -2809,3 +2809,9 @@
 2026-11-20 17:10:46,083 INFO scalp_burst_large value $195.67  cash $45.89  holding ['AMD', 'AVGO', 'MSTR']
 2026-11-20 17:10:53,417 INFO insider: checked 20 new Form 4 filings, found 2 insider purchases
 2026-11-20 17:11:03,974 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
+2026-11-20 17:13:46,030 INFO scalp_burst_large SELL AMD   $  49.39 @ 431.4  burst exit: stop  P/L $-0.61
+2026-11-20 17:13:46,031 INFO scalp_burst_large value $194.68  cash $95.28  holding ['AVGO', 'MSTR']
+2026-11-20 17:21:46,063 INFO scalp_burst_large SELL AVGO  $  49.40 @ 307.5  burst exit: stop  P/L $-0.60
+2026-11-20 17:21:46,064 INFO scalp_burst_large value $194.42  cash $144.68  holding ['MSTR']
+2026-11-20 17:27:06,706 INFO insider: Traceback (most recent call last):
+2026-11-20 17:27:07,663 INFO activist: checked 13D feed: nothing new
