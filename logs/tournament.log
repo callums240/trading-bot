@@ -2783,3 +2783,9 @@
 2026-11-20 15:42:46,128 INFO scalp_vwap_large  value $199.67  cash $199.67  holding -
 2026-11-20 15:50:56,262 INFO insider: checked 36 new Form 4 filings, found 4 insider purchases
 2026-11-20 15:51:02,400 INFO activist: checked 13D feed: nothing new
+2026-11-20 15:51:46,091 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 81.09  burst signal
+2026-11-20 15:51:46,092 INFO scalp_burst_large value $197.05  cash $147.07  holding ['MSTR']
+2026-11-20 16:02:46,171 INFO scalp_burst_large SELL MSTR  $  49.35 @ 80.03  burst exit: stop  P/L $-0.65
+2026-11-20 16:02:46,172 INFO scalp_burst_large value $196.42  cash $196.42  holding -
+2026-11-20 16:06:50,605 INFO insider: checked 11 new Form 4 filings, found 2 insider purchases
+2026-11-20 16:06:51,624 INFO activist: checked 13D feed: nothing new
