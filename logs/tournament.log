@@ -2737,3 +2737,25 @@
 2026-11-20 14:30:56,945 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
 2026-11-20 14:46:50,919 INFO insider: checked 15 new Form 4 filings, found 3 insider purchases
 2026-11-20 14:46:52,467 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
+2026-11-20 15:00:44,779 INFO orb_tqqq          BUY  TQQQ  $ 199.75 @ 48.38  QQQ 642.42 > OR high 641.71
+2026-11-20 15:00:44,780 INFO orb_tqqq          value $199.65  cash $0.00  holding ['TQQQ']
+2026-11-20 15:00:44,944 INFO gap_fade          BUY  AMD   $  95.67 @ 473.5  gap down, bouncing
+2026-11-20 15:00:44,945 INFO gap_fade          BUY  SMCI  $  95.67 @ 23.49  gap down, bouncing
+2026-11-20 15:00:44,945 INFO gap_fade          value $191.24  cash $0.00  holding ['AMD', 'SMCI']
+2026-11-20 15:00:45,016 INFO wsb_crowd         BUY  AMD   $  65.53 @ 473.5  WSB mentions spiking
+2026-11-20 15:00:45,016 INFO wsb_crowd         BUY  GME   $  65.53 @ 27.05  WSB mentions spiking
+2026-11-20 15:00:45,016 INFO wsb_crowd         BUY  IT    $  65.53 @ 177.6  WSB mentions spiking
+2026-11-20 15:00:45,017 INFO wsb_crowd         value $196.51  cash $0.00  holding ['AMD', 'GME', 'IT']
+2026-11-20 15:00:45,017 INFO overnight_qqq     SELL QQQ   $ 195.08 @ 642.1  morning exit  P/L $-1.05
+2026-11-20 15:00:45,017 INFO overnight_qqq     value $195.08  cash $195.08  holding -
+2026-11-20 15:00:45,881 INFO nonews_dip        BUY  ARM   $  48.98 @ 170.1  opened -4.2% with no company news
+2026-11-20 15:00:45,882 INFO nonews_dip        value $195.88  cash $51.03  holding ['KLAC', 'ANET', 'ARM']
+2026-11-20 15:00:46,531 WARNING real: options_orb BUY 1x QQQ261120C00657000 REJECTED: {"code":40310000,"cost_basis":"37.01","message":"insufficient options buying power","options_buying_power":"0.59"}
+2026-11-20 15:00:46,532 INFO options_orb       BUY  QQQ261120C00657000 $  37.00 @ 0.37  QQQ 642.42 broke above 641.71; 1x QQQ261120C00657000 @ 0.37
+2026-11-20 15:00:46,532 INFO options_orb       value $375.00  cash $340.00  holding ['QQQ261120C00657000']
+2026-11-20 15:00:46,840 INFO options_orb_spy   BUY  SPY261120C00732000 $  36.00 @ 0.36  SPY 717.82 broke above 717.24; 1x SPY261120C00732000 @ 0.36
+2026-11-20 15:00:46,841 INFO options_orb_spy   value $347.50  cash $312.00  holding ['SPY261120C00732000']
+2026-11-20 15:01:45,974 INFO scalp_burst_large BUY  PLTR  $  50.00 @ 151.8  burst signal
+2026-11-20 15:01:45,975 INFO scalp_burst_large value $197.59  cash $147.62  holding ['PLTR']
+2026-11-20 15:03:06,553 INFO insider: Traceback (most recent call last):
+2026-11-20 15:03:07,388 INFO activist: checked 13D feed: nothing new
