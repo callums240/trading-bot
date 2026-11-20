@@ -1,6 +1,6 @@
 # What's working
 
-Updated 2026-11-20 14:31 UTC from **188 completed trades** over 11 trading day(s) (2026-11-05 to 2026-11-19).
+Updated 2026-11-20 14:46 UTC from **188 completed trades** over 11 trading day(s) (2026-11-05 to 2026-11-19).
 
 How to read this: *Avg trade* is the average % made or lost per trade after costs. A row is only called **working** or **losing** once it has 30+ trades and its average is about 2 standard errors from zero (roughly 95% sure it isn't luck). Big samples beat big numbers.
 
