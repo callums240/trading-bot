@@ -2874,3 +2874,21 @@
 2026-11-20 20:00:30,720 INFO activist: checked 13D feed: nothing new
 2026-11-20 20:16:27,859 INFO insider: checked 25 new Form 4 filings, found 2 insider purchases
 2026-11-20 20:16:29,174 INFO activist: checked 13D feed: nothing new
+2026-11-20 20:26:19,101 INFO scalp_burst_large SELL AMD   $  49.46 @ 424.8  burst exit: stop  P/L $-0.54
+2026-11-20 20:26:19,102 INFO scalp_burst_large value $191.36  cash $92.12  holding ['META', 'AVGO']
+2026-11-20 20:30:18,125 INFO orb_tqqq          SELL TQQQ  $ 170.55 @ 41.31  close  P/L $-29.21
+2026-11-20 20:30:18,126 INFO orb_tqqq          value $170.55  cash $170.55  holding -
+2026-11-20 20:30:18,197 INFO gap_fade          SELL AMD   $  85.86 @ 424.9  close  P/L $-9.80
+2026-11-20 20:30:18,197 INFO gap_fade          SELL SMCI  $  88.33 @ 21.69  close  P/L $-7.34
+2026-11-20 20:30:18,197 INFO gap_fade          value $174.19  cash $174.19  holding -
+2026-11-20 20:30:18,267 INFO wsb_crowd         SELL AMD   $  58.82 @ 424.9  close  P/L $-6.72
+2026-11-20 20:30:18,268 INFO wsb_crowd         SELL GME   $  64.29 @ 26.54  close  P/L $-1.24
+2026-11-20 20:30:18,268 INFO wsb_crowd         SELL IT    $  64.82 @ 175.7  close  P/L $-0.72
+2026-11-20 20:30:18,268 INFO wsb_crowd         value $187.93  cash $187.93  holding -
+2026-11-20 20:30:18,269 INFO overnight_qqq     BUY  QQQ   $ 195.08 @ 612  overnight hold
+2026-11-20 20:30:18,269 INFO overnight_qqq     value $194.99  cash $0.00  holding ['QQQ']
+2026-11-20 20:31:18,631 INFO scalp_burst_large SELL AVGO  $  49.39 @ 302.2  burst exit: stop  P/L $-0.61
+2026-11-20 20:31:18,632 INFO scalp_burst_large value $191.08  cash $141.51  holding ['META']
+2026-11-20 20:32:20,378 INFO live bot ran (exit 0): 2026-11-20 20:32:20,304 INFO ==== run end ====
+2026-11-20 20:32:41,066 INFO insider: checked 33 new Form 4 filings, found 4 insider purchases
+2026-11-20 20:32:42,224 INFO activist: checked 13D feed: nothing new
