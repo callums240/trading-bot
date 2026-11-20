@@ -2862,3 +2862,7 @@
 2026-11-20 19:13:19,177 INFO scalp_burst_large value $192.66  cash $192.66  holding -
 2026-11-20 19:28:34,369 INFO insider: checked 26 new Form 4 filings, found 3 insider purchases
 2026-11-20 19:28:35,376 INFO activist: checked 13D feed: nothing new
+2026-11-20 19:37:19,244 INFO scalp_burst_large BUY  META  $  50.00 @ 564.6  burst signal
+2026-11-20 19:37:19,245 INFO scalp_burst_large value $192.63  cash $142.66  holding ['META']
+2026-11-20 19:44:29,386 INFO insider: checked 32 new Form 4 filings, found 5 insider purchases
+2026-11-20 19:44:31,244 INFO activist: checked 13D feed: nothing new
