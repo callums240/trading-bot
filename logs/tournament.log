@@ -2801,3 +2801,11 @@
 2026-11-20 16:39:04,436 INFO activist: checked 13D feed: nothing new
 2026-11-20 16:54:54,560 INFO insider: checked 16 new Form 4 filings, found 2 insider purchases
 2026-11-20 16:55:12,248 INFO activist: checked 13D feed: nothing new
+2026-11-20 17:08:45,967 INFO scalp_burst_large BUY  AMD   $  50.00 @ 436.8  burst signal
+2026-11-20 17:08:45,968 INFO scalp_burst_large value $195.87  cash $145.89  holding ['AMD']
+2026-11-20 17:09:45,998 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 311.2  burst signal
+2026-11-20 17:09:45,999 INFO scalp_burst_large value $195.84  cash $95.89  holding ['AMD', 'AVGO']
+2026-11-20 17:10:46,082 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 80.92  burst signal
+2026-11-20 17:10:46,083 INFO scalp_burst_large value $195.67  cash $45.89  holding ['AMD', 'AVGO', 'MSTR']
+2026-11-20 17:10:53,417 INFO insider: checked 20 new Form 4 filings, found 2 insider purchases
+2026-11-20 17:11:03,974 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
