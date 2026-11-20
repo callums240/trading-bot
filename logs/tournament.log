@@ -2721,3 +2721,5 @@
 2026-11-19 20:53:14,682 INFO scalp_burst_large value $197.62  cash $197.62  holding -
 2026-11-19 20:56:25,148 INFO insider: checked 24 new Form 4 filings, found 2 insider purchases
 2026-11-19 20:56:27,782 INFO activist: checked 13D feed: nothing new
+2026-11-20 01:38:05,967 INFO ==== session start ====
+2026-11-20 01:38:06,093 INFO market closed (opens in 772 min); hourly snapshots
