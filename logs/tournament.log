@@ -2770,3 +2770,12 @@
 2026-11-20 15:17:45,784 INFO scalp_burst_large value $197.07  cash $197.07  holding -
 2026-11-20 15:19:04,746 INFO insider: checked 73 new Form 4 filings, found 1 insider purchases
 2026-11-20 15:19:18,045 INFO activist: checked 13D feed: nothing new
+2026-11-20 15:19:45,770 WARNING real: options_orb BUY 1x QQQ261120P00615000 REJECTED: {"code":40310000,"cost_basis":"37.01","message":"insufficient options buying power","options_buying_power":"0.59"}
+2026-11-20 15:19:45,771 INFO options_orb       BUY  QQQ261120P00615000 $  37.00 @ 0.37  QQQ 633.26 broke below 633.96 (second shot after a stop); 1x QQQ261120P00615000 @ 0.37
+2026-11-20 15:19:45,771 INFO options_orb       value $357.50  cash $321.00  holding ['QQQ261120P00615000']
+2026-11-20 15:21:45,799 INFO options_orb_spy   BUY  SPY261120P00690000 $  26.00 @ 0.26  SPY 711.55 broke below 711.75 (second shot after a stop); 1x SPY261120P00690000 @ 0.26
+2026-11-20 15:21:45,799 INFO options_orb_spy   value $326.50  cash $303.00  holding ['SPY261120P00690000']
+2026-11-20 15:34:46,036 INFO scalp_vwap_large  BUY  AMZN  $  50.00 @ 256.4  vwap signal
+2026-11-20 15:34:46,036 INFO scalp_vwap_large  value $199.93  cash $149.95  holding ['AMZN']
+2026-11-20 15:35:07,086 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-20 15:35:08,244 INFO activist: checked 13D feed: nothing new

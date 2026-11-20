@@ -1,38 +1,38 @@
-# Daily briefing: Friday 20 November 2026, 10:18 ET
+# Daily briefing: Friday 20 November 2026, 10:34 ET
 
 ## Market
 
-**Mood: calm.** Calm: no big move either way.
+**Mood: nervous.** Nervous: the market is down or jittery, and few sectors are rising.
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.48% | -1.72% | -0.13% | +0.64% | +0.72% | 9 of 11 |
+| -0.87% | -2.21% | -0.64% | +0.32% | +3.11% | 8 of 11 |
 
-Sectors today: XLP +2.1%, XLV +1.6%, XLRE +1.1%, XLU +0.9%, XLB +0.6%, XLF +0.5%, XLE +0.4%, XLY +0.2%, XLC +0.1%, XLI -0.1%, XLK -2.9%
+Sectors today: XLP +2.1%, XLRE +1.1%, XLV +1.1%, XLU +0.8%, XLE +0.3%, XLB +0.3%, XLF +0.3%, XLY +0.1%, XLC -0.2%, XLI -0.6%, XLK -3.5%
 
 ## Real paper account (live bot)
 
-Equity $149.02 (started $200.00), cash $0.59. Holding: NVDA (-15.2%), SPY (-3.7%), XLV (+1.5%).
+Equity $147.95 (started $200.00), cash $0.59. Holding: NVDA (-16.0%), SPY (-4.0%), XLV (+1.1%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| activist_13d | $+2.73 | +3.1% | $206.22 | 0 | - | ASPE, FUN, TRIP, BKD |
+| options_orb | $+18.50 | +97.8% | $395.50 | 3 | 0/1 | QQQ261120P00615000 |
+| activist_13d | $+1.56 | +2.5% | $205.05 | 0 | - | ASPE, FUN, TRIP, BKD |
 | midday_momentum | $+0.00 | +0.0% | $200.10 | 0 | - | cash |
 | scalp_vwap | $+0.00 | +1.0% | $201.94 | 0 | - | cash |
-| scalp_vwap_large | $+0.00 | -0.0% | $199.95 | 0 | - | cash |
+| scalp_vwap_large | $-0.02 | -0.0% | $199.93 | 1 | - | AMZN |
 | scalp_burst_large | $-0.55 | -1.5% | $197.07 | 2 | 0/1 | cash |
-| wsb_crowd | $-0.76 | -2.1% | $195.84 | 3 | - | AMD, GME, IT |
-| spy_hold | $-0.90 | -7.2% | $185.54 | 0 | - | SPY |
 | overnight_qqq | $-0.92 | -2.5% | $195.08 | 1 | 0/1 | cash |
-| insider_buys | $-1.76 | -1.0% | $197.96 | 2 | 0/1 | KNOP, LRN, ASPE, WWB |
-| weekly_momentum | $-2.47 | -15.5% | $169.04 | 0 | - | SOFI, AMZN, TSLA |
-| gold_fear | $-3.67 | -11.1% | $177.81 | 0 | - | GDX |
-| gap_fade | $-5.76 | -7.2% | $185.57 | 2 | - | AMD, SMCI |
-| orb_tqqq | $-8.23 | -4.2% | $191.52 | 1 | - | TQQQ |
-| nonews_dip | $-8.89 | -4.4% | $191.25 | 1 | - | KLAC, ANET, ARM |
-| options_orb | $-19.00 | +79.0% | $358.00 | 2 | 0/1 | cash |
-| options_orb_spy | $-19.00 | +64.5% | $329.00 | 2 | 0/1 | cash |
+| spy_hold | $-1.63 | -7.6% | $184.81 | 0 | - | SPY |
+| wsb_crowd | $-2.45 | -2.9% | $194.15 | 3 | - | AMD, GME, IT |
+| weekly_momentum | $-3.10 | -15.8% | $168.41 | 0 | - | SOFI, AMZN, TSLA |
+| gold_fear | $-3.87 | -11.2% | $177.61 | 0 | - | GDX |
+| insider_buys | $-4.28 | -2.3% | $195.44 | 2 | 0/1 | KNOP, LRN, ASPE, WWB |
+| gap_fade | $-8.06 | -8.4% | $183.27 | 2 | - | AMD, SMCI |
+| nonews_dip | $-9.57 | -4.7% | $190.57 | 1 | - | KLAC, ANET, ARM |
+| orb_tqqq | $-11.20 | -5.7% | $188.55 | 1 | - | TQQQ |
+| options_orb_spy | $-19.50 | +64.2% | $328.50 | 3 | 0/1 | SPY261120P00690000 |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.

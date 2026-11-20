@@ -1,10 +1,10 @@
 # Dress rehearsal: real orders on the paper account
 
-Updated 2026-11-20 15:14 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
+Updated 2026-11-20 15:19 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
 
 ## options_orb
 
-Real-order profit so far: **$-18.00**. Orders: 6 sent, 2 filled, 4 rejected or never filled. Cost of worse-than-assumed prices: $-4.00.
+Real-order profit so far: **$-18.00**. Orders: 7 sent, 2 filled, 5 rejected or never filled. Cost of worse-than-assumed prices: $-4.00.
 
 | When (ET) | Side | Contract | Qty | Assumed | Got | Status | Profit | Why |
 |---|---|---|---|---|---|---|---|---|
@@ -14,3 +14,4 @@ Real-order profit so far: **$-18.00**. Orders: 6 sent, 2 filled, 4 rejected or n
 | 11-18 11:21 | buy | QQQ261118P00642000 | 1 | 0.4 | - | rejected |  | {"code":40310000,"cost_basis":"40.01","message":"insufficient options buying power","optio |
 | 11-19 10:15 | buy | QQQ261119P00632000 | 1 | 0.35 | - | rejected |  | {"code":40310000,"cost_basis":"35.01","message":"insufficient options buying power","optio |
 | 11-20 10:00 | buy | QQQ261120C00657000 | 1 | 0.37 | - | rejected |  | {"code":40310000,"cost_basis":"37.01","message":"insufficient options buying power","optio |
+| 11-20 10:19 | buy | QQQ261120P00615000 | 1 | 0.37 | - | rejected |  | {"code":40310000,"cost_basis":"37.01","message":"insufficient options buying power","optio |
