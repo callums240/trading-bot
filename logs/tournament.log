@@ -2837,3 +2837,11 @@
 2026-11-20 18:30:56,240 INFO activist: checked 13D feed: nothing new
 2026-11-20 18:46:58,898 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
 2026-11-20 18:46:59,789 INFO activist: checked 13D feed: nothing new
+2026-11-20 18:56:17,508 INFO ==== session start ====
+2026-11-20 18:56:18,973 INFO scalp_vwap        BUY  RIOT  $  50.00 @ 16.45  vwap signal
+2026-11-20 18:56:18,974 INFO scalp_vwap        value $201.92  cash $151.94  holding ['RIOT']
+2026-11-20 18:56:19,228 INFO scalp_burst_large BUY  QQQ   $  50.00 @ 624.8  burst signal
+2026-11-20 18:56:19,228 INFO scalp_burst_large BUY  TSLA  $  44.89 @ 352.7  burst signal
+2026-11-20 18:56:19,229 INFO scalp_burst_large value $195.43  cash $0.00  holding ['AMD', 'NVDA', 'QQQ', 'TSLA']
+2026-11-20 18:56:29,608 INFO insider: checked 9 new Form 4 filings, found 1 insider purchases
+2026-11-20 18:56:42,587 INFO activist: checked 13D feed: nothing new
