@@ -2827,3 +2827,11 @@
 2026-11-20 18:00:46,218 INFO scalp_burst_large value $194.06  cash $94.16  holding ['AMD', 'MSTR']
 2026-11-20 18:14:52,453 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
 2026-11-20 18:14:53,330 INFO activist: checked 13D feed: nothing new
+2026-11-20 18:18:45,488 INFO options_orb_spy   SELL SPY261120P00690000 $  23.00 @ 0.23  trailing exit: peaked +117%, now -10%  P/L $-3.00
+2026-11-20 18:18:45,488 INFO options_orb_spy   value $326.00  cash $326.00  holding -
+2026-11-20 18:19:45,778 INFO scalp_burst_large BUY  NVDA  $  50.00 @ 136.5  burst signal
+2026-11-20 18:19:45,779 INFO scalp_burst_large value $194.94  cash $44.16  holding ['AMD', 'MSTR', 'NVDA']
+2026-11-20 18:24:45,776 INFO scalp_burst_large SELL MSTR  $  50.73 @ 82.13  burst exit: target  P/L $+0.73
+2026-11-20 18:24:45,777 INFO scalp_burst_large value $195.07  cash $94.89  holding ['AMD', 'NVDA']
+2026-11-20 18:30:55,400 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
+2026-11-20 18:30:56,240 INFO activist: checked 13D feed: nothing new
