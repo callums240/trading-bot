@@ -2835,3 +2835,5 @@
 2026-11-20 18:24:45,777 INFO scalp_burst_large value $195.07  cash $94.89  holding ['AMD', 'NVDA']
 2026-11-20 18:30:55,400 INFO insider: checked 9 new Form 4 filings, found 0 insider purchases
 2026-11-20 18:30:56,240 INFO activist: checked 13D feed: nothing new
+2026-11-20 18:46:58,898 INFO insider: checked 19 new Form 4 filings, found 1 insider purchases
+2026-11-20 18:46:59,789 INFO activist: checked 13D feed: nothing new
