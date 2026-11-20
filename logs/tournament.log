@@ -2759,3 +2759,14 @@
 2026-11-20 15:01:45,975 INFO scalp_burst_large value $197.59  cash $147.62  holding ['PLTR']
 2026-11-20 15:03:06,553 INFO insider: Traceback (most recent call last):
 2026-11-20 15:03:07,388 INFO activist: checked 13D feed: nothing new
+2026-11-20 15:07:45,630 INFO options_orb_spy   SELL SPY261120C00732000 $  17.00 @ 0.17  stop: down 51%  P/L $-19.00
+2026-11-20 15:07:45,631 INFO options_orb_spy   value $329.00  cash $329.00  holding -
+2026-11-20 15:14:45,500 INFO options_orb       SELL QQQ261120C00657000 $  18.00 @ 0.18  stop: down 50%  P/L $-19.00
+2026-11-20 15:14:45,500 INFO options_orb       value $358.00  cash $358.00  holding -
+2026-11-20 15:17:45,267 INFO insider_buys      SELL GLXY  $  42.26 @ 11.76  stop -15%  P/L $-7.74
+2026-11-20 15:17:45,267 INFO insider_buys      BUY  WWB   $  42.26 @ 24.74  2 insider(s) bought $49,750,007
+2026-11-20 15:17:45,268 INFO insider_buys      value $197.96  cash $0.00  holding ['KNOP', 'LRN', 'ASPE', 'WWB']
+2026-11-20 15:17:45,783 INFO scalp_burst_large SELL PLTR  $  49.46 @ 150.1  burst exit: stop  P/L $-0.54
+2026-11-20 15:17:45,784 INFO scalp_burst_large value $197.07  cash $197.07  holding -
+2026-11-20 15:19:04,746 INFO insider: checked 73 new Form 4 filings, found 1 insider purchases
+2026-11-20 15:19:18,045 INFO activist: checked 13D feed: nothing new
