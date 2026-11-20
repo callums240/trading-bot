@@ -2866,3 +2866,9 @@
 2026-11-20 19:37:19,245 INFO scalp_burst_large value $192.63  cash $142.66  holding ['META']
 2026-11-20 19:44:29,386 INFO insider: checked 32 new Form 4 filings, found 5 insider purchases
 2026-11-20 19:44:31,244 INFO activist: checked 13D feed: nothing new
+2026-11-20 19:46:19,279 INFO scalp_burst_large BUY  AMD   $  50.00 @ 429.4  burst signal
+2026-11-20 19:46:19,281 INFO scalp_burst_large value $192.74  cash $92.66  holding ['META', 'AMD']
+2026-11-20 19:59:19,336 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 305.9  burst signal
+2026-11-20 19:59:19,375 INFO scalp_burst_large value $192.85  cash $42.66  holding ['META', 'AMD', 'AVGO']
+2026-11-20 20:00:29,891 INFO insider: checked 24 new Form 4 filings, found 4 insider purchases
+2026-11-20 20:00:30,720 INFO activist: checked 13D feed: nothing new
