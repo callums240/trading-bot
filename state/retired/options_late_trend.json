@@ -1,111 +1,16 @@
 {
  "start_cash": 200.0,
- "cash": 147.48425,
+ "cash": 200.0,
  "positions": {},
- "trades": [
-  {
-   "t": "2026-11-09T14:00-05:00",
-   "side": "buy",
-   "sym": "QQQ261109C00680000",
-   "qty": 100.0,
-   "price": 0.23,
-   "usd": 23.0,
-   "reason": "QQQ +3.3% today, above VWAP 674.45; 1x QQQ261109C00680000 @ 0.23",
-   "mood": "strong"
-  },
-  {
-   "t": "2026-11-09T14:19-05:00",
-   "side": "sell",
-   "sym": "QQQ261109C00680000",
-   "qty": 100.0,
-   "price": 0.1,
-   "usd": 10.0,
-   "pnl": -13.0,
-   "reason": "stop: down 54%",
-   "mood": "strong"
-  },
-  {
-   "t": "2026-11-10T14:00-05:00",
-   "side": "buy",
-   "sym": "QQQ261110P00668000",
-   "qty": 100.0,
-   "price": 0.28,
-   "usd": 28.0,
-   "reason": "QQQ -1.1% today, below VWAP 673.73; 1x QQQ261110P00668000 @ 0.28",
-   "mood": "nervous"
-  },
-  {
-   "t": "2026-11-10T14:10-05:00",
-   "side": "sell",
-   "sym": "QQQ261110P00668000",
-   "qty": 100.0,
-   "price": 0.11,
-   "usd": 11.0,
-   "pnl": -17.0,
-   "reason": "stop: down 59%",
-   "mood": "nervous"
-  },
-  {
-   "t": "2026-11-11T14:00-05:00",
-   "side": "buy",
-   "sym": "QQQ261111C00696000",
-   "qty": 100.0,
-   "price": 0.36,
-   "usd": 36.0,
-   "reason": "QQQ +2.9% today, above VWAP 690.97; 1x QQQ261111C00696000 @ 0.36",
-   "mood": "strong"
-  },
-  {
-   "t": "2026-11-11T14:05-05:00",
-   "side": "sell",
-   "sym": "QQQ261111C00696000",
-   "qty": 100.0,
-   "price": 0.17,
-   "usd": 17.0,
-   "pnl": -19.0,
-   "reason": "stop: down 51%",
-   "mood": "strong"
-  },
-  {
-   "t": "2026-11-16T14:00-05:00",
-   "side": "buy",
-   "sym": "QQQ261116P00659000",
-   "qty": 100.0,
-   "price": 0.35,
-   "usd": 35.0,
-   "reason": "QQQ -2.3% today, below VWAP 666.11; 1x QQQ261116P00659000 @ 0.35",
-   "mood": "nervous"
-  },
-  {
-   "t": "2026-11-16T14:01-05:00",
-   "side": "sell",
-   "sym": "QQQ261116P00659000",
-   "qty": 100.0,
-   "price": 0.3148,
-   "usd": 31.48,
-   "pnl": -3.52,
-   "reason": "STOP: fell below $150",
-   "mood": "nervous"
-  }
- ],
+ "trades": [],
  "equity": {
-  "2026-11-09": 187.0,
-  "2026-11-10": 170.0,
-  "2026-11-11": 151.0,
-  "2026-11-12": 151.0,
-  "2026-11-13": 151.0,
-  "2026-11-16": 147.48
+  "2026-11-19": 200.0
  },
  "done": [],
  "memo": {
-  "day": "2026-11-16",
-  "entries": 1,
-  "held": {
-   "QQQ261116P00659000": {
-    "entry": 0.35,
-    "peak": 0.345
-   }
-  }
+  "day": "2026-11-19",
+  "entries": 0,
+  "held": {}
  },
- "stopped": "2026-11-16"
+ "stopped": null
 }
