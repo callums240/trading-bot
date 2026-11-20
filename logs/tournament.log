@@ -2815,3 +2815,7 @@
 2026-11-20 17:21:46,064 INFO scalp_burst_large value $194.42  cash $144.68  holding ['MSTR']
 2026-11-20 17:27:06,706 INFO insider: Traceback (most recent call last):
 2026-11-20 17:27:07,663 INFO activist: checked 13D feed: nothing new
+2026-11-20 17:33:46,110 INFO scalp_burst_large BUY  AMD   $  50.00 @ 435.1  burst signal
+2026-11-20 17:33:46,111 INFO scalp_burst_large value $194.41  cash $94.68  holding ['MSTR', 'AMD']
+2026-11-20 17:42:56,233 INFO insider: checked 27 new Form 4 filings, found 1 insider purchases
+2026-11-20 17:43:22,880 INFO activist: checked 1 new 13D filings, 0 look like activist stakes
