@@ -3020,3 +3020,11 @@
 2026-11-23 16:11:38,035 INFO activist: checked 13D feed: nothing new
 2026-11-23 16:27:14,886 INFO insider: checked 11 new Form 4 filings, found 1 insider purchases
 2026-11-23 16:27:15,699 INFO activist: checked 13D feed: nothing new
+2026-11-23 16:37:11,053 INFO scalp_burst_large SELL MSTR  $  49.43 @ 87.15  burst exit: stop  P/L $-0.57
+2026-11-23 16:37:11,054 INFO scalp_burst_large value $190.51  cash $140.50  holding ['AVGO']
+2026-11-23 16:38:10,951 INFO scalp_vwap_large  SELL AVGO  $  49.76 @ 309.7  vwap exit: stop  P/L $-0.24
+2026-11-23 16:38:10,952 INFO scalp_vwap_large  value $199.20  cash $199.20  holding -
+2026-11-23 16:43:10,993 INFO scalp_burst_large SELL AVGO  $  49.47 @ 307.9  burst exit: stop  P/L $-0.53
+2026-11-23 16:43:10,994 INFO scalp_burst_large value $189.97  cash $189.97  holding -
+2026-11-23 16:43:27,721 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-23 16:43:28,624 INFO activist: checked 13D feed: nothing new
