@@ -1,9 +1,7 @@
 {
   "start_equity": 200.0,
   "unsettled": [],
-  "entries": {
-    "SPY": "2026-11-16",
-    "XLV": "2026-11-19"
-  },
-  "last_run": "2026-11-20"
+  "entries": {},
+  "last_run": "2026-11-20",
+  "retired": "2026-11-23: leftovers SPY/XLV sold by hand so the rehearsal has cash; bot is sell-only"
 }
