@@ -3018,3 +3018,5 @@
 2026-11-23 16:09:11,318 INFO scalp_burst_large value $191.02  cash $91.07  holding ['AVGO', 'MSTR']
 2026-11-23 16:11:28,828 INFO insider: checked 30 new Form 4 filings, found 1 insider purchases
 2026-11-23 16:11:38,035 INFO activist: checked 13D feed: nothing new
+2026-11-23 16:27:14,886 INFO insider: checked 11 new Form 4 filings, found 1 insider purchases
+2026-11-23 16:27:15,699 INFO activist: checked 13D feed: nothing new
