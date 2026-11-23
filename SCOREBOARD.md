@@ -1,25 +1,25 @@
 # Strategy tournament scoreboard
 
-Updated 2026-11-23 18:19 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
+Updated 2026-11-23 18:35 UTC. Each strategy trades its own virtual $200 at live prices with 0.05% slippage per side (scalpers pay the real small-stock spread). Ranked by return. A strategy that falls to $150 is stopped for good.
 
 | # | Strategy | Value | Return | vs SPY | Trades | Win rate | Small / big wins | Holding | Since |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **options_orb** | $362.00 | +81.0% | +86.7 pts | 28 | 62% | 0 / 10 | cash | 2026-11-04 |
 | 2 | **options_orb_spy** | $301.00 | +50.5% | +56.2 pts | 27 | 47% | 0 / 7 | cash | 2026-11-09 |
-| 3 | **insider_buys** | $207.54 | +3.8% | +9.5 pts | 6 | 0% | 0 / 0 | KNOP, LRN, ASPE, WWB | 2026-11-04 |
+| 3 | **insider_buys** | $207.83 | +3.9% | +9.6 pts | 6 | 0% | 0 / 0 | KNOP, LRN, ASPE, WWB | 2026-11-04 |
 | 4 | **overnight_qqq** | $207.34 | +3.7% | +9.4 pts | 24 | 42% | 4 / 1 | cash | 2026-11-04 |
-| 5 | **activist_13d** | $202.42 | +1.2% | +6.9 pts | 4 | - | 0 / 0 | ASPE, FUN, TRIP, BKD | 2026-11-10 |
-| 6 | **scalp_vwap** | $201.36 | +0.7% | +6.4 pts | 93 | 48% | 22 / 0 | RIVN | 2026-11-05 |
-| 7 | **nonews_dip** | $201.13 | +0.6% | +6.3 pts | 4 | - | 0 / 0 | KLAC, ANET, ARM, UNH | 2026-11-16 |
-| 8 | **scalp_vwap_large** | $199.29 | -0.4% | +5.3 pts | 44 | 48% | 10 / 0 | TSLA, NFLX | 2026-11-09 |
-| 9 | **midday_momentum** | $198.60 | -0.7% | +5.0 pts | 28 | 46% | 6 / 0 | TSLA, RIVN | 2026-11-04 |
+| 5 | **activist_13d** | $203.15 | +1.6% | +7.3 pts | 4 | - | 0 / 0 | ASPE, FUN, TRIP, BKD | 2026-11-10 |
+| 6 | **scalp_vwap** | $201.29 | +0.6% | +6.4 pts | 94 | 47% | 22 / 0 | cash | 2026-11-05 |
+| 7 | **nonews_dip** | $200.95 | +0.5% | +6.2 pts | 4 | - | 0 / 0 | KLAC, ANET, ARM, UNH | 2026-11-16 |
+| 8 | **scalp_vwap_large** | $199.27 | -0.4% | +5.3 pts | 46 | 48% | 11 / 0 | cash | 2026-11-09 |
+| 9 | **midday_momentum** | $198.59 | -0.7% | +5.0 pts | 28 | 46% | 6 / 0 | TSLA, RIVN | 2026-11-04 |
 | 10 | **scalp_burst_large** | $189.97 | -5.0% | +0.7 pts | 112 | 34% | 19 / 0 | cash | 2026-11-09 |
-| 11 | **spy_hold** | $188.61 | -5.7% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
-| 12 | **wsb_crowd** | $185.95 | -7.0% | -1.3 pts | 69 | 39% | 12 / 1 | NVDA, NYT, SOXL | 2026-11-04 |
-| 13 | **gold_fear** | $184.35 | -7.8% | -2.1 pts | 1 | - | 0 / 0 | GDX | 2026-11-16 |
+| 11 | **spy_hold** | $188.58 | -5.7% | - | 1 | - | 0 / 0 | SPY | 2026-11-04 |
+| 12 | **wsb_crowd** | $185.91 | -7.0% | -1.3 pts | 69 | 39% | 12 / 1 | NVDA, NYT, SOXL | 2026-11-04 |
+| 13 | **gold_fear** | $184.25 | -7.9% | -2.2 pts | 1 | - | 0 / 0 | GDX | 2026-11-16 |
 | 14 | **gap_fade** | $174.19 | -12.9% | -7.2 pts | 26 | 31% | 4 / 0 | cash | 2026-11-04 |
-| 15 | **weekly_momentum** | $173.12 | -13.4% | -7.7 pts | 7 | 0% | 0 / 0 | SOFI, AMZN, TSLA | 2026-11-04 |
-| 16 | **orb_tqqq** | $167.54 | -16.2% | -10.5 pts | 11 | 40% | 2 / 0 | TQQQ | 2026-11-04 |
+| 15 | **weekly_momentum** | $172.90 | -13.5% | -7.8 pts | 7 | 0% | 0 / 0 | SOFI, AMZN, TSLA | 2026-11-04 |
+| 16 | **orb_tqqq** | $167.39 | -16.3% | -10.6 pts | 11 | 40% | 2 / 0 | TQQQ | 2026-11-04 |
 
 ## What each strategy does
 

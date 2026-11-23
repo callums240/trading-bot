@@ -3053,3 +3053,11 @@
 2026-11-23 18:03:21,904 INFO activist: checked 13D feed: nothing new
 2026-11-23 18:19:21,734 INFO insider: checked 31 new Form 4 filings, found 6 insider purchases
 2026-11-23 18:19:22,839 INFO activist: checked 13D feed: nothing new
+2026-11-23 18:20:10,725 INFO scalp_vwap        SELL RIVN  $  49.91 @ 11.19  vwap exit: time limit  P/L $-0.09
+2026-11-23 18:20:10,726 INFO scalp_vwap        value $201.29  cash $201.29  holding -
+2026-11-23 18:24:11,331 INFO scalp_vwap_large  SELL TSLA  $  49.96 @ 388  vwap exit: time limit  P/L $-0.04
+2026-11-23 18:24:11,332 INFO scalp_vwap_large  value $199.35  cash $149.20  holding ['NFLX']
+2026-11-23 18:32:12,106 INFO scalp_vwap_large  SELL NFLX  $  50.07 @ 58.09  vwap exit: time limit  P/L $+0.07
+2026-11-23 18:32:12,107 INFO scalp_vwap_large  value $199.27  cash $199.27  holding -
+2026-11-23 18:35:19,577 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
+2026-11-23 18:35:29,307 INFO activist: checked 13D feed: nothing new
