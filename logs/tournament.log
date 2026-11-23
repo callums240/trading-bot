@@ -3036,3 +3036,10 @@
 2026-11-23 16:59:23,132 INFO activist: checked 13D feed: nothing new
 2026-11-23 17:15:29,771 INFO insider: checked 29 new Form 4 filings, found 1 insider purchases
 2026-11-23 17:15:30,541 INFO activist: checked 13D feed: nothing new
+2026-11-23 17:19:11,007 INFO scalp_vwap_large  SELL SPY   $  50.05 @ 722.9  vwap exit: time limit  P/L $+0.05
+2026-11-23 17:19:11,008 INFO scalp_vwap_large  value $199.25  cash $199.25  holding -
+2026-11-23 17:30:10,433 INFO midday_momentum   BUY  TSLA  $ 100.05 @ 390  top gainer at midday
+2026-11-23 17:30:10,433 INFO midday_momentum   BUY  RIVN  $ 100.05 @ 11.32  top gainer at midday
+2026-11-23 17:30:10,434 INFO midday_momentum   value $200.00  cash $0.00  holding ['TSLA', 'RIVN']
+2026-11-23 17:31:18,238 INFO insider: checked 18 new Form 4 filings, found 1 insider purchases
+2026-11-23 17:31:19,016 INFO activist: checked 13D feed: nothing new
