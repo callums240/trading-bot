@@ -3061,3 +3061,6 @@
 2026-11-23 18:32:12,107 INFO scalp_vwap_large  value $199.27  cash $199.27  holding -
 2026-11-23 18:35:19,577 INFO insider: checked 20 new Form 4 filings, found 1 insider purchases
 2026-11-23 18:35:29,307 INFO activist: checked 13D feed: nothing new
+2026-11-23 20:20:45,939 INFO ==== session start ====
+2026-11-23 20:20:49,257 INFO insider: 0000357301-26-000060: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/1696206/000035730126000060/index.json)
+2026-11-23 20:20:49,929 INFO activist: checked 13D feed: nothing new
