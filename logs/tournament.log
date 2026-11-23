@@ -3051,3 +3051,5 @@
 2026-11-23 18:01:11,059 INFO scalp_vwap_large  value $199.19  cash $99.25  holding ['TSLA', 'NFLX']
 2026-11-23 18:03:21,287 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
 2026-11-23 18:03:21,904 INFO activist: checked 13D feed: nothing new
+2026-11-23 18:19:21,734 INFO insider: checked 31 new Form 4 filings, found 6 insider purchases
+2026-11-23 18:19:22,839 INFO activist: checked 13D feed: nothing new
