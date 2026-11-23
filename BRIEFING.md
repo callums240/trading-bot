@@ -1,4 +1,4 @@
-# Daily briefing: Monday 23 November 2026, 09:30 ET
+# Daily briefing: Monday 23 November 2026, 09:35 ET
 
 ## Market
 
@@ -6,25 +6,25 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +4.66% | +6.97% | +3.22% | +2.71% | -14.42% | 10 of 11 |
+| +3.95% | +6.16% | +2.97% | +2.09% | -12.81% | 10 of 11 |
 
-Sectors today: XLK +9.3%, XLI +3.6%, XLY +3.5%, XLC +2.9%, XLB +2.4%, XLF +2.0%, XLRE +1.4%, XLU +1.1%, XLV +0.6%, XLE +0.1%, XLP -0.6%
+Sectors today: XLK +8.3%, XLY +3.1%, XLI +3.0%, XLC +2.6%, XLB +1.6%, XLF +1.5%, XLRE +1.1%, XLU +0.9%, XLE +0.3%, XLV +0.3%, XLP -1.1%
 
 ## Real paper account (live bot)
 
-Equity $163.49 (started $200.00), cash $0.59. Holding: NVDA (-0.9%), SPY (-2.2%), XLV (+0.5%).
+Equity $160.60 (started $200.00), cash $0.59. Holding: NVDA (-3.4%), SPY (-3.0%), XLV (+0.2%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| nonews_dip | $+19.71 | +1.6% | $203.25 | 0 | - | KLAC, ANET, ARM |
-| overnight_qqq | $+14.11 | +4.0% | $207.92 | 0 | - | QQQ |
-| gold_fear | $+12.23 | -7.7% | $184.62 | 0 | - | GDX |
-| weekly_momentum | $+11.91 | -13.9% | $172.17 | 0 | - | SOFI, AMZN, TSLA |
-| insider_buys | $+9.38 | -0.5% | $198.90 | 0 | - | KNOP, LRN, ASPE, WWB |
-| spy_hold | $+9.03 | -5.9% | $188.27 | 0 | - | SPY |
-| activist_13d | $+2.92 | +0.7% | $201.34 | 0 | - | ASPE, FUN, TRIP, BKD |
+| nonews_dip | $+18.27 | +0.9% | $201.81 | 0 | - | KLAC, ANET, ARM |
+| overnight_qqq | $+12.54 | +3.2% | $206.35 | 0 | - | QQQ |
+| weekly_momentum | $+12.09 | -13.8% | $172.35 | 0 | - | SOFI, AMZN, TSLA |
+| gold_fear | $+11.86 | -7.9% | $184.25 | 0 | - | GDX |
+| insider_buys | $+9.65 | -0.4% | $199.17 | 0 | - | KNOP, LRN, ASPE, WWB |
+| spy_hold | $+7.74 | -6.5% | $186.98 | 0 | - | SPY |
+| activist_13d | $+3.34 | +0.9% | $201.76 | 0 | - | ASPE, FUN, TRIP, BKD |
 | gap_fade | $+0.00 | -12.9% | $174.19 | 0 | - | cash |
 | midday_momentum | $+0.00 | +0.0% | $200.10 | 0 | - | cash |
 | options_orb | $+0.00 | +91.5% | $383.00 | 0 | - | cash |
