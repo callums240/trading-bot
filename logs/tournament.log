@@ -2975,3 +2975,13 @@
 2026-11-23 14:35:27,696 INFO activist: checked 13D feed: nothing new
 2026-11-23 14:51:14,403 INFO insider: checked 9 new Form 4 filings, found 1 insider purchases
 2026-11-23 14:51:20,448 INFO activist: checked 13D feed: nothing new
+2026-11-23 15:00:10,457 INFO wsb_crowd         BUY  NVDA  $  62.64 @ 169.4  WSB mentions spiking
+2026-11-23 15:00:10,457 INFO wsb_crowd         BUY  NYT   $  62.64 @ 68.34  WSB mentions spiking
+2026-11-23 15:00:10,457 INFO wsb_crowd         BUY  SOXL  $  62.64 @ 43.08  WSB mentions spiking
+2026-11-23 15:00:10,458 INFO wsb_crowd         value $187.84  cash $0.00  holding ['NVDA', 'NYT', 'SOXL']
+2026-11-23 15:00:10,458 INFO overnight_qqq     SELL QQQ   $ 207.34 @ 650.4  morning exit  P/L $+12.26
+2026-11-23 15:00:10,459 INFO overnight_qqq     value $207.34  cash $207.34  holding -
+2026-11-23 15:00:10,936 INFO nonews_dip        BUY  UNH   $  49.95 @ 330.7  opened -5.6% with no company news
+2026-11-23 15:00:10,937 INFO nonews_dip        value $199.78  cash $1.08  holding ['KLAC', 'ANET', 'ARM', 'UNH']
+2026-11-23 15:07:18,070 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
+2026-11-23 15:07:32,041 INFO activist: checked 13D feed: nothing new
