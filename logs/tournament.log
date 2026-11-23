@@ -3010,3 +3010,11 @@
 2026-11-23 15:46:11,234 INFO scalp_vwap        value $201.37  cash $201.37  holding -
 2026-11-23 15:55:33,881 INFO insider: checked 48 new Form 4 filings, found 3 insider purchases
 2026-11-23 15:55:36,198 INFO activist: checked 13D feed: nothing new
+2026-11-23 16:07:10,919 INFO scalp_vwap_large  BUY  AVGO  $  50.00 @ 311.1  vwap signal
+2026-11-23 16:07:10,920 INFO scalp_vwap_large  value $199.41  cash $149.43  holding ['AVGO']
+2026-11-23 16:07:10,958 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 311.1  burst signal
+2026-11-23 16:07:10,959 INFO scalp_burst_large value $191.05  cash $141.07  holding ['AVGO']
+2026-11-23 16:09:11,317 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 88.16  burst signal
+2026-11-23 16:09:11,318 INFO scalp_burst_large value $191.02  cash $91.07  holding ['AVGO', 'MSTR']
+2026-11-23 16:11:28,828 INFO insider: checked 30 new Form 4 filings, found 1 insider purchases
+2026-11-23 16:11:38,035 INFO activist: checked 13D feed: nothing new
