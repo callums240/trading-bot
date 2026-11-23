@@ -3002,3 +3002,11 @@
 2026-11-23 15:27:11,087 INFO scalp_vwap        value $202.12  cash $152.22  holding ['LCID']
 2026-11-23 15:39:25,378 INFO insider: checked 14 new Form 4 filings, found 2 insider purchases
 2026-11-23 15:39:26,156 INFO activist: checked 13D feed: nothing new
+2026-11-23 15:42:10,776 INFO options_orb       SELL QQQ261123C00672000 $  18.00 @ 0.18  stop: down 53%  P/L $-21.00
+2026-11-23 15:42:10,777 INFO options_orb       value $362.00  cash $362.00  holding -
+2026-11-23 15:46:11,061 INFO options_orb_spy   SELL SPY261123C00738000 $  15.00 @ 0.15  stop: down 61%  P/L $-25.00
+2026-11-23 15:46:11,061 INFO options_orb_spy   value $301.00  cash $301.00  holding -
+2026-11-23 15:46:11,233 INFO scalp_vwap        SELL LCID  $  49.16 @ 2.684  vwap exit: stop  P/L $-0.84
+2026-11-23 15:46:11,234 INFO scalp_vwap        value $201.37  cash $201.37  holding -
+2026-11-23 15:55:33,881 INFO insider: checked 48 new Form 4 filings, found 3 insider purchases
+2026-11-23 15:55:36,198 INFO activist: checked 13D feed: nothing new
