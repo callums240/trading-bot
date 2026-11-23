@@ -2993,3 +2993,12 @@
 2026-11-23 15:21:11,036 INFO scalp_vwap        value $202.22  cash $202.22  holding -
 2026-11-23 15:23:16,826 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
 2026-11-23 15:23:26,663 INFO activist: checked 13D feed: nothing new
+2026-11-23 15:25:10,302 INFO orb_tqqq          BUY  TQQQ  $ 170.55 @ 50.28  QQQ 656.50 > OR high 655.96
+2026-11-23 15:25:10,303 INFO orb_tqqq          value $170.46  cash $0.00  holding ['TQQQ']
+2026-11-23 15:25:10,932 WARNING real: options_orb BUY 1x QQQ261123C00672000 REJECTED: {"code":40310000,"cost_basis":"39.01","message":"insufficient options buying power","options_buying_power":"0.59"}
+2026-11-23 15:25:10,933 INFO options_orb       BUY  QQQ261123C00672000 $  39.00 @ 0.39  QQQ 656.50 broke above 655.96; 1x QQQ261123C00672000 @ 0.39
+2026-11-23 15:25:10,933 INFO options_orb       value $380.50  cash $344.00  holding ['QQQ261123C00672000']
+2026-11-23 15:27:11,086 INFO scalp_vwap        BUY  LCID  $  50.00 @ 2.731  vwap signal
+2026-11-23 15:27:11,087 INFO scalp_vwap        value $202.12  cash $152.22  holding ['LCID']
+2026-11-23 15:39:25,378 INFO insider: checked 14 new Form 4 filings, found 2 insider purchases
+2026-11-23 15:39:26,156 INFO activist: checked 13D feed: nothing new
