@@ -3045,3 +3045,9 @@
 2026-11-23 17:31:19,016 INFO activist: checked 13D feed: nothing new
 2026-11-23 17:47:18,447 INFO insider: checked 22 new Form 4 filings, found 0 insider purchases
 2026-11-23 17:47:41,424 INFO activist: checked 13D feed: nothing new
+2026-11-23 17:54:10,911 INFO scalp_vwap_large  BUY  TSLA  $  50.00 @ 388.4  vwap signal
+2026-11-23 17:54:10,913 INFO scalp_vwap_large  value $199.22  cash $149.25  holding ['TSLA']
+2026-11-23 18:01:11,038 INFO scalp_vwap_large  BUY  NFLX  $  50.00 @ 58.01  vwap signal
+2026-11-23 18:01:11,059 INFO scalp_vwap_large  value $199.19  cash $99.25  holding ['TSLA', 'NFLX']
+2026-11-23 18:03:21,287 INFO insider: checked 31 new Form 4 filings, found 1 insider purchases
+2026-11-23 18:03:21,904 INFO activist: checked 13D feed: nothing new
