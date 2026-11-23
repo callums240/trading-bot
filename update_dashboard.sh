@@ -11,6 +11,6 @@ export PATH=/usr/bin:/bin:/opt/homebrew/bin
   else
     echo "local changes present, not pulling"
   fi
-  .venv/bin/python dashboard.py && git checkout -q -- BRIEFING.md LEARNING.md 2>/dev/null
+  .venv/bin/python dashboard.py --no-open && git checkout -q -- BRIEFING.md LEARNING.md 2>/dev/null
 } >> logs/dashboard_update.log 2>&1
 tail -n 400 logs/dashboard_update.log > logs/.du && mv logs/.du logs/dashboard_update.log
