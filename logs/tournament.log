@@ -3028,3 +3028,9 @@
 2026-11-23 16:43:10,994 INFO scalp_burst_large value $189.97  cash $189.97  holding -
 2026-11-23 16:43:27,721 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
 2026-11-23 16:43:28,624 INFO activist: checked 13D feed: nothing new
+2026-11-23 16:49:10,795 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 11.21  vwap signal
+2026-11-23 16:49:10,797 INFO scalp_vwap        value $201.34  cash $151.37  holding ['RIVN']
+2026-11-23 16:49:10,936 INFO scalp_vwap_large  BUY  SPY   $  50.00 @ 722.1  vwap signal
+2026-11-23 16:49:10,937 INFO scalp_vwap_large  value $199.17  cash $149.20  holding ['SPY']
+2026-11-23 16:59:22,360 INFO insider: checked 29 new Form 4 filings, found 3 insider purchases
+2026-11-23 16:59:23,132 INFO activist: checked 13D feed: nothing new
