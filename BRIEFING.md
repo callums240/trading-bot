@@ -1,4 +1,4 @@
-# Daily briefing: Monday 23 November 2026, 15:36 ET
+# Daily briefing: Monday 23 November 2026, 15:52 ET
 
 ## Market
 
@@ -6,29 +6,29 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +4.88% | +7.06% | +3.38% | +3.14% | -14.11% | 9 of 11 |
+| +4.55% | +6.69% | +3.27% | +2.98% | -13.79% | 9 of 11 |
 
-Sectors today: XLK +9.3%, XLY +4.3%, XLI +4.0%, XLC +3.9%, XLB +3.0%, XLF +2.0%, XLV +1.2%, XLU +1.2%, XLRE +0.9%, XLP -0.1%, XLE -1.2%
+Sectors today: XLK +8.7%, XLY +4.1%, XLI +3.8%, XLC +3.7%, XLB +3.1%, XLF +1.9%, XLV +1.2%, XLU +1.1%, XLRE +1.0%, XLP -0.0%, XLE -1.3%
 
 ## Real paper account (live bot)
 
-Equity $165.89 (started $200.00), cash $64.67. Holding: NVDA (+1.2%).
+Equity $164.69 (started $200.00), cash $64.67. Holding: NVDA (+0.0%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| nonews_dip | $+17.79 | +0.7% | $201.33 | 1 | - | KLAC, ANET, ARM, UNH |
-| insider_buys | $+17.27 | +3.4% | $206.79 | 0 | - | KNOP, LRN, ASPE, WWB |
-| overnight_qqq | $+13.44 | +3.6% | $207.25 | 2 | 1/1 | QQQ |
-| weekly_momentum | $+11.85 | -13.9% | $172.11 | 2 | 0/1 | AMZN, TSLA, META |
-| gold_fear | $+11.81 | -7.9% | $184.20 | 0 | - | GDX |
-| spy_hold | $+9.42 | -5.7% | $188.66 | 0 | - | SPY |
-| activist_13d | $+2.12 | +0.3% | $200.54 | 0 | - | ASPE, FUN, TRIP, BKD |
+| insider_buys | $+17.37 | +3.4% | $206.89 | 0 | - | KNOP, LRN, ASPE, WWB |
+| nonews_dip | $+16.65 | +0.1% | $200.19 | 1 | - | KLAC, ANET, ARM, UNH |
+| overnight_qqq | $+12.71 | +3.3% | $206.52 | 2 | 1/1 | QQQ |
+| gold_fear | $+11.46 | -8.1% | $183.85 | 0 | - | GDX |
+| weekly_momentum | $+11.06 | -14.3% | $171.32 | 2 | 0/1 | AMZN, TSLA, META |
+| spy_hold | $+8.83 | -6.0% | $188.07 | 0 | - | SPY |
+| activist_13d | $+3.33 | +0.9% | $201.75 | 0 | - | ASPE, FUN, TRIP, BKD |
 | scalp_vwap_large | $+0.14 | -0.2% | $199.57 | 12 | 4/6 | cash |
 | gap_fade | $+0.00 | -12.9% | $174.19 | 0 | - | cash |
 | scalp_vwap | $-0.12 | +0.6% | $201.29 | 6 | 1/3 | cash |
-| scalp_burst_large | $-0.60 | -4.8% | $190.47 | 6 | 0/2 | AMD, AVGO |
+| scalp_burst_large | $-0.99 | -5.0% | $190.08 | 6 | 0/2 | AMD, AVGO |
 | midday_momentum | $-1.12 | -0.5% | $198.98 | 4 | 0/2 | cash |
 | wsb_crowd | $-1.13 | -6.6% | $186.80 | 6 | 1/3 | cash |
 | orb_tqqq | $-2.85 | -16.2% | $167.70 | 2 | 0/1 | cash |
