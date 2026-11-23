@@ -3064,3 +3064,22 @@
 2026-11-23 20:20:45,939 INFO ==== session start ====
 2026-11-23 20:20:49,257 INFO insider: 0000357301-26-000060: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/1696206/000035730126000060/index.json)
 2026-11-23 20:20:49,929 INFO activist: checked 13D feed: nothing new
+2026-11-23 20:27:46,075 INFO scalp_vwap_large  SELL SPY   $  50.16 @ 724.4  vwap exit: time limit  P/L $+0.16
+2026-11-23 20:27:46,075 INFO scalp_vwap_large  value $199.57  cash $199.57  holding -
+2026-11-23 20:30:46,029 INFO orb_tqqq          SELL TQQQ  $ 167.70 @ 49.44  close  P/L $-2.85
+2026-11-23 20:30:46,030 INFO orb_tqqq          value $167.70  cash $167.70  holding -
+2026-11-23 20:30:46,037 INFO midday_momentum   SELL TSLA  $  99.65 @ 388.5  close  P/L $-0.40
+2026-11-23 20:30:46,037 INFO midday_momentum   SELL RIVN  $  99.33 @ 11.24  close  P/L $-0.72
+2026-11-23 20:30:46,038 INFO midday_momentum   value $198.98  cash $198.98  holding -
+2026-11-23 20:30:46,045 INFO wsb_crowd         SELL NVDA  $  61.46 @ 166.2  close  P/L $-1.18
+2026-11-23 20:30:46,045 INFO wsb_crowd         SELL NYT   $  62.61 @ 68.31  close  P/L $-0.03
+2026-11-23 20:30:46,045 INFO wsb_crowd         SELL SOXL  $  62.73 @ 43.14  close  P/L $+0.08
+2026-11-23 20:30:46,046 INFO wsb_crowd         value $186.80  cash $186.80  holding -
+2026-11-23 20:30:46,046 INFO overnight_qqq     BUY  QQQ   $ 207.34 @ 653.1  overnight hold
+2026-11-23 20:30:46,047 INFO overnight_qqq     value $207.24  cash $0.00  holding ['QQQ']
+2026-11-23 20:30:46,075 INFO weekly_momentum   SELL SOFI  $  50.26 @ 13.17  dropped out of top 3  P/L $-16.41
+2026-11-23 20:30:46,075 INFO weekly_momentum   BUY  META  $  50.26 @ 601.3  top 20-day return 2026-W48
+2026-11-23 20:30:46,075 INFO weekly_momentum   value $172.22  cash $0.00  holding ['AMZN', 'TSLA', 'META']
+2026-11-23 20:32:46,960 INFO live bot ran (exit 0): 2026-11-23 20:32:46,882 INFO ==== run end ====
+2026-11-23 20:37:00,948 INFO insider: 0001918704-26-036563: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/1682472/000191870426036563/index.json)
+2026-11-23 20:37:02,240 INFO activist: checked 13D feed: nothing new
