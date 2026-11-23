@@ -2985,3 +2985,11 @@
 2026-11-23 15:00:10,937 INFO nonews_dip        value $199.78  cash $1.08  holding ['KLAC', 'ANET', 'ARM', 'UNH']
 2026-11-23 15:07:18,070 INFO insider: checked 16 new Form 4 filings, found 0 insider purchases
 2026-11-23 15:07:32,041 INFO activist: checked 13D feed: nothing new
+2026-11-23 15:14:10,726 INFO scalp_vwap        BUY  AMC   $  50.00 @ 2.711  vwap signal
+2026-11-23 15:14:10,727 INFO scalp_vwap        value $201.30  cash $151.41  holding ['AMC']
+2026-11-23 15:21:10,870 INFO options_orb_spy   BUY  SPY261123C00738000 $  40.00 @ 0.4  SPY 725.48 broke above 724.76; 1x SPY261123C00738000 @ 0.40
+2026-11-23 15:21:10,874 INFO options_orb_spy   value $325.50  cash $286.00  holding ['SPY261123C00738000']
+2026-11-23 15:21:11,035 INFO scalp_vwap        SELL AMC   $  50.81 @ 2.755  vwap exit: target  P/L $+0.81
+2026-11-23 15:21:11,036 INFO scalp_vwap        value $202.22  cash $202.22  holding -
+2026-11-23 15:23:16,826 INFO insider: checked 20 new Form 4 filings, found 0 insider purchases
+2026-11-23 15:23:26,663 INFO activist: checked 13D feed: nothing new

@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 201.40719459752384,
+ "cash": 202.21712438323988,
  "positions": {},
  "trades": [
   {
@@ -921,6 +921,27 @@
    "pnl": -0.54,
    "reason": "vwap exit: stop",
    "mood": "panic"
+  },
+  {
+   "t": "2026-11-23T10:14-05:00",
+   "side": "buy",
+   "sym": "AMC",
+   "qty": 18.446488,
+   "price": 2.7105,
+   "usd": 50.0,
+   "reason": "vwap signal",
+   "mood": "strong"
+  },
+  {
+   "t": "2026-11-23T10:21-05:00",
+   "side": "sell",
+   "sym": "AMC",
+   "qty": 18.446488,
+   "price": 2.7545,
+   "usd": 50.81,
+   "pnl": 0.81,
+   "reason": "vwap exit: target",
+   "mood": "strong"
   }
  ],
  "equity": {
@@ -936,14 +957,18 @@
   "2026-11-18": 202.49,
   "2026-11-19": 201.94,
   "2026-11-20": 201.41,
-  "2026-11-23": 201.41
+  "2026-11-23": 202.22
  },
  "done": [],
  "memo": {
   "day": "2026-11-23",
   "open": {},
-  "count": {},
-  "last_bar": {}
+  "count": {
+   "AMC": 1
+  },
+  "last_bar": {
+   "AMC": "2026-11-23T10:13:00-05:00"
+  }
  },
  "stopped": null
 }
