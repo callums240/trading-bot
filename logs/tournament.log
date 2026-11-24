@@ -3115,3 +3115,10 @@
 2026-11-24 15:00:08,293 INFO overnight_qqq     value $203.80  cash $203.80  holding -
 2026-11-24 15:02:13,984 INFO insider: 0001839882-26-057788: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/9631/000183988226057788/index.json)
 2026-11-24 15:02:15,256 INFO activist: checked 13D feed: nothing new
+2026-11-24 15:04:08,531 INFO scalp_burst_large BUY  PLTR  $  50.00 @ 162.3  burst signal
+2026-11-24 15:04:08,531 INFO scalp_burst_large BUY  NFLX  $  50.00 @ 59.69  burst signal
+2026-11-24 15:04:08,533 INFO scalp_burst_large value $189.89  cash $89.94  holding ['PLTR', 'NFLX']
+2026-11-24 15:16:08,482 INFO scalp_burst_large BUY  MSFT  $  50.00 @ 494.4  burst signal
+2026-11-24 15:16:08,484 INFO scalp_burst_large value $189.78  cash $39.94  holding ['PLTR', 'NFLX', 'MSFT']
+2026-11-24 15:18:14,346 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-24 15:18:15,721 INFO activist: checked 13D feed: nothing new
