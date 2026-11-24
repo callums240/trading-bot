@@ -3226,3 +3226,16 @@
 2026-11-24 20:13:04,207 INFO activist: checked 13D feed: nothing new
 2026-11-24 20:28:52,059 INFO insider: checked 42 new Form 4 filings, found 0 insider purchases
 2026-11-24 20:29:03,091 INFO activist: checked 13D feed: nothing new
+2026-11-24 20:30:36,205 INFO gap_fade          SELL HOOD  $ 172.41 @ 65.32  close  P/L $-1.78
+2026-11-24 20:30:36,205 INFO gap_fade          value $172.41  cash $172.41  holding -
+2026-11-24 20:30:36,254 INFO midday_momentum   SELL PLTR  $ 196.32 @ 159.9  close  P/L $-2.65
+2026-11-24 20:30:36,254 INFO midday_momentum   value $196.32  cash $196.32  holding -
+2026-11-24 20:30:36,301 INFO wsb_crowd         SELL NVDA  $  60.88 @ 152.9  close  P/L $-1.39
+2026-11-24 20:30:36,301 INFO wsb_crowd         SELL HR    $  63.12 @ 20.07  close  P/L $+0.85
+2026-11-24 20:30:36,301 INFO wsb_crowd         SELL AMD   $  61.05 @ 410.8  close  P/L $-1.21
+2026-11-24 20:30:36,302 INFO wsb_crowd         value $185.05  cash $185.05  holding -
+2026-11-24 20:30:36,303 INFO overnight_qqq     BUY  QQQ   $ 203.80 @ 635.6  overnight hold
+2026-11-24 20:30:36,303 INFO overnight_qqq     value $203.70  cash $0.00  holding ['QQQ']
+2026-11-24 20:32:37,605 INFO live bot ran (exit 0): 2026-11-24 20:32:37,458 INFO ==== run end ====
+2026-11-24 20:45:04,283 INFO insider: Traceback (most recent call last):
+2026-11-24 20:45:15,925 INFO activist: checked 13D feed: nothing new
