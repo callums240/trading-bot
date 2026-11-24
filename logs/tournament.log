@@ -3158,3 +3158,7 @@
 2026-11-24 16:06:23,034 INFO activist: checked 13D feed: nothing new
 2026-11-24 16:22:21,028 INFO insider: checked 36 new Form 4 filings, found 0 insider purchases
 2026-11-24 16:22:22,084 INFO activist: checked 13D feed: nothing new
+2026-11-24 16:25:08,376 INFO scalp_vwap        BUY  NIO   $  50.00 @ 2.561  vwap signal
+2026-11-24 16:25:08,377 INFO scalp_vwap        value $201.86  cash $151.97  holding ['NIO']
+2026-11-24 16:38:22,651 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-24 16:38:33,233 INFO activist: checked 13D feed: nothing new
