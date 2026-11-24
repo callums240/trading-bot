@@ -1,4 +1,4 @@
-# Daily briefing: Tuesday 24 November 2026, 12:26 ET
+# Daily briefing: Tuesday 24 November 2026, 12:42 ET
 
 ## Market
 
@@ -6,33 +6,33 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -0.60% | -2.05% | +0.57% | +0.65% | +2.53% | 9 of 11 |
+| -0.39% | -1.75% | +0.82% | +0.82% | +1.20% | 9 of 11 |
 
-Sectors today: XLV +2.9%, XLP +2.1%, XLC +1.0%, XLE +0.9%, XLRE +0.9%, XLF +0.8%, XLY +0.6%, XLU +0.5%, XLB +0.3%, XLI -0.6%, XLK -3.4%
+Sectors today: XLV +3.0%, XLP +2.1%, XLC +1.4%, XLRE +1.1%, XLE +1.0%, XLF +1.0%, XLY +0.8%, XLU +0.6%, XLB +0.5%, XLI -0.3%, XLK -3.0%
 
 ## Real paper account (live bot)
 
-Equity $141.62 (started $200.00), cash $48.60. Holding: NVDA (-7.0%).
+Equity $141.91 (started $200.00), cash $48.60. Holding: NVDA (-6.7%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| midday_momentum | $+0.00 | -0.5% | $198.98 | 0 | - | cash |
+| activist_13d | $+1.23 | +1.8% | $203.59 | 0 | - | ASPE, FUN, TRIP, BKD |
+| midday_momentum | $+0.40 | -0.3% | $199.38 | 1 | - | PLTR |
 | options_orb_spy | $+0.00 | +50.5% | $301.00 | 0 | - | cash |
 | orb_tqqq | $+0.00 | -16.2% | $167.70 | 0 | - | cash |
-| activist_13d | $-0.13 | +1.1% | $202.23 | 0 | - | ASPE, FUN, TRIP, BKD |
-| scalp_vwap | $-0.41 | +0.4% | $200.88 | 5 | 1/2 | RIOT |
-| scalp_vwap_large | $-0.66 | -0.5% | $198.91 | 5 | 0/2 | AMZN |
-| spy_hold | $-0.99 | -6.5% | $187.05 | 0 | - | SPY |
-| weekly_momentum | $-1.34 | -15.2% | $169.68 | 0 | - | AMZN, TSLA, META |
-| scalp_burst_large | $-1.77 | -5.9% | $188.17 | 11 | 1/5 | COIN |
-| wsb_crowd | $-2.36 | -7.8% | $184.44 | 3 | - | NVDA, HR, AMD |
-| gold_fear | $-2.73 | -9.6% | $180.86 | 0 | - | GDX |
+| scalp_vwap | $-0.44 | +0.4% | $200.85 | 6 | 1/2 | RIOT, PLUG |
+| spy_hold | $-0.59 | -6.3% | $187.45 | 0 | - | SPY |
+| scalp_vwap_large | $-0.97 | -0.7% | $198.60 | 8 | 0/4 | cash |
+| weekly_momentum | $-0.99 | -15.0% | $170.03 | 0 | - | AMZN, TSLA, META |
+| wsb_crowd | $-1.39 | -7.3% | $185.41 | 3 | - | NVDA, HR, AMD |
+| scalp_burst_large | $-1.66 | -5.9% | $188.28 | 12 | 1/5 | COIN, MSTR |
+| insider_buys | $-2.30 | +2.7% | $205.47 | 0 | - | KNOP, LRN, ASPE, WWB |
+| gold_fear | $-2.38 | -9.4% | $181.21 | 0 | - | GDX |
+| gap_fade | $-2.42 | -14.1% | $171.77 | 1 | - | HOOD |
 | overnight_qqq | $-2.80 | +1.9% | $203.80 | 1 | 0/1 | cash |
-| insider_buys | $-3.16 | +2.3% | $204.61 | 0 | - | KNOP, LRN, ASPE, WWB |
-| gap_fade | $-3.44 | -14.6% | $170.75 | 1 | - | HOOD |
-| nonews_dip | $-10.34 | -4.7% | $190.58 | 0 | - | KLAC, ANET, ARM, UNH |
+| nonews_dip | $-9.21 | -4.1% | $191.71 | 0 | - | KLAC, ANET, ARM, UNH |
 | options_orb | $-21.00 | +70.5% | $341.00 | 2 | 0/1 | cash |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.
