@@ -3105,3 +3105,13 @@
 2026-11-24 14:30:31,787 INFO activist: checked 13D feed: nothing new
 2026-11-24 14:46:20,900 INFO insider: 0001445546-26-008957: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/2153633/000144554626008957/index.json)
 2026-11-24 14:46:21,880 INFO activist: 0001062993-26-006243: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/1510281/000106299326006243/index.json)
+2026-11-24 15:00:08,272 INFO gap_fade          BUY  HOOD  $ 174.19 @ 65.99  gap down, bouncing
+2026-11-24 15:00:08,273 INFO gap_fade          value $174.10  cash $0.00  holding ['HOOD']
+2026-11-24 15:00:08,290 INFO wsb_crowd         BUY  NVDA  $  62.27 @ 156.4  WSB mentions spiking
+2026-11-24 15:00:08,290 INFO wsb_crowd         BUY  HR    $  62.27 @ 19.8  WSB mentions spiking
+2026-11-24 15:00:08,290 INFO wsb_crowd         BUY  AMD   $  62.27 @ 419  WSB mentions spiking
+2026-11-24 15:00:08,292 INFO wsb_crowd         value $186.71  cash $0.00  holding ['NVDA', 'HR', 'AMD']
+2026-11-24 15:00:08,292 INFO overnight_qqq     SELL QQQ   $ 203.80 @ 642  morning exit  P/L $-3.54
+2026-11-24 15:00:08,293 INFO overnight_qqq     value $203.80  cash $203.80  holding -
+2026-11-24 15:02:13,984 INFO insider: 0001839882-26-057788: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/9631/000183988226057788/index.json)
+2026-11-24 15:02:15,256 INFO activist: checked 13D feed: nothing new
