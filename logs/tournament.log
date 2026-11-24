@@ -3142,3 +3142,9 @@
 2026-11-24 15:34:08,141 INFO real: options_orb SELL QQQ261124P00618000 -> filled @ 0.21
 2026-11-24 15:34:17,817 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
 2026-11-24 15:34:27,236 INFO activist: checked 13D feed: nothing new
+2026-11-24 15:45:08,477 INFO scalp_vwap_large  SELL AVGO  $  49.56 @ 300.8  vwap exit: stop  P/L $-0.44
+2026-11-24 15:45:08,478 INFO scalp_vwap_large  value $199.13  cash $199.13  holding -
+2026-11-24 15:47:08,336 INFO scalp_vwap        SELL AMC   $  50.68 @ 2.884  vwap exit: target  P/L $+0.68
+2026-11-24 15:47:08,337 INFO scalp_vwap        value $201.97  cash $201.97  holding -
+2026-11-24 15:50:23,659 INFO insider: checked 33 new Form 4 filings, found 1 insider purchases
+2026-11-24 15:50:32,567 INFO activist: checked 13D feed: nothing new
