@@ -3101,3 +3101,5 @@
 2026-11-24 12:55:43,812 INFO market closed (opens in 94 min); hourly snapshots
 2026-11-24 13:38:39,293 INFO ==== session start ====
 2026-11-24 13:38:39,600 INFO market closed (opens in 51 min); hourly snapshots
+2026-11-24 14:30:21,136 INFO insider: 0001918704-26-036654: skipped (404 Client Error: Not Found for url: https://www.sec.gov/Archives/edgar/data/1665650/000191870426036654/index.json)
+2026-11-24 14:30:31,787 INFO activist: checked 13D feed: nothing new
