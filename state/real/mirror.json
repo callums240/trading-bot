@@ -1,5 +1,5 @@
 {
- "day": "2026-11-23",
+ "day": "2026-11-24",
  "buys_today": 1,
  "pos": {
   "options_orb": {},
@@ -211,6 +211,37 @@
    "id": null,
    "status": "rejected",
    "error": "{\"code\":40310000,\"cost_basis\":\"39.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"0.59\"}"
+  },
+  {
+   "t": "2026-11-24T10:28:08-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261124P00618000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.4,
+   "virtual": 0.4,
+   "why": "QQQ 634.32 broke below 635.91; 1x QQQ261124P00618000 @ 0.40",
+   "filled_qty": 1,
+   "filled_avg": 0.37,
+   "booked": 1,
+   "id": "341d3f23-2189-4f4a-9a75-547c7dd4842b",
+   "status": "filled"
+  },
+  {
+   "t": "2026-11-24T10:33:08-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261124P00618000",
+   "side": "sell",
+   "qty": 1,
+   "limit": null,
+   "virtual": 0.19,
+   "why": "stop: down 51%",
+   "filled_qty": 1,
+   "filled_avg": 0.21,
+   "booked": 1,
+   "id": "fb109fd0-b16e-4263-a898-d1d2b392fd2e",
+   "status": "filled",
+   "pnl": -16.0
   }
  ]
 }

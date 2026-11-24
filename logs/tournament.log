@@ -3122,3 +3122,23 @@
 2026-11-24 15:16:08,484 INFO scalp_burst_large value $189.78  cash $39.94  holding ['PLTR', 'NFLX', 'MSFT']
 2026-11-24 15:18:14,346 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-24 15:18:15,721 INFO activist: checked 13D feed: nothing new
+2026-11-24 15:23:08,514 INFO scalp_burst_large SELL NFLX  $  49.46 @ 59.05  burst exit: stop  P/L $-0.54
+2026-11-24 15:23:08,515 INFO scalp_burst_large value $188.96  cash $89.40  holding ['PLTR', 'MSFT']
+2026-11-24 15:28:08,305 INFO real: options_orb BUY 1x QQQ261124P00618000 sent (limit 0.40)
+2026-11-24 15:28:08,306 INFO options_orb       BUY  QQQ261124P00618000 $  40.00 @ 0.4  QQQ 634.32 broke below 635.91; 1x QQQ261124P00618000 @ 0.40
+2026-11-24 15:28:08,307 INFO options_orb       value $361.50  cash $322.00  holding ['QQQ261124P00618000']
+2026-11-24 15:28:08,614 INFO scalp_burst_large SELL PLTR  $  49.44 @ 160.5  burst exit: stop  P/L $-0.56
+2026-11-24 15:28:08,615 INFO scalp_burst_large value $188.83  cash $138.83  holding ['MSFT']
+2026-11-24 15:29:08,140 INFO real: options_orb BUY QQQ261124P00618000 -> filled @ 0.37
+2026-11-24 15:33:08,246 INFO real: options_orb SELL 1x QQQ261124P00618000 sent (market)
+2026-11-24 15:33:08,247 INFO options_orb       SELL QQQ261124P00618000 $  19.00 @ 0.19  stop: down 51%  P/L $-21.00
+2026-11-24 15:33:08,247 INFO options_orb       value $341.00  cash $341.00  holding -
+2026-11-24 15:33:08,349 INFO scalp_vwap        BUY  AMC   $  50.00 @ 2.846  vwap signal
+2026-11-24 15:33:08,350 INFO scalp_vwap        value $201.19  cash $151.29  holding ['AMC']
+2026-11-24 15:33:08,468 INFO scalp_vwap_large  BUY  AVGO  $  50.00 @ 303.4  vwap signal
+2026-11-24 15:33:08,469 INFO scalp_vwap_large  value $199.54  cash $149.57  holding ['AVGO']
+2026-11-24 15:33:08,558 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 303.4  burst signal
+2026-11-24 15:33:08,560 INFO scalp_burst_large value $188.99  cash $88.83  holding ['MSFT', 'AVGO']
+2026-11-24 15:34:08,141 INFO real: options_orb SELL QQQ261124P00618000 -> filled @ 0.21
+2026-11-24 15:34:17,817 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
+2026-11-24 15:34:27,236 INFO activist: checked 13D feed: nothing new
