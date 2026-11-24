@@ -3168,3 +3168,9 @@
 2026-11-24 16:47:08,584 INFO scalp_burst_large value $187.93  cash $137.95  holding ['COIN']
 2026-11-24 16:54:12,928 INFO insider: checked 12 new Form 4 filings, found 0 insider purchases
 2026-11-24 16:54:14,007 INFO activist: checked 13D feed: nothing new
+2026-11-24 17:03:08,677 INFO scalp_vwap        SELL NIO   $  49.30 @ 2.525  vwap exit: stop  P/L $-0.70
+2026-11-24 17:03:08,678 INFO scalp_vwap        value $201.27  cash $201.27  holding -
+2026-11-24 17:09:08,337 INFO scalp_vwap        BUY  RIOT  $  50.00 @ 15.88  vwap signal
+2026-11-24 17:09:08,338 INFO scalp_vwap        value $201.24  cash $151.27  holding ['RIOT']
+2026-11-24 17:10:16,683 INFO insider: checked 30 new Form 4 filings, found 1 insider purchases
+2026-11-24 17:10:22,270 INFO activist: checked 13D feed: nothing new
