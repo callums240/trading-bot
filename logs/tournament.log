@@ -3174,3 +3174,10 @@
 2026-11-24 17:09:08,338 INFO scalp_vwap        value $201.24  cash $151.27  holding ['RIOT']
 2026-11-24 17:10:16,683 INFO insider: checked 30 new Form 4 filings, found 1 insider purchases
 2026-11-24 17:10:22,270 INFO activist: checked 13D feed: nothing new
+2026-11-24 17:11:08,458 INFO scalp_vwap_large  BUY  NVDA  $  50.00 @ 153.1  vwap signal
+2026-11-24 17:11:08,458 INFO scalp_vwap_large  BUY  AMZN  $  50.00 @ 253.3  vwap signal
+2026-11-24 17:11:08,459 INFO scalp_vwap_large  value $199.08  cash $99.13  holding ['NVDA', 'AMZN']
+2026-11-24 17:23:08,478 INFO scalp_vwap_large  SELL NVDA  $  49.77 @ 152.4  vwap exit: stop  P/L $-0.23
+2026-11-24 17:23:08,479 INFO scalp_vwap_large  value $198.83  cash $148.89  holding ['AMZN']
+2026-11-24 17:26:36,723 INFO insider: checked 35 new Form 4 filings, found 1 insider purchases
+2026-11-24 17:26:38,167 INFO activist: checked 13D feed: nothing new
