@@ -3201,3 +3201,7 @@
 2026-11-24 17:58:24,463 INFO activist: checked 13D feed: nothing new
 2026-11-24 18:14:21,123 INFO insider: checked 46 new Form 4 filings, found 0 insider purchases
 2026-11-24 18:14:23,998 INFO activist: checked 13D feed: nothing new
+2026-11-24 18:18:08,595 INFO scalp_burst_large SELL COIN  $  50.15 @ 103.3  burst exit: time limit  P/L $+0.15
+2026-11-24 18:18:08,597 INFO scalp_burst_large value $187.56  cash $187.56  holding -
+2026-11-24 18:30:26,441 INFO insider: checked 36 new Form 4 filings, found 2 insider purchases
+2026-11-24 18:30:31,397 INFO activist: checked 13D feed: nothing new
