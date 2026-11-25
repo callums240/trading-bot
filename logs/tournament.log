@@ -3305,3 +3305,9 @@
 2026-11-25 15:50:59,059 INFO activist: checked 13D feed: nothing new
 2026-11-25 16:06:50,908 INFO insider: checked 69 new Form 4 filings, found 2 insider purchases
 2026-11-25 16:07:11,337 INFO activist: checked 13D feed: nothing new
+2026-11-25 16:12:21,682 INFO scalp_vwap        SELL HOOD  $  49.47 @ 61.72  vwap exit: stop  P/L $-0.53
+2026-11-25 16:12:21,683 INFO scalp_vwap        value $202.17  cash $202.17  holding -
+2026-11-25 16:22:21,819 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 71.54  burst signal
+2026-11-25 16:22:21,820 INFO scalp_burst_large value $187.24  cash $87.56  holding ['SPY', 'MSTR']
+2026-11-25 16:22:43,478 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
+2026-11-25 16:22:51,179 INFO activist: checked 13D feed: nothing new
