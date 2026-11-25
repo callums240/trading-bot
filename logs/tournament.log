@@ -3415,3 +3415,7 @@
 2026-11-25 20:32:51,372 INFO live bot ran (exit 0): 2026-11-25 20:32:51,282 INFO ==== run end ====
 2026-11-25 20:37:21,702 INFO insider: checked 16 new Form 4 filings, found 1 insider purchases
 2026-11-25 20:37:24,356 INFO activist: checked 13D feed: nothing new
+2026-11-25 20:38:50,066 INFO scalp_burst_large SELL COIN  $  49.66 @ 102.7  burst exit: time limit  P/L $-0.34
+2026-11-25 20:38:50,068 INFO scalp_burst_large value $190.07  cash $190.07  holding -
+2026-11-25 20:53:09,691 INFO insider: checked 44 new Form 4 filings, found 0 insider purchases
+2026-11-25 20:53:12,707 INFO activist: checked 13D feed: nothing new
