@@ -3311,3 +3311,13 @@
 2026-11-25 16:22:21,820 INFO scalp_burst_large value $187.24  cash $87.56  holding ['SPY', 'MSTR']
 2026-11-25 16:22:43,478 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
 2026-11-25 16:22:51,179 INFO activist: checked 13D feed: nothing new
+2026-11-25 16:26:21,765 INFO scalp_vwap_large  BUY  AAPL  $  50.00 @ 348.9  vwap signal
+2026-11-25 16:26:21,766 INFO scalp_vwap_large  value $198.26  cash $148.29  holding ['AAPL']
+2026-11-25 16:27:21,677 INFO scalp_vwap        BUY  RKLB  $  50.00 @ 42.95  vwap signal
+2026-11-25 16:27:21,678 INFO scalp_vwap        value $202.15  cash $152.17  holding ['RKLB']
+2026-11-25 16:29:21,864 INFO scalp_burst_large SELL SPY   $  49.70 @ 699.3  burst exit: time limit  P/L $-0.30
+2026-11-25 16:29:21,865 INFO scalp_burst_large value $187.52  cash $137.26  holding ['MSTR']
+2026-11-25 16:38:21,773 INFO scalp_vwap_large  SELL AAPL  $  49.72 @ 346.9  vwap exit: stop  P/L $-0.28
+2026-11-25 16:38:21,774 INFO scalp_vwap_large  value $198.00  cash $198.00  holding -
+2026-11-25 16:38:27,514 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
+2026-11-25 16:38:35,166 INFO activist: checked 13D feed: nothing new
