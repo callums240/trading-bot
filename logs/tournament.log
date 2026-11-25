@@ -3343,3 +3343,9 @@
 2026-11-25 17:10:21,887 INFO scalp_vwap_large  value $198.57  cash $198.57  holding -
 2026-11-25 17:10:30,904 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
 2026-11-25 17:10:41,215 INFO activist: checked 13D feed: nothing new
+2026-11-25 17:12:21,832 INFO scalp_burst_large BUY  PLTR  $  36.72 @ 158.8  burst signal
+2026-11-25 17:12:21,833 INFO scalp_burst_large value $187.47  cash $0.00  holding ['META', 'AMZN', 'TSLA', 'PLTR']
+2026-11-25 17:16:21,862 INFO scalp_burst_large SELL META  $  50.78 @ 596  burst exit: target  P/L $+0.78
+2026-11-25 17:16:21,863 INFO scalp_burst_large value $187.86  cash $50.78  holding ['AMZN', 'TSLA', 'PLTR']
+2026-11-25 17:26:34,714 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
+2026-11-25 17:26:42,696 INFO activist: checked 13D feed: nothing new
