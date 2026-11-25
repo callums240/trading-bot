@@ -3329,3 +3329,17 @@
 2026-11-25 16:51:21,814 INFO scalp_vwap_large  value $197.98  cash $148.00  holding ['COIN']
 2026-11-25 16:54:28,980 INFO insider: checked 25 new Form 4 filings, found 4 insider purchases
 2026-11-25 16:54:39,916 INFO activist: checked 13D feed: nothing new
+2026-11-25 16:57:21,849 INFO scalp_vwap_large  BUY  AAPL  $  50.00 @ 348.8  vwap signal
+2026-11-25 16:57:21,850 INFO scalp_vwap_large  value $198.15  cash $98.00  holding ['COIN', 'AAPL']
+2026-11-25 16:59:21,811 INFO scalp_vwap_large  SELL COIN  $  50.28 @ 97.44  vwap exit: target  P/L $+0.28
+2026-11-25 16:59:21,812 INFO scalp_vwap_large  value $198.35  cash $148.28  holding ['AAPL']
+2026-11-25 17:01:21,824 INFO scalp_burst_large BUY  META  $  50.00 @ 586.8  burst signal
+2026-11-25 17:01:21,825 INFO scalp_burst_large value $186.70  cash $136.72  holding ['META']
+2026-11-25 17:07:22,184 INFO scalp_burst_large BUY  AMZN  $  50.00 @ 242  burst signal
+2026-11-25 17:07:22,185 INFO scalp_burst_large value $187.04  cash $86.72  holding ['META', 'AMZN']
+2026-11-25 17:09:21,818 INFO scalp_burst_large BUY  TSLA  $  50.00 @ 369.2  burst signal
+2026-11-25 17:09:21,819 INFO scalp_burst_large value $187.38  cash $36.72  holding ['META', 'AMZN', 'TSLA']
+2026-11-25 17:10:21,886 INFO scalp_vwap_large  SELL AAPL  $  50.29 @ 350.8  vwap exit: target  P/L $+0.29
+2026-11-25 17:10:21,887 INFO scalp_vwap_large  value $198.57  cash $198.57  holding -
+2026-11-25 17:10:30,904 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
+2026-11-25 17:10:41,215 INFO activist: checked 13D feed: nothing new

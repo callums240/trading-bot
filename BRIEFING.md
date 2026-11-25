@@ -1,4 +1,4 @@
-# Daily briefing: Wednesday 25 November 2026, 11:54 ET
+# Daily briefing: Wednesday 25 November 2026, 12:10 ET
 
 ## Market
 
@@ -6,32 +6,32 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -2.62% | -4.09% | -1.57% | -1.46% | +15.62% | 2 of 11 |
+| -1.62% | -2.83% | -0.41% | -0.49% | +10.31% | 5 of 11 |
 
-Sectors today: XLP +0.5%, XLRE +0.2%, XLU -0.1%, XLE -0.1%, XLB -0.2%, XLF -0.8%, XLV -1.3%, XLC -1.4%, XLI -1.6%, XLY -2.1%, XLK -4.9%
+Sectors today: XLRE +1.0%, XLB +0.9%, XLP +0.8%, XLU +0.4%, XLE +0.4%, XLF -0.1%, XLC -0.2%, XLI -0.6%, XLV -0.7%, XLY -0.9%, XLK -3.5%
 
 ## Real paper account (live bot)
 
-Equity $118.88 (started $200.00), cash $32.48. Holding: NVDA (-13.6%).
+Equity $120.21 (started $200.00), cash $32.48. Holding: NVDA (-12.3%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| activist_13d | $+1.56 | +1.4% | $202.80 | 0 | - | ASPE, FUN, TRIP, BKD |
+| activist_13d | $+5.38 | +3.3% | $206.62 | 0 | - | ASPE, FUN, TRIP, BKD |
+| orb_tqqq | $+1.21 | -15.5% | $168.91 | 1 | - | TQQQ |
+| insider_buys | $+0.73 | +4.0% | $207.96 | 0 | - | KNOP, LRN, ASPE, WWB |
+| wsb_crowd | $+0.05 | -7.5% | $185.10 | 3 | - | DELL, AAPL, SOXL |
+| scalp_burst_large | $+0.04 | -6.2% | $187.60 | 7 | 0/2 | META, AMZN, TSLA |
 | midday_momentum | $+0.00 | -1.8% | $196.32 | 0 | - | cash |
-| scalp_vwap_large | $-0.54 | -1.0% | $198.06 | 5 | 0/2 | COIN |
-| scalp_burst_large | $-0.84 | -6.6% | $186.72 | 4 | 0/2 | cash |
-| insider_buys | $-1.10 | +3.1% | $206.13 | 0 | - | KNOP, LRN, ASPE, WWB |
+| scalp_vwap_large | $-0.03 | -0.7% | $198.57 | 8 | 2/4 | cash |
 | scalp_vwap | $-1.11 | +0.8% | $201.59 | 4 | 0/2 | cash |
-| gold_fear | $-4.11 | -12.0% | $175.95 | 0 | - | GDX |
-| gap_fade | $-4.76 | -16.2% | $167.65 | 2 | - | NVDA, AMD |
-| spy_hold | $-4.80 | -8.8% | $182.32 | 0 | - | SPY |
-| orb_tqqq | $-5.78 | -19.0% | $161.92 | 1 | - | TQQQ |
+| gap_fade | $-1.18 | -14.4% | $171.23 | 2 | - | NVDA, AMD |
+| gold_fear | $-1.42 | -10.7% | $178.64 | 0 | - | GDX |
+| spy_hold | $-2.92 | -7.9% | $184.20 | 0 | - | SPY |
+| weekly_momentum | $-4.21 | -17.3% | $165.31 | 0 | - | AMZN, TSLA, META |
 | overnight_qqq | $-6.27 | -0.9% | $198.22 | 1 | 0/1 | cash |
-| wsb_crowd | $-6.44 | -10.7% | $178.61 | 3 | - | DELL, AAPL, SOXL |
-| weekly_momentum | $-6.88 | -18.7% | $162.64 | 0 | - | AMZN, TSLA, META |
-| nonews_dip | $-10.10 | -9.6% | $180.78 | 0 | - | KLAC, ANET, ARM, UNH |
+| nonews_dip | $-6.86 | -8.0% | $184.02 | 0 | - | KLAC, ANET, ARM, UNH |
 | options_orb_spy | $-18.00 | +41.5% | $283.00 | 2 | 0/1 | cash |
 | options_orb | $-20.00 | +60.5% | $321.00 | 2 | 0/1 | cash |
 
