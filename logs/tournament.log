@@ -3321,3 +3321,11 @@
 2026-11-25 16:38:21,774 INFO scalp_vwap_large  value $198.00  cash $198.00  holding -
 2026-11-25 16:38:27,514 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
 2026-11-25 16:38:35,166 INFO activist: checked 13D feed: nothing new
+2026-11-25 16:39:21,733 INFO scalp_vwap        SELL RKLB  $  49.41 @ 42.45  vwap exit: stop  P/L $-0.59
+2026-11-25 16:39:21,734 INFO scalp_vwap        value $201.59  cash $201.59  holding -
+2026-11-25 16:44:21,860 INFO scalp_burst_large SELL MSTR  $  49.46 @ 70.76  burst exit: stop  P/L $-0.54
+2026-11-25 16:44:21,861 INFO scalp_burst_large value $186.72  cash $186.72  holding -
+2026-11-25 16:51:21,813 INFO scalp_vwap_large  BUY  COIN  $  50.00 @ 96.9  vwap signal
+2026-11-25 16:51:21,814 INFO scalp_vwap_large  value $197.98  cash $148.00  holding ['COIN']
+2026-11-25 16:54:28,980 INFO insider: checked 25 new Form 4 filings, found 4 insider purchases
+2026-11-25 16:54:39,916 INFO activist: checked 13D feed: nothing new
