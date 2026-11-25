@@ -3361,3 +3361,5 @@
 2026-11-25 17:56:21,796 INFO scalp_burst_large value $189.02  cash $0.00  holding ['AMZN', 'TSLA', 'AMD', 'META']
 2026-11-25 17:58:26,739 INFO insider: checked 18 new Form 4 filings, found 0 insider purchases
 2026-11-25 17:58:28,021 INFO activist: checked 13D feed: nothing new
+2026-11-25 18:14:24,857 INFO insider: checked 10 new Form 4 filings, found 0 insider purchases
+2026-11-25 18:14:30,644 INFO activist: checked 13D feed: nothing new
