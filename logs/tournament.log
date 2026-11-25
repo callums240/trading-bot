@@ -3376,3 +3376,5 @@
 2026-11-25 18:37:50,547 INFO scalp_burst_large value $190.21  cash $101.99  holding ['META', 'AVGO']
 2026-11-25 18:45:00,250 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
 2026-11-25 18:45:01,756 INFO activist: checked 13D feed: nothing new
+2026-11-25 19:01:00,178 INFO insider: checked 14 new Form 4 filings, found 1 insider purchases
+2026-11-25 19:01:01,428 INFO activist: checked 13D feed: nothing new
