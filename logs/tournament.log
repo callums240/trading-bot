@@ -3378,3 +3378,9 @@
 2026-11-25 18:45:01,756 INFO activist: checked 13D feed: nothing new
 2026-11-25 19:01:00,178 INFO insider: checked 14 new Form 4 filings, found 1 insider purchases
 2026-11-25 19:01:01,428 INFO activist: checked 13D feed: nothing new
+2026-11-25 19:03:50,574 INFO scalp_burst_large SELL AVGO  $  50.84 @ 296.2  burst exit: target  P/L $+0.84
+2026-11-25 19:03:50,575 INFO scalp_burst_large value $191.02  cash $152.83  holding ['META']
+2026-11-25 19:08:50,621 INFO scalp_burst_large BUY  COIN  $  50.00 @ 103.4  burst signal
+2026-11-25 19:08:50,622 INFO scalp_burst_large value $190.95  cash $102.83  holding ['META', 'COIN']
+2026-11-25 19:16:57,912 INFO insider: checked 25 new Form 4 filings, found 1 insider purchases
+2026-11-25 19:16:59,021 INFO activist: checked 13D feed: nothing new
