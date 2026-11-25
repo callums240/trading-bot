@@ -3384,3 +3384,9 @@
 2026-11-25 19:08:50,622 INFO scalp_burst_large value $190.95  cash $102.83  holding ['META', 'COIN']
 2026-11-25 19:16:57,912 INFO insider: checked 25 new Form 4 filings, found 1 insider purchases
 2026-11-25 19:16:59,021 INFO activist: checked 13D feed: nothing new
+2026-11-25 19:25:50,956 INFO scalp_burst_large BUY  MSTR  $  50.00 @ 80.51  burst signal
+2026-11-25 19:25:50,957 INFO scalp_burst_large value $191.12  cash $52.83  holding ['META', 'COIN', 'MSTR']
+2026-11-25 19:26:50,728 INFO scalp_burst_large SELL META  $  38.11 @ 604.3  burst exit: time limit  P/L $+0.05
+2026-11-25 19:26:50,729 INFO scalp_burst_large value $191.16  cash $90.94  holding ['COIN', 'MSTR']
+2026-11-25 19:32:59,073 INFO insider: checked 25 new Form 4 filings, found 2 insider purchases
+2026-11-25 19:33:10,794 INFO activist: checked 13D feed: nothing new
