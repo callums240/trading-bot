@@ -3293,3 +3293,9 @@
 2026-11-25 15:13:21,611 INFO options_orb_spy   value $283.00  cash $283.00  holding -
 2026-11-25 15:18:29,245 INFO insider: checked 19 new Form 4 filings, found 0 insider purchases
 2026-11-25 15:18:35,611 INFO activist: checked 13D feed: nothing new
+2026-11-25 15:27:21,673 INFO scalp_vwap        BUY  HOOD  $  50.00 @ 62.38  vwap signal
+2026-11-25 15:27:21,674 INFO scalp_vwap        value $202.68  cash $152.70  holding ['HOOD']
+2026-11-25 15:32:21,776 INFO scalp_vwap_large  BUY  AVGO  $  50.00 @ 283.7  vwap signal
+2026-11-25 15:32:21,777 INFO scalp_vwap_large  value $198.58  cash $148.60  holding ['AVGO']
+2026-11-25 15:34:28,093 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
+2026-11-25 15:34:28,980 INFO activist: checked 13D feed: nothing new
