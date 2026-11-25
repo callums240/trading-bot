@@ -3349,3 +3349,8 @@
 2026-11-25 17:16:21,863 INFO scalp_burst_large value $187.86  cash $50.78  holding ['AMZN', 'TSLA', 'PLTR']
 2026-11-25 17:26:34,714 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
 2026-11-25 17:26:42,696 INFO activist: checked 13D feed: nothing new
+2026-11-25 17:30:21,562 INFO midday_momentum   BUY  META  $  98.16 @ 594.1  top gainer at midday
+2026-11-25 17:30:21,562 INFO midday_momentum   BUY  SMCI  $  98.16 @ 21.93  top gainer at midday
+2026-11-25 17:30:21,563 INFO midday_momentum   value $196.23  cash $0.00  holding ['META', 'SMCI']
+2026-11-25 17:42:34,114 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
+2026-11-25 17:42:40,317 INFO activist: checked 13D feed: nothing new
