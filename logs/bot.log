@@ -113,3 +113,8 @@
 2026-11-24 20:32:37,047 INFO ignoring your manual positions: ['NVDA']
 2026-11-24 20:32:37,457 INFO sell-only mode: no new buys
 2026-11-24 20:32:37,458 INFO ==== run end ====
+2026-11-25 20:32:50,355 INFO ==== run start (PAPER) ====
+2026-11-25 20:32:50,631 INFO equity $122.26 | cash $32.48 | unsettled $0.00 | settled $32.48
+2026-11-25 20:32:50,696 INFO ignoring your manual positions: ['NVDA']
+2026-11-25 20:32:51,281 INFO sell-only mode: no new buys
+2026-11-25 20:32:51,282 INFO ==== run end ====
