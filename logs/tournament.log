@@ -3369,3 +3369,6 @@
 2026-11-25 18:18:21,846 INFO scalp_burst_large value $190.11  cash $0.73  holding ['AMZN', 'AMD', 'META', 'AVGO']
 2026-11-25 18:27:21,844 INFO scalp_burst_large SELL AMD   $  50.73 @ 395.4  burst exit: target  P/L $+0.73
 2026-11-25 18:27:21,845 INFO scalp_burst_large value $190.33  cash $51.46  holding ['AMZN', 'META', 'AVGO']
+2026-11-25 18:28:49,004 INFO ==== session start ====
+2026-11-25 18:29:07,361 INFO insider: checked 32 new Form 4 filings, found 0 insider purchases
+2026-11-25 18:29:08,665 INFO activist: checked 13D feed: nothing new
