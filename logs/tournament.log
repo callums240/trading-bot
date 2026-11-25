@@ -3264,3 +3264,22 @@
 2026-11-25 14:30:36,771 INFO activist: checked 13D feed: nothing new
 2026-11-25 14:46:31,053 INFO insider: checked 28 new Form 4 filings, found 0 insider purchases
 2026-11-25 14:46:43,471 INFO activist: checked 13D feed: nothing new
+2026-11-25 14:59:21,726 INFO scalp_burst_large BUY  SPY   $  50.00 @ 703.5  burst signal
+2026-11-25 14:59:21,727 INFO scalp_burst_large value $187.53  cash $137.56  holding ['SPY']
+2026-11-25 15:00:21,540 INFO orb_tqqq          BUY  TQQQ  $ 167.70 @ 41.96  QQQ 618.56 > OR high 618.38
+2026-11-25 15:00:21,540 INFO orb_tqqq          value $167.61  cash $0.00  holding ['TQQQ']
+2026-11-25 15:00:21,572 INFO gap_fade          BUY  NVDA  $  86.20 @ 145.7  gap down, bouncing
+2026-11-25 15:00:21,572 INFO gap_fade          BUY  AMD   $  86.20 @ 387.5  gap down, bouncing
+2026-11-25 15:00:21,573 INFO gap_fade          value $172.32  cash $0.00  holding ['NVDA', 'AMD']
+2026-11-25 15:00:21,581 INFO wsb_crowd         BUY  DELL  $  61.68 @ 279.8  WSB mentions spiking
+2026-11-25 15:00:21,581 INFO wsb_crowd         BUY  AAPL  $  61.68 @ 350.8  WSB mentions spiking
+2026-11-25 15:00:21,581 INFO wsb_crowd         BUY  SOXL  $  61.68 @ 27.71  WSB mentions spiking
+2026-11-25 15:00:21,582 INFO wsb_crowd         value $184.96  cash $0.00  holding ['DELL', 'AAPL', 'SOXL']
+2026-11-25 15:00:21,582 INFO overnight_qqq     SELL QQQ   $ 198.22 @ 618.3  morning exit  P/L $-5.58
+2026-11-25 15:00:21,582 INFO overnight_qqq     value $198.22  cash $198.22  holding -
+2026-11-25 15:00:21,925 INFO real: options_orb BUY 1x QQQ261125C00636000 sent (limit 0.36)
+2026-11-25 15:00:21,926 INFO options_orb       BUY  QQQ261125C00636000 $  36.00 @ 0.36  QQQ 618.56 broke above 618.38; 1x QQQ261125C00636000 @ 0.36
+2026-11-25 15:00:21,926 INFO options_orb       value $340.50  cash $305.00  holding ['QQQ261125C00636000']
+2026-11-25 15:01:21,512 INFO real: options_orb BUY QQQ261125C00636000 -> filled @ 0.34
+2026-11-25 15:02:32,640 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-25 15:02:45,197 INFO activist: checked 13D feed: nothing new

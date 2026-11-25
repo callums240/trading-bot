@@ -1,8 +1,13 @@
 {
- "day": "2026-11-24",
+ "day": "2026-11-25",
  "buys_today": 1,
  "pos": {
-  "options_orb": {},
+  "options_orb": {
+   "QQQ261125C00636000": {
+    "qty": 1,
+    "entry": 0.34
+   }
+  },
   "options_orb_spy": {}
  },
  "orders": [
@@ -242,6 +247,21 @@
    "id": "fb109fd0-b16e-4263-a898-d1d2b392fd2e",
    "status": "filled",
    "pnl": -16.0
+  },
+  {
+   "t": "2026-11-25T10:00:21-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261125C00636000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.36,
+   "virtual": 0.36,
+   "why": "QQQ 618.56 broke above 618.38; 1x QQQ261125C00636000 @ 0.36",
+   "filled_qty": 1,
+   "filled_avg": 0.34,
+   "booked": 1,
+   "id": "91d35c22-55f5-43db-aeb9-f308a0a33714",
+   "status": "filled"
   }
  ]
 }
