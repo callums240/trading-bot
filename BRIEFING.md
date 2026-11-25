@@ -1,4 +1,4 @@
-# Daily briefing: Wednesday 25 November 2026, 09:30 ET
+# Daily briefing: Wednesday 25 November 2026, 09:46 ET
 
 ## Market
 
@@ -6,13 +6,13 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| -2.29% | -3.43% | -1.44% | -1.55% | +10.71% | 2 of 11 |
+| -2.98% | -4.36% | -2.21% | -2.09% | +14.24% | 2 of 11 |
 
-Sectors today: XLP +0.5%, XLRE +0.0%, XLU -0.0%, XLV -0.1%, XLE -1.0%, XLB -1.0%, XLF -1.1%, XLY -1.9%, XLC -1.9%, XLI -2.1%, XLK -4.0%
+Sectors today: XLP +0.2%, XLU +0.0%, XLE -0.3%, XLRE -0.3%, XLB -1.2%, XLF -1.3%, XLV -1.4%, XLI -2.3%, XLC -2.6%, XLY -3.0%, XLK -5.0%
 
 ## Real paper account (live bot)
 
-Equity $135.51 (started $200.00), cash $48.53. Holding: NVDA (-13.0%).
+Equity $135.27 (started $200.00), cash $48.53. Holding: NVDA (-13.3%).
 
 ## Tournament today
 
@@ -27,12 +27,12 @@ Equity $135.51 (started $200.00), cash $48.53. Holding: NVDA (-13.0%).
 | scalp_vwap | $+0.00 | +1.3% | $202.70 | 0 | - | cash |
 | scalp_vwap_large | $+0.00 | -0.7% | $198.60 | 0 | - | cash |
 | wsb_crowd | $+0.00 | -7.5% | $185.05 | 0 | - | cash |
-| insider_buys | $-1.27 | +3.0% | $205.96 | 0 | - | KNOP, LRN, ASPE, WWB |
-| activist_13d | $-1.57 | -0.2% | $199.67 | 0 | - | ASPE, FUN, TRIP, BKD |
-| spy_hold | $-4.18 | -8.5% | $182.94 | 0 | - | SPY |
-| gold_fear | $-6.44 | -13.2% | $173.62 | 0 | - | GDX |
-| weekly_momentum | $-6.85 | -18.7% | $162.67 | 0 | - | AMZN, TSLA, META |
-| overnight_qqq | $-6.92 | -1.2% | $197.57 | 0 | - | QQQ |
-| nonews_dip | $-10.00 | -9.6% | $180.88 | 0 | - | KLAC, ANET, ARM, UNH |
+| spy_hold | $-5.46 | -9.2% | $181.66 | 0 | - | SPY |
+| gold_fear | $-7.67 | -13.8% | $172.39 | 0 | - | GDX |
+| activist_13d | $-8.11 | -3.4% | $193.13 | 0 | - | ASPE, FUN, TRIP, BKD |
+| weekly_momentum | $-8.80 | -19.6% | $160.72 | 0 | - | AMZN, TSLA, META |
+| overnight_qqq | $-8.83 | -2.2% | $195.66 | 0 | - | QQQ |
+| insider_buys | $-10.78 | -1.8% | $196.45 | 0 | - | KNOP, LRN, ASPE, WWB |
+| nonews_dip | $-12.35 | -10.7% | $178.53 | 0 | - | KLAC, ANET, ARM, UNH |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.
