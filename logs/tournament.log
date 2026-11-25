@@ -3299,3 +3299,7 @@
 2026-11-25 15:32:21,777 INFO scalp_vwap_large  value $198.58  cash $148.60  holding ['AVGO']
 2026-11-25 15:34:28,093 INFO insider: checked 24 new Form 4 filings, found 1 insider purchases
 2026-11-25 15:34:28,980 INFO activist: checked 13D feed: nothing new
+2026-11-25 15:46:21,710 INFO scalp_vwap_large  SELL AVGO  $  49.69 @ 281.9  vwap exit: stop  P/L $-0.31
+2026-11-25 15:46:21,711 INFO scalp_vwap_large  value $198.29  cash $198.29  holding -
+2026-11-25 15:50:57,652 INFO insider: Traceback (most recent call last):
+2026-11-25 15:50:59,059 INFO activist: checked 13D feed: nothing new
