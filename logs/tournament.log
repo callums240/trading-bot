@@ -3354,3 +3354,10 @@
 2026-11-25 17:30:21,563 INFO midday_momentum   value $196.23  cash $0.00  holding ['META', 'SMCI']
 2026-11-25 17:42:34,114 INFO insider: checked 23 new Form 4 filings, found 0 insider purchases
 2026-11-25 17:42:40,317 INFO activist: checked 13D feed: nothing new
+2026-11-25 17:44:21,817 INFO scalp_burst_large BUY  AMD   $  50.00 @ 389.8  burst signal
+2026-11-25 17:44:21,819 INFO scalp_burst_large value $188.12  cash $0.78  holding ['AMZN', 'TSLA', 'PLTR', 'AMD']
+2026-11-25 17:56:21,794 INFO scalp_burst_large SELL PLTR  $  37.28 @ 161.2  burst exit: target  P/L $+0.56
+2026-11-25 17:56:21,794 INFO scalp_burst_large BUY  META  $  38.06 @ 603.6  burst signal
+2026-11-25 17:56:21,796 INFO scalp_burst_large value $189.02  cash $0.00  holding ['AMZN', 'TSLA', 'AMD', 'META']
+2026-11-25 17:58:26,739 INFO insider: checked 18 new Form 4 filings, found 0 insider purchases
+2026-11-25 17:58:28,021 INFO activist: checked 13D feed: nothing new
