@@ -1,6 +1,6 @@
 {
  "start_cash": 200.0,
- "cash": 301.0,
+ "cash": 283.0,
  "positions": {},
  "trades": [
   {
@@ -287,6 +287,27 @@
    "pnl": -25.0,
    "reason": "stop: down 61%",
    "mood": "strong"
+  },
+  {
+   "t": "2026-11-25T10:03-05:00",
+   "side": "buy",
+   "sym": "SPY261125C00718000",
+   "qty": 100.0,
+   "price": 0.35,
+   "usd": 35.0,
+   "reason": "SPY 704.28 broke above 703.73; 1x SPY261125C00718000 @ 0.35",
+   "mood": "panic"
+  },
+  {
+   "t": "2026-11-25T10:13-05:00",
+   "side": "sell",
+   "sym": "SPY261125C00718000",
+   "qty": 100.0,
+   "price": 0.17,
+   "usd": 17.0,
+   "pnl": -18.0,
+   "reason": "stop: down 50%",
+   "mood": "panic"
   }
  ],
  "equity": {
@@ -302,13 +323,15 @@
   "2026-11-20": 326.0,
   "2026-11-23": 301.0,
   "2026-11-24": 301.0,
-  "2026-11-25": 301.0
+  "2026-11-25": 283.0
  },
  "done": [],
  "memo": {
   "day": "2026-11-25",
-  "entries": 0,
-  "held": {}
+  "entries": 1,
+  "held": {},
+  "dir": "C",
+  "stops": 1
  },
  "stopped": null
 }

@@ -3283,3 +3283,13 @@
 2026-11-25 15:01:21,512 INFO real: options_orb BUY QQQ261125C00636000 -> filled @ 0.34
 2026-11-25 15:02:32,640 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-25 15:02:45,197 INFO activist: checked 13D feed: nothing new
+2026-11-25 15:03:21,705 INFO options_orb_spy   BUY  SPY261125C00718000 $  35.00 @ 0.35  SPY 704.28 broke above 703.73; 1x SPY261125C00718000 @ 0.35
+2026-11-25 15:03:21,706 INFO options_orb_spy   value $300.00  cash $266.00  holding ['SPY261125C00718000']
+2026-11-25 15:08:21,626 INFO real: options_orb SELL 1x QQQ261125C00636000 sent (market)
+2026-11-25 15:08:21,626 INFO options_orb       SELL QQQ261125C00636000 $  16.00 @ 0.16  stop: down 54%  P/L $-20.00
+2026-11-25 15:08:21,626 INFO options_orb       value $321.00  cash $321.00  holding -
+2026-11-25 15:09:21,560 INFO real: options_orb SELL QQQ261125C00636000 -> filled @ 0.18
+2026-11-25 15:13:21,611 INFO options_orb_spy   SELL SPY261125C00718000 $  17.00 @ 0.17  stop: down 50%  P/L $-18.00
+2026-11-25 15:13:21,611 INFO options_orb_spy   value $283.00  cash $283.00  holding -
+2026-11-25 15:18:29,245 INFO insider: checked 19 new Form 4 filings, found 0 insider purchases
+2026-11-25 15:18:35,611 INFO activist: checked 13D feed: nothing new

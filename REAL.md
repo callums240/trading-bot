@@ -1,10 +1,10 @@
 # Dress rehearsal: real orders on the paper account
 
-Updated 2026-11-25 15:01 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
+Updated 2026-11-25 15:09 UTC. Strategies mirrored: options_orb. Each row is an order actually sent to Alpaca's paper account. *Assumed* is the price the virtual ledger used; *Got* is what the broker filled.
 
 ## options_orb
 
-Real-order profit so far: **$-34.00**. Orders: 11 sent, 5 filled, 6 rejected or never filled. Cost of worse-than-assumed prices: $-11.00.
+Real-order profit so far: **$-50.00**. Orders: 12 sent, 6 filled, 6 rejected or never filled. Cost of worse-than-assumed prices: $-13.00.
 
 | When (ET) | Side | Contract | Qty | Assumed | Got | Status | Profit | Why |
 |---|---|---|---|---|---|---|---|---|
@@ -19,3 +19,4 @@ Real-order profit so far: **$-34.00**. Orders: 11 sent, 5 filled, 6 rejected or 
 | 11-24 10:28 | buy | QQQ261124P00618000 | 1 | 0.4 | 0.37 | filled |  | QQQ 634.32 broke below 635.91; 1x QQQ261124P00618000 @ 0.40 |
 | 11-24 10:33 | sell | QQQ261124P00618000 | 1 | 0.19 | 0.21 | filled | $-16.00 | stop: down 51% |
 | 11-25 10:00 | buy | QQQ261125C00636000 | 1 | 0.36 | 0.34 | filled |  | QQQ 618.56 broke above 618.38; 1x QQQ261125C00636000 @ 0.36 |
+| 11-25 10:08 | sell | QQQ261125C00636000 | 1 | 0.16 | 0.18 | filled | $-16.00 | stop: down 54% |
