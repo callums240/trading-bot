@@ -1,5 +1,5 @@
 {
- "day": "2026-11-25",
+ "day": "2026-11-27",
  "buys_today": 1,
  "pos": {
   "options_orb": {},
@@ -273,6 +273,22 @@
    "id": "1df8dc0a-a096-4034-afe6-411637ef7ec7",
    "status": "filled",
    "pnl": -16.0
+  },
+  {
+   "t": "2026-11-27T10:44:10-05:00",
+   "strategy": "options_orb",
+   "sym": "QQQ261127C00652000",
+   "side": "buy",
+   "qty": 1,
+   "limit": 0.34,
+   "virtual": 0.34,
+   "why": "QQQ 645.80 broke above 645.74; 1x QQQ261127C00652000 @ 0.34",
+   "filled_qty": 0,
+   "filled_avg": null,
+   "booked": 0,
+   "id": null,
+   "status": "rejected",
+   "error": "{\"code\":40310000,\"cost_basis\":\"34.01\",\"message\":\"insufficient options buying power\",\"options_buying_power\":\"32.41\"}"
   }
  ]
 }

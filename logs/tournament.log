@@ -3489,3 +3489,16 @@
 2026-11-27 15:18:27,818 INFO activist: checked 13D feed: nothing new
 2026-11-27 15:34:17,279 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-27 15:34:20,066 INFO activist: checked 13D feed: nothing new
+2026-11-27 15:36:10,441 INFO scalp_vwap_large  SELL COIN  $  50.40 @ 106.7  vwap exit: target  P/L $+0.40
+2026-11-27 15:36:10,442 INFO scalp_vwap_large  value $198.97  cash $198.97  holding -
+2026-11-27 15:44:10,157 INFO orb_tqqq          BUY  TQQQ  $ 177.74 @ 47.79  QQQ 645.80 > OR high 645.74
+2026-11-27 15:44:10,157 INFO orb_tqqq          value $177.65  cash $0.00  holding ['TQQQ']
+2026-11-27 15:44:10,377 WARNING real: options_orb BUY 1x QQQ261127C00652000 REJECTED: {"code":40310000,"cost_basis":"34.01","message":"insufficient options buying power","options_buying_power":"32.41"}
+2026-11-27 15:44:10,378 INFO options_orb       BUY  QQQ261127C00652000 $  34.00 @ 0.34  QQQ 645.80 broke above 645.74; 1x QQQ261127C00652000 @ 0.34
+2026-11-27 15:44:10,379 INFO options_orb       value $320.50  cash $287.00  holding ['QQQ261127C00652000']
+2026-11-27 15:46:10,311 INFO options_orb_spy   BUY  SPY261127C00730000 $  40.00 @ 0.4  SPY 726.20 broke above 726.05 (second shot after a stop); 1x SPY261127C00730000 @ 0.40
+2026-11-27 15:46:10,312 INFO options_orb_spy   value $258.50  cash $221.00  holding ['SPY261127C00730000']
+2026-11-27 15:50:10,265 INFO options_orb       SELL QQQ261127C00652000 $  16.00 @ 0.16  stop: down 51%  P/L $-18.00
+2026-11-27 15:50:10,266 INFO options_orb       value $303.00  cash $303.00  holding -
+2026-11-27 15:50:31,350 INFO insider: checked 38 new Form 4 filings, found 0 insider purchases
+2026-11-27 15:50:32,371 INFO activist: checked 13D feed: nothing new
