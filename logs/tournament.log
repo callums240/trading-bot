@@ -3487,3 +3487,5 @@
 2026-11-27 15:11:10,406 INFO scalp_vwap_large  value $198.55  cash $148.57  holding ['COIN']
 2026-11-27 15:18:15,752 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
 2026-11-27 15:18:27,818 INFO activist: checked 13D feed: nothing new
+2026-11-27 15:34:17,279 INFO insider: checked 25 new Form 4 filings, found 0 insider purchases
+2026-11-27 15:34:20,066 INFO activist: checked 13D feed: nothing new
