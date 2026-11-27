@@ -3538,3 +3538,14 @@
 2026-11-27 17:36:42,398 INFO scalp_vwap_large  value $198.91  cash $148.94  holding ['MSFT']
 2026-11-27 17:40:59,213 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
 2026-11-27 17:41:00,503 INFO activist: checked 13D feed: nothing new
+2026-11-27 17:44:42,167 INFO scalp_vwap        SELL LCID  $  49.30 @ 2.539  vwap exit: stop  P/L $-0.70
+2026-11-27 17:44:42,169 INFO scalp_vwap        value $200.92  cash $150.89  holding ['RIVN']
+2026-11-27 17:53:42,193 INFO scalp_vwap        BUY  SOUN  $  50.00 @ 2.746  vwap signal
+2026-11-27 17:53:42,195 INFO scalp_vwap        value $200.73  cash $100.89  holding ['RIVN', 'SOUN']
+2026-11-27 17:55:42,244 INFO scalp_vwap        BUY  LCID  $  50.00 @ 2.58  vwap signal
+2026-11-27 17:55:42,246 INFO scalp_vwap        value $201.00  cash $50.89  holding ['RIVN', 'SOUN', 'LCID']
+2026-11-27 17:55:42,704 INFO scalp_burst_large SELL PLTR  $  49.84 @ 171.4  burst exit: time limit  P/L $-0.16
+2026-11-27 17:55:42,704 INFO scalp_burst_large BUY  AVGO  $  50.00 @ 310.1  burst signal
+2026-11-27 17:55:42,705 INFO scalp_burst_large value $189.35  cash $139.38  holding ['AVGO']
+2026-11-27 17:57:07,167 INFO insider: checked 51 new Form 4 filings, found 0 insider purchases
+2026-11-27 17:57:08,611 INFO activist: checked 13D feed: nothing new

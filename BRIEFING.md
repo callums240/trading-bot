@@ -1,4 +1,4 @@
-# Daily briefing: Friday 27 November 2026, 12:40 ET
+# Daily briefing: Friday 27 November 2026, 12:56 ET
 
 ## Market
 
@@ -6,32 +6,32 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +1.29% | +1.89% | +1.40% | +1.12% | -6.40% | 11 of 11 |
+| +1.39% | +2.20% | +1.61% | +1.07% | -7.26% | 11 of 11 |
 
-Sectors today: XLY +2.1%, XLK +1.8%, XLC +1.7%, XLB +1.6%, XLE +1.4%, XLI +1.4%, XLF +1.3%, XLRE +0.6%, XLP +0.5%, XLV +0.3%, XLU +0.2%
+Sectors today: XLK +2.2%, XLY +1.9%, XLC +1.9%, XLB +1.8%, XLI +1.6%, XLE +1.2%, XLF +1.1%, XLRE +0.6%, XLP +0.4%, XLV +0.2%, XLU +0.1%
 
 ## Real paper account (live bot)
 
-Equity $122.76 (started $200.00), cash $32.41. Holding: NVDA (-9.6%).
+Equity $123.73 (started $200.00), cash $32.41. Holding: NVDA (-8.7%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| gold_fear | $+10.67 | -1.5% | $197.09 | 0 | - | GDX |
-| weekly_momentum | $+6.92 | -12.3% | $175.49 | 0 | - | AMZN, TSLA, META |
-| activist_13d | $+6.76 | +7.0% | $213.95 | 0 | - | ASPE, FUN, TRIP, BKD |
-| nonews_dip | $+6.30 | -1.6% | $196.81 | 0 | - | KLAC, ANET, ARM, UNH |
-| insider_buys | $+4.75 | +8.3% | $216.70 | 0 | - | KNOP, LRN, ASPE, WWB |
-| spy_hold | $+2.40 | -5.5% | $189.06 | 0 | - | SPY |
+| gold_fear | $+11.98 | -0.8% | $198.40 | 0 | - | GDX |
+| nonews_dip | $+7.72 | -0.9% | $198.23 | 0 | - | KLAC, ANET, ARM, UNH |
+| weekly_momentum | $+6.49 | -12.5% | $175.06 | 0 | - | AMZN, TSLA, META |
+| activist_13d | $+6.35 | +6.8% | $213.54 | 0 | - | ASPE, FUN, TRIP, BKD |
+| insider_buys | $+4.50 | +8.2% | $216.45 | 0 | - | KNOP, LRN, ASPE, WWB |
+| spy_hold | $+2.59 | -5.4% | $189.25 | 0 | - | SPY |
+| orb_tqqq | $+1.49 | -10.4% | $179.23 | 1 | - | TQQQ |
 | overnight_qqq | $+1.04 | +0.1% | $200.28 | 1 | 1/1 | cash |
-| scalp_vwap_large | $+0.28 | -0.6% | $198.85 | 5 | 1/2 | MSFT |
-| wsb_crowd | $+0.20 | -2.6% | $194.78 | 1 | - | PS |
+| scalp_vwap_large | $+0.37 | -0.5% | $198.94 | 5 | 1/2 | MSFT |
 | gap_fade | $+0.00 | -11.8% | $176.38 | 0 | - | cash |
-| orb_tqqq | $-0.13 | -11.2% | $177.61 | 1 | - | TQQQ |
-| scalp_vwap | $-0.41 | +0.6% | $201.18 | 2 | - | LCID, RIVN |
-| scalp_burst_large | $-0.63 | -5.3% | $189.44 | 3 | 0/1 | PLTR |
-| midday_momentum | $-1.01 | +0.7% | $201.47 | 1 | - | SHOP |
+| scalp_vwap | $-0.15 | +0.7% | $201.44 | 5 | 0/1 | RIVN, SOUN, LCID |
+| wsb_crowd | $-0.33 | -2.9% | $194.25 | 1 | - | PS |
+| midday_momentum | $-0.48 | +1.0% | $202.00 | 1 | - | SHOP |
+| scalp_burst_large | $-0.73 | -5.3% | $189.34 | 5 | 0/2 | AVGO |
 | options_orb | $-18.00 | +51.5% | $303.00 | 2 | 0/1 | cash |
 | options_orb_spy | $-43.00 | +20.0% | $240.00 | 4 | 0/2 | cash |
 
