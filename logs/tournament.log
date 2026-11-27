@@ -3506,3 +3506,7 @@
 2026-11-27 15:52:10,339 INFO options_orb_spy   value $240.00  cash $240.00  holding -
 2026-11-27 16:06:16,953 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
 2026-11-27 16:06:22,186 INFO activist: checked 13D feed: nothing new
+2026-11-27 16:21:10,540 INFO scalp_burst_large BUY  COIN  $  50.00 @ 108.4  burst signal
+2026-11-27 16:21:10,542 INFO scalp_burst_large value $190.04  cash $140.07  holding ['COIN']
+2026-11-27 16:22:24,858 INFO insider: checked 23 new Form 4 filings, found 1 insider purchases
+2026-11-27 16:22:28,005 INFO activist: checked 13D feed: nothing new
