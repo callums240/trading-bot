@@ -3525,3 +3525,9 @@
 2026-11-27 17:08:42,232 INFO scalp_vwap        value $201.16  cash $101.59  holding ['LCID', 'RIVN']
 2026-11-27 17:08:59,365 INFO insider: checked 30 new Form 4 filings, found 0 insider purchases
 2026-11-27 17:09:05,475 INFO activist: checked 13D feed: nothing new
+2026-11-27 17:12:42,605 INFO scalp_burst_large SELL COIN  $  49.46 @ 107.2  burst exit: stop  P/L $-0.54
+2026-11-27 17:12:42,607 INFO scalp_burst_large value $189.50  cash $139.53  holding ['PLTR']
+2026-11-27 17:20:42,395 INFO scalp_vwap_large  SELL AAPL  $  49.97 @ 357.6  vwap exit: time limit  P/L $-0.03
+2026-11-27 17:20:42,396 INFO scalp_vwap_large  value $198.94  cash $198.94  holding -
+2026-11-27 17:25:16,203 INFO insider: checked 37 new Form 4 filings, found 0 insider purchases
+2026-11-27 17:25:29,100 INFO activist: checked 13D feed: nothing new
