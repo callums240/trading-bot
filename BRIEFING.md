@@ -1,4 +1,4 @@
-# Daily briefing: Friday 27 November 2026, 09:46 ET
+# Daily briefing: Friday 27 November 2026, 10:02 ET
 
 ## Market
 
@@ -6,25 +6,25 @@
 
 | SPY (S&P 500) | QQQ (Nasdaq 100) | IWM (small caps) | DIA (Dow) | VIXY (fear gauge) | Sectors up |
 |---|---|---|---|---|---|
-| +0.70% | +0.75% | +0.95% | +0.75% | -1.12% | 11 of 11 |
+| +0.50% | +0.60% | +0.83% | +0.58% | -0.43% | 10 of 11 |
 
-Sectors today: XLC +1.5%, XLE +1.4%, XLY +1.2%, XLI +1.1%, XLB +1.0%, XLF +0.9%, XLK +0.5%, XLRE +0.5%, XLU +0.2%, XLP +0.1%, XLV +0.1%
+Sectors today: XLE +1.6%, XLC +1.3%, XLB +1.0%, XLI +0.9%, XLY +0.9%, XLF +0.9%, XLRE +0.5%, XLK +0.4%, XLP +0.2%, XLU +0.0%, XLV -0.4%
 
 ## Real paper account (live bot)
 
-Equity $121.46 (started $200.00), cash $32.41. Holding: NVDA (-10.9%).
+Equity $121.39 (started $200.00), cash $32.41. Holding: NVDA (-11.0%).
 
 ## Tournament today
 
 | Strategy | Today | Since start | Value | Trades today | Closed wins | Holding |
 |---|---|---|---|---|---|---|
-| gold_fear | $+7.82 | -2.9% | $194.24 | 0 | - | GDX |
-| weekly_momentum | $+4.21 | -13.6% | $172.78 | 0 | - | AMZN, TSLA, META |
-| nonews_dip | $+2.65 | -3.4% | $193.16 | 0 | - | KLAC, ANET, ARM, UNH |
-| overnight_qqq | $+1.49 | +0.4% | $200.73 | 0 | - | QQQ |
-| spy_hold | $+1.30 | -6.0% | $187.96 | 0 | - | SPY |
-| insider_buys | $+0.96 | +6.5% | $212.91 | 0 | - | KNOP, LRN, ASPE, WWB |
-| activist_13d | $+0.55 | +3.9% | $207.74 | 0 | - | ASPE, FUN, TRIP, BKD |
+| gold_fear | $+6.83 | -3.4% | $193.25 | 0 | - | GDX |
+| insider_buys | $+6.07 | +9.0% | $218.02 | 0 | - | KNOP, LRN, ASPE, WWB |
+| activist_13d | $+5.01 | +6.1% | $212.20 | 0 | - | ASPE, FUN, TRIP, BKD |
+| weekly_momentum | $+3.99 | -13.7% | $172.56 | 0 | - | AMZN, TSLA, META |
+| nonews_dip | $+2.17 | -3.7% | $192.68 | 0 | - | KLAC, ANET, ARM, UNH |
+| overnight_qqq | $+1.04 | +0.1% | $200.28 | 1 | 1/1 | cash |
+| spy_hold | $+0.93 | -6.2% | $187.59 | 0 | - | SPY |
 | gap_fade | $+0.00 | -11.8% | $176.38 | 0 | - | cash |
 | midday_momentum | $+0.00 | +1.2% | $202.48 | 0 | - | cash |
 | options_orb | $+0.00 | +60.5% | $321.00 | 0 | - | cash |
@@ -33,6 +33,6 @@ Equity $121.46 (started $200.00), cash $32.41. Holding: NVDA (-10.9%).
 | scalp_burst_large | $+0.00 | -5.0% | $190.07 | 0 | - | cash |
 | scalp_vwap | $+0.00 | +0.8% | $201.59 | 0 | - | cash |
 | scalp_vwap_large | $+0.00 | -0.7% | $198.57 | 0 | - | cash |
-| wsb_crowd | $+0.00 | -2.7% | $194.58 | 0 | - | cash |
+| wsb_crowd | $-0.10 | -2.8% | $194.48 | 1 | - | PS |
 
 Stop rule: a strategy that falls to $150 is stopped for good. None are close to it.

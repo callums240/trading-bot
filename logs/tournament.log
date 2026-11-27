@@ -3473,3 +3473,9 @@
 2026-11-27 14:30:29,568 INFO activist: checked 13D feed: nothing new
 2026-11-27 14:46:33,763 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
 2026-11-27 14:46:47,902 INFO activist: checked 13D feed: nothing new
+2026-11-27 15:00:10,181 INFO wsb_crowd         BUY  PS    $ 194.58 @ 32.99  WSB mentions spiking
+2026-11-27 15:00:10,183 INFO wsb_crowd         value $194.48  cash $0.00  holding ['PS']
+2026-11-27 15:00:10,183 INFO overnight_qqq     SELL QQQ   $ 200.28 @ 637.2  morning exit  P/L $+2.05
+2026-11-27 15:00:10,184 INFO overnight_qqq     value $200.28  cash $200.28  holding -
+2026-11-27 15:02:38,121 INFO insider: checked 80 new Form 4 filings, found 2 insider purchases
+2026-11-27 15:02:44,880 INFO activist: checked 13D feed: nothing new
