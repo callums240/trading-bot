@@ -3549,3 +3549,6 @@
 2026-11-27 17:55:42,705 INFO scalp_burst_large value $189.35  cash $139.38  holding ['AVGO']
 2026-11-27 17:57:07,167 INFO insider: checked 51 new Form 4 filings, found 0 insider purchases
 2026-11-27 17:57:08,611 INFO activist: checked 13D feed: nothing new
+2026-11-27 17:58:42,150 INFO scalp_vwap        SELL SOUN  $  50.71 @ 2.784  vwap exit: target  P/L $+0.71
+2026-11-27 17:58:42,152 INFO scalp_vwap        value $202.00  cash $101.60  holding ['RIVN', 'LCID']
+2026-11-27 18:57:50,607 INFO market closed (opens in 4052 min); hourly snapshots
