@@ -3521,3 +3521,7 @@
 2026-11-27 16:49:42,451 INFO scalp_vwap_large  value $198.95  cash $148.97  holding ['AAPL']
 2026-11-27 16:52:55,353 INFO insider: checked 37 new Form 4 filings, found 1 insider purchases
 2026-11-27 16:53:01,993 INFO activist: checked 13D feed: nothing new
+2026-11-27 17:08:42,231 INFO scalp_vwap        BUY  RIVN  $  50.00 @ 12.13  vwap signal
+2026-11-27 17:08:42,232 INFO scalp_vwap        value $201.16  cash $101.59  holding ['LCID', 'RIVN']
+2026-11-27 17:08:59,365 INFO insider: checked 30 new Form 4 filings, found 0 insider purchases
+2026-11-27 17:09:05,475 INFO activist: checked 13D feed: nothing new
