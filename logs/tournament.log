@@ -3531,3 +3531,10 @@
 2026-11-27 17:20:42,396 INFO scalp_vwap_large  value $198.94  cash $198.94  holding -
 2026-11-27 17:25:16,203 INFO insider: checked 37 new Form 4 filings, found 0 insider purchases
 2026-11-27 17:25:29,100 INFO activist: checked 13D feed: nothing new
+2026-11-27 17:30:41,730 INFO midday_momentum   BUY  SHOP  $ 202.48 @ 142  top gainer at midday
+2026-11-27 17:30:41,730 INFO midday_momentum   value $202.38  cash $0.00  holding ['SHOP']
+2026-11-27 17:32:43,843 INFO live bot ran (exit 0): 2026-11-27 17:32:43,771 INFO ==== run end ====
+2026-11-27 17:36:42,396 INFO scalp_vwap_large  BUY  MSFT  $  50.00 @ 491.9  vwap signal
+2026-11-27 17:36:42,398 INFO scalp_vwap_large  value $198.91  cash $148.94  holding ['MSFT']
+2026-11-27 17:40:59,213 INFO insider: checked 40 new Form 4 filings, found 1 insider purchases
+2026-11-27 17:41:00,503 INFO activist: checked 13D feed: nothing new
