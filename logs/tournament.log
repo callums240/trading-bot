@@ -3514,3 +3514,6 @@
 2026-11-27 16:25:10,547 INFO scalp_burst_large value $190.15  cash $90.07  holding ['COIN', 'PLTR']
 2026-11-27 16:35:10,325 INFO scalp_vwap        BUY  LCID  $  50.00 @ 2.575  vwap signal
 2026-11-27 16:35:10,327 INFO scalp_vwap        value $201.48  cash $151.59  holding ['LCID']
+2026-11-27 16:36:41,246 INFO ==== session start ====
+2026-11-27 16:36:58,775 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
+2026-11-27 16:37:00,228 INFO activist: checked 13D feed: nothing new
