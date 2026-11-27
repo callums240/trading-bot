@@ -3471,3 +3471,5 @@
 2026-11-27 13:52:43,964 INFO market closed (opens in 37 min); hourly snapshots
 2026-11-27 14:30:24,547 INFO insider: checked 43 new Form 4 filings, found 5 insider purchases
 2026-11-27 14:30:29,568 INFO activist: checked 13D feed: nothing new
+2026-11-27 14:46:33,763 INFO insider: checked 22 new Form 4 filings, found 1 insider purchases
+2026-11-27 14:46:47,902 INFO activist: checked 13D feed: nothing new
