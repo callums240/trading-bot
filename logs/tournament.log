@@ -3517,3 +3517,7 @@
 2026-11-27 16:36:41,246 INFO ==== session start ====
 2026-11-27 16:36:58,775 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
 2026-11-27 16:37:00,228 INFO activist: checked 13D feed: nothing new
+2026-11-27 16:49:42,449 INFO scalp_vwap_large  BUY  AAPL  $  50.00 @ 357.8  vwap signal
+2026-11-27 16:49:42,451 INFO scalp_vwap_large  value $198.95  cash $148.97  holding ['AAPL']
+2026-11-27 16:52:55,353 INFO insider: checked 37 new Form 4 filings, found 1 insider purchases
+2026-11-27 16:53:01,993 INFO activist: checked 13D feed: nothing new
