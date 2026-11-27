@@ -3502,3 +3502,7 @@
 2026-11-27 15:50:10,266 INFO options_orb       value $303.00  cash $303.00  holding -
 2026-11-27 15:50:31,350 INFO insider: checked 38 new Form 4 filings, found 0 insider purchases
 2026-11-27 15:50:32,371 INFO activist: checked 13D feed: nothing new
+2026-11-27 15:52:10,338 INFO options_orb_spy   SELL SPY261127C00730000 $  19.00 @ 0.19  stop: down 51%  P/L $-21.00
+2026-11-27 15:52:10,339 INFO options_orb_spy   value $240.00  cash $240.00  holding -
+2026-11-27 16:06:16,953 INFO insider: checked 26 new Form 4 filings, found 0 insider purchases
+2026-11-27 16:06:22,186 INFO activist: checked 13D feed: nothing new
