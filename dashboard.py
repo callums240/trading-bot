@@ -1,380 +1,175 @@
-"""Visual dashboard for everything the bot knows: the live paper bot, the strategy
-tournament, every trade, what's working, the WSB crowd data, insider buys and the logs.
+"""Simple dashboard: one page, three questions.
+  1. How is the real paper account doing?
+  2. How did each strategy do with its OWN $200?
+  3. Are we getting better? (win rate by day)
 
-It only reads files already in this repo (state/, logs/, data/, the .md reports and the
-git history), so it needs no API keys and no extra packages: plain Python 3 is enough.
-
-Usage:
-  python3 dashboard.py                  # build dashboard.html and open it in your browser
-  python3 dashboard.py --no-open        # just build the file
-  python3 dashboard.py --serve          # live mode at http://localhost:8765 (rebuilds on every load)
-  python3 dashboard.py --serve --pull   # live mode that also fetches the cloud bot's newest commits
+Reads only files in this repo. Usage: python3 dashboard.py [--no-open]
 """
-import argparse
 import html
 import json
 import re
-import subprocess
 import sys
-import time
 import webbrowser
-from datetime import datetime, timezone
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
-STATE = ROOT / "state"
-TOURN = STATE / "tournament"
-TEMPLATE = ROOT / "dashboard_template.html"
+TOURN = ROOT / "state" / "tournament"
 OUT = ROOT / "dashboard.html"
-LOG_LINE = re.compile(r"^(\d{4}-\d\d-\d\d \d\d:\d\d:\d\d),\d+ (\w+) (.*)$")
 
 
-def read_json(path, default=None):
+def read_json(p, default=None):
     try:
-        return json.loads(Path(path).read_text())
+        return json.loads(Path(p).read_text())
     except Exception:
         return default
 
 
-def git(*args, data=None):
-    try:
-        r = subprocess.run(["git", "-C", str(ROOT), *args], input=data, capture_output=True, timeout=120)
-        return r.stdout if r.returncode == 0 else b""
-    except Exception:
-        return b""
-
-
-# ------------------------------------------------------------ tournament ---
-def family(name):
-    if name.startswith("scalp"):
-        return "scalper"
-    if name.startswith(("options", "put_")):
-        return "options"
-    return "benchmark" if name == "spy_hold" else "swing"
-
-
-def strategy_about():
-    """Names and one-line descriptions, read from the PLAYERS list without importing it
-    (importing would need pandas and the Alpaca library)."""
+def about():
     try:
         src = (ROOT / "tournament" / "strategies.py").read_text()
+        return dict(re.findall(r'Strategy\("([^"]+)",\s*"([^"]+)"', src))
     except Exception:
         return {}
-    return dict(re.findall(r'Strategy\("([^"]+)",\s*"([^"]+)"', src))
 
 
-def round_trips(name, d):
-    """One row per completed trade (same pairing rules as learn.py, plus the details)."""
-    rows, open_buys, partial = [], {}, {}
+def round_trips(d):
+    """Completed trades as (day, pnl). Partial sells are merged."""
+    rows, open_buys, acc = [], {}, {}
     for t in d.get("trades", []):
-        sym = t["sym"]
+        s = t["sym"]
         if t["side"] == "buy":
-            open_buys.setdefault(sym, t)
-        elif t["side"] == "sell" and sym in open_buys:
-            acc = partial.setdefault(sym, {"qty": 0.0, "usd": 0.0, "pnl": 0.0})
-            acc["qty"] += t["qty"]; acc["usd"] += t["usd"]; acc["pnl"] += t.get("pnl", 0)
-            if acc["qty"] < open_buys[sym]["qty"] * 0.999:
-                continue
-            b = open_buys.pop(sym)
-            partial.pop(sym)
-            cost = acc["usd"] - acc["pnl"]
-            if cost <= 0:
-                continue
-            t_in, t_out = datetime.fromisoformat(b["t"]), datetime.fromisoformat(t["t"])
-            mins = (t_out - t_in).total_seconds() / 60
-            rows.append({
-                "strategy": name, "family": family(name),
-                "style": (name.replace("scalp_", "").replace("_large", "").replace("_fast", "")
-                          if name.startswith("scalp") else name),
-                "stocks": ("big stocks" if name.endswith(("_large", "_large_fast")) else
-                           "small caps" if name.startswith("scalp") else "mixed"),
-                "sym": sym, "ticker": sym if ":" not in sym and len(sym) <= 6 else "options",
-                "t_in": b["t"], "t_out": t["t"], "mins": round(mins, 1),
-                "cost": round(cost, 2), "pnl": round(acc["pnl"], 2), "ret": acc["pnl"] / cost,
-                "entry_time": ("9:30-10:30 (first hour)" if t_in.hour < 10 or (t_in.hour == 10 and t_in.minute < 30)
-                               else "10:30-14:00 (middle)" if t_in.hour < 14 else "14:00-16:00 (last 2 hours)"),
-                "mood": b.get("mood", "unknown"),
-                "held": ("under 15 min" if mins < 15 else "15-60 min" if mins < 60 else
-                         "1-6.5 hours" if mins < 390 else "overnight or longer"),
-                "why_in": b.get("reason", ""), "why_out": t.get("reason", ""), "day": t["t"][:10],
-            })
+            open_buys.setdefault(s, t)
+        elif s in open_buys:
+            a = acc.setdefault(s, {"qty": 0.0, "pnl": 0.0})
+            a["qty"] += t["qty"]
+            a["pnl"] += t.get("pnl", 0)
+            if a["qty"] >= open_buys[s]["qty"] * 0.999:
+                open_buys.pop(s)
+                acc.pop(s)
+                rows.append((t["t"][:10], a["pnl"]))
     return rows
 
 
-def tournament():
-    about = strategy_about()
-    strategies, trips = [], []
+def real_account():
+    text = ""
+    try:
+        text = (ROOT / "BRIEFING.md").read_text()
+    except Exception:
+        pass
+    m = re.search(r"Equity \$([\d.,]+) \(started \$([\d.,]+)\), cash \$([\d.,]+)\. Holding: (.+)\.", text)
+    rehearsal = re.search(r"Real-order profit so far: \*\*\$(-?[\d.]+)\*\*", (ROOT / "REAL.md").read_text()) \
+        if (ROOT / "REAL.md").exists() else None
+    if not m:
+        return None
+    return {"equity": float(m.group(1).replace(",", "")), "start": float(m.group(2).replace(",", "")),
+            "cash": float(m.group(3).replace(",", "")), "holding": m.group(4),
+            "rehearsal": float(rehearsal.group(1)) if rehearsal else None}
+
+
+def money(x, sign=False):
+    s = f"{abs(x):,.2f}"
+    return ("+" if x > 0 else "-" if x < 0 else "") + "$" + s if sign else "$" + s
+
+
+def cls(x):
+    return "up" if x > 0 else "down" if x < 0 else ""
+
+
+def build():
+    desc = about()
+    strategies, by_day = [], {}
     for f in sorted(TOURN.glob("*.json")):
         d = read_json(f)
         if not d:
             continue
-        name = f.stem
         eq = d.get("equity", {})
         days = sorted(eq)
         value = eq[days[-1]] if days else d["start_cash"]
-        prev = eq[days[-2]] if len(days) > 1 else d["start_cash"]
-        sells = [t for t in d["trades"] if t["side"] == "sell"]
-        rt = round_trips(name, d)
-        trips += rt
-        strategies.append({
-            "name": name, "about": about.get(name, ""), "family": family(name),
-            "start": d["start_cash"], "cash": round(d["cash"], 2), "value": value,
-            "ret": value / d["start_cash"] - 1, "today": round(value - prev, 2),
-            "day": days[-1] if days else None, "since": days[0] if days else None,
-            "equity": eq, "stopped": d.get("stopped"),
-            "positions": [{"sym": s, "qty": p["qty"], "entry": p["entry"], "since": p.get("since"),
-                           "cost": round(p["qty"] * p["entry"], 2)} for s, p in d["positions"].items()],
-            "trades": d["trades"], "n_trades": len(d["trades"]), "closed": len(rt),
-            "wins": sum(1 for r in rt if r["pnl"] > 0),
-            "realized": round(sum(t.get("pnl", 0) for t in sells), 2),
-        })
+        trips = round_trips(d)
+        for day, pnl in trips:
+            w = by_day.setdefault(day, [0, 0])
+            w[0] += pnl > 0
+            w[1] += 1
+        strategies.append({"name": f.stem, "value": value, "ret": value / d["start_cash"] - 1,
+                           "pnl": value - d["start_cash"], "trades": len(trips),
+                           "wins": sum(1 for _, p in trips if p > 0),
+                           "holding": ", ".join(d["positions"]) or "cash"})
     strategies.sort(key=lambda s: s["ret"], reverse=True)
-    trips.sort(key=lambda r: r["t_out"])
-    return strategies, trips
 
+    acct = real_account()
+    tw = sum(s["wins"] for s in strategies)
+    tt = sum(s["trades"] for s in strategies)
 
-def history(names):
-    """How every strategy's value moved through each day, rebuilt from the git history
-    (the cloud bot commits its state about every 15 minutes)."""
-    log = git("log", "--reverse", "--format=%H %ct", "--", "state/tournament").decode().split("\n")
-    commits = [l.split() for l in log if l.strip()]
-    if not commits:
-        return {"t": [], "series": {}}
-    req = "".join(f"{sha}:state/tournament/{n}.json\n" for sha, _ in commits for n in names)
-    out = git("cat-file", "--batch", data=req.encode())
-    pos, vals = 0, []
-    for _ in range(len(commits) * len(names)):
-        nl = out.find(b"\n", pos)
-        if nl < 0:
-            vals.append(None)
-            continue
-        head = out[pos:nl].split()
-        pos = nl + 1
-        if len(head) == 3 and head[1] == b"blob":
-            size = int(head[2])
-            try:
-                eq = json.loads(out[pos:pos + size]).get("equity", {})
-                vals.append(eq[max(eq)] if eq else None)
-            except Exception:
-                vals.append(None)
-            pos += size + 1
-        else:
-            vals.append(None)
-    times, series, last = [], {n: [] for n in names}, None
-    for i, (_, ts) in enumerate(commits):
-        row = vals[i * len(names):(i + 1) * len(names)]
-        if row == last or all(v is None for v in row):
-            continue
-        last = row
-        times.append(int(ts))
-        for n, v in zip(names, row):
-            series[n].append(v)
-    return {"t": times, "series": series}
+    out = ["""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Trading Results</title>
+<style>
+:root{--bg:#fafafa;--fg:#1a1a1a;--mut:#6b6b6b;--card:#fff;--line:#e3e3e3;--up:#0a7d3c;--down:#c0272d}
+@media(prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--mut:#9a9a9a;--card:#1c1c1c;--line:#333;--up:#4cc27a;--down:#f06267}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:32px 0 8px}
+p.sub{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.big{font-size:34px;font-weight:700}.up{color:var(--up)}.down{color:var(--down)}.mut{color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);font-size:15px}
+th:first-child,td:first-child{text-align:left}th{color:var(--mut);font-weight:500;font-size:13px}
+tr:last-child td{border-bottom:0}
+.bar{display:inline-block;height:10px;background:var(--up);border-radius:3px;vertical-align:middle}
+.banner{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--down);border-radius:10px;padding:12px 16px;margin-bottom:16px}
+@media(max-width:600px){.hide{display:none}}
+</style></head><body><main>
+<h1>Trading results</h1>
+<p class="sub">Paper money only. Built """ + datetime.now().strftime("%a %d %b %Y, %H:%M") + """.</p>
+<div class="banner"><b>Tournament ended 27 Nov 2026.</b> No more trades are being placed. These are the final numbers.</div>
+"""]
 
-
-def learning(trips):
-    try:
-        from learn import stats, MIN_TRADES
-    except Exception:
-        return None
-
-    def groups(rows, key, min_n=1):
-        g = {}
-        for r in rows:
-            g.setdefault(r[key], []).append(r)
-        out = []
-        for k, v in g.items():
-            if len(v) >= min_n:
-                s = stats(v)
-                s["key"] = k
-                s["verdict"] = s["verdict"].replace("**", "")
-                out.append(s)
-        return sorted(out, key=lambda s: s["mean"], reverse=True)
-
-    wins = [r for r in trips if r["ret"] > 0]
-    total = stats(trips)
-    return {
-        "min_trades": MIN_TRADES, "total": total,
-        "days": sorted({r["day"] for r in trips}),
-        "big_wins": sum(1 for r in wins if r["ret"] >= 0.05), "wins": len(wins),
-        "tables": [
-            {"title": "By strategy", "rows": groups(trips, "strategy")},
-            {"title": "Big stocks vs small caps", "rows": groups(trips, "stocks")},
-            {"title": "By time of day the trade was opened (ET)", "rows": groups(trips, "entry_time")},
-            {"title": "By market mood when the trade was opened", "rows": groups(trips, "mood")},
-            {"title": "By how long the trade was held", "rows": groups(trips, "held")},
-            {"title": "Scalpers by style", "rows": groups([r for r in trips if r["family"] == "scalper"], "style")},
-            {"title": "By ticker (3+ trades)", "rows": groups(trips, "ticker", 3)},
-        ],
-    }
-
-
-# -------------------------------------------------------------- live bot ---
-def live_bot():
-    cfg = {}
-    try:
-        import config as C
-        cfg = {k: getattr(C, k) for k in dir(C) if k.isupper()}
-    except Exception:
-        pass
-    runs, cur = [], None
-    try:
-        lines = (ROOT / "logs" / "bot.log").read_text().splitlines()
-    except Exception:
-        lines = []
-    for line in lines:
-        m = LOG_LINE.match(line)
-        if not m:
-            continue
-        ts, level, msg = m.groups()
-        start = re.search(r"run start \(([\w-]+)\)", msg)
-        if start:
-            cur = {"t": ts, "mode": start.group(1), "lines": [], "equity": None, "cash": None}
-            runs.append(cur)
-            continue
-        if cur is None or "run end" in msg:
-            continue
-        eq = re.search(r"equity \$([\d.]+) \| cash \$([\d.]+)", msg)
-        if eq:
-            cur["equity"], cur["cash"] = float(eq.group(1)), float(eq.group(2))
-        cur["lines"].append({"level": level, "msg": msg})
-    return {"config": cfg, "state": read_json(STATE / "state.json", {}), "runs": runs}
-
-
-def briefing():
-    try:
-        text = (ROOT / "BRIEFING.md").read_text()
-    except Exception:
-        return None
-    b = {"title": (re.search(r"^# Daily briefing: (.+)$", text, re.M) or [None, ""])[1]}
-    m = re.search(r"\*\*Mood: (\w+)\.\*\* (.+)", text)
-    if m:
-        b["mood"], b["mood_words"] = m.group(1), m.group(2).strip()
-    row = re.search(r"\|---\|---\|---\|---\|---\|---\|\n\|(.+)\|", text)
-    if row:
-        cells = [c.strip() for c in row.group(1).split("|")]
-        if len(cells) == 6:
-            b["indexes"] = [{"name": n, "chg": c} for n, c in zip(
-                ["SPY (S&P 500)", "QQQ (Nasdaq 100)", "IWM (small caps)", "DIA (Dow)", "VIXY (fear gauge)"], cells)]
-            b["sectors_up"] = cells[5]
-    sec = re.search(r"^Sectors today: (.+)$", text, re.M)
-    if sec:
-        b["sectors"] = [{"sym": s, "chg": float(c)} for s, c in re.findall(r"(\w+) ([+-][\d.]+)%", sec.group(1))]
-    acct = re.search(r"Equity \$([\d.,]+) \(started \$([\d.,]+)\), cash \$([\d.,]+)\. Holding: (.+)\.", text)
     if acct:
-        b["account"] = {"equity": float(acct.group(1).replace(",", "")), "start": float(acct.group(2).replace(",", "")),
-                        "cash": float(acct.group(3).replace(",", "")), "holding": acct.group(4)}
-    return b
+        pl = acct["equity"] - acct["start"]
+        out.append(f"""<h2>The paper account (includes your NVDA and the old tests)</h2><div class="card">
+<div class="big {cls(pl)}">{money(acct['equity'])}</div>
+<div>Started with {money(acct['start'])}: <b class="{cls(pl)}">{money(pl, True)}</b> ({pl / acct['start']:+.0%}).</div>
+<div class="mut">Cash {money(acct['cash'])}. Holding: {html.escape(acct['holding'])}.""")
+        if acct["rehearsal"] is not None:
+            out.append(f" Options practice trades lost {money(acct['rehearsal'], True)} of that.")
+        out.append("</div></div>")
 
-
-# ------------------------------------------------------ crowd + insiders ---
-def forum(top=6, table=25):
-    files = sorted((ROOT / "data" / "forum" / "wallstreetbets").glob("*.json"))
-    snaps = []
-    for f in files:
-        d = read_json(f)
-        if d and d.get("results"):
-            snaps.append(d)
-    if not snaps:
-        return None
-    latest = [dict(r, name=html.unescape(r.get("name") or "")) for r in snaps[-1]["results"]]
-    tickers = [r["ticker"] for r in latest[:top]]
-    return {
-        "captured": snaps[-1].get("captured_utc"), "snapshots": len(snaps),
-        "t": [s.get("captured_utc") for s in snaps],
-        "series": {tk: [next((r["mentions"] for r in s["results"] if r["ticker"] == tk), None) for s in snaps]
-                   for tk in tickers},
-        "top": latest[:table],
-    }
-
-
-def insiders():
-    rows = []
     try:
-        for line in (ROOT / "data" / "insider" / "purchases.jsonl").read_text().splitlines():
-            if line.strip():
-                rows.append(json.loads(line))
+        rep = (ROOT / "agent" / "REPORT.md").read_text()
+        out.append("<h2>The agent (live strategy)</h2><div class='card'><pre style='white-space:pre-wrap;margin:0;font:14px/1.5 inherit'>"
+                   + html.escape(rep.replace("#", "").replace("**", "")) + "</pre></div>")
     except Exception:
-        pass
-    return sorted(rows, key=lambda r: r.get("seen_utc", ""), reverse=True)
+        out.append("<h2>The agent (live strategy)</h2><div class='card mut'>Hasn't run yet. First run: next market open.</div>")
+    best, worst = strategies[0], strategies[-1]
+    up = sum(1 for s in strategies if s["pnl"] > 0)
+    out.append(f"""<h2>Old tournament: each strategy, on its own $200</h2>
+<p class="sub">Every row is a separate $200 test. They are not added together. {up} of {len(strategies)} finished above $200.
+Win rate overall: {tw}/{tt} trades ({tw / max(tt, 1):.0%}).</p>
+<table><tr><th>Strategy</th><th>Now</th><th>Change</th><th>Trades</th><th class="hide">Win rate</th><th class="hide">Holding</th></tr>""")
+    for s in strategies:
+        wr = f"{s['wins'] / s['trades']:.0%}" if s["trades"] else "-"
+        out.append(f"""<tr title="{html.escape(desc.get(s['name'], ''))}"><td>{s['name']}</td><td>{money(s['value'])}</td>
+<td class="{cls(s['pnl'])}">{money(s['pnl'], True)} ({s['ret']:+.0%})</td><td>{s['trades']}</td>
+<td class="hide">{wr}</td><td class="hide mut">{html.escape(s['holding'][:28])}</td></tr>""")
+    out.append("</table>")
 
-
-def activity(limit=500):
-    try:
-        lines = (ROOT / "logs" / "tournament.log").read_text().splitlines()
-    except Exception:
-        return []
-    out = []
-    for line in lines[-limit:]:
-        m = LOG_LINE.match(line)
-        if m:
-            out.append({"t": m.group(1), "level": m.group(2), "msg": m.group(3)})
-    return out[::-1]
-
-
-# ------------------------------------------------------------------ build --
-def collect():
-    strategies, trips = tournament()
-    head = git("log", "-1", "--format=%h|%ct|%s").decode().strip().split("|")
-    return {
-        "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "commit": {"sha": head[0], "t": int(head[1]), "msg": head[2]} if len(head) == 3 else None,
-        "strategies": strategies, "trips": trips,
-        "history": history([s["name"] for s in strategies]),
-        "learning": learning(trips), "live": live_bot(), "briefing": briefing(),
-        "forum": forum(), "insiders": insiders(), "activity": activity(),
-    }
-
-
-def build():
-    data = json.dumps(collect(), separators=(",", ":")).replace("</", "<\\/")
-    return TEMPLATE.read_text().replace("/*__DATA__*/null", data)
-
-
-def serve(port, pull):
-    last_pull = [0.0]
-
-    class Handler(BaseHTTPRequestHandler):
-        def do_GET(self):
-            if self.path.split("?")[0] not in ("/", "/index.html"):
-                self.send_error(404)
-                return
-            if pull and time.time() - last_pull[0] > 60:
-                last_pull[0] = time.time()
-                git("pull", "--ff-only", "--quiet")
-            try:
-                body, code = build().encode(), 200
-            except Exception as e:      # show the problem in the browser instead of a blank page
-                body, code = f"Dashboard build failed: {e!r}".encode(), 500
-            self.send_response(code)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.send_header("Cache-Control", "no-store")
-            self.send_header("Content-Length", str(len(body)))
-            self.end_headers()
-            self.wfile.write(body)
-
-        def log_message(self, *a):
-            pass
-
-    print(f"Dashboard running at http://localhost:{port}  (Ctrl+C to stop)")
-    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    out.append("""<h2>Old tournament: win rate by day</h2>
+<p class="sub">Share of finished trades that made money, all strategies together. Bar = win rate.</p>
+<table><tr><th>Day</th><th>Wins / trades</th><th>Win rate</th></tr>""")
+    for day in sorted(by_day):
+        w, n = by_day[day]
+        r = w / n
+        out.append(f"<tr><td>{day}</td><td>{w} / {n}</td><td><span class='bar' style='width:{r * 100:.0f}px'></span> {r:.0%}</td></tr>")
+    out.append("</table></main></body></html>")
+    return "".join(out)
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build or serve the trading-bot dashboard")
-    ap.add_argument("--serve", action="store_true", help="run a local page that rebuilds on every load")
-    ap.add_argument("--pull", action="store_true", help="with --serve: git pull the cloud bot's latest state")
-    ap.add_argument("--port", type=int, default=8765)
-    ap.add_argument("--no-open", action="store_true", help="build dashboard.html without opening it")
-    args = ap.parse_args()
-    if args.serve:
-        serve(args.port, args.pull)
-        return
     OUT.write_text(build())
     print(f"Wrote {OUT}")
-    if not args.no_open:
+    if "--no-open" not in sys.argv:
         webbrowser.open(OUT.as_uri())
 
 
